@@ -9,7 +9,7 @@
  * @copyright  Copyright 2013 Ian Miers, Christina Garman and Matthew Green
  * @license    This project is released under the MIT license.
  **/
-// Copyright (c) 2017-2018 The PIVX developers
+// Copyright (c) 2017-2018 The DOMO developers
 
 #include "CoinSpend.h"
 #include <iostream>
@@ -57,7 +57,7 @@ namespace libzerocoin
 
     // Now generate the two core ZK proofs:
     // 3. Proves that the committed public coin is in the Accumulator (PoK of "witness")
-    this->accumulatorPoK = AccumulatorProofOfKnowledge(&paramsAcc->accumulatorParams, fullCommitmentToCoinUnderAccParams, witness);
+    this->accumulatorPoK = AccumulatorProofOfKnowledge(&paramsAcc->accumulatorParams, fullCommitmentToCoinUnderAccParams, witness, a);
 
     // 4. Proves that the coin is correct w.r.t. serial number and hidden coin secret
     // (This proof is bound to the coin 'metadata', i.e., transaction hash)
@@ -76,28 +76,28 @@ bool CoinSpend::Verify(const Accumulator& a) const
 {
     // Double check that the version is the same as marked in the serial
     if (ExtractVersionFromSerial(coinSerialNumber) != version) {
-        //cout << "CoinSpend::Verify: version does not match serial=" << (int)ExtractVersionFromSerial(coinSerialNumber) << " actual=" << (int)version << endl;
+        // cout << "CoinSpend::Verify: version does not match serial=" << (int)ExtractVersionFromSerial(coinSerialNumber) << " actual=" << (int)version << endl;
         return false;
     }
 
     if (a.getDenomination() != this->denomination) {
-        //std::cout << "CoinsSpend::Verify: failed, denominations do not match\n";
+        // std::cout << "CoinsSpend::Verify: failed, denominations do not match\n";
         return false;
     }
 
     // Verify both of the sub-proofs using the given meta-data
     if (!commitmentPoK.Verify(serialCommitmentToCoinValue, accCommitmentToCoinValue)) {
-        //std::cout << "CoinsSpend::Verify: commitmentPoK failed\n";
+        // std::cout << "CoinsSpend::Verify: commitmentPoK failed\n";
         return false;
     }
 
     if (!accumulatorPoK.Verify(a, accCommitmentToCoinValue)) {
-        //std::cout << "CoinsSpend::Verify: accumulatorPoK failed\n";
+        // std::cout << "CoinsSpend::Verify: accumulatorPoK failed\n";
         return false;
     }
 
     if (!serialNumberSoK.Verify(coinSerialNumber, serialCommitmentToCoinValue, signatureHash())) {
-        //std::cout << "CoinsSpend::Verify: serialNumberSoK failed. sighash:" << signatureHash().GetHex() << "\n";
+        // std::cout << "CoinsSpend::Verify: serialNumberSoK failed. sighash:" << signatureHash().GetHex() << "\n";
         return false;
     }
 

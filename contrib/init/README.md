@@ -1,10 +1,10 @@
 Sample configuration files for:
 
-SystemD: pivxd.service
-Upstart: pivxd.conf
-OpenRC:  pivxd.openrc
-         pivxd.openrcconf
-CentOS:  pivxd.init
+SystemD: domod.service
+Upstart: domod.conf
+OpenRC:  domod.openrc
+         domod.openrcconf
+CentOS:  domod.init
 
 have been made available to assist packagers in creating node packages here.
 

@@ -9,7 +9,7 @@
  * @copyright  Copyright 2013 Ian Miers, Christina Garman and Matthew Green
  * @license    This project is released under the MIT license.
  **/
-// Copyright (c) 2017-2018 The PIVX developers
+// Copyright (c) 2017-2018 The DOMO developers
 
 #ifndef COIN_H_
 #define COIN_H_
@@ -111,8 +111,8 @@ public:
     const uint8_t& getVersion() const { return this->version; }
 
     void setPublicCoin(PublicCoin p) { publicCoin = p; }
-    void setRandomness(CBigNum n) { randomness = n; }
-    void setSerialNumber(CBigNum n) { serialNumber = n; }
+    void setRandomness(Bignum n) { randomness = n; }
+    void setSerialNumber(Bignum n) { serialNumber = n; }
     void setVersion(uint8_t nVersion) { this->version = nVersion; }
     void setPrivKey(const CPrivKey& privkey) { this->privkey = privkey; }
     bool sign(const uint256& hash, std::vector<unsigned char>& vchSig) const;

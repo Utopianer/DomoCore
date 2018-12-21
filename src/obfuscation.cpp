@@ -1,5 +1,6 @@
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
+// Copyright (c) 2018 The DOMO developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -15,6 +16,7 @@
 #include <boost/algorithm/string/replace.hpp>
 #include <boost/filesystem.hpp>
 #include <boost/filesystem/fstream.hpp>
+#include <boost/lexical_cast.hpp>
 
 #include <algorithm>
 #include <boost/assign/list_of.hpp>
@@ -36,7 +38,7 @@ map<uint256, CObfuscationBroadcastTx> mapObfuscationBroadcastTxes;
 // Keep track of the active Masternode
 CActiveMasternode activeMasternode;
 
-/* *** BEGIN OBFUSCATION MAGIC - PIV **********
+/* *** BEGIN OBFUSCATION MAGIC - DOMO **********
     Copyright (c) 2014-2015, Dash Developers
         eduffield - evan@dashpay.io
         udjinm6   - udjinm6@dashpay.io
@@ -601,7 +603,7 @@ void CObfuscationPool::CheckFinalTransaction()
         // sign a message
 
         int64_t sigTime = GetAdjustedTime();
-        std::string strMessage = txNew.GetHash().ToString() + std::to_string(sigTime);
+        std::string strMessage = txNew.GetHash().ToString() + boost::lexical_cast<std::string>(sigTime);
         std::string strError = "";
         std::vector<unsigned char> vchSig;
         CKey key2;
@@ -776,9 +778,9 @@ void CObfuscationPool::ChargeRandomFees()
 
                 Being that Obfuscation has "no fees" we need to have some kind of cost associated
                 with using it to stop abuse. Otherwise it could serve as an attack vector and
-                allow endless transaction that would bloat PIVX and make it unusable. To
+                allow endless transaction that would bloat DOMO and make it unusable. To
                 stop these kinds of attacks 1 in 10 successful transactions are charged. This
-                adds up to a cost of 0.001 PIV per transaction on average.
+                adds up to a cost of 0.001 DOMO per transaction on average.
             */
             if (r <= 10) {
                 LogPrintf("CObfuscationPool::ChargeRandomFees -- charging random fees. %u\n", i);
@@ -1433,7 +1435,7 @@ bool CObfuscationPool::DoAutomaticDenominating(bool fDryRun)
         // should have some additional amount for them
         nLowestDenom += OBFUSCATION_COLLATERAL * 4;
 
-    CAmount nBalanceNeedsAnonymized = nAnonymizePivxAmount * COIN - pwalletMain->GetAnonymizedBalance();
+    CAmount nBalanceNeedsAnonymized = nAnonymizeDomoAmount * COIN - pwalletMain->GetAnonymizedBalance();
 
     // if balanceNeedsAnonymized is more than pool max, take the pool max
     if (nBalanceNeedsAnonymized > OBFUSCATION_POOL_MAX) nBalanceNeedsAnonymized = OBFUSCATION_POOL_MAX;
@@ -1916,10 +1918,10 @@ void CObfuscationPool::GetDenominationsToString(int nDenom, std::string& strDeno
 {
     // Function returns as follows:
     //
-    // bit 0 - 100PIV+1 ( bit on if present )
-    // bit 1 - 10PIV+1
-    // bit 2 - 1PIV+1
-    // bit 3 - .1PIV+1
+    // bit 0 - 100DOMO+1 ( bit on if present )
+    // bit 1 - 10DOMO+1
+    // bit 2 - 1DOMO+1
+    // bit 3 - .1DOMO+1
     // bit 3 - non-denom
 
 
@@ -1989,10 +1991,10 @@ int CObfuscationPool::GetDenominations(const std::vector<CTxOut>& vout, bool fSi
 
     // Function returns as follows:
     //
-    // bit 0 - 100PIV+1 ( bit on if present )
-    // bit 1 - 10PIV+1
-    // bit 2 - 1PIV+1
-    // bit 3 - .1PIV+1
+    // bit 0 - 100DOMO+1 ( bit on if present )
+    // bit 1 - 10DOMO+1
+    // bit 2 - 1DOMO+1
+    // bit 3 - .1DOMO+1
 
     return denom;
 }
@@ -2110,7 +2112,7 @@ bool CObfuScationSigner::IsVinAssociatedWithPubkey(CTxIn& vin, CPubKey& pubkey)
     uint256 hash;
     if (GetTransaction(vin.prevout.hash, txVin, hash, true)) {
         BOOST_FOREACH (CTxOut out, txVin.vout) {
-            if (out.nValue == 10000 * COIN) {
+            if (out.nValue == Params().MasternodeCollateral()) {
                 if (out.scriptPubKey == payee2) return true;
             }
         }
@@ -2183,7 +2185,7 @@ bool CObfuscationQueue::Sign()
 {
     if (!fMasterNode) return false;
 
-    std::string strMessage = vin.ToString() + std::to_string(nDenom) + std::to_string(time) + std::to_string(ready);
+    std::string strMessage = vin.ToString() + boost::lexical_cast<std::string>(nDenom) + boost::lexical_cast<std::string>(time) + boost::lexical_cast<std::string>(ready);
 
     CKey key2;
     CPubKey pubkey2;
@@ -2223,7 +2225,7 @@ bool CObfuscationQueue::CheckSignature()
     CMasternode* pmn = mnodeman.Find(vin);
 
     if (pmn != NULL) {
-        std::string strMessage = vin.ToString() + std::to_string(nDenom) + std::to_string(time) + std::to_string(ready);
+        std::string strMessage = vin.ToString() + boost::lexical_cast<std::string>(nDenom) + boost::lexical_cast<std::string>(time) + boost::lexical_cast<std::string>(ready);
 
         std::string errorMessage = "";
         if (!obfuScationSigner.VerifyMessage(pmn->pubKeyMasternode, vchSig, strMessage, errorMessage)) {
@@ -2285,7 +2287,7 @@ void ThreadCheckObfuScationPool()
     if (fLiteMode) return; //disable all Obfuscation/Masternode related functionality
 
     // Make this thread recognisable as the wallet flushing thread
-    RenameThread("pivx-obfuscation");
+    RenameThread("domo-obfuscation");
 
     unsigned int c = 0;
 

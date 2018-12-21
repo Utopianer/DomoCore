@@ -9,7 +9,7 @@
  * @copyright  Copyright 2013 Ian Miers, Christina Garman and Matthew Green
  * @license    This project is released under the MIT license.
  **/
-// Copyright (c) 2017-2018 The PIVX developers
+// Copyright (c) 2017-2018 The DOMO developers
 
 #include <stdexcept>
 #include <iostream>
@@ -259,7 +259,7 @@ int ExtractVersionFromSerial(const CBigNum& bnSerial)
 	if (nMark == 0xf)
 		return PrivateCoin::PUBKEY_VERSION;
 
-	return 1;
+	return 2;
 }
 
 //Remove the first four bits for V2 serials

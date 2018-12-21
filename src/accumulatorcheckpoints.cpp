@@ -1,4 +1,5 @@
 // Copyright (c) 2018 The PIVX developers
+// Copyright (c) 2018 The DOMO developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -66,7 +67,7 @@ namespace AccumulatorCheckpoints
     Checkpoint GetClosestCheckpoint(const int& nHeight, int& nHeightCheckpoint)
     {
         nHeightCheckpoint = -1;
-        for (auto it : mapCheckpoints) {
+         for (auto it : mapCheckpoints) {
             //only checkpoints that are less than the height requested (unless height is less than the first checkpoint)
             if (it.first < nHeight) {
                 if (nHeightCheckpoint == -1)

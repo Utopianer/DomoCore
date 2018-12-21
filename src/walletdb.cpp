@@ -2,6 +2,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2018 The PIVX developers
+// Copyright (c) 2018 The DOMO developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -851,7 +852,7 @@ DBErrors CWalletDB::ZapWalletTx(CWallet* pwallet, vector<CWalletTx>& vWtx)
 void ThreadFlushWalletDB(const string& strFile)
 {
     // Make this thread recognisable as the wallet flushing thread
-    RenameThread("pivx-wallet");
+    RenameThread("domo-wallet");
 
     static bool fOneThread;
     if (fOneThread)
@@ -1019,10 +1020,6 @@ bool AttemptBackupWallet(const CWallet& wallet, const filesystem::path& pathSrc,
     bool retStatus;
     string strMessage;
     try {
-        if (boost::filesystem::equivalent(pathSrc, pathDest)) {
-            LogPrintf("cannot backup to wallet source file %s\n", pathDest.string());
-            return false;
-        }
 #if BOOST_VERSION >= 105800 /* BOOST_LIB_VERSION 1_58 */
         filesystem::copy_file(pathSrc.c_str(), pathDest, filesystem::copy_option::overwrite_if_exists);
 #else
@@ -1269,7 +1266,7 @@ bool CWalletDB::ReadCurrentSeedHash(uint256& hashSeed)
     return Read(string("seedhash"), hashSeed);
 }
 
-bool CWalletDB::WriteZPIVSeed(const uint256& hashSeed, const vector<unsigned char>& seed)
+bool CWalletDB::WriteZDOMOSeed(const uint256& hashSeed, const vector<unsigned char>& seed)
 {
     if (!WriteCurrentSeedHash(hashSeed))
         return error("%s: failed to write current seed hash", __func__);
@@ -1277,13 +1274,13 @@ bool CWalletDB::WriteZPIVSeed(const uint256& hashSeed, const vector<unsigned cha
     return Write(make_pair(string("dzs"), hashSeed), seed);
 }
 
-bool CWalletDB::EraseZPIVSeed()
+bool CWalletDB::EraseZDOMOSeed()
 {
     uint256 hash;
     if(!ReadCurrentSeedHash(hash)){
         return error("Failed to read a current seed hash");
     }
-    if(!WriteZPIVSeed(hash, ToByteVector(base_uint<256>(0) << 256))) {
+    if(!WriteZDOMOSeed(hash, ToByteVector(base_uint<256>(0) << 256))) {
         return error("Failed to write empty seed to wallet");
     }
     if(!WriteCurrentSeedHash(0)) {
@@ -1293,27 +1290,27 @@ bool CWalletDB::EraseZPIVSeed()
     return true;
 }
 
-bool CWalletDB::EraseZPIVSeed_deprecated()
+bool CWalletDB::EraseZDOMOSeed_deprecated()
 {
     return Erase(string("dzs"));
 }
 
-bool CWalletDB::ReadZPIVSeed(const uint256& hashSeed, vector<unsigned char>& seed)
+bool CWalletDB::ReadZDOMOSeed(const uint256& hashSeed, vector<unsigned char>& seed)
 {
     return Read(make_pair(string("dzs"), hashSeed), seed);
 }
 
-bool CWalletDB::ReadZPIVSeed_deprecated(uint256& seed)
+bool CWalletDB::ReadZDOMOSeed_deprecated(uint256& seed)
 {
     return Read(string("dzs"), seed);
 }
 
-bool CWalletDB::WriteZPIVCount(const uint32_t& nCount)
+bool CWalletDB::WriteZDOMOCount(const uint32_t& nCount)
 {
     return Write(string("dzc"), nCount);
 }
 
-bool CWalletDB::ReadZPIVCount(uint32_t& nCount)
+bool CWalletDB::ReadZDOMOCount(uint32_t& nCount)
 {
     return Read(string("dzc"), nCount);
 }
@@ -1516,7 +1513,7 @@ std::list<CBigNum> CWalletDB::ListSpentCoinsSerial()
 {
     std::list<CBigNum> listPubCoin;
     std::list<CZerocoinSpend> listCoins = ListSpentCoins();
-
+    
     for ( auto& coin : listCoins) {
         listPubCoin.push_back(coin.GetSerial());
     }
