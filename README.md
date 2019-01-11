@@ -6,11 +6,14 @@ https://domoproject.me
 What is DOMO?
 --------------
 
-DOMO is an experimental new digital currency that enables instant payments to
-anyone, anywhere in the world. DOMO uses peer-to-peer technology to operate
-with no central authority: managing transactions and issuing money are carried
-out collectively by the network. DOMO Core is the name of open source
-software which enables the use of this currency.
+DOMOcoin will be used as a 'ticket' to enter the community in the future (proof of ownership).
+We are developing the first prototype of a new kind of social network approach.
+Only people holding Domocoins in their wallet will be able to login to the network. 
+This way mostly only 'crypto' and blockchain enthusiasts will join the community and create an environment Cryptotwitter is dreaming of. After reaching a decent amount of unique users within the prototype, we will do a official crowdfunding to develop a open source, decentralized, autonomous social network, which is not run by a single entity or centralized servers.
+This is your chance to join the team in early stages, earn a masternode for your effort and be hired to build a social network, which can´t be taken down by institutions and is maintained by the people actually using it.
+
+The DOMO Community is essential part of Domocoin and will help to develop the project outside the boundarys of our initial goals.
+All future Blockchains and Projects will be carried out on the DOMO community, acting as testing, evaluating and developing entity in the Blockchain era.
 
 For more information, as well as an immediately useable, binary version of
 the DOMO Core software, see https://domoproject.me/.
