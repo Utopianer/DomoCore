@@ -2066,7 +2066,7 @@ https://www.transifex.com/domo-project/domo-project-translations</translation>
         <translation>Solde total, incluant les pièces indisponibles.</translation>
     </message>
     <message>
-        <source>DOMO Balance</source>
+        <source>Detailed Balance</source>
         <translation>Solde de DOMO</translation>
     </message>
     <message>
@@ -2094,7 +2094,7 @@ https://www.transifex.com/domo-project/domo-project-translations</translation>
         <translation>Votre solde DOMO actuel, incluant les transactions non confirmées et immatures</translation>
     </message>
     <message>
-        <source>zDOMO Balance</source>
+        <source>zDetailed Balance</source>
         <translation>Solde de zDOMO</translation>
     </message>
     <message>
@@ -2118,11 +2118,11 @@ Immature: confirmé, mais moins de 1 monnayer de la même dénomination après s
         <translation>APERÇU</translation>
     </message>
     <message>
-        <source>Combined Balance (including unconfirmed and immature coins)</source>
+        <source>Domo Balance (including unconfirmed and immature coins)</source>
         <translation>Solde combiné (incluant les pièces immatures et non confirmées)</translation>
     </message>
     <message>
-        <source>Combined Balance</source>
+        <source>Domo Balance</source>
         <translation>Solde combiné</translation>
     </message>
     <message>

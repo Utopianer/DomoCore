@@ -246,10 +246,10 @@
                           </font>
                          </property>
                          <property name="toolTip">
-                          <string>Combined Balance (including unconfirmed and immature coins)</string>
+                          <string>Domo Balance (including unconfirmed and immature coins)</string>
                          </property>
                          <property name="text">
-                          <string>Combined Balance</string>
+                          <string>Domo Balance</string>
                          </property>
                         </widget>
                        </item>
@@ -433,7 +433,7 @@
                           </font>
                          </property>
                          <property name="text">
-                          <string>DOMO Balance</string>
+                          <string>Detailed Balance</string>
                          </property>
                         </widget>
                        </item>
@@ -852,7 +852,7 @@
                           </font>
                          </property>
                          <property name="text">
-                          <string>zDOMO Balance</string>
+                          <string>zDetailed Balance</string>
                          </property>
                         </widget>
                        </item>

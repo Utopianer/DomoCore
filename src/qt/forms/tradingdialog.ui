@@ -2762,7 +2762,7 @@
       </font>
      </property>
      <property name="text">
-      <string>DOMO Balance:</string>
+      <string>Detailed Balance:</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_12">

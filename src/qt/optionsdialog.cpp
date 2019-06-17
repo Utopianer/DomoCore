@@ -146,6 +146,12 @@ OptionsDialog::OptionsDialog(QWidget* parent, bool enableWallet) : QDialog(paren
 
     /* setup/change UI elements when proxy IP is invalid/valid */
     connect(this, SIGNAL(proxyIpChecks(QValidatedLineEdit*, QLineEdit*)), this, SLOT(doProxyIpChecks(QValidatedLineEdit*, QLineEdit*)));
+
+    ui->checkBoxZeromintEnable->setVisible(false);
+    ui->percentage_label->setVisible(false);
+    ui->zeromintPercentage->setVisible(false);
+    ui->labelPreferredDenom->setVisible(false);
+    ui->preferredDenom->setVisible(false);
 }
 
 OptionsDialog::~OptionsDialog()

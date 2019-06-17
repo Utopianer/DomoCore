@@ -2131,7 +2131,7 @@ https://www.transifex.com/domo-project/domo-project-translations</translation>
         <translation>Balance Total, incluidas todas las monedas no disponibles.</translation>
     </message>
     <message>
-        <source>DOMO Balance</source>
+        <source>Detailed Balance</source>
         <translation>Balance DOMO</translation>
     </message>
     <message>
@@ -2159,7 +2159,7 @@ https://www.transifex.com/domo-project/domo-project-translations</translation>
         <translation>Su balance DOMO actual, transacciones no confirmadas e inmaduras incluidas</translation>
     </message>
     <message>
-        <source>zDOMO Balance</source>
+        <source>zDetailed Balance</source>
         <translation>Balance zDOMO</translation>
     </message>
     <message>
@@ -2183,11 +2183,11 @@ Inmaduro: confirmado, pero menos de 1 acuñación de la misma denominación desp
         <translation>VISIÓN DE CONJUNTO</translation>
     </message>
     <message>
-        <source>Combined Balance (including unconfirmed and immature coins)</source>
+        <source>Domo Balance (including unconfirmed and immature coins)</source>
         <translation>Balance combinados (incluidas las monedas no confirmadas e inmaduras)</translation>
     </message>
     <message>
-        <source>Combined Balance</source>
+        <source>Domo Balance</source>
         <translation>Balance Combinado</translation>
     </message>
     <message>

@@ -2131,7 +2131,7 @@ https://www.transifex.com/domo-project/domo-project-translations</translation>
         <translation>Ukupni saldo, uključujući sve nedostupne kovanice.</translation>
     </message>
     <message>
-        <source>DOMO Balance</source>
+        <source>Detailed Balance</source>
         <translation>DOMO Saldo</translation>
     </message>
     <message>
@@ -2159,7 +2159,7 @@ https://www.transifex.com/domo-project/domo-project-translations</translation>
         <translation>Uključena je vaša trenutna bilanca DOMO, nepotvrđene i nezrele transakcije</translation>
     </message>
     <message>
-        <source>zDOMO Balance</source>
+        <source>zDetailed Balance</source>
         <translation>zDOMO Bilanca</translation>
     </message>
     <message>
@@ -2183,11 +2183,11 @@ Nezreli: potvrđeno, ali manje od 1 minta iste denominacije nakon mintanja</tran
         <translation>PREGLED</translation>
     </message>
     <message>
-        <source>Combined Balance (including unconfirmed and immature coins)</source>
+        <source>Domo Balance (including unconfirmed and immature coins)</source>
         <translation>Kombinirana bilanca (uključujući nepotvrđene i nezrele novčiće)</translation>
     </message>
     <message>
-        <source>Combined Balance</source>
+        <source>Domo Balance</source>
         <translation>Kombinirani saldo</translation>
     </message>
     <message>

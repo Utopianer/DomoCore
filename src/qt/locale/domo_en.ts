@@ -2692,7 +2692,7 @@ https://www.transifex.com/domo-project/domo-project-translations</source>
     </message>
     <message>
         <location line="+71"/>
-        <source>DOMO Balance</source>
+        <source>Detailed Balance</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2729,7 +2729,7 @@ https://www.transifex.com/domo-project/domo-project-translations</source>
     </message>
     <message>
         <location line="+96"/>
-        <source>zDOMO Balance</source>
+        <source>zDetailed Balance</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2761,12 +2761,12 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
     </message>
     <message>
         <location line="+134"/>
-        <source>Combined Balance (including unconfirmed and immature coins)</source>
+        <source>Domo Balance (including unconfirmed and immature coins)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Combined Balance</source>
+        <source>Domo Balance</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

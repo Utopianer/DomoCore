@@ -1787,7 +1787,7 @@ https://www.transifex.com/domo-project/domo-project-translations</translation>
         <translation>Via aktuala elspezebla saldo</translation>
     </message>
     <message>
-        <source>DOMO Balance</source>
+        <source>Detailed Balance</source>
         <translation>DOMO kvanto</translation>
     </message>
     <message>
@@ -1799,7 +1799,7 @@ https://www.transifex.com/domo-project/domo-project-translations</translation>
         <translation>Via aktuala DOMO totalo, nekonformita kaj nematurita transakcioj inkluzivita</translation>
     </message>
     <message>
-        <source>zDOMO Balance</source>
+        <source>zDetailed Balance</source>
         <translation>zDOMO kvanto</translation>
     </message>
     <message>

@@ -2131,8 +2131,8 @@ https://www.transifex.com/domo-project/domo-project-translations</translation>
         <translation>Samlet saldo, inklusive alle utilgængelige mønter.</translation>
     </message>
     <message>
-        <source>DOMO Balance</source>
-        <translation>DOMO Balance</translation>
+        <source>Detailed Balance</source>
+        <translation>Detailed Balance</translation>
     </message>
     <message>
         <source>Pending:</source>
@@ -2159,7 +2159,7 @@ https://www.transifex.com/domo-project/domo-project-translations</translation>
         <translation>Din nuværende DOMO-saldo, ubekræftede og umodne transaktioner inkluderet</translation>
     </message>
     <message>
-        <source>zDOMO Balance</source>
+        <source>zDetailed Balance</source>
         <translation>zDOMO-saldo</translation>
     </message>
     <message>
@@ -2183,11 +2183,11 @@ Uplettet: bekræftet, men mindre end 1 minutter med samme betegnelse, efter at d
         <translation>OVERSIGT</translation>
     </message>
     <message>
-        <source>Combined Balance (including unconfirmed and immature coins)</source>
+        <source>Domo Balance (including unconfirmed and immature coins)</source>
         <translation>Kombinerede saldi (inklusiv ubekræftede og umodne mønter)</translation>
     </message>
     <message>
-        <source>Combined Balance</source>
+        <source>Domo Balance</source>
         <translation>Kombineret saldo</translation>
     </message>
     <message>

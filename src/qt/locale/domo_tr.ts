@@ -2078,7 +2078,7 @@ https://www.transifex.com/domo-project/domo-project-translations</translation>
         <translation>Toplam Bakiye, mevcut olmayan tüm paralar dahil.</translation>
     </message>
     <message>
-        <source>DOMO Balance</source>
+        <source>Detailed Balance</source>
         <translation>DOMO Bakiyesi</translation>
     </message>
     <message>
@@ -2102,7 +2102,7 @@ https://www.transifex.com/domo-project/domo-project-translations</translation>
         <translation>Güncel DOMO bakiyeniz, onaylanmamış ve olgunlaşmamış işlemler dahil</translation>
     </message>
     <message>
-        <source>zDOMO Balance</source>
+        <source>zDetailed Balance</source>
         <translation>zDOMO Bakiyesi</translation>
     </message>
     <message>
@@ -2114,11 +2114,11 @@ https://www.transifex.com/domo-project/domo-project-translations</translation>
         <translation>GENEL BAKIŞ</translation>
     </message>
     <message>
-        <source>Combined Balance (including unconfirmed and immature coins)</source>
+        <source>Domo Balance (including unconfirmed and immature coins)</source>
         <translation>Toplam Bakiye (onaylanmamış ve olgunlaşmamış paralar dahil)</translation>
     </message>
     <message>
-        <source>Combined Balance</source>
+        <source>Domo Balance</source>
         <translation>Toplam Bakiye</translation>
     </message>
     <message>

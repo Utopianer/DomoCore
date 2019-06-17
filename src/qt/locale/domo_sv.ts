@@ -2106,7 +2106,7 @@ https://www.transifex.com/domo-project/domo-project-translations</translation>
         <translation>Totalt saldo, inkluderar alla otillgängliga mynt.</translation>
     </message>
     <message>
-        <source>DOMO Balance</source>
+        <source>Detailed Balance</source>
         <translation>DOMO Saldo</translation>
     </message>
     <message>
@@ -2134,7 +2134,7 @@ https://www.transifex.com/domo-project/domo-project-translations</translation>
         <translation>Ditt nuvarande DOMO saldo, obekräftade och omogna transaktioner är inkluderade</translation>
     </message>
     <message>
-        <source>zDOMO Balance</source>
+        <source>zDetailed Balance</source>
         <translation>zDOMO Saldo</translation>
     </message>
     <message>
@@ -2158,11 +2158,11 @@ Omogna: bekräftade men under 1 myntning av samma valör efter den blev präglad
         <translation>ÖVERBLICK</translation>
     </message>
     <message>
-        <source>Combined Balance (including unconfirmed and immature coins)</source>
+        <source>Domo Balance (including unconfirmed and immature coins)</source>
         <translation>Kombinerat Saldo (inkluderar obekräftade och omogna mynt)</translation>
     </message>
     <message>
-        <source>Combined Balance</source>
+        <source>Domo Balance</source>
         <translation>Kombinerat Saldo</translation>
     </message>
     <message>

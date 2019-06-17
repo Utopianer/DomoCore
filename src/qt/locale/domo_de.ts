@@ -2122,7 +2122,7 @@ https://www.transifex.com/domo-project/domo-project-translations</translation>
         <translation>Gesamtsaldo, einschließlich aller nicht verfügbaren Münzen.</translation>
     </message>
     <message>
-        <source>DOMO Balance</source>
+        <source>Detailed Balance</source>
         <translation>DOMO Bilanzen</translation>
     </message>
     <message>
@@ -2150,7 +2150,7 @@ https://www.transifex.com/domo-project/domo-project-translations</translation>
         <translation>Ihr aktueller DOMO-Saldo, unbestätigte und unreife Transaktionen sind enthalten</translation>
     </message>
     <message>
-        <source>zDOMO Balance</source>
+        <source>zDetailed Balance</source>
         <translation>zDOMO Bilanzen</translation>
     </message>
     <message>
@@ -2174,11 +2174,11 @@ Unreif: Bestätigt, aber keine Prägung in der selben Stückelung seit erfolgter
         <translation>ÜBERBLICK</translation>
     </message>
     <message>
-        <source>Combined Balance (including unconfirmed and immature coins)</source>
+        <source>Domo Balance (including unconfirmed and immature coins)</source>
         <translation>Kombinierte Beträge (einschließlich unbestätigte und unreife Coins)</translation>
     </message>
     <message>
-        <source>Combined Balance</source>
+        <source>Domo Balance</source>
         <translation>Kombiniertes Guthaben</translation>
     </message>
     <message>

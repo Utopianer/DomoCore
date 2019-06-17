@@ -2131,7 +2131,7 @@ https://www.transifex.com/domo-project/domo-project-translations</translation>
         <translation>전체 잔액, (현재 전송이 불가능한 코인 포함)</translation>
     </message>
     <message>
-        <source>DOMO Balance</source>
+        <source>Detailed Balance</source>
         <translation>DOMO 잔액</translation>
     </message>
     <message>
@@ -2159,7 +2159,7 @@ https://www.transifex.com/domo-project/domo-project-translations</translation>
         <translation>현재 DOMO 잔액, 미확정, 생성중인 코인 포함</translation>
     </message>
     <message>
-        <source>zDOMO Balance</source>
+        <source>zDetailed Balance</source>
         <translation>zDOMO 잔액</translation>
     </message>
     <message>
@@ -2183,11 +2183,11 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
         <translation>개요</translation>
     </message>
     <message>
-        <source>Combined Balance (including unconfirmed and immature coins)</source>
+        <source>Domo Balance (including unconfirmed and immature coins)</source>
         <translation>전체 잔액 (미확정, 생성중인 코인 포함)</translation>
     </message>
     <message>
-        <source>Combined Balance</source>
+        <source>Domo Balance</source>
         <translation>전체 잔액</translation>
     </message>
     <message>

@@ -21,6 +21,7 @@ const std::string CLIENT_NAME("DOMO Core");
  * Client version number
  */
 #define CLIENT_VERSION_SUFFIX ""
+#define BUILD_SUFFIX "well"
 
 
 /**

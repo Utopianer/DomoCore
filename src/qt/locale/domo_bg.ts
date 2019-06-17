@@ -2127,7 +2127,7 @@ https://www.transifex.com/domo-project/domo-project-translations</translation>
         <translation>Обща Наличност, включително и неналичните монети.</translation>
     </message>
     <message>
-        <source>DOMO Balance</source>
+        <source>Detailed Balance</source>
         <translation>DOMO Наличности</translation>
     </message>
     <message>
@@ -2155,7 +2155,7 @@ https://www.transifex.com/domo-project/domo-project-translations</translation>
         <translation>Вашите DOMO наличности, включително непотвърдените и неузрели преводи</translation>
     </message>
     <message>
-        <source>zDOMO Balance</source>
+        <source>zDetailed Balance</source>
         <translation>zDOMO Наличности</translation>
     </message>
     <message>
@@ -2179,11 +2179,11 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
         <translation>ПРЕГЛЕД</translation>
     </message>
     <message>
-        <source>Combined Balance (including unconfirmed and immature coins)</source>
+        <source>Domo Balance (including unconfirmed and immature coins)</source>
         <translation>Комбинирани Наличности (включително непотвърдени и неузрели монети)</translation>
     </message>
     <message>
-        <source>Combined Balance</source>
+        <source>Domo Balance</source>
         <translation>Комбинирани Наличности</translation>
     </message>
     <message>

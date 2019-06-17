@@ -1792,7 +1792,7 @@ Per favore controlla l'indirizzo e riprova nuovamente.</translation>
         <translation>Saldo totale, inclusi tutte le monete non disponibili.</translation>
     </message>
     <message>
-        <source>DOMO Balance</source>
+        <source>Detailed Balance</source>
         <translation>Bilancio DOMO</translation>
     </message>
     <message>
@@ -1808,7 +1808,7 @@ Per favore controlla l'indirizzo e riprova nuovamente.</translation>
         <translation>Il tuo saldo DOMO corrente, incluse le transazioni non confermate e non mature</translation>
     </message>
     <message>
-        <source>zDOMO Balance</source>
+        <source>zDetailed Balance</source>
         <translation>Bilancio zDOMO</translation>
     </message>
     <message>
@@ -1822,11 +1822,11 @@ Questi zDOMO sono spendibili.</translation>
         <translation>PANORAMICA</translation>
     </message>
     <message>
-        <source>Combined Balance (including unconfirmed and immature coins)</source>
+        <source>Domo Balance (including unconfirmed and immature coins)</source>
         <translation>Saldo complessivo (incluse monete non confermate e non mature)</translation>
     </message>
     <message>
-        <source>Combined Balance</source>
+        <source>Domo Balance</source>
         <translation>Saldo complessivo</translation>
     </message>
     <message>

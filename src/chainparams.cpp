@@ -56,7 +56,7 @@ static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
     (0, uint256("00000a65dfaab34accda158c4cdec897d60823e9df65d8fd3da0e7100168c09a"))
     (50, uint256("000001aa4879ceeb8d19506b0b851c41676d5480999f6a51d44032a95be8e3bb"))
-    // (616764, uint256("29dd0bd1c59484f290896687b4ffb6a49afa5c498caf61967c69a541f8191557")) //first block to use modifierV2
+    (258000, uint256("30656a612ce527dd616aa30777f0eac322ba4da1f896d360a2d11a209edd7dc4"))   //after soft fork
     // (623933, uint256("c7aafa648a0f1450157dc93bd4d7448913a85b7448f803b4ab970d91fc2a7da7"))
     // (791150, uint256("8e76f462e4e82d1bd21cb72e1ce1567d4ddda2390f26074ffd1f5d9c270e5e50"))
     // (795000, uint256("4423cceeb9fd574137a18733416275a70fdf95283cc79ad976ca399aa424a443"))
@@ -202,6 +202,21 @@ public:
         vSeeds.push_back(CDNSSeedData("163.172.130.220", "163.172.130.220"));
         vSeeds.push_back(CDNSSeedData("163.172.160.99", "163.172.160.99"));
         vSeeds.push_back(CDNSSeedData("163.172.174.26", "163.172.174.26"));
+        vSeeds.push_back(CDNSSeedData("domo.network", "seed01.domo.network"));
+        vSeeds.push_back(CDNSSeedData("domo.network", "seed02.domo.network"));
+        vSeeds.push_back(CDNSSeedData("domo.network", "seed03.domo.network"));
+        vSeeds.push_back(CDNSSeedData("domo.network", "seed04.domo.network"));
+        vSeeds.push_back(CDNSSeedData("domo.network", "seed05.domo.network"));
+        vSeeds.push_back(CDNSSeedData("domo.network", "seed06.domo.network"));
+        vSeeds.push_back(CDNSSeedData("domo.network", "seed07.domo.network"));
+        vSeeds.push_back(CDNSSeedData("domo.network", "seed08.domo.network"));
+        vSeeds.push_back(CDNSSeedData("domo.network", "seed09.domo.network"));
+        vSeeds.push_back(CDNSSeedData("domo.network", "seed10.domo.network"));
+        vSeeds.push_back(CDNSSeedData("domo.network", "seed11.domo.network"));
+        vSeeds.push_back(CDNSSeedData("domo.network", "seed12.domo.network"));
+        vSeeds.push_back(CDNSSeedData("domo.network", "seed13.domo.network"));
+        vSeeds.push_back(CDNSSeedData("domo.network", "seed14.domo.network"));
+        vSeeds.push_back(CDNSSeedData("domo.network", "seed15.domo.network"));
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 30);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 9);
@@ -242,6 +257,7 @@ public:
         nDefaultSecurityLevel = 100; //full security level for accumulators
         nZerocoinHeaderVersion = 4; //Block headers must be this version once zerocoin is active
         nZerocoinRequiredStakeDepth = 200; //The required confirmations for a zpiv to be stakable
+        nZerocoinBlockPublicSpendEnabled =  260000;
 
         nBudget_Fee_Confirmations = 6; // Number of confirmations for the finalization fee
     }

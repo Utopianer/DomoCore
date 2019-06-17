@@ -2029,7 +2029,7 @@ https://www.transifex.com/domo-project/domo-project-translations</translation>
         <translation>Bendras balansas, įskaitant visas nepasiekiamas monetas.</translation>
     </message>
     <message>
-        <source>DOMO Balance</source>
+        <source>Detailed Balance</source>
         <translation>DOMO Balansas</translation>
     </message>
     <message>
@@ -2057,7 +2057,7 @@ https://www.transifex.com/domo-project/domo-project-translations</translation>
         <translation>Jūsų dabartinis DOMO balansas, įskaitant nepatvirtintus ir nesubrendusius sandorius</translation>
     </message>
     <message>
-        <source>zDOMO Balance</source>
+        <source>zDetailed Balance</source>
         <translation>zDOMO Balansas</translation>
     </message>
     <message>
@@ -2081,11 +2081,11 @@ Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos to pačio nominalo
         <translation>APŽVALGA</translation>
     </message>
     <message>
-        <source>Combined Balance (including unconfirmed and immature coins)</source>
+        <source>Domo Balance (including unconfirmed and immature coins)</source>
         <translation>Kombinuotas balansas (įskaitant nepatvirtintas ir nesubrandintas monetas)</translation>
     </message>
     <message>
-        <source>Combined Balance</source>
+        <source>Domo Balance</source>
         <translation>Kombinuotas balansas</translation>
     </message>
     <message>

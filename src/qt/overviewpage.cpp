@@ -209,13 +209,13 @@ void OverviewPage::setBalance(const CAmount& balance, const CAmount& unconfirmed
         nLockedBalance = pwalletMain->GetLockedCoins();
         nWatchOnlyLockedBalance = pwalletMain->GetLockedWatchOnlyBalance();
     }
-    // DOMO Balance
+    // Detailed Balance
     CAmount nTotalBalance = balance + unconfirmedBalance + nLockedBalance;
     CAmount pivAvailableBalance = balance - immatureBalance;
     CAmount nTotalWatchBalance = watchOnlyBalance + watchUnconfBalance + watchImmatureBalance;    
     CAmount nUnlockedBalance = nTotalBalance - nLockedBalance - nLockedBalance; // increment nLockedBalance twice because it was added to
                                                                                 // nTotalBalance above
-    // zDOMO Balance
+    // zDetailed Balance
     CAmount matureZerocoinBalance = zerocoinBalance - unconfirmedZerocoinBalance - immatureZerocoinBalance;
     // Percentages
     QString szPercentage = "";
@@ -292,18 +292,26 @@ void OverviewPage::setBalance(const CAmount& balance, const CAmount& unconfirmed
     ui->labelImmature->setVisible(showImmature || showWatchOnlyImmature); // for symmetry reasons also show immature label when the watch-only one is shown
     ui->labelImmatureText->setVisible(showImmature || showWatchOnlyImmature);
     ui->labelWatchImmature->setVisible(showImmature && showWatchOnly); // show watch-only immature balance
-    bool showzDOMOAvailable = settingShowAllBalances || zerocoinBalance != matureZerocoinBalance;
-    bool showzDOMOnconfirmed = settingShowAllBalances || unconfirmedZerocoinBalance != 0;
-    bool showzDOMOImmature = settingShowAllBalances || immatureZerocoinBalance != 0;
+    bool showzDOMOAvailable = false;    //settingShowAllBalances || zerocoinBalance != matureZerocoinBalance;
+    bool showzDOMOnconfirmed = false; //settingShowAllBalances || unconfirmedZerocoinBalance != 0;
+    bool showzDOMOImmature = false; //settingShowAllBalances || immatureZerocoinBalance != 0;
     ui->labelzBalanceMature->setVisible(showzDOMOAvailable);
     ui->labelzBalanceMatureText->setVisible(showzDOMOAvailable);
     ui->labelzBalanceUnconfirmed->setVisible(showzDOMOnconfirmed);
     ui->labelzBalanceUnconfirmedText->setVisible(showzDOMOnconfirmed);
     ui->labelzBalanceImmature->setVisible(showzDOMOImmature);
     ui->labelzBalanceImmatureText->setVisible(showzDOMOImmature);
-    bool showPercentages = ! (zerocoinBalance == 0 && nTotalBalance == 0);
+    bool showPercentages = false; //! (zerocoinBalance == 0 && nTotalBalance == 0);
     ui->labelDOMOPercent->setVisible(showPercentages);
     ui->labelzDOMOPercent->setVisible(showPercentages);
+
+    ui->label_5z_3->setVisible(false);
+    ui->labelzBalanceMatureText->setVisible(false);
+    ui->labelzBalanceUnconfirmedText->setVisible(false);
+    ui->labelzBalanceImmatureText->setVisible(false);
+    ui->labelzBalanceText->setVisible(false);
+    ui->labelzBalance->setVisible(false);
+    ui->line_ZerocoinBalance->setVisible(false);
 
     static int cachedTxLocks = 0;
 
