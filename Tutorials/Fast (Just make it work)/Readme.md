@@ -6,7 +6,7 @@ This Tutorial is using a setup script to make Masternode Setup as easy as possib
 <b>There is a chance that the 1000 coins masternode collateral will stake and split the transaction. If that happens you will have to do step 1.6 again.</b>
 
 ## 1. Initial setup
-* 1.1 Download the [latest wallet](https://github.com/Utopianer/DOMO-Project/releases) for your operating system.<br>
+* 1.1 Download the [latest wallet](https://github.com/Utopianer/DomoCore/releases) for your operating system.<br>
 * 1.2 Launch the wallet and allow it to synchronize <br />
 * 1.3 Click on `debug console` found in `tools`
 * 1.4 Type `masternode genkey` - copy the generated key and exit the console<br />
