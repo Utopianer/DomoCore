@@ -15,7 +15,7 @@ Pro:
 * No Setup
 * No monthly hosting fee
 
-Contra: 
+Contra:
 * No control of your coins (trust the provider)
 * Paid in reward shares from masternodes
 
@@ -29,7 +29,7 @@ Contra:
 
 Pay a monthly fee and manage your Masternode by a external Service
 
-Pro: 
+Pro:
 * No Setup
 * Full control of your coins
 
@@ -44,6 +44,6 @@ Contra:
 
 Want to setup a Masternode yourself? We prepared 3 different levels based on your experience:
 
-* [Fast](https://github.com/Utopianer/DOMO-Project/tree/master/docs/Tutorials/Fast%20(Just%20make%20it%20work)) - Just make it work!
-* [Average](https://github.com/Utopianer/DOMO-Project/tree/master/docs/Tutorials/Average%20(I%20know%20what%20I%C2%B4m%20doing)) - I did this already before
-* [Long](https://github.com/Utopianer/DOMO-Project/tree/master/docs/Tutorials/Long%20(Don%C2%B4t%20trust%2C%20verify!)) - Don´t trust, verify!
+* [Fast](https://github.com/Utopianer/DomoCore/tree/master/Tutorials/Fast%20(Just%20make%20it%20work))) - Just make it work!
+* [Average](https://github.com/Utopianer/DomoCore/tree/master/Tutorials/Average%20(I%20know%20what%20I%C2%B4m%20doing))) - I did this already before
+* [Long](https://github.com/Utopianer/DomoCore/tree/master/Tutorials/Long%20(Don%C2%B4t%20trust%2C%20verify!))) - Don´t trust, verify!
