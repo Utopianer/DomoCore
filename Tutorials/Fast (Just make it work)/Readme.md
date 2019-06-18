@@ -67,7 +67,7 @@ Let's update our system to the latest version to make sure we are secure.
 Remember that you can copy the text below and paste it in to the server via RIGHT-MOUSE click for PuTTY, or CMD-V for MAC<br>
 
 * Type: `cd ~`  ENTER
-* Type: `wget -N https://raw.githubusercontent.com/zoldur/Domo/master/domo_install.sh` ENTER
+* Type: `wget -N https://github.com/Utopianer/Domo-Masternode-Setup/blob/master/domo_install.sh` ENTER
 * Type: `bash domo_install.sh` ENTER
 * Follow the Script and paste the requested informations.
 
