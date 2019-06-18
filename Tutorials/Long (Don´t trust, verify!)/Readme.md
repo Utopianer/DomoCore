@@ -76,7 +76,7 @@ domod -reindex
 * 3.4 A new file has been created containing the configuration files you need to edit later. Press CTRL + C to quit the daemon <br>
 
 ## 4. Main wallet setup
-* 4.1 Download the [latest wallet](https://github.com/Utopianer/DOMO-Project/releases) for your operating system.<br>
+* 4.1 Download the [latest wallet](https://github.com/Utopianer/DomoCore/releases) for your operating system.<br>
 * 4.2 Launch the wallet and allow it to synchronize <br />
 * 4.3 Click on `debug console` found in `tools`
 * 4.4 Type `masternode genkey` - copy the generated key and exit the console<br />
