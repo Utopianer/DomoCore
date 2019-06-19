@@ -54,8 +54,6 @@ MN01 69.69.69.0:52992 119cCx5YeA5ggdYkTzun4EptddxAo3RvQXaPdkP 838328ce34cc8b1682
 * 3.1 Download the Debian package here:
 https://github.com/Utopianer/DomoCore/releases/download/v3.0.2.1/Domo-ubuntu-setup_3.0.2.1.deb
 
-(The Debian package only contains Daemon and Client no QT.)
-
 * 3.2 Install the package with:
 `sudo dpkg --install ./Domo-ubuntu-setup_3.0.2.1.deb`
 
