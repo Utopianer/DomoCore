@@ -1,6 +1,5 @@
 // Copyright (c) 2011-2013 The Bitcoin developers
-// Copyright (c) 2017-2018 The PIVX developers
-// Copyright (c) 2018-2019 The DOMO developers
+// Copyright (c) 2017-2019 The DOMO developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -10,12 +9,13 @@
 #include "amount.h"
 
 #include <QAbstractListModel>
+#include <QSettings>
 
 QT_BEGIN_NAMESPACE
 class QNetworkProxy;
 QT_END_NAMESPACE
 
-/** Interface from Qt to configuration data structure for Bitcoin client.
+/** Interface from Qt to configuration data structure for DOMO client.
    To Qt, the options are presented as a list with the different options
    laid out vertically.
    This can be changed to a tree once the settings become sufficiently
@@ -46,9 +46,11 @@ public:
         DatabaseCache,       // int
         SpendZeroConfChange, // bool
         ZeromintEnable,      // bool
+        ZeromintAddresses,   // bool
         ZeromintPercentage,  // int
         ZeromintPrefDenom,   // int
         HideZeroBalances,    // bool
+        HideOrphans,    // bool
         AnonymizeDomoAmount, //int
         ShowMasternodesTab,  // bool
         Listen,              // bool
@@ -62,6 +64,7 @@ public:
     int rowCount(const QModelIndex& parent = QModelIndex()) const;
     QVariant data(const QModelIndex& index, int role = Qt::DisplayRole) const;
     bool setData(const QModelIndex& index, const QVariant& value, int role = Qt::EditRole);
+    void refreshDataView();
     /** Updates current unit in memory, settings and emits displayUnitChanged(newUnit) signal */
     void setDisplayUnit(const QVariant& value);
     /* Update StakeSplitThreshold's value in wallet */
@@ -81,6 +84,13 @@ public:
     bool isRestartRequired();
     bool resetSettings;
 
+    // Reset
+    void setMainDefaultOptions(QSettings& settings, bool reset = false);
+    void setWalletDefaultOptions(QSettings& settings, bool reset = false);
+    void setNetworkDefaultOptions(QSettings& settings, bool reset = false);
+    void setWindowDefaultOptions(QSettings& settings, bool reset = false);
+    void setDisplayDefaultOptions(QSettings& settings, bool reset = false);
+
 private:
     /* Qt-only settings */
     bool fMinimizeToTray;
@@ -90,6 +100,7 @@ private:
     QString strThirdPartyTxUrls;
     bool fCoinControlFeatures;
     bool fHideZeroBalances;
+    bool fHideOrphans;
     /* settings that were overriden by command-line */
     QString strOverriddenByCommandLine;
 
@@ -99,11 +110,13 @@ private:
 signals:
     void displayUnitChanged(int unit);
     void zeromintEnableChanged(bool);
+    void zeromintAddressesChanged(bool);
     void zeromintPercentageChanged(int);
     void preferredDenomChanged(int);
     void anonymizeDomoAmountChanged(int);
     void coinControlFeaturesChanged(bool);
     void hideZeroBalancesChanged(bool);
+    void hideOrphansChanged(bool);
 };
 
 #endif // BITCOIN_QT_OPTIONSMODEL_H

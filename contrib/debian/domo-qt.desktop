@@ -1,6 +1,6 @@
 [Desktop Entry]
-Encoding=UTF-8
-Name=DOMO
+Version=1.0
+Name=DOMO Core
 Comment=DOMO P2P Cryptocurrency
 Comment[fr]=DOMO, monnaie virtuelle cryptographique pair à pair
 Comment[tr]=DOMO, eşten eşe kriptografik sanal para birimi
@@ -10,3 +10,4 @@ Type=Application
 Icon=domo128
 MimeType=x-scheme-handler/domo;
 Categories=Office;Finance;
+StartupWMClass=Domo-qt

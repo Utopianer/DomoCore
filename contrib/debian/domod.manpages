@@ -1,2 +1,2 @@
-debian/manpages/domod.1
-debian/manpages/domo.conf.5
+doc/man/domod.1
+doc/man/domo-cli.1

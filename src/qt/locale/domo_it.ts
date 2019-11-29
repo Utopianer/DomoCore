@@ -176,16 +176,16 @@
         <translation>Conferma cifratura portafoglio</translation>
     </message>
     <message>
-        <source>DOMO will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your DOMOs from being stolen by malware infecting your computer.</source>
-        <translation>DOMO verrà ora chiuso per completare il processo di cifratura. Ricorda che crittografare il tuo portafoglio non protegge completamente i tuoi DOMO dal furto da parte di software malevoli che potrebbero infettare il tuo computer.</translation>
+        <source>DOMO will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your DOMs from being stolen by malware infecting your computer.</source>
+        <translation>DOMO verrà ora chiuso per completare il processo di cifratura. Ricorda che crittografare il tuo portafoglio non protegge completamente i tuoi DOM dal furto da parte di software malevoli che potrebbero infettare il tuo computer.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Confermi di voler crittografare il portafoglio?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR DOMO&lt;/b&gt;!</source>
-        <translation>Attenzione: Se crittografi il portafoglio e poi perdi la parola d'ordine, &lt;b&gt;PERDERAI TUTTI I TUOI DOMO&lt;7b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR DOM&lt;/b&gt;!</source>
+        <translation>Attenzione: Se crittografi il portafoglio e poi perdi la parola d'ordine, &lt;b&gt;PERDERAI TUTTI I TUOI DOM&lt;7b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -433,8 +433,8 @@
         <translation>Espora la cronologia delle transazioni</translation>
     </message>
     <message>
-        <source>Privacy Actions for zDOMO</source>
-        <translation>Operazioni di privacy per zDOMO</translation>
+        <source>Privacy Actions for zDOM</source>
+        <translation>Operazioni di privacy per zDOM</translation>
     </message>
     <message>
         <source>E&amp;xit</source>
@@ -608,10 +608,6 @@
         <source>&amp;Command-line options</source>
         <translation>Opzioni riga di &amp;Comando</translation>
     </message>
-    <message numerus="yes">
-        <source>Processed %n blocks of transaction history.</source>
-        <translation><numerusform>Elaborato 1 blocco dalla cronologia delle transazioni</numerusform><numerusform>Elaborati %n blocchi dalla cronologia delle transazioni.</numerusform></translation>
-    </message>
     <message>
         <source>Synchronizing additional data: %p%</source>
         <translation>Sincronizzazione dati addizionali: %p%</translation>
@@ -736,10 +732,6 @@
         <source>DOMO Core client</source>
         <translation>DOMO Core</translation>
     </message>
-    <message numerus="yes">
-        <source>%n active connection(s) to DOMO network</source>
-        <translation><numerusform>%n connessione attiva alla rete DOMOIX</numerusform><numerusform>%n connessioni attive alla rete DOMOIX</numerusform></translation>
-    </message>
     <message>
         <source>Synchronizing with network...</source>
         <translation>Sincronizzazione con la rete ...</translation>
@@ -760,25 +752,9 @@
         <source>Up to date</source>
         <translation>Aggiornato</translation>
     </message>
-    <message numerus="yes">
-        <source>%n hour(s)</source>
-        <translation><numerusform>%n ora</numerusform><numerusform>%n ore</numerusform></translation>
-    </message>
-    <message numerus="yes">
-        <source>%n day(s)</source>
-        <translation><numerusform>%n giorno</numerusform><numerusform>%n giorni</numerusform></translation>
-    </message>
-    <message numerus="yes">
-        <source>%n week(s)</source>
-        <translation><numerusform>%n settimana</numerusform><numerusform>%n settimane</numerusform></translation>
-    </message>
     <message>
         <source>%1 and %2</source>
         <translation>%1 e %2</translation>
-    </message>
-    <message numerus="yes">
-        <source>%n year(s)</source>
-        <translation><numerusform>%n anno</numerusform><numerusform>%n anni</numerusform></translation>
     </message>
     <message>
         <source>Last received block was generated %1 ago.</source>
@@ -860,7 +836,7 @@ MultiSend: %1</translation>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
         <translation>Il portafoglio è &lt;b&gt;crittografato&lt;/b&gt; e attualmente &lt;b&gt;bloccato&lt;/b&gt;</translation>
     </message>
-</context>
+    </context>
 <context>
     <name>BlockExplorer</name>
     <message>
@@ -1126,8 +1102,8 @@ MultiSend: %1</translation>
         <translation>Questa etichetta diventa rossa se uno dei destinatari riceve un importo inferiore a %1.</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 upiv per input.</source>
-        <translation>Può variare di +/- %1 uDOMO per input.</translation>
+        <source>Can vary +/- %1 udom per input.</source>
+        <translation>Può variare di +/- %1 uDOM per input.</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -1213,6 +1189,17 @@ MultiSend: %1</translation>
     </message>
 </context>
 <context>
+    <name>GovernancePage</name>
+    <message>
+        <source>Form</source>
+        <translation>Modulo</translation>
+    </message>
+    <message>
+        <source>0</source>
+        <translation>0</translation>
+    </message>
+    </context>
+<context>
     <name>HelpMessageDialog</name>
     <message>
         <source>version</source>
@@ -1275,7 +1262,7 @@ MultiSend: %1</translation>
     </message>
     <message>
         <source>Welcome to DOMO Core.</source>
-        <translation>Benvenuto in DOMOIX Core.</translation>
+        <translation>Benvenuto in DOMIX Core.</translation>
     </message>
     <message>
         <source>As this is the first time the program is launched, you can choose where DOMO Core will store its data.</source>
@@ -1530,47 +1517,8 @@ MultiSend non verrà attivato a meno che tu non prema su Attiva</translation>
         <translation>(nessuna etichetta)</translation>
     </message>
     <message>
-        <source>The entered address:
-</source>
-        <translation>L'indirizzo immesso:</translation>
-    </message>
-    <message>
-        <source> is invalid.
-Please check the address and try again.</source>
-        <translation>è invalido.
-Per favore controlla l'indirizzo e riprova nuovamente.</translation>
-    </message>
-    <message>
-        <source>The total amount of your MultiSend vector is over 100% of your stake reward
-</source>
-        <translation>L'ammontare totale del tuo vettore MultiSend è superiore al 100% della tua ricompensa per lo stake
-</translation>
-    </message>
-    <message>
         <source>Please Enter 1 - 100 for percent.</source>
         <translation>Per favore inserisci 1 - 100 come percentuale.</translation>
-    </message>
-    <message>
-        <source>Saved the MultiSend to memory, but failed saving properties to the database.
-</source>
-        <translation>MultiSend è stato salvato con successo in memoria, ma il salvataggio delle proprietà nel database non è andato a buon fine.
-</translation>
-    </message>
-    <message>
-        <source>MultiSend Vector
-</source>
-        <translation>Vettore InvioMultiplo
-</translation>
-    </message>
-    <message>
-        <source>Removed </source>
-        <translation>Eliminato</translation>
-    </message>
-    <message>
-        <source>Could not locate address
-</source>
-        <translation>Impossibile trovare l'indirizzo
-</translation>
     </message>
 </context>
 <context>
@@ -1665,29 +1613,6 @@ Per favore controlla l'indirizzo e riprova nuovamente.</translation>
     </message>
 </context>
 <context>
-    <name>ObfuscationConfig</name>
-    <message>
-        <source>Configure Obfuscation</source>
-        <translation>Configura Offuscamento</translation>
-    </message>
-    <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 DOMO</source>
-        <translation>Usa 2 masternodi diversi per mescolare fino a 10000 DOMO</translation>
-    </message>
-    <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 DOMO</source>
-        <translation>Usa 8 masternodi diversi per mixare fino a 10000 DOMO</translation>
-    </message>
-    <message>
-        <source>Use 16 separate masternodes</source>
-        <translation>Usa 16 masternodi diversi</translation>
-    </message>
-    <message>
-        <source>Obfuscation Configuration</source>
-        <translation>Configurazione Offuscamento</translation>
-    </message>
-    </context>
-<context>
     <name>OpenURIDialog</name>
     <message>
         <source>Open URI</source>
@@ -1713,24 +1638,24 @@ Per favore controlla l'indirizzo e riprova nuovamente.</translation>
         <translation>Mappa la porta utilizzando &amp;UPnP</translation>
     </message>
     <message>
-        <source>Enable automatic minting of DOMO units to zDOMO</source>
-        <translation>Attiva il conio automatico di unità DOMO in zDOMO</translation>
+        <source>Enable automatic minting of DOM units to zDOM</source>
+        <translation>Attiva il conio automatico di unità DOM in zDOM</translation>
     </message>
     <message>
-        <source>Enable zDOMO Automint</source>
-        <translation>Attiva Conio automatico zDOMO</translation>
+        <source>Enable zDOM Automint</source>
+        <translation>Attiva Conio automatico zDOM</translation>
     </message>
     <message>
-        <source>Percentage of incoming DOMO which get automatically converted to zDOMO via Zerocoin Protocol (min: 10%)</source>
-        <translation>Percentuale di DOMO in entrata che viene automaticamente convertita in zDOMO attraverso il protocollo Zerocoin (min: 10%)</translation>
+        <source>Percentage of incoming DOM which get automatically converted to zDOM via Zerocoin Protocol (min: 10%)</source>
+        <translation>Percentuale di DOM in entrata che viene automaticamente convertita in zDOM attraverso il protocollo Zerocoin (min: 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zDOMO</source>
-        <translation>Percentuale di zDOMO Percentuale di zDOMO da coniare automaticamente</translation>
+        <source>Percentage of autominted zDOM</source>
+        <translation>Percentuale di zDOM Percentuale di zDOM da coniare automaticamente</translation>
     </message>
     <message>
-        <source>Preferred Automint zDOMO Denomination</source>
-        <translation>Denominazione preferita conio automatico zDOMO</translation>
+        <source>Preferred Automint zDOM Denomination</source>
+        <translation>Denominazione preferita conio automatico zDOM</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1792,8 +1717,8 @@ Per favore controlla l'indirizzo e riprova nuovamente.</translation>
         <translation>Saldo totale, inclusi tutte le monete non disponibili.</translation>
     </message>
     <message>
-        <source>Detailed Balance</source>
-        <translation>Bilancio DOMO</translation>
+        <source>DOM Balance</source>
+        <translation>Bilancio DOM</translation>
     </message>
     <message>
         <source>Immature:</source>
@@ -1808,25 +1733,25 @@ Per favore controlla l'indirizzo e riprova nuovamente.</translation>
         <translation>Il tuo saldo DOMO corrente, incluse le transazioni non confermate e non mature</translation>
     </message>
     <message>
-        <source>zDetailed Balance</source>
-        <translation>Bilancio zDOMO</translation>
+        <source>zDOM Balance</source>
+        <translation>Bilancio zDOM</translation>
     </message>
     <message>
         <source>Mature: more than 20 confirmation and more than 1 mint of the same denomination after it was minted.
-These zDOMO are spendable.</source>
+These zDOM are spendable.</source>
         <translation>Maturi: più di 20 conferme e più di 1 conio della stessa denominazione dopo il conio.
-Questi zDOMO sono spendibili.</translation>
+Questi zDOM sono spendibili.</translation>
     </message>
     <message>
         <source>OVERVIEW</source>
         <translation>PANORAMICA</translation>
     </message>
     <message>
-        <source>Domo Balance (including unconfirmed and immature coins)</source>
+        <source>Combined Balance (including unconfirmed and immature coins)</source>
         <translation>Saldo complessivo (incluse monete non confermate e non mature)</translation>
     </message>
     <message>
-        <source>Domo Balance</source>
+        <source>Combined Balance</source>
         <translation>Saldo complessivo</translation>
     </message>
     <message>
@@ -1846,8 +1771,8 @@ Questi zDOMO sono spendibili.</translation>
         <translation>Spendibili:</translation>
     </message>
     <message>
-        <source>Locked DOMO or Masternode collaterals. These are excluded from zDOMO minting.</source>
-        <translation>DOMO bloccati o collaterali Masternodo. Questi sono esclusi dal conio di zDOMO.</translation>
+        <source>Locked DOM or Masternode collaterals. These are excluded from zDOM minting.</source>
+        <translation>DOM bloccati o collaterali Masternodo. Questi sono esclusi dal conio di zDOM.</translation>
     </message>
     <message>
         <source>Locked:</source>
@@ -1858,24 +1783,24 @@ Questi zDOMO sono spendibili.</translation>
         <translation>Non confermati:</translation>
     </message>
     <message>
-        <source>Your current zDOMO balance, unconfirmed and immature zDOMO included.</source>
-        <translation>Il tuo saldo zDOMO corrente, inclusi zDOMO non confermati e non maturi</translation>
+        <source>Your current zDOM balance, unconfirmed and immature zDOM included.</source>
+        <translation>Il tuo saldo zDOM corrente, inclusi zDOM non confermati e non maturi</translation>
     </message>
     <message>
         <source>Recent transactions</source>
         <translation>Transazioni recenti</translation>
     </message>
     <message>
-        <source>Current percentage of zDOMO.
+        <source>Current percentage of zDOM.
 If AutoMint is enabled this percentage will settle around the configured AutoMint percentage (default = 10%).
 </source>
-        <translation>Percentuale corrente di zDOMO.
+        <translation>Percentuale corrente di zDOM.
 Se il conio automatico è attivato questa percentuale si stabilizzerà all'incirca sulla percentuale stabilita per il conio automatico (percentuale prestabilita = 10%).
 </translation>
     </message>
     <message>
         <source>AutoMint is currently enabled and set to </source>
-        <translation>AutoMint è attivo e impostato su</translation>
+        <translation>Conio automatico è attivo e impostato su</translation>
     </message>
     <message>
         <source>To disable AutoMint add 'enablezeromint=0' in domo.conf.</source>
@@ -1933,44 +1858,24 @@ Per attivare il Conio automatico cambiare 'enablezeromint=0' in 'enablezeromint=
         <translation>0</translation>
     </message>
     <message>
-        <source>zDOMO</source>
-        <translation>zDOMO</translation>
-    </message>
-    <message>
-        <source>0.000 000 00 DOMO</source>
-        <translation>0.000 000 00 DOMO</translation>
+        <source>zDOM</source>
+        <translation>zDOM</translation>
     </message>
     <message>
         <source>Reset</source>
         <translation>Reset</translation>
     </message>
     <message>
-        <source>Coin Control...</source>
-        <translation>Controllo Monete...</translation>
-    </message>
-    <message>
-        <source>Quantity:</source>
-        <translation>Quantità:</translation>
-    </message>
-    <message>
-        <source>Amount:</source>
-        <translation>Totale:</translation>
-    </message>
-    <message>
         <source>PRIVACY</source>
         <translation>PRIVACY</translation>
     </message>
     <message>
-        <source>Enter an amount of Domo to convert to zDOMO</source>
-        <translation>Immetti un importo di DOMO da convertire in zDOMO</translation>
+        <source>zDOM Control</source>
+        <translation>Controllo zDOM</translation>
     </message>
     <message>
-        <source>zDOMO Control</source>
-        <translation>Controllo zDOMO</translation>
-    </message>
-    <message>
-        <source>zDOMO Selected:</source>
-        <translation>zDOMO selezionati:</translation>
+        <source>zDOM Selected:</source>
+        <translation>zDOM selezionati:</translation>
     </message>
     <message>
         <source>Quantity Selected:</source>
@@ -1981,23 +1886,23 @@ Per attivare il Conio automatico cambiare 'enablezeromint=0' in 'enablezeromint=
         <translation>Spendi Zerocoin</translation>
     </message>
     <message>
-        <source>Available (mature and spendable) zDOMO for spending</source>
-        <translation>zDOMO disponibili disponibili per essere spesi (maturi e spendibili)</translation>
+        <source>Available (mature and spendable) zDOM for spending</source>
+        <translation>zDOM disponibili disponibili per essere spesi (maturi e spendibili)</translation>
     </message>
     <message>
         <source>Available Balance:</source>
         <translation>Bilancio Disponibile:</translation>
     </message>
     <message>
-        <source>Available (mature and spendable) zDOMO for spending
+        <source>Available (mature and spendable) zDOM for spending
 
-zDOMO are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</source>
-        <translation>zDOMO disponibili disponibili per essere spesi (maturi e spendibili)
-Gli zDOMO sono maturi quando hanno più di 20 conferme E più di 2 conii della stessa denominazione dopo che sono stati coniati</translation>
+zDOM are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</source>
+        <translation>zDOM disponibili disponibili per essere spesi (maturi e spendibili)
+Gli zDOM sono maturi quando hanno più di 20 conferme E più di 2 conii della stessa denominazione dopo che sono stati coniati</translation>
     </message>
     <message>
-        <source>0 zDOMO</source>
-        <translation>0 zDOMO</translation>
+        <source>0 zDOM</source>
+        <translation>0 zDOM</translation>
     </message>
     <message>
         <source>Pay &amp;To:</source>
@@ -2040,31 +1945,31 @@ Gli zDOMO sono maturi quando hanno più di 20 conferme E più di 2 conii della s
         <translation>Statistiche Zerocoin:</translation>
     </message>
     <message>
-        <source>Total Balance including unconfirmed and immature zDOMO</source>
-        <translation>Saldo totale inclusi zDOMO non confermati e non maturi</translation>
+        <source>Total Balance including unconfirmed and immature zDOM</source>
+        <translation>Saldo totale inclusi zDOM non confermati e non maturi</translation>
     </message>
     <message>
         <source>Total Zerocoin  Balance:</source>
         <translation>Saldo totale Zerocoin:</translation>
     </message>
     <message>
-        <source>Show the current status of automatic zDOMO minting.
+        <source>Show the current status of automatic zDOM minting.
 
 To change the status (restart required):
 - enable: add 'enablezeromint=1' to domo.conf
 - disable: add 'enablezeromint=0' to domo.conf
 
 To change the percentage (no restart required):
-- menu Settings-&gt;Options-&gt;Percentage of autominted zDOMO
+- menu Settings-&gt;Options-&gt;Percentage of autominted zDOM
 
 </source>
-        <translation>Mostra lo stato corrente del conio automatico zDOMO.
+        <translation>Mostra lo stato corrente del conio automatico zDOM.
 Per cambiare lo stato (riavvio necessario):
 - attivato: aggiungi 'enablezeromint=1' a domo.conf
 - disattivato: aggiungi 'enablezeromint=0' a domo.conf
 
 Per cambiare la percentuale (riavvio non necessario):
-- menu Impostazioni-&gt;Opzioni-&gt;Percentuale di zDOMO da coniare automaticamente
+- menu Impostazioni-&gt;Opzioni-&gt;Percentuale di zDOM da coniare automaticamente
 
 </translation>
     </message>
@@ -2174,7 +2079,7 @@ Per cambiare la percentuale (riavvio non necessario):
     </message>
     <message>
         <source>Fee:</source>
-        <translation>Tassa:</translation>
+        <translation>Commissione:</translation>
     </message>
     <message>
         <source>Dust:</source>
@@ -2193,6 +2098,10 @@ Per cambiare la percentuale (riavvio non necessario):
         <translation>Fondi insufficienti!</translation>
     </message>
     <message>
+        <source>medium</source>
+        <translation>media</translation>
+    </message>
+    <message>
         <source>Amount After Fee:</source>
         <translation>Importo al netto della commissione:</translation>
     </message>
@@ -2201,16 +2110,8 @@ Per cambiare la percentuale (riavvio non necessario):
         <translation>Differenza:</translation>
     </message>
     <message>
-        <source>Copy quantity</source>
-        <translation>Copia importo</translation>
-    </message>
-    <message>
-        <source>Copy amount</source>
-        <translation>Copia ammontare</translation>
-    </message>
-    <message>
-        <source>zDOMO Mint</source>
-        <translation>Conio zDOMO</translation>
+        <source>zDOM Mint</source>
+        <translation>Conio zDOM</translation>
     </message>
     <message>
         <source>AutoMint Status:</source>
@@ -2226,7 +2127,7 @@ Per cambiare la percentuale (riavvio non necessario):
     </message>
     <message>
         <source>Confirm send coins</source>
-        <translation>Converma invio monete</translation>
+        <translation>Conferma invio monete</translation>
     </message>
     <message>
         <source>Sending successful, return code: </source>
@@ -2238,10 +2139,17 @@ Per cambiare la percentuale (riavvio non necessario):
     </message>
 </context>
 <context>
+    <name>ProposalFrame</name>
+    </context>
+<context>
     <name>QObject</name>
     <message>
         <source>Amount</source>
         <translation>Ammontare</translation>
+    </message>
+    <message>
+        <source>DOMO Core</source>
+        <translation>DOMO Core</translation>
     </message>
     </context>
 <context>
@@ -2269,6 +2177,10 @@ Per cambiare la percentuale (riavvio non necessario):
 <context>
     <name>ReceiveCoinsDialog</name>
     <message>
+        <source>A&amp;mount:</source>
+        <translation>Q&amp;uantità:</translation>
+    </message>
+    <message>
         <source>&amp;Label:</source>
         <translation>&amp;Etichetta:</translation>
     </message>
@@ -2279,6 +2191,10 @@ Per cambiare la percentuale (riavvio non necessario):
     <message>
         <source>Copy amount</source>
         <translation>Copia ammontare</translation>
+    </message>
+    <message>
+        <source>Copy address</source>
+        <translation>Copia indirizzo</translation>
     </message>
 </context>
 <context>
@@ -2305,6 +2221,10 @@ Per cambiare la percentuale (riavvio non necessario):
     <message>
         <source>Label</source>
         <translation>Etichetta</translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation>Indirizzo</translation>
     </message>
     <message>
         <source>Amount</source>
@@ -2346,8 +2266,12 @@ Per cambiare la percentuale (riavvio non necessario):
         <translation>Priorità:</translation>
     </message>
     <message>
+        <source>medium</source>
+        <translation>media</translation>
+    </message>
+    <message>
         <source>Fee:</source>
-        <translation>Tassa:</translation>
+        <translation>Commissione:</translation>
     </message>
     <message>
         <source>Dust:</source>
@@ -2359,7 +2283,7 @@ Per cambiare la percentuale (riavvio non necessario):
     </message>
     <message>
         <source>After Fee:</source>
-        <translation>Al netto della commissione:</translation>
+        <translation>Importo al netto della commissione:</translation>
     </message>
     <message>
         <source>Change:</source>
@@ -2407,15 +2331,19 @@ Per cambiare la percentuale (riavvio non necessario):
     </message>
     <message>
         <source>Copy fee</source>
-        <translation>Copia commissioni</translation>
+        <translation>Copia commissione</translation>
     </message>
     <message>
         <source>Copy after fee</source>
-        <translation>Copia al netto della commissione</translation>
+        <translation>Copia importo al netto della commissione</translation>
     </message>
     <message>
         <source>Copy bytes</source>
         <translation>Copia byte</translation>
+    </message>
+    <message>
+        <source>Copy priority</source>
+        <translation>Copia priorità</translation>
     </message>
     <message>
         <source>Copy dust</source>
@@ -2666,14 +2594,14 @@ Per cambiare la percentuale (riavvio non necessario):
     </message>
     </context>
 <context>
-    <name>ZDomoControlDialog</name>
+    <name>ZDomControlDialog</name>
     <message>
         <source>0</source>
         <translation>0</translation>
     </message>
     <message>
-        <source>zDOMO</source>
-        <translation>zDOMO</translation>
+        <source>zDOM</source>
+        <translation>zDOM</translation>
     </message>
     </context>
 <context>

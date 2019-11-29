@@ -1,2 +1,3 @@
 usr/local/bin/domod usr/bin
 usr/local/bin/domo-cli usr/bin
+debian/examples/domo.conf etc/domo

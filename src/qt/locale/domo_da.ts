@@ -176,7 +176,7 @@
         <translation>Bekræft, og tegnebogen krypteres.</translation>
     </message>
     <message>
-        <source>DOMO will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your DOMOs from being stolen by malware infecting your computer.</source>
+        <source>DOMO will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your DOMs from being stolen by malware infecting your computer.</source>
         <translation>DOMO vil lukke ned for at færdiggøre kryptograferingsprocesserne. Husk at kryptering alene ikke sikrer mod tyveri af mønterne fra malware eller virus på computeren.</translation>
     </message>
     <message>
@@ -184,8 +184,8 @@
         <translation>Er du sikker på, at du vil kryptere din tegnebog?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR DOMO&lt;/b&gt;!</source>
-        <translation>Advarsel! Hvis du krypterer din tegnebog og mister dit password vil du &lt;b&gt;MISTE ALLE DINE DOMO&lt;/b&gt;. Passworded kan ikke genskabes.</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR DOM&lt;/b&gt;!</source>
+        <translation>Advarsel! Hvis du krypterer din tegnebog og mister dit password vil du &lt;b&gt;MISTE ALLE DINE DOM&lt;/b&gt;. Passworded kan ikke genskabes.</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -433,8 +433,8 @@
         <translation>Vis transaktionshistorik</translation>
     </message>
     <message>
-        <source>Privacy Actions for zDOMO</source>
-        <translation>Beskyttelse af personlige oplysninger for zDOMO</translation>
+        <source>Privacy Actions for zDOM</source>
+        <translation>Beskyttelse af personlige oplysninger for zDOM</translation>
     </message>
     <message>
         <source>E&amp;xit</source>
@@ -608,10 +608,6 @@
         <source>&amp;Command-line options</source>
         <translation>&amp;Kommandolinieparametre</translation>
     </message>
-    <message numerus="yes">
-        <source>Processed %n blocks of transaction history.</source>
-        <translation><numerusform>Behandlet %n blok af transaktionshistorik.</numerusform><numerusform>Behandlet %n blokke af transaktionshistorik.</numerusform></translation>
-    </message>
     <message>
         <source>Synchronizing additional data: %p%</source>
         <translation>Synkroniserer yderligere data %p%</translation>
@@ -736,10 +732,6 @@
         <source>DOMO Core client</source>
         <translation>DOMO kerneklient</translation>
     </message>
-    <message numerus="yes">
-        <source>%n active connection(s) to DOMO network</source>
-        <translation><numerusform>%n aktiv forbindelse til DOMO-netværk</numerusform><numerusform>%n aktiv forbindelse(s) til DOMO netværk</numerusform></translation>
-    </message>
     <message>
         <source>Synchronizing with network...</source>
         <translation>Synkroniserer med netværket</translation>
@@ -760,25 +752,9 @@
         <source>Up to date</source>
         <translation>Opdateret!</translation>
     </message>
-    <message numerus="yes">
-        <source>%n hour(s)</source>
-        <translation><numerusform>%n timer</numerusform><numerusform>%n timer</numerusform></translation>
-    </message>
-    <message numerus="yes">
-        <source>%n day(s)</source>
-        <translation><numerusform>%n dage</numerusform><numerusform>%n dage</numerusform></translation>
-    </message>
-    <message numerus="yes">
-        <source>%n week(s)</source>
-        <translation><numerusform>%n uger</numerusform><numerusform>%n uger</numerusform></translation>
-    </message>
     <message>
         <source>%1 and %2</source>
         <translation>%1 og %2</translation>
-    </message>
-    <message numerus="yes">
-        <source>%n year(s)</source>
-        <translation><numerusform>%n år</numerusform><numerusform>%n år</numerusform></translation>
     </message>
     <message>
         <source>Catching up...</source>
@@ -864,7 +840,7 @@ Adresse: %4
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
         <translation>Tegnebogen er &lt;b&gt;krypteret og låst&lt;/b&gt;</translation>
     </message>
-</context>
+    </context>
 <context>
     <name>BlockExplorer</name>
     <message>
@@ -1130,8 +1106,8 @@ Adresse: %4
         <translation>Denne tekstmarkør bliver rød, hvis en modtageradresse modtager et beløb mindre end %1.</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 upiv per input.</source>
-        <translation>Kan variere +/- %1 opiv pr input.</translation>
+        <source>Can vary +/- %1 udom per input.</source>
+        <translation>Kan variere +/- %1 odom pr input.</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -1224,6 +1200,17 @@ Adresse: %4
         <translation>Kan ikke oprette en mappe hr</translation>
     </message>
 </context>
+<context>
+    <name>GovernancePage</name>
+    <message>
+        <source>Form</source>
+        <translation>Formular</translation>
+    </message>
+    <message>
+        <source>0</source>
+        <translation>0</translation>
+    </message>
+    </context>
 <context>
     <name>HelpMessageDialog</name>
     <message>
@@ -1542,48 +1529,26 @@ Multisend vil ikke fungere med mindre systemet er aktiveret.</translation>
         <translation>(ingen opmærknig)</translation>
     </message>
     <message>
-        <source>The entered address:
-</source>
-        <translation>Den indtastede adresse:
-</translation>
-    </message>
-    <message>
-        <source> is invalid.
-Please check the address and try again.</source>
-        <translation>er ikke gyldig. 
-Kontroller adressen og prøv igen.</translation>
-    </message>
-    <message>
-        <source>The total amount of your MultiSend vector is over 100% of your stake reward
-</source>
+        <source>The total amount of your MultiSend vector is over 100% of your stake reward</source>
         <translation>Den totale sum af Deres Multisendgruppe er over 100% af Deres indskudsbelønning
 </translation>
     </message>
     <message>
-        <source>Please Enter 1 - 100 for percent.</source>
-        <translation>Indtast en procentsats 1-100 </translation>
-    </message>
-    <message>
-        <source>Saved the MultiSend to memory, but failed saving properties to the database.
-</source>
+        <source>Saved the MultiSend to memory, but failed saving properties to the database.</source>
         <translation>Gemt MultiSend til hukommelse, men fejlede gemme egenskaber til databasen.
 </translation>
     </message>
     <message>
-        <source>MultiSend Vector
-</source>
-        <translation>Multisendgruppe
-</translation>
+        <source>Removed %1</source>
+        <translation>Fjernet %1</translation>
     </message>
     <message>
-        <source>Removed </source>
-        <translation>Fjernet</translation>
+        <source>Could not locate address</source>
+        <translation>Kunne ikke finde adresse</translation>
     </message>
     <message>
-        <source>Could not locate address
-</source>
-        <translation>Kunne ikke finde adresse
-</translation>
+        <source>Please Enter 1 - 100 for percent.</source>
+        <translation>Indtast en procentsats 1-100 </translation>
     </message>
 </context>
 <context>
@@ -1681,8 +1646,8 @@ Vær tålmodig efter at du har klikket på import.</translation>
         <translation>Adresse / Beløb:</translation>
     </message>
     <message>
-        <source>Add destinations to send DOMO to</source>
-        <translation>Tilføj destinationer for at sende DOMO til</translation>
+        <source>Add destinations to send DOM to</source>
+        <translation>Tilføj destinationer for at sende DOM til</translation>
     </message>
     <message>
         <source>Add &amp;Destination</source>
@@ -1755,73 +1720,6 @@ Vær tålmodig efter at du har klikket på import.</translation>
     <message>
         <source>Maximum (15)</source>
         <translation>Maksimum (15)</translation>
-    </message>
-</context>
-<context>
-    <name>ObfuscationConfig</name>
-    <message>
-        <source>Configure Obfuscation</source>
-        <translation>Konfigurer tilslørin</translation>
-    </message>
-    <message>
-        <source>Basic Privacy</source>
-        <translation>Grundlæggende tilsløret </translation>
-    </message>
-    <message>
-        <source>High Privacy</source>
-        <translation>Grundigt tilsløret</translation>
-    </message>
-    <message>
-        <source>Maximum Privacy</source>
-        <translation>Meget grundigt tilsløret</translation>
-    </message>
-    <message>
-        <source>Please select a privacy level.</source>
-        <translation>Vælg tilsløringsniveau</translation>
-    </message>
-    <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 DOMO</source>
-        <translation>Brug 2 separate masternoder for at tilsløre beløb op til 10000 DOMO</translation>
-    </message>
-    <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 DOMO</source>
-        <translation>Brug 8 separate masternoder for at tilsløre op til 10000 DOMO</translation>
-    </message>
-    <message>
-        <source>Use 16 separate masternodes</source>
-        <translation>Brug 16 separate masternoder</translation>
-    </message>
-    <message>
-        <source>This option is the quickest and will cost about ~0.025 DOMO to anonymize 10000 DOMO</source>
-        <translation>Dette valg er det hurtigste og vil koste i omegnen af 0.025 DOMO for at anonymiser 10000 DOMO</translation>
-    </message>
-    <message>
-        <source>This option is moderately fast and will cost about 0.05 DOMO to anonymize 10000 DOMO</source>
-        <translation>Dette valg er relativt hurtigt og vil koste i omegnen af 0.05 DOMO for at anonymiser 10000 DOMO</translation>
-    </message>
-    <message>
-        <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
-        <translation>Denne mulighed er den langsomste og det mest sikre valg. Valg af maksimal tilsløring vil koste</translation>
-    </message>
-    <message>
-        <source>0.1 DOMO per 10000 DOMO you anonymize.</source>
-        <translation>0.1 pr 10000 DOMO for at tilsløre.</translation>
-    </message>
-    <message>
-        <source>Obfuscation Configuration</source>
-        <translation>Tilsløringskonfiguration</translation>
-    </message>
-    <message>
-        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening DOMO's configuration screen.</source>
-        <translation>Tilsløring blev sat til grundlæggende (%1 og 2 gennemløb) De kan ændre dette hvornår De vil ved at åbne DOMO konfigurationsbillede.</translation>
-    </message>
-    <message>
-        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening DOMO's configuration screen.</source>
-        <translation>Tilsløring blev sat til høj (%1 og 8 gennemløb) De kan ændre dette hvornår De vil ved at åbne DOMO konfigurationsbillede.</translation>
-    </message>
-    <message>
-        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening DOMO's configuration screen.</source>
-        <translation>Tilsløring blev sat til maksimum (%1 og 16 gennemløb) De kan ændre dette hvornår De vil ved at åbne DOMO konfigurationsbillede.</translation>
     </message>
 </context>
 <context>
@@ -1948,28 +1846,28 @@ https://www.transifex.com/domo-project/domo-project-translations</translation>
         <translation>MAP port ved hjælp af UPnP</translation>
     </message>
     <message>
-        <source>Enable automatic minting of DOMO units to zDOMO</source>
-        <translation>Aktivér automatisk mintning af DOMO-enheder til zDOMO</translation>
+        <source>Enable automatic minting of DOM units to zDOM</source>
+        <translation>Aktivér automatisk mintning af DOM-enheder til zDOM</translation>
     </message>
     <message>
-        <source>Enable zDOMO Automint</source>
-        <translation>Aktivér zDOMO Automint</translation>
+        <source>Enable zDOM Automint</source>
+        <translation>Aktivér zDOM Automint</translation>
     </message>
     <message>
-        <source>Percentage of incoming DOMO which get automatically converted to zDOMO via Zerocoin Protocol (min: 10%)</source>
-        <translation>Procentdelen af indkommende DOMO, som automatisk konverteres til zDOMO via Zerocoin Protocol (min: 10%)</translation>
+        <source>Percentage of incoming DOM which get automatically converted to zDOM via Zerocoin Protocol (min: 10%)</source>
+        <translation>Procentdelen af indkommende DOM, som automatisk konverteres til zDOM via Zerocoin Protocol (min: 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zDOMO</source>
-        <translation>Procentdel af automatiseret zDOMO</translation>
+        <source>Percentage of autominted zDOM</source>
+        <translation>Procentdel af automatiseret zDOM</translation>
     </message>
     <message>
-        <source>Wait with automatic conversion to Zerocoin until enough DOMO for this denomination is available</source>
-        <translation>Vent med automatisk konvertering til Zerocoin, indtil nok DOMO til denne betegnelse er tilgængelig</translation>
+        <source>Wait with automatic conversion to Zerocoin until enough DOM for this denomination is available</source>
+        <translation>Vent med automatisk konvertering til Zerocoin, indtil nok DOM til denne betegnelse er tilgængelig</translation>
     </message>
     <message>
-        <source>Preferred Automint zDOMO Denomination</source>
-        <translation>Foretrukket Automint zDOMO Denomination</translation>
+        <source>Preferred Automint zDOM Denomination</source>
+        <translation>Foretrukket Automint zDOM Denomination</translation>
     </message>
     <message>
         <source>Stake split threshold:</source>
@@ -2026,10 +1924,6 @@ https://www.transifex.com/domo-project/domo-project-translations</translation>
     <message>
         <source>User Interface Theme:</source>
         <translation>Brugers tema:</translation>
-    </message>
-    <message>
-        <source>&amp;Unit to show amounts in:</source>
-        <translation>&amp;Enhed som beløb vises i</translation>
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
@@ -2131,8 +2025,8 @@ https://www.transifex.com/domo-project/domo-project-translations</translation>
         <translation>Samlet saldo, inklusive alle utilgængelige mønter.</translation>
     </message>
     <message>
-        <source>Detailed Balance</source>
-        <translation>Detailed Balance</translation>
+        <source>DOM Balance</source>
+        <translation>DOM Balance</translation>
     </message>
     <message>
         <source>Pending:</source>
@@ -2159,14 +2053,14 @@ https://www.transifex.com/domo-project/domo-project-translations</translation>
         <translation>Din nuværende DOMO-saldo, ubekræftede og umodne transaktioner inkluderet</translation>
     </message>
     <message>
-        <source>zDetailed Balance</source>
-        <translation>zDOMO-saldo</translation>
+        <source>zDOM Balance</source>
+        <translation>zDOM-saldo</translation>
     </message>
     <message>
         <source>Mature: more than 20 confirmation and more than 1 mint of the same denomination after it was minted.
-These zDOMO are spendable.</source>
+These zDOM are spendable.</source>
         <translation>Ældre: mere end 20 bekræftelser og mere end 1 minutter med samme betegnelse, efter at den blev minted
-Disse zDOMO kan bruges.</translation>
+Disse zDOM kan bruges.</translation>
     </message>
     <message>
         <source>Unconfirmed: less than 20 confirmations
@@ -2183,11 +2077,11 @@ Uplettet: bekræftet, men mindre end 1 minutter med samme betegnelse, efter at d
         <translation>OVERSIGT</translation>
     </message>
     <message>
-        <source>Domo Balance (including unconfirmed and immature coins)</source>
+        <source>Combined Balance (including unconfirmed and immature coins)</source>
         <translation>Kombinerede saldi (inklusiv ubekræftede og umodne mønter)</translation>
     </message>
     <message>
-        <source>Domo Balance</source>
+        <source>Combined Balance</source>
         <translation>Kombineret saldo</translation>
     </message>
     <message>
@@ -2219,8 +2113,8 @@ Uplettet: bekræftet, men mindre end 1 minutter med samme betegnelse, efter at d
         <translation>Brugbare:</translation>
     </message>
     <message>
-        <source>Locked DOMO or Masternode collaterals. These are excluded from zDOMO minting.</source>
-        <translation>Låste DOMO eller Masternode collaterals. Disse er udelukket fra zDOMO-mintning.</translation>
+        <source>Locked DOM or Masternode collaterals. These are excluded from zDOM minting.</source>
+        <translation>Låste DOM eller Masternode collaterals. Disse er udelukket fra zDOM-mintning.</translation>
     </message>
     <message>
         <source>Locked:</source>
@@ -2231,8 +2125,8 @@ Uplettet: bekræftet, men mindre end 1 minutter med samme betegnelse, efter at d
         <translation>Ubekræftet:</translation>
     </message>
     <message>
-        <source>Your current zDOMO balance, unconfirmed and immature zDOMO included.</source>
-        <translation>Din nuværende zDOMO-saldo, ubekræftede og umodne zDOMO inkluderet.</translation>
+        <source>Your current zDOM balance, unconfirmed and immature zDOM included.</source>
+        <translation>Din nuværende zDOM-saldo, ubekræftede og umodne zDOM inkluderet.</translation>
     </message>
     <message>
         <source>Recent transactions</source>
@@ -2243,10 +2137,10 @@ Uplettet: bekræftet, men mindre end 1 minutter med samme betegnelse, efter at d
         <translation>Ude af synk</translation>
     </message>
     <message>
-        <source>Current percentage of zDOMO.
+        <source>Current percentage of zDOM.
 If AutoMint is enabled this percentage will settle around the configured AutoMint percentage (default = 10%).
 </source>
-        <translation>Nuværende procentdel af zDOMO
+        <translation>Nuværende procentdel af zDOM
 Hvis AutoMint er aktiveret, vil denne procentdel sætte sig omkring den konfigurerede AutoMint-procent (default = 10%)</translation>
     </message>
     <message>
@@ -2389,20 +2283,8 @@ For at aktivere AutoMint-ændring 'enablezeromint = 0' til 'enablezeromint = 1' 
         <translation>0</translation>
     </message>
     <message>
-        <source>zDOMO</source>
-        <translation>zDOMO</translation>
-    </message>
-    <message>
-        <source>Available for minting are coins which are confirmed and not locked or Masternode collaterals.</source>
-        <translation>Til rådighed for mintning er mønter, som er bekræftet og ikke låst eller Masternode collaterals.</translation>
-    </message>
-    <message>
-        <source>Available for Minting:</source>
-        <translation>Til rådighed til Minting:</translation>
-    </message>
-    <message>
-        <source>0.000 000 00 DOMO</source>
-        <translation>0.000 000 00 DOMO</translation>
+        <source>zDOM</source>
+        <translation>zDOM</translation>
     </message>
     <message>
         <source>Reset Zerocoin Wallet DB. Deletes transactions that did not make it into the blockchain.</source>
@@ -2411,18 +2293,6 @@ For at aktivere AutoMint-ændring 'enablezeromint = 0' til 'enablezeromint = 1' 
     <message>
         <source>Reset</source>
         <translation>Nulstil</translation>
-    </message>
-    <message>
-        <source>Coin Control...</source>
-        <translation>Møntkontrol...</translation>
-    </message>
-    <message>
-        <source>Quantity:</source>
-        <translation>Antal:</translation>
-    </message>
-    <message>
-        <source>Amount:</source>
-        <translation>Beløb</translation>
     </message>
     <message>
         <source>Rescan the complete blockchain for  Zerocoin mints and their meta-data.</source>
@@ -2441,16 +2311,12 @@ For at aktivere AutoMint-ændring 'enablezeromint = 0' til 'enablezeromint = 1' 
         <translation>PRIVATLIV</translation>
     </message>
     <message>
-        <source>Enter an amount of Domo to convert to zDOMO</source>
-        <translation>Indtast en mængde Domo for at konvertere til zDomo</translation>
+        <source>zDOM Control</source>
+        <translation>zDOM Control</translation>
     </message>
     <message>
-        <source>zDOMO Control</source>
-        <translation>zDOMO Control</translation>
-    </message>
-    <message>
-        <source>zDOMO Selected:</source>
-        <translation>zDOMO Selected:</translation>
+        <source>zDOM Selected:</source>
+        <translation>zDOM Selected:</translation>
     </message>
     <message>
         <source>Quantity Selected:</source>
@@ -2465,36 +2331,24 @@ For at aktivere AutoMint-ændring 'enablezeromint = 0' til 'enablezeromint = 1' 
         <translation>Tilbring Zerocoin</translation>
     </message>
     <message>
-        <source>Available (mature and spendable) zDOMO for spending</source>
-        <translation>Tilgængelig (moden og brugt) zDOMO for udgifter</translation>
+        <source>Available (mature and spendable) zDOM for spending</source>
+        <translation>Tilgængelig (moden og brugt) zDOM for udgifter</translation>
     </message>
     <message>
         <source>Available Balance:</source>
         <translation>Disponibel saldo:</translation>
     </message>
     <message>
-        <source>Available (mature and spendable) zDOMO for spending
+        <source>Available (mature and spendable) zDOM for spending
 
-zDOMO are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</source>
-        <translation>Tilgængelig (moden og brugt) zDOMO for spending
+zDOM are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</source>
+        <translation>Tilgængelig (moden og brugt) zDOM for spending
 
-zDOMO er modne, når de har mere end 20 bekræftelser OG mere end 2 minutter med samme betegnelse, efter at de blev præsenteret</translation>
+zDOM er modne, når de har mere end 20 bekræftelser OG mere end 2 minutter med samme betegnelse, efter at de blev præsenteret</translation>
     </message>
     <message>
-        <source>0 zDOMO</source>
-        <translation>0 zDOMO</translation>
-    </message>
-    <message>
-        <source>Security Level for Zerocoin Transactions. More is better, but needs more time and resources.</source>
-        <translation>Sikkerhedsniveau for Zerocoin Transaktioner. Mere er bedre, men har brug for mere tid og ressourcer.</translation>
-    </message>
-    <message>
-        <source>Security Level:</source>
-        <translation>Sikkerhedsniveau:</translation>
-    </message>
-    <message>
-        <source>Security Level 1 - 100 (default: 42)</source>
-        <translation>Sikkerhedsniveau 1 - 100 (standard: 42)</translation>
+        <source>0 zDOM</source>
+        <translation>0 zDOM</translation>
     </message>
     <message>
         <source>Pay &amp;To:</source>
@@ -2553,8 +2407,8 @@ zDOMO er modne, når de har mere end 20 bekræftelser OG mere end 2 minutter med
         <translation>Zerocoin Stats:</translation>
     </message>
     <message>
-        <source>Total Balance including unconfirmed and immature zDOMO</source>
-        <translation>Samlet saldo inklusive ubekræftede og umodne zDOMO</translation>
+        <source>Total Balance including unconfirmed and immature zDOM</source>
+        <translation>Samlet saldo inklusive ubekræftede og umodne zDOM</translation>
     </message>
     <message>
         <source>Total Zerocoin  Balance:</source>
@@ -2575,24 +2429,24 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
 Uplettet: bekræftet, men mindre end 1 minutter med samme betegnelse, efter at den blev mønnet</translation>
     </message>
     <message>
-        <source>Show the current status of automatic zDOMO minting.
+        <source>Show the current status of automatic zDOM minting.
 
 To change the status (restart required):
 - enable: add 'enablezeromint=1' to domo.conf
 - disable: add 'enablezeromint=0' to domo.conf
 
 To change the percentage (no restart required):
-- menu Settings-&gt;Options-&gt;Percentage of autominted zDOMO
+- menu Settings-&gt;Options-&gt;Percentage of autominted zDOM
 
 </source>
-        <translation>Vis den aktuelle status for automatisk zDOMO minting.øj
+        <translation>Vis den aktuelle status for automatisk zDOM minting.øj
 
 For at ændre status (genstart kræves):.
 - aktiver: tilføj 'enablezeromint = 1' til domo.conf
 - deaktiver: tilføj 'enablezeromint = 0' til domo.conf
 
 For at ændre procentdelen (ingen genstart kræves):.
-- menu Indstillinger-&gt; Indstillinger-&gt; Procentdel af automatiseret zDOMO
+- menu Indstillinger-&gt; Indstillinger-&gt; Procentdel af automatiseret zDOM
 </translation>
     </message>
     <message>
@@ -2760,40 +2614,18 @@ For at ændre procentdelen (ingen genstart kræves):.
         <translation>Mint Status: Okay</translation>
     </message>
     <message>
-        <source>Copy quantity</source>
-        <translation>Kopiér antal</translation>
-    </message>
-    <message>
-        <source>Copy amount</source>
-        <translation>Kopiér beløb</translation>
-    </message>
-    <message>
         <source>Starting ResetMintZerocoin: rescanning complete blockchain, this will need up to 30 minutes depending on your hardware.
 Please be patient...</source>
         <translation>Starter ResetMintZerocoin: Genskanning af komplet blockchain, dette vil tage op til 30 minutter afhængigt af din hardware.
 Vær tålmodig...</translation>
     </message>
     <message>
-        <source>Spending Zerocoin.
-Computationally expensive, might need several minutes depending on the selected Security Level and your hardware.
-Please be patient...</source>
-        <translation>Tilbringe Zerocoin
-Computationally dyrt, kan have brug for flere minutter afhængigt af det valgte sikkerhedsniveau og din hardware.
-Vær tålmodig..</translation>
+        <source>zDOM Spend #: </source>
+        <translation>zDOM Spend #: </translation>
     </message>
     <message>
-        <source>) needed.
-Maximum allowed: </source>
-        <translation>) havde brug for.
-Maksimum tilladt:</translation>
-    </message>
-    <message>
-        <source>zDOMO Spend #: </source>
-        <translation>zDOMO Spend #: </translation>
-    </message>
-    <message>
-        <source>zDOMO Mint</source>
-        <translation>zDOMO Mint</translation>
+        <source>zDOM Mint</source>
+        <translation>zDOM Mint</translation>
     </message>
     <message>
         <source> &lt;b&gt;enabled&lt;/b&gt;.</source>
@@ -2808,12 +2640,12 @@ Maksimum tilladt:</translation>
         <translation>Konfigureret målprocent:&lt;b&gt;</translation>
     </message>
     <message>
-        <source>zDOMO is currently disabled due to maintenance.</source>
-        <translation>zDOMO er i øjeblikket deaktiveret på grund af vedligeholdelse.</translation>
+        <source>zDOM is currently disabled due to maintenance.</source>
+        <translation>zDOM er i øjeblikket deaktiveret på grund af vedligeholdelse.</translation>
     </message>
     <message>
-        <source>zDOMO is currently undergoing maintenance.</source>
-        <translation>zDOMO er i øjeblikket under opretholdelse.</translation>
+        <source>zDOM is currently undergoing maintenance.</source>
+        <translation>zDOM er i øjeblikket under opretholdelse.</translation>
     </message>
     <message>
         <source>Denom. with value &lt;b&gt;1&lt;/b&gt;:</source>
@@ -2884,32 +2716,6 @@ Maksimum tilladt:</translation>
         <translation>Denom. &lt;b&gt;5000&lt;/b&gt;:</translation>
     </message>
     <message>
-        <source>Error: Your wallet is locked. Please enter the wallet passphrase first.</source>
-        <translation>Fejl: Din tegnebog er låst. Indtast venligst lommebrevets kodeord først.</translation>
-    </message>
-    <message>
-        <source>Message: Enter an amount &gt; 0.</source>
-        <translation>Meddelelse: Indtast et beløb&gt; 0.</translation>
-    </message>
-    <message>
-        <source>Minting </source>
-        <translation>Minting</translation>
-    </message>
-    <message>
-        <source>Successfully minted </source>
-        <translation>Mynt succesfuldt</translation>
-    </message>
-    <message>
-        <source> zDOMO in </source>
-        <translation> zDOMO i</translation>
-    </message>
-    <message>
-        <source> sec. Used denominations:
-</source>
-        <translation>sek. Brugte betegnelser:.
-</translation>
-    </message>
-    <message>
         <source>Duration: </source>
         <translation>Varighed:</translation>
     </message>
@@ -2952,43 +2758,16 @@ Maksimum tilladt:</translation>
         <translation>til en nyligt genereret (ubrugt og derfor anonym) lokal adresse &lt;br /&gt;</translation>
     </message>
     <message>
-        <source>with Security Level </source>
-        <translation>med sikkerhedsniveau</translation>
-    </message>
-    <message>
         <source>Confirm send coins</source>
         <translation>Bekræft at De vil sende mønter</translation>
-    </message>
-    <message>
-        <source>Version 1 zDOMO require a security level of 100 to successfully spend.</source>
-        <translation>Version 1 zDOMO kræver et sikkerhedsniveau på 100 til succes.</translation>
-    </message>
-    <message>
-        <source>Failed to spend zDOMO</source>
-        <translation>Kunne ikke bruge zDOMO</translation>
     </message>
     <message>
         <source>Failed to fetch mint associated with serial hash</source>
         <translation>Kunne ikke hente mynte i forbindelse med seriel hash</translation>
     </message>
     <message>
-        <source>Too much inputs (</source>
-        <translation>For mange input (</translation>
-    </message>
-    <message>
-        <source>
-Either mint higher denominations (so fewer inputs are needed) or reduce the amount to spend.</source>
-        <translation>
-Enten mint højere nomineringer (så færre input er nødvendige) eller reducere det beløb, der skal bruges.</translation>
-    </message>
-    <message>
         <source>Spend Zerocoin failed with status = </source>
         <translation>Brug Zerocoin mislykkedes med status =</translation>
-    </message>
-    <message numerus="yes">
-        <source>PrivacyDialog</source>
-        <comment>Enter an amount of DOMO to convert to zDOMO</comment>
-        <translation><numerusform>PrivacyDialog</numerusform><numerusform>PrivacyDialog</numerusform></translation>
     </message>
     <message>
         <source>denomination: </source>
@@ -3023,6 +2802,9 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Gebyr:</translation>
     </message>
 </context>
+<context>
+    <name>ProposalFrame</name>
+    </context>
 <context>
     <name>QObject</name>
     <message>
@@ -3073,7 +2855,11 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <source>%1 ms</source>
         <translation>%1 ms</translation>
     </message>
-</context>
+    <message>
+        <source>DOMO Core</source>
+        <translation>DOMO kerne</translation>
+    </message>
+    </context>
 <context>
     <name>QRImageWidget</name>
     <message>
@@ -3304,8 +3090,8 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Brugerdefineret Backup-sti:</translation>
     </message>
     <message>
-        <source>Custom zDOMO Backup Path:</source>
-        <translation>Brugerdefineret zDOMO Backup-sti:</translation>
+        <source>Custom zDOM Backup Path:</source>
+        <translation>Brugerdefineret zDOM Backup-sti:</translation>
     </message>
     <message>
         <source>Custom Backups Threshold:</source>
@@ -3436,10 +3222,6 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Bekræft resync Blockchain</translation>
     </message>
     <message>
-        <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
-        <translation>Brug piltasterne for at navigere rundt i historiedata, og &lt;b&gt;Ctrl-L&lt;/b&gt; for at tømme skærmen.</translation>
-    </message>
-    <message>
         <source>Type &lt;b&gt;help&lt;/b&gt; for an overview of available commands.</source>
         <translation>Tast &lt;b&gt;help&gt; for at få en oversigt over tilgængelige kommandoer</translation>
     </message>
@@ -3511,6 +3293,14 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Valgfri opmærkning som tilknyttes den nye modtageradresse.</translation>
     </message>
     <message>
+        <source>&amp;Address:</source>
+        <translation>&amp;adresse</translation>
+    </message>
+    <message>
+        <source>A&amp;mount:</source>
+        <translation>A&amp;mount</translation>
+    </message>
+    <message>
         <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the DOMO network.</source>
         <translation>Valgfri besked som vedhæftes betalingsanmodnigen, og som bliver vist når anmodningen åbnes. Note: Beskeden fremsendes ikke sammen med betalingen, når denne sendes ud på DOMO netværket.</translation>
     </message>
@@ -3533,10 +3323,6 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
     <message>
         <source>An optional amount to request. Leave this empty or zero to not request a specific amount.</source>
         <translation>Beløbsfeltet er valgfrit. Efterlad det tomt, eller med værdien 0 for at anmode om et beløb, som afsenderen bestemmer.</translation>
-    </message>
-    <message>
-        <source>&amp;Amount:</source>
-        <translation>&amp;Beløb</translation>
     </message>
     <message>
         <source>&amp;Request payment</source>
@@ -3581,6 +3367,10 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
     <message>
         <source>Copy amount</source>
         <translation>Kopiér beløb</translation>
+    </message>
+    <message>
+        <source>Copy address</source>
+        <translation>Kopiér adresse</translation>
     </message>
 </context>
 <context>
@@ -3651,6 +3441,10 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
     <message>
         <source>Message</source>
         <translation>Besked</translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation>Adresse</translation>
     </message>
     <message>
         <source>Amount</source>
@@ -3748,8 +3542,8 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>UTXO størrelse:</translation>
     </message>
     <message>
-        <source>0 DOMO</source>
-        <translation>0 DOMO</translation>
+        <source>0 DOM</source>
+        <translation>0 DOM</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -3804,12 +3598,12 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Mønter vælges automatisk</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uDOMOs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uDOMOs in fee,&lt;br /&gt;while "at least" pays 1000 uDOMOs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Hvis den brugerfastsatte gebyrbetaling er sat til 1000 uDOMOs og transaktionen kun fylder 250 bytes, så vil "pr. kilobyte" kun udbetale 250 uDOMO i gebyr, &lt;br /&gt; mens "mindst" udbetaler 1000 uDOMOs. For transaktioner større end en kilobyte betales i begge tilfælde i forhold til antallet af kilobytes </translation>
+        <source>If the custom fee is set to 1000 uDOMs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uDOMs in fee,&lt;br /&gt;while "at least" pays 1000 uDOMs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Hvis den brugerfastsatte gebyrbetaling er sat til 1000 uDOMs og transaktionen kun fylder 250 bytes, så vil "pr. kilobyte" kun udbetale 250 uDOM i gebyr, &lt;br /&gt; mens "mindst" udbetaler 1000 uDOMs. For transaktioner større end en kilobyte betales i begge tilfælde i forhold til antallet af kilobytes </translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uDOMOs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uDOMOs in fee,&lt;br /&gt;while "total at least" pays 1000 uDOMOs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Hvis den brugerfastsatte gebyrbetaling er sat til 1000 uDOMOs og transaktionen kun fylder 250 bytes, så vil "pr. kilobyte" kun udbetale 250 uDOMO i gebyr, &lt;br /&gt; mens "Total-mindst" udbetaler 1000 uDOMOs. For transaktioner større end en kilobyte betales i begge tilfælde i forhold til antallet af kilobytes </translation>
+        <source>If the custom fee is set to 1000 uDOMs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uDOMs in fee,&lt;br /&gt;while "total at least" pays 1000 uDOMs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Hvis den brugerfastsatte gebyrbetaling er sat til 1000 uDOMs og transaktionen kun fylder 250 bytes, så vil "pr. kilobyte" kun udbetale 250 uDOM i gebyr, &lt;br /&gt; mens "Total-mindst" udbetaler 1000 uDOMs. For transaktioner større end en kilobyte betales i begge tilfælde i forhold til antallet af kilobytes </translation>
     </message>
     <message>
         <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for DOMO transactions than the network can process.</source>
@@ -3860,8 +3654,8 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Tilføj &amp;Modtager</translation>
     </message>
     <message>
-        <source>Anonymized DOMO</source>
-        <translation>Tilsløret DOMO</translation>
+        <source>Anonymized DOM</source>
+        <translation>Tilsløret DOM</translation>
     </message>
     <message>
         <source>Balance:</source>
@@ -3934,10 +3728,6 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
     <message>
         <source>A fee %1 times higher than %2 per kB is considered an insanely high fee.</source>
         <translation>Et gebyr %1 gange højere end %2 pr. kilobyte er vanvittigt højt.</translation>
-    </message>
-    <message numerus="yes">
-        <source>Estimated to begin confirmation within %n block(s).</source>
-        <translation><numerusform>Forventer bekræftelse indenfor %n blokke</numerusform><numerusform>Forventer bekræftelse indenfor %n blokke</numerusform></translation>
     </message>
     <message>
         <source>The recipient address is not valid, please recheck.</source>
@@ -4244,10 +4034,6 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>DASH "core" udviklerne</translation>
     </message>
     <message>
-        <source>The PIVX Core developers</source>
-        <translation>PIVX "core" udviklerne</translation>
-    </message>
-    <message>
         <source>The DOMO Core developers</source>
         <translation>DOMO "core" udviklerne</translation>
     </message>
@@ -4265,10 +4051,6 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
 </context>
 <context>
     <name>TransactionDesc</name>
-    <message numerus="yes">
-        <source>Open for %n more block(s)</source>
-        <translation><numerusform>Åbn for %n flere blokke</numerusform><numerusform>Åbn for %n flere blokke</numerusform></translation>
-    </message>
     <message>
         <source>Open until %1</source>
         <translation>Åbn frem til %1</translation>
@@ -4329,10 +4111,6 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <source>, has not been successfully broadcast yet</source>
         <translation>, er ikke udsendt endnu</translation>
     </message>
-    <message numerus="yes">
-        <source>, broadcast through %n node(s)</source>
-        <translation><numerusform>, sendt gennem %n noder</numerusform><numerusform>, sendt gennem %n noder</numerusform></translation>
-    </message>
     <message>
         <source>Date</source>
         <translation>Dato</translation>
@@ -4372,10 +4150,6 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
     <message>
         <source>Credit</source>
         <translation>Kredit</translation>
-    </message>
-    <message numerus="yes">
-        <source>matures in %n more block(s)</source>
-        <translation><numerusform>Modnes efter %n blokke</numerusform><numerusform>Modnes efter %n blokke</numerusform></translation>
     </message>
     <message>
         <source>not accepted</source>
@@ -4475,10 +4249,6 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <source>Address</source>
         <translation>Adresse</translation>
     </message>
-    <message numerus="yes">
-        <source>Open for %n more block(s)</source>
-        <translation><numerusform>Åbn for %n flere blokke</numerusform><numerusform>Åbn for %n flere blokke</numerusform></translation>
-    </message>
     <message>
         <source>Open until %1</source>
         <translation>Åbn frem til %1</translation>
@@ -4528,12 +4298,12 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Modtaget via tilsløring</translation>
     </message>
     <message>
-        <source>DOMO Stake</source>
-        <translation>DOMO Stake</translation>
+        <source>DOM Stake</source>
+        <translation>DOM Stake</translation>
     </message>
     <message>
-        <source>zDOMO Stake</source>
-        <translation>zDOMO Stake</translation>
+        <source>zDOM Stake</source>
+        <translation>zDOM Stake</translation>
     </message>
     <message>
         <source>Obfuscation Denominate</source>
@@ -4552,32 +4322,32 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Opret tilsløret designering</translation>
     </message>
     <message>
-        <source>Converted DOMO to zDOMO</source>
-        <translation>Konverteret DOMO til zDOMO</translation>
+        <source>Converted DOM to zDOM</source>
+        <translation>Konverteret DOM til zDOM</translation>
     </message>
     <message>
-        <source>Spent zDOMO</source>
-        <translation>Brugt zDomo</translation>
+        <source>Spent zDOM</source>
+        <translation>Brugt zDom</translation>
     </message>
     <message>
-        <source>Received DOMO from zDOMO</source>
-        <translation>Modtaget Domo fra zDomo</translation>
+        <source>Received DOM from zDOM</source>
+        <translation>Modtaget Dom fra zDom</translation>
     </message>
     <message>
-        <source>Minted Change as zDOMO from zDOMO Spend</source>
-        <translation>Minted Change som zDOMO fra zDOMO Spend</translation>
+        <source>Minted Change as zDOM from zDOM Spend</source>
+        <translation>Minted Change som zDOM fra zDOM Spend</translation>
     </message>
     <message>
-        <source>Converted zDOMO to DOMO</source>
-        <translation>Konverteret DOMO til zDOMO</translation>
+        <source>Converted zDOM to DOM</source>
+        <translation>Konverteret DOM til zDOM</translation>
     </message>
     <message>
-        <source>Anonymous (zDOMO Transaction)</source>
-        <translation>Anonym (zDOMO Transaction)</translation>
+        <source>Anonymous (zDOM Transaction)</source>
+        <translation>Anonym (zDOM Transaction)</translation>
     </message>
     <message>
-        <source>Anonymous (zDOMO Stake)</source>
-        <translation>Anonym (zDOMO Stake)</translation>
+        <source>Anonymous (zDOM Stake)</source>
+        <translation>Anonym (zDOM Stake)</translation>
     </message>
     <message>
         <source>Sent to</source>
@@ -4787,12 +4557,12 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Eksporteret!</translation>
     </message>
     <message>
-        <source>Received DOMO from zDOMO</source>
-        <translation>Modtaget Domo fra zDomo</translation>
+        <source>Received DOM from zDOM</source>
+        <translation>Modtaget Dom fra zDom</translation>
     </message>
     <message>
-        <source>Zerocoin Spend, Change in zDOMO</source>
-        <translation>Zerocoin Spend, Ændring i zDOMO</translation>
+        <source>Zerocoin Spend, Change in zDOM</source>
+        <translation>Zerocoin Spend, Ændring i zDOM</translation>
     </message>
     <message>
         <source>The transaction history was successfully saved to %1.</source>
@@ -4828,8 +4598,8 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Send mønter</translation>
     </message>
     <message>
-        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 DOMO.</source>
-        <translation>SwiftTx understøtter ikke afsendelse af så store beløb endnu. Transaktioner er for tiden begrænsede til %1DOMO.</translation>
+        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 DOM.</source>
+        <translation>SwiftTx understøtter ikke afsendelse af så store beløb endnu. Transaktioner er for tiden begrænsede til %1DOM.</translation>
     </message>
 </context>
 <context>
@@ -4860,10 +4630,10 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
     </message>
 </context>
 <context>
-    <name>ZDomoControlDialog</name>
+    <name>ZDomControlDialog</name>
     <message>
-        <source>Select zDOMO to Spend</source>
-        <translation>Vælg zDOMO for at bruge</translation>
+        <source>Select zDOM to Spend</source>
+        <translation>Vælg zDOM for at bruge</translation>
     </message>
     <message>
         <source>Quantity</source>
@@ -4874,18 +4644,14 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>0</translation>
     </message>
     <message>
-        <source>zDOMO</source>
-        <translation>zDOMO</translation>
+        <source>zDOM</source>
+        <translation>zDOM</translation>
     </message>
     <message>
         <source>Select/Deselect All</source>
         <translation>Vælg / Fravælg alle</translation>
     </message>
-    <message>
-        <source>Is Spendable</source>
-        <translation>Kan tilbringes</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>domo-core</name>
     <message>
@@ -4942,16 +4708,16 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
 &lt;http://www.opensource.org/licenses/mit-license.php&gt;. </translation>
     </message>
     <message>
-        <source>Enable automatic wallet backups triggered after each zDOMO minting (0-1, default: %u)</source>
-        <translation>Aktivér automatiske wallet-sikkerhedskopier udløst efter hver zDomo-mintning (0-1, standard: %u)</translation>
+        <source>Enable automatic wallet backups triggered after each zDOM minting (0-1, default: %u)</source>
+        <translation>Aktivér automatiske wallet-sikkerhedskopier udløst efter hver zDom-mintning (0-1, standard: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for DOMO inputs (0-1, default: %u)</source>
-        <translation>Aktiver eller deaktiver staking-funktionalitet for DOMO-indgange (0-1, standard: %u)</translation>
+        <source>Enable or disable staking functionality for DOM inputs (0-1, default: %u)</source>
+        <translation>Aktiver eller deaktiver staking-funktionalitet for DOM-indgange (0-1, standard: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for zDOMO inputs (0-1, default: %u)</source>
-        <translation>Aktiver eller deaktiver staking-funktionalitet for zDOMO-indgange (0-1, standard: %u)</translation>
+        <source>Enable or disable staking functionality for zDOM inputs (0-1, default: %u)</source>
+        <translation>Aktiver eller deaktiver staking-funktionalitet for zDOM-indgange (0-1, standard: %u)</translation>
     </message>
     <message>
         <source>Enable spork administration functionality with the appropriate private key.</source>
@@ -4986,20 +4752,16 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Udfør en kommando når den bedste blok ændres (%s in cmd erstattes med blok hashen)</translation>
     </message>
     <message>
-        <source>Fees (in DOMO/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Gebyrer (in DOMO/kb) lavere end dette betragtes som et nul-gebyr for at videresende (default: %s)</translation>
+        <source>Fees (in DOM/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Gebyrer (in DOM/kb) lavere end dette betragtes som et nul-gebyr for at videresende (default: %s)</translation>
     </message>
     <message>
-        <source>Fees (in DOMO/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Gebyrer (in DOMO/kb) lavere end dette betragtes som et nul-gebyr for at oprette en transaktion (default: %s)</translation>
+        <source>Fees (in DOM/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Gebyrer (in DOM/kb) lavere end dette betragtes som et nul-gebyr for at oprette en transaktion (default: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
         <translation>Opsaml databaseaktiviteterne fra hukommelsespool og gem dem i loggen på disken for hver &lt;n&gt; megabytes (default: %u)</translation>
-    </message>
-    <message>
-        <source>Found unconfirmed denominated outputs, will wait till they confirm to continue.</source>
-        <translation>Der er fundet ubekræftede designerede outputs. Vent indtil de bekræftes for at fortsætte.</translation>
     </message>
     <message>
         <source>If paytxfee is not set, include enough fee so transactions begin confirmation on average within n blocks (default: %u)</source>
@@ -5098,12 +4860,12 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Det er ikke muligt at allokere tilstrækkeligt med tilsløret designeret indestående for at gennemføre denne transaktion.</translation>
     </message>
     <message>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 DOMO.</source>
-        <translation>Det er ikke muligt at allokere tilstrækkeligt med tilsløret  ikke-designeret indestående for at gennemføre denne transaktion, der ikke ækvivalerer 10000 DOMO.</translation>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 DOM.</source>
+        <translation>Det er ikke muligt at allokere tilstrækkeligt med tilsløret  ikke-designeret indestående for at gennemføre denne transaktion, der ikke ækvivalerer 10000 DOM.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 DOMO.</source>
-        <translation>Det var ikke muligt at allokere tilstrækkelige midler til denne transaktion som er forskellig fra 10000 DOMO.</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 DOM.</source>
+        <translation>Det var ikke muligt at allokere tilstrækkelige midler til denne transaktion som er forskellig fra 10000 DOM.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -5150,8 +4912,8 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Der skal angives en masternodeprivkey i konfigurationen. For mere information, se i dokumentationen.</translation>
     </message>
     <message>
-        <source>(52992 could be used only on mainnet)</source>
-        <translation>(52992 kunne kun bruges på hovednettet)</translation>
+        <source>(30717 could be used only on mainnet)</source>
+        <translation>(30717 kunne kun bruges på hovednettet)</translation>
     </message>
     <message>
         <source>(default: %s)</source>
@@ -5162,8 +4924,8 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>(default: 1)</translation>
     </message>
     <message>
-        <source>(must be 52992 for mainnet)</source>
-        <translation>(skal være 52992 for hovednettet)</translation>
+        <source>(must be 30717 for mainnet)</source>
+        <translation>(skal være 30717 for hovednettet)</translation>
     </message>
     <message>
         <source>Accept command line and JSON-RPC commands</source>
@@ -5186,10 +4948,6 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Tillad DNS opslag for -addnode, -seednode og -connect</translation>
     </message>
     <message>
-        <source>Already have that input.</source>
-        <translation>Dette er allerede angivet</translation>
-    </message>
-    <message>
         <source>Always query for peer addresses via DNS lookup (default: %u)</source>
         <translation>Forespørg altid peer adresser via DNS opslag (default: %u)</translation>
     </message>
@@ -5210,18 +4968,6 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Beregning af manglende akkumulatorer ...</translation>
     </message>
     <message>
-        <source>Can't denominate: no compatible inputs left.</source>
-        <translation>Kan ikke designere: Ingen kompatible inputs tilbage.</translation>
-    </message>
-    <message>
-        <source>Can't find random Masternode.</source>
-        <translation>Kan ikke finde en tilfældig masternode.</translation>
-    </message>
-    <message>
-        <source>Can't mix while sync in progress.</source>
-        <translation>Kan ikke usynliggøre så længe der synkroniseres.</translation>
-    </message>
-    <message>
         <source>Cannot downgrade wallet</source>
         <translation>Kan ikke nedgradere tegnebogen</translation>
     </message>
@@ -5240,10 +4986,6 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
     <message>
         <source>Cannot write default address</source>
         <translation>Kan ikke skrive standardadressen</translation>
-    </message>
-    <message>
-        <source>Collateral not valid.</source>
-        <translation>Sikkerhed ikke gyldig</translation>
     </message>
     <message>
         <source>Connect only to the specified node(s)</source>
@@ -5270,12 +5012,8 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Copyright (C) 2014-%i The Dash Core Developers </translation>
     </message>
     <message>
-        <source>Copyright (C) 2015-%i The PIVX Core Developers</source>
-        <translation>Copyright (C) 2015-%i The PIVX Core Developers</translation>
-    </message>
-    <message>
-        <source>Copyright (C) %i The DOMO Core Developers</source>
-        <translation>Copyright (C) %i The DOMO Core Developers</translation>
+        <source>Copyright (C) 2015-%i The DOMO Core Developers</source>
+        <translation>Copyright (C) 2015-%i The DOMO Core Developers</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>
@@ -5334,14 +5072,6 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Slå tilstanden "masternode" til (0-1 default: %u)</translation>
     </message>
     <message>
-        <source>Entries are full.</source>
-        <translation>Der er ikke plads til flere poster</translation>
-    </message>
-    <message>
-        <source>Error connecting to Masternode.</source>
-        <translation>Fejl ved oprettelse af forbindelse til masternode.</translation>
-    </message>
-    <message>
         <source>Error initializing block database</source>
         <translation>Fejl ved initialisering af blokdatabasen</translation>
     </message>
@@ -5378,16 +5108,16 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Fejl ved genskabelse af den offentlige nøgle</translation>
     </message>
     <message>
+        <source>Error writing zerocoinDB to disk</source>
+        <translation>Fejl ved at skrive zerocoinDB til disk</translation>
+    </message>
+    <message>
         <source>Error</source>
         <translation>Fejl!</translation>
     </message>
     <message>
         <source>Error: A fatal internal error occured, see debug.log for details</source>
         <translation>Fejl! En fatal intern fejl opstod. Se debug.log for nærmere detaljer</translation>
-    </message>
-    <message>
-        <source>Error: Can't select current denominated inputs</source>
-        <translation>Fejl! Kan ikke vælge de aktuelt designerede inputs</translation>
     </message>
     <message>
         <source>Error: Disk space is low!</source>
@@ -5402,10 +5132,6 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Fejl! Tegnebogen er låst. Det er ikke muligt at oprette transaktionen.</translation>
     </message>
     <message>
-        <source>Error: You already have pending entries in the Obfuscation pool</source>
-        <translation>Fejl! De har allerede ventende transaktioner i tilsløringsgruppen</translation>
-    </message>
-    <message>
         <source>Failed to calculate accumulator checkpoint</source>
         <translation>Kunne ikke beregne akkumulatorkontrolpunktet</translation>
     </message>
@@ -5414,28 +5140,20 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Lytning på uspecificerede porte mislykkedes. Brug -listen=0 hvis De ønsker denne funktion.</translation>
     </message>
     <message>
+        <source>Failed to parse host:port string</source>
+        <translation>Failed to parse host:port string</translation>
+    </message>
+    <message>
         <source>Failed to read block</source>
         <translation>Læsning af blokken mislykkedes</translation>
     </message>
     <message>
-        <source>Fee (in DOMO/kB) to add to transactions you send (default: %s)</source>
-        <translation>Gebyr (i DOMO/kB) som skal tilføjes transaktionen der sendes (default: %s)</translation>
-    </message>
-    <message>
-        <source>Finalizing transaction.</source>
-        <translation>Færdiggør transaktionen.</translation>
+        <source>Fee (in DOM/kB) to add to transactions you send (default: %s)</source>
+        <translation>Gebyr (i DOM/kB) som skal tilføjes transaktionen der sendes (default: %s)</translation>
     </message>
     <message>
         <source>Force safe mode (default: %u)</source>
         <translation>Gennemtving beskyttet tilstand (default: %u)</translation>
-    </message>
-    <message>
-        <source>Found enough users, signing ( waiting %s )</source>
-        <translation>Der er fundet tilstrækkeligt med brugere der underskriver (venter %s)</translation>
-    </message>
-    <message>
-        <source>Found enough users, signing ...</source>
-        <translation>Der er fundet tilstrækkeligt med brugere der underskriver...</translation>
     </message>
     <message>
         <source>Generate coins (default: %u)</source>
@@ -5462,14 +5180,6 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Inkluder IP adressen i debug output (default: %u)</translation>
     </message>
     <message>
-        <source>Incompatible mode.</source>
-        <translation>Ikke kompatibel i denne tilstand</translation>
-    </message>
-    <message>
-        <source>Incompatible version.</source>
-        <translation>Ikke kompatibel version</translation>
-    </message>
-    <message>
         <source>Incorrect or no genesis block found. Wrong datadir for network?</source>
         <translation>Forkert, eller ikke genesis blok fundet. Er De sikker på, at det er den rigtige datadir der benyttes til netværket?</translation>
     </message>
@@ -5480,10 +5190,6 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
     <message>
         <source>Initialization sanity check failed. DOMO Core is shutting down.</source>
         <translation>Initiering af sanitetskontrollen fejlede. DOMO core lukker ned. </translation>
-    </message>
-    <message>
-        <source>Input is not valid.</source>
-        <translation>Ugyldigt input</translation>
     </message>
     <message>
         <source>Insufficient funds</source>
@@ -5542,16 +5248,12 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Ugyldig privat nøgle</translation>
     </message>
     <message>
-        <source>Invalid script detected.</source>
-        <translation>Ugyldigt script fundet.</translation>
-    </message>
-    <message>
         <source>Percentage of automatically minted Zerocoin  (1-100, default: %u)</source>
         <translation>Procentdel af automatisk mintede Zerocoin (10-100, standard: %u)</translation>
     </message>
     <message>
-        <source>Reindex the DOMO and zDOMO money supply statistics</source>
-        <translation>Reindex DOMO og zDOMO pengemængde statistikker</translation>
+        <source>Reindex the DOM and zDOM money supply statistics</source>
+        <translation>Reindex DOM og zDOM pengemængde statistikker</translation>
     </message>
     <message>
         <source>Reindexing zerocoin database...</source>
@@ -5626,8 +5328,8 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Foretrukken Betegnelse for automatisk mintede Zerocoin (1/5/10/50/100/500/1000/5000), 0 uden præference. standard: %u)</translation>
     </message>
     <message>
-        <source>Specify custom backup path to add a copy of any automatic zDOMO backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
-        <translation>Angiv brugerdefineret backup-vej for at tilføje en kopi af enhver zDOMO-backup. Hvis det er angivet som dig, genererer hver backup en tidsstempelet fil. Hvis den er angivet som fil, ønsker man at omskrive til den pågældende fil hver backup. Hvis backupath er indstillet, vil der ske 4 sikkerhedskopier</translation>
+        <source>Specify custom backup path to add a copy of any automatic zDOM backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
+        <translation>Angiv brugerdefineret backup-vej for at tilføje en kopi af enhver zDOM-backup. Hvis det er angivet som dig, genererer hver backup en tidsstempelet fil. Hvis den er angivet som fil, ønsker man at omskrive til den pågældende fil hver backup. Hvis backupath er indstillet, vil der ske 4 sikkerhedskopier</translation>
     </message>
     <message>
         <source>Specify custom backup path to add a copy of any wallet backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup.</source>
@@ -5690,10 +5392,6 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Kunne ikke oprette mynte</translation>
     </message>
     <message>
-        <source>Failed to deserialize</source>
-        <translation>Kunne ikke deserialisere</translation>
-    </message>
-    <message>
         <source>Failed to find Zerocoins in wallet.dat</source>
         <translation>Kunne ikke finde Zerocoins i wallet.dat</translation>
     </message>
@@ -5712,14 +5410,6 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
     <message>
         <source>Keep at most &lt;n&gt; unconnectable transactions in memory (default: %u)</source>
         <translation>Behold højest &lt;n&gt; transaktioner i hukommelsen, der ikke kan forbindes (default: %u)</translation>
-    </message>
-    <message>
-        <source>Last Obfuscation was too recent.</source>
-        <translation>Seneste tilsløring var for ny</translation>
-    </message>
-    <message>
-        <source>Last successful Obfuscation action was too recent.</source>
-        <translation>Seneste succesfulde tilsløring var for ny</translation>
     </message>
     <message>
         <source>Limit size of signature cache to &lt;n&gt; entries (default: %u)</source>
@@ -5774,10 +5464,6 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Placering af auth cookie (standard: data dir)</translation>
     </message>
     <message>
-        <source>Lock is already in place.</source>
-        <translation>Er allerede låst</translation>
-    </message>
-    <message>
         <source>Lock masternodes from masternode configuration file (default: %u)</source>
         <translation>Lås masternoder fra masternode konfiguratinsfilen (default: %u)</translation>
     </message>
@@ -5794,14 +5480,6 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Masternodeoptioner</translation>
     </message>
     <message>
-        <source>Masternode queue is full.</source>
-        <translation>Masternodens kø er fyldt op.</translation>
-    </message>
-    <message>
-        <source>Masternode:</source>
-        <translation>Masternode:</translation>
-    </message>
-    <message>
         <source>Maximum per-connection receive buffer, &lt;n&gt;*1000 bytes (default: %u)</source>
         <translation>Maksimal størrelse på per-connection receive buffer, &lt;n&gt;*1000 bytes (default: %u)</translation>
     </message>
@@ -5814,14 +5492,6 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Mint gjorde det ikke til blockchain</translation>
     </message>
     <message>
-        <source>Missing input transaction information.</source>
-        <translation>Manglende transaktionsinformationsinput</translation>
-    </message>
-    <message>
-        <source>Mixing in progress...</source>
-        <translation>Usynliggørelse i gang</translation>
-    </message>
-    <message>
         <source>Need address because change is not exact</source>
         <translation>Har brug for adresse, fordi ændring ikke er nøjagtig</translation>
     </message>
@@ -5830,40 +5500,12 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Der skal specificeres en port med -whitebind: '%s'</translation>
     </message>
     <message>
-        <source>No Masternodes detected.</source>
-        <translation>Ingen masternoder fundet.</translation>
-    </message>
-    <message>
-        <source>No compatible Masternode found.</source>
-        <translation>Ingen kompatible masternoder fundet.</translation>
-    </message>
-    <message>
-        <source>No funds detected in need of denominating.</source>
-        <translation>Ingen midler fundet til eventuel designering</translation>
-    </message>
-    <message>
-        <source>No matching denominations found for mixing.</source>
-        <translation>ingen matchende designerede midler til usynliggørelse.</translation>
-    </message>
-    <message>
         <source>Node relay options:</source>
         <translation>Node videresendelsesoptioner:</translation>
     </message>
     <message>
-        <source>Non-standard public key detected.</source>
-        <translation>Ikke standard offentlig nøgle fundet</translation>
-    </message>
-    <message>
-        <source>Not compatible with existing transactions.</source>
-        <translation>Ikke kompatibel med eksisterende transaktioner</translation>
-    </message>
-    <message>
         <source>Not enough file descriptors available.</source>
         <translation>Ikke nok fildescriptors tilgængelige</translation>
-    </message>
-    <message>
-        <source>Not in the Masternode list.</source>
-        <translation>Findes ikke i masternodelisten</translation>
     </message>
     <message>
         <source>Number of automatic wallet backups (default: 10)</source>
@@ -5872,18 +5514,6 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
     <message>
         <source>Number of custom location backups to retain (default: %d)</source>
         <translation>Antal brugerdefinerede positionsbackups til at beholde (standard: %d)</translation>
-    </message>
-    <message>
-        <source>Obfuscation is idle.</source>
-        <translation>Tilsløringssystem ledigt</translation>
-    </message>
-    <message>
-        <source>Obfuscation request complete:</source>
-        <translation>Tilsløring færdig.</translation>
-    </message>
-    <message>
-        <source>Obfuscation request incomplete:</source>
-        <translation>Tilsløringsanmodning ikke færdiggjort</translation>
     </message>
     <message>
         <source>Only accept block chain matching built-in checkpoints (default: %u)</source>
@@ -5976,10 +5606,6 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
     <message>
         <source>Send transactions as zero-fee transactions if possible (default: %u)</source>
         <translation>Send transaktioner som nugebyrstransaktioner hvis muligt (default: %u)</translation>
-    </message>
-    <message>
-        <source>Session not complete!</source>
-        <translation>Sessionen blev ikke færdiggjort!</translation>
     </message>
     <message>
         <source>Session timed out.</source>
@@ -6086,18 +5712,6 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Stop kørsel efter import af blokke fra disken (default: %u)</translation>
     </message>
     <message>
-        <source>Submitted following entries to masternode: %u / %d</source>
-        <translation>Afsendt følgende posteringer til masternode %u / %d</translation>
-    </message>
-    <message>
-        <source>Submitted to masternode, waiting for more entries ( %u / %d ) %s</source>
-        <translation>Afsendt til masternode. Afventer flere posteringer (%u /%d) %s</translation>
-    </message>
-    <message>
-        <source>Submitted to masternode, waiting in queue %s</source>
-        <translation>Afsendt til masternode, venter i kø %s</translation>
-    </message>
-    <message>
         <source>Synchronization failed</source>
         <translation>Synkronisering mislykkedes.</translation>
     </message>
@@ -6126,20 +5740,12 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Synkroniserer sporks...</translation>
     </message>
     <message>
-        <source>Syncing zDOMO wallet...</source>
-        <translation>Syncing zDOMO wallet ..</translation>
+        <source>Syncing zDOM wallet...</source>
+        <translation>Syncing zDOM wallet ..</translation>
     </message>
     <message>
         <source>The coin spend has been used</source>
         <translation>Møntudgifterne er blevet brugt</translation>
-    </message>
-    <message>
-        <source>The new spend coin transaction did not verify</source>
-        <translation>Den nye udgiftsmønttransaktion bekræftede ikke</translation>
-    </message>
-    <message>
-        <source>The selected mint coin is an invalid coin</source>
-        <translation>Den valgte mintmønter er en ugyldig mønt</translation>
     </message>
     <message>
         <source>The transaction did not verify</source>
@@ -6156,10 +5762,6 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
     <message>
         <source>This is intended for regression testing tools and app development.</source>
         <translation>Dette er ment som et tilbagekørings test- og appudviklingsværktøj.</translation>
-    </message>
-    <message>
-        <source>This is not a Masternode.</source>
-        <translation>Dette er ikke en masternode</translation>
     </message>
     <message>
         <source>Threshold for disconnecting misbehaving peers (default: %u)</source>
@@ -6194,18 +5796,6 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Transaktionsbeløbet skal være positivt</translation>
     </message>
     <message>
-        <source>Transaction created successfully.</source>
-        <translation>Transaktionen blev oprettet.</translation>
-    </message>
-    <message>
-        <source>Transaction fees are too high.</source>
-        <translation>Transaktionsgebyrerne er for høje</translation>
-    </message>
-    <message>
-        <source>Transaction not valid.</source>
-        <translation>Transaktionen er ugyldig</translation>
-    </message>
-    <message>
         <source>Transaction too large for fee policy</source>
         <translation>Transaktionen er for stor til at opfylde gebyrpolitikken</translation>
     </message>
@@ -6214,24 +5804,12 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Transaktionen er for stor</translation>
     </message>
     <message>
-        <source>Transmitting final transaction.</source>
-        <translation>Afsender sluttransaktionen.</translation>
-    </message>
-    <message>
-        <source>Try to spend with a higher security level to include more coins</source>
-        <translation>Prøv at bruge med et højere sikkerhedsniveau til at inkludere flere mønter</translation>
-    </message>
-    <message>
         <source>Trying to spend an already spent serial #, try again.</source>
         <translation>Forsøger at bruge en allerede brugt serie #, prøv igen.</translation>
     </message>
     <message>
         <source>Unable to bind to %s on this computer (bind returned error %s)</source>
         <translation>Det er ikke muligt at forbide til %s på denne computer (bind returnerede fejl %s)</translation>
-    </message>
-    <message>
-        <source>Unable to find transaction containing mint</source>
-        <translation>Kunne ikke finde transaktioner indeholdende mynte</translation>
     </message>
     <message>
         <source>Unable to sign spork message, wrong key?</source>
@@ -6244,10 +5822,6 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
     <message>
         <source>Unknown network specified in -onlynet: '%s'</source>
         <translation>Ukendt netværk specificeret i -onlynet: '%s'</translation>
-    </message>
-    <message>
-        <source>Unknown state: id = %u</source>
-        <translation>Ukendt stade: id = %u</translation>
     </message>
     <message>
         <source>Upgrade wallet to latest format</source>
@@ -6274,12 +5848,8 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Brugernavn til JSON-RPC forbindelser</translation>
     </message>
     <message>
-        <source>Value is below the smallest available denomination (= 1) of zDOMO</source>
-        <translation>Værdien er under den mindste tilgængelige værdi (= 1) for zDOMO</translation>
-    </message>
-    <message>
-        <source>Value more than Obfuscation pool maximum allows.</source>
-        <translation>Værdien er højere end tilsløringsgruppen tillader</translation>
+        <source>Value is below the smallest available denomination (= 1) of zDOM</source>
+        <translation>Værdien er under den mindste tilgængelige værdi (= 1) for zDOM</translation>
     </message>
     <message>
         <source>Verifying blocks...</source>
@@ -6290,16 +5860,8 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Verificerer  tegnebog</translation>
     </message>
     <message>
-        <source>Version 1 zDOMO require a security level of 100 to successfully spend.</source>
-        <translation>Version 1 zDOMO kræver et sikkerhedsniveau på 100 til succes.</translation>
-    </message>
-    <message>
         <source>Wallet %s resides outside data directory %s</source>
         <translation>Tegnbogen %s befinder sig udenfor datamappen %s</translation>
-    </message>
-    <message>
-        <source>Wallet is locked.</source>
-        <translation>Tegnebogen er låst</translation>
     </message>
     <message>
         <source>Wallet needed to be rewritten: restart DOMO Core to complete</source>
@@ -6330,24 +5892,12 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Advarsel! Argumentet -debugnet understøttes ikke og blev ignoret. Brug -debug=net.</translation>
     </message>
     <message>
-        <source>Will retry...</source>
-        <translation>Prøver igen</translation>
-    </message>
-    <message>
         <source>You don't have enough Zerocoins in your wallet</source>
         <translation>Du har ikke nok Zerocoins i din tegnebog</translation>
     </message>
     <message>
         <source>You need to rebuild the database using -reindex to change -txindex</source>
         <translation>Databasen skal genopbygges ved hjælp af -reindex for at ændre -txindex</translation>
-    </message>
-    <message>
-        <source>Your entries added successfully.</source>
-        <translation>Posterne blev tilføjet.</translation>
-    </message>
-    <message>
-        <source>Your transaction was accepted into the pool!</source>
-        <translation>Transaktionen blev accepteret af POOL!</translation>
     </message>
     <message>
         <source>Zapping all transactions from wallet...</source>

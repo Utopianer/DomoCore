@@ -176,15 +176,15 @@
         <translation>cüzdan şifrelemesini onayla</translation>
     </message>
     <message>
-        <source>DOMO will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your DOMOs from being stolen by malware infecting your computer.</source>
-        <translation>DOMO şifreleme işlemini tamamlamak için şimdi kapanacaktır. Cüzdanınızı şifrelemenin, DOMO'lerinizi bilgisayarınıza bulaşan kötücül yazılımlar tarafından çalınmasına tamamen engelleyemediğini unutmayın</translation>
+        <source>DOMO will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your DOMs from being stolen by malware infecting your computer.</source>
+        <translation>DOMO şifreleme işlemini tamamlamak için şimdi kapanacaktır. Cüzdanınızı şifrelemenin, DOM'lerinizi bilgisayarınıza bulaşan kötücül yazılımlar tarafından çalınmasına tamamen engelleyemediğini unutmayın</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Cüzdanınızı şifrelemek istediğinizden emin misiniz?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR DOMO&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR DOM&lt;/b&gt;!</source>
         <translation>Dikkat! Eğer cüzdanınızı şifrelerseniz ve şifrenizi unutursanız &lt;b&gt;Tüm Pıvlerinizi kaybedersiniz&lt;/b&gt;!</translation>
     </message>
     <message>
@@ -433,8 +433,8 @@
         <translation>İşlem geçmişini ara</translation>
     </message>
     <message>
-        <source>Privacy Actions for zDOMO</source>
-        <translation>Gizlilik Aksiyonları zDOMO</translation>
+        <source>Privacy Actions for zDOM</source>
+        <translation>Gizlilik Aksiyonları zDOM</translation>
     </message>
     <message>
         <source>E&amp;xit</source>
@@ -617,6 +617,14 @@
         <translation>%1 geride. blok tarıyor %2</translation>
     </message>
     <message>
+        <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt; for anonymization and staking only</source>
+        <translation>Cüzdan şifrelenmiştirve şu anda sadece anonimleştirme ve staking yapılabilmesi amacıyla kilitsiz&lt;/b&gt; hale getirilmiştir.</translation>
+    </message>
+    <message>
+        <source>Tor is &lt;b&gt;enabled&lt;/b&gt;: %1</source>
+        <translation>Tor &lt;b&gt;etkin&lt;/b&gt; hale getirilmiştir: %1</translation>
+    </message>
+    <message>
         <source>&amp;File</source>
         <translation>&amp;Dosya</translation>
     </message>
@@ -786,7 +794,7 @@
     </message>
     <message>
         <source>Sent MultiSend transaction</source>
-        <translation>MultiSend işlemi gönderildi</translation>
+        <translation>ÇokluGönderi işlemi gönderildi</translation>
     </message>
     <message>
         <source>Date: %1
@@ -804,7 +812,7 @@ Adres: %4
         <source>Staking is active
  MultiSend: %1</source>
         <translation>Staking aktif
- Multisend: %1</translation>
+ ÇokluGönderi: %1</translation>
     </message>
     <message>
         <source>Active</source>
@@ -817,8 +825,8 @@ Adres: %4
     <message>
         <source>Staking is not active
  MultiSend: %1</source>
-        <translation>staking inaktif
- Multisend: %1</translation>
+        <translation>Staking etkin değildir
+ÇokluGönderi: %1</translation>
     </message>
     <message>
         <source>AutoMint is currently enabled and set to </source>
@@ -836,7 +844,7 @@ Adres: %4
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
         <translation>Cüzdan&lt;b&gt;şifreli&lt;/b&gt;ve şu anda&lt;b&gt;kilitli&lt;/b&gt;</translation>
     </message>
-</context>
+    </context>
 <context>
     <name>BlockExplorer</name>
     <message>
@@ -1194,6 +1202,17 @@ Adres: %4
     </message>
 </context>
 <context>
+    <name>GovernancePage</name>
+    <message>
+        <source>Form</source>
+        <translation>Form</translation>
+    </message>
+    <message>
+        <source>0</source>
+        <translation>0</translation>
+    </message>
+    </context>
+<context>
     <name>HelpMessageDialog</name>
     <message>
         <source>version</source>
@@ -1402,7 +1421,7 @@ Adres: %4
     <name>MultiSendDialog</name>
     <message>
         <source>MultiSend</source>
-        <translation>MultiSend</translation>
+        <translation>ÇokluGönderi</translation>
     </message>
     <message>
         <source>Enter whole numbers 1 - 100</source>
@@ -1421,14 +1440,14 @@ Adres: %4
 To Add: enter percentage to give and DOMO address to add to the MultiSend vector.
 To Delete: Enter address to delete and press delete.
 MultiSend will not be activated unless you have clicked Activate</source>
-        <translation>MultiSend, olgunlaştıktan sonra diğer DOMO adreslerinin bir listesine otomatik olarak kazancınızın 100% 'ünü veya grup yazınızı ödüllendirmenize olanak tanır.
-Eklemek için: Verilecek yüzdeyi ve MultiSend vektörüne eklemek için DOMO adresi girin.
+        <translation>ÇokluGönderi, olgunlaştıktan sonra diğer DOMO adreslerinin bir listesine staking ya da masternode ödülünüzün 100% 'ünü otomatik olarak göndermenize olanak tanır.
+Eklemek için: Verilecek yüzdeyi ve ÇokluGönderi vektörüne eklemek için DOMO adresi girin.
 Silme: Silinecek adresi girin ve silmek için basın.
-MultiSend, Etkinleştir'i tıklamadığınız sürece etkinleştirilmeyecektir</translation>
+ÇokluGönderi, Etkinleştir'i tıklamadığınız sürece etkinleştirilmeyecektir</translation>
     </message>
     <message>
         <source>Add to MultiSend Vector</source>
-        <translation>Ekle MultiSend Vector</translation>
+        <translation>ÇokluGönderi Vektörüne Ekle</translation>
     </message>
     <message>
         <source>Add</source>
@@ -1436,7 +1455,7 @@ MultiSend, Etkinleştir'i tıklamadığınız sürece etkinleştirilmeyecektir</
     </message>
     <message>
         <source>Deactivate MultiSend</source>
-        <translation>Deaktif et MultiSend</translation>
+        <translation>ÇokluGönderi'yi Etkisiz hale getir</translation>
     </message>
     <message>
         <source>Deactivate</source>
@@ -1476,7 +1495,7 @@ MultiSend, Etkinleştir'i tıklamadığınız sürece etkinleştirilmeyecektir</
     </message>
     <message>
         <source>Delete Address From MultiSend Vector</source>
-        <translation>MultiSend Vector den adresi sil</translation>
+        <translation>ÇokluGönderi Vektöründen Adresi Sil</translation>
     </message>
     <message>
         <source>Delete</source>
@@ -1484,7 +1503,7 @@ MultiSend, Etkinleştir'i tıklamadığınız sürece etkinleştirilmeyecektir</
     </message>
     <message>
         <source>Activate MultiSend</source>
-        <translation>aktifle MultiSend</translation>
+        <translation>ÇokluGönderi'yi Etkinleştir</translation>
     </message>
     <message>
         <source>Activate</source>
@@ -1492,11 +1511,11 @@ MultiSend, Etkinleştir'i tıklamadığınız sürece etkinleştirilmeyecektir</
     </message>
     <message>
         <source>View MultiSend Vector</source>
-        <translation>GösterMultiSend Vector</translation>
+        <translation>ÇokluGönderi Vektörünü Görüntüle</translation>
     </message>
     <message>
         <source>View MultiSend</source>
-        <translation>Göster multisend</translation>
+        <translation>ÇokluGönderi'yi Görüntüle</translation>
     </message>
     <message>
         <source>Send For Stakes</source>
@@ -1511,42 +1530,42 @@ MultiSend, Etkinleştir'i tıklamadığınız sürece etkinleştirilmeyecektir</
         <translation>(etiket yok)</translation>
     </message>
     <message>
-        <source>The entered address:
-</source>
-        <translation>Girilen adres:
-</translation>
+        <source>MultiSend Active for Stakes and Masternode Rewards</source>
+        <translation>Masternode Ödülleri için ÇokluGönderi Etkinleştirilmiştir</translation>
     </message>
     <message>
-        <source> is invalid.
+        <source>MultiSend Active for Masternode Rewards</source>
+        <translation>Masternode Ödülleri için ÇokluGönderi Etkinleştirilmiştir</translation>
+    </message>
+    <message>
+        <source>MultiSend Not Active</source>
+        <translation>ÇokluGönderi Etkin değildir</translation>
+    </message>
+    <message>
+        <source>The entered address: %1 is invalid.
 Please check the address and try again.</source>
-        <translation>geçersiz.
-Lütfen adresi kontrol edin ve tekrar deneyin.</translation>
+        <translation>Girili adres: %1 geçersiz.
+Lütfen adresi kontrol ediniz ve tekrar deneyiniz.</translation>
     </message>
     <message>
-        <source>The total amount of your MultiSend vector is over 100% of your stake reward
-</source>
-        <translation> MultiSend vectorünüzün toplam miktarı stake ödülünün  100% ünden fazla 
-</translation>
+        <source>Removed %1</source>
+        <translation>Kaldırıldı %1</translation>
+    </message>
+    <message>
+        <source>Could not locate address</source>
+        <translation>Adres bulunamadı.</translation>
+    </message>
+    <message>
+        <source>MultiSend activated</source>
+        <translation>ÇokluGönderi geçerli hale getirildi</translation>
+    </message>
+    <message>
+        <source>First Address Not Valid</source>
+        <translation>İlk Adres Geçersiz</translation>
     </message>
     <message>
         <source>Please Enter 1 - 100 for percent.</source>
         <translation>Lütfen 1 - 100 arası yüzdelik miktarı girin</translation>
-    </message>
-    <message>
-        <source>MultiSend Vector
-</source>
-        <translation>MultiSend Vector
-</translation>
-    </message>
-    <message>
-        <source>Removed </source>
-        <translation>Silindi</translation>
-    </message>
-    <message>
-        <source>Could not locate address
-</source>
-        <translation>Adres bulunamıyor
-</translation>
     </message>
 </context>
 <context>
@@ -1644,8 +1663,8 @@ Unutmayın, cüzdan, yeni adresi içeren işlemleri bulmak için blok zinciri ye
         <translation>Address /miktar:</translation>
     </message>
     <message>
-        <source>Add destinations to send DOMO to</source>
-        <translation>DOMO göndermek için varış yerleri ekleyin</translation>
+        <source>Add destinations to send DOM to</source>
+        <translation>DOM göndermek için varış yerleri ekleyin</translation>
     </message>
     <message>
         <source>Add &amp;Destination</source>
@@ -1718,73 +1737,6 @@ Unutmayın, cüzdan, yeni adresi içeren işlemleri bulmak için blok zinciri ye
     <message>
         <source>Maximum (15)</source>
         <translation>Maksimum (15)</translation>
-    </message>
-</context>
-<context>
-    <name>ObfuscationConfig</name>
-    <message>
-        <source>Configure Obfuscation</source>
-        <translation>Şaşırtmayı Yapılandır</translation>
-    </message>
-    <message>
-        <source>Basic Privacy</source>
-        <translation>Temel Gizlilik</translation>
-    </message>
-    <message>
-        <source>High Privacy</source>
-        <translation>Yüksek Gizlilik</translation>
-    </message>
-    <message>
-        <source>Maximum Privacy</source>
-        <translation>Maksimum Gizlilik</translation>
-    </message>
-    <message>
-        <source>Please select a privacy level.</source>
-        <translation>Lütfen bir gizlilik düzeyi seçin.</translation>
-    </message>
-    <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 DOMO</source>
-        <translation>10000 DOMO'e kadar fonları karıştırmak için 2 ayrı matternod kullanın</translation>
-    </message>
-    <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 DOMO</source>
-        <translation>10000 DOMO'ye kadar olan fonları karıştırmak için 8 ayrı matternod kullanın</translation>
-    </message>
-    <message>
-        <source>Use 16 separate masternodes</source>
-        <translation>16 ayrı matternod kullan</translation>
-    </message>
-    <message>
-        <source>This option is the quickest and will cost about ~0.025 DOMO to anonymize 10000 DOMO</source>
-        <translation>Bu seçenek en hızlıdır ve 10000 DOMO'yi anonimleştirmek için ~ 0.025 DOMO'lik bir maliyeti olacaktır</translation>
-    </message>
-    <message>
-        <source>This option is moderately fast and will cost about 0.05 DOMO to anonymize 10000 DOMO</source>
-        <translation>Bu seçenek orta derecede hızlıdır ve 10000 DOMO'yi anonimleştirmek için yaklaşık 0.05 DOMO'e mal olur</translation>
-    </message>
-    <message>
-        <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
-        <translation>Bu en yavaş ve en güvenli seçenektir. Maksimum anonimlik kullanmak maliyete gelecek</translation>
-    </message>
-    <message>
-        <source>0.1 DOMO per 10000 DOMO you anonymize.</source>
-        <translation>0.1 DOMO her 10000 DOMO anonimleştirmeye.</translation>
-    </message>
-    <message>
-        <source>Obfuscation Configuration</source>
-        <translation>Şaşırtma ayarlama</translation>
-    </message>
-    <message>
-        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening DOMO's configuration screen.</source>
-        <translation>Şaşırtma başarıyla temele ayarlandı. (%1 ve  2 turlar) Bunu istediğiniz zaman değiştirmek için DOMO in ayarlar ekranını açmanız yeterli</translation>
-    </message>
-    <message>
-        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening DOMO's configuration screen.</source>
-        <translation>Şaşırtma başarıyla Yüksek e ayarlandı. (%1 ve 8 turlar) Bunu istediğiniz zaman değiştirmek için DOMO in ayarlar ekranını açmanız yeterli</translation>
-    </message>
-    <message>
-        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening DOMO's configuration screen.</source>
-        <translation>Şaşırtma başarıyla maksimuma ayarlandı. (%1 ve 16 turlar) Bunu istediğiniz zaman değiştirmek için DOMO in ayarlar ekranını açmanız yeterli</translation>
     </message>
 </context>
 <context>
@@ -1911,24 +1863,28 @@ https://www.transifex.com/domo-project/domo-project-translations</translation>
         <translation>Map port using &amp;UPnP</translation>
     </message>
     <message>
-        <source>Enable zDOMO Automint</source>
-        <translation>zDOMO Otomatik basımı etkinleştir</translation>
+        <source>Enable automatic minting of DOM units to zDOM</source>
+        <translation>DOM birimlerinin zDOM'e otomatik basımını ektinleştir</translation>
     </message>
     <message>
-        <source>Percentage of incoming DOMO which get automatically converted to zDOMO via Zerocoin Protocol (min: 10%)</source>
-        <translation>Zerocoin Protokolü üzerinden otomatik olarak zDOMO'ye dönüştürülen gelen DOMO yüzdesi (dakika: 10%)</translation>
+        <source>Enable zDOM Automint</source>
+        <translation>zDOM Otomatik basımı etkinleştir</translation>
     </message>
     <message>
-        <source>Percentage of autominted zDOMO</source>
-        <translation>Otomatikleştirilmiş zDOMO yüzdesi</translation>
+        <source>Percentage of incoming DOM which get automatically converted to zDOM via Zerocoin Protocol (min: 10%)</source>
+        <translation>Zerocoin Protokolü üzerinden otomatik olarak zDOM'ye dönüştürülen gelen DOM yüzdesi (dakika: 10%)</translation>
     </message>
     <message>
-        <source>Wait with automatic conversion to Zerocoin until enough DOMO for this denomination is available</source>
-        <translation>Bu mezhebi için yeterli DOMO bulunana kadar Zerocoin'e otomatik dönüşümle birlikte bekleyin</translation>
+        <source>Percentage of autominted zDOM</source>
+        <translation>Otomatikleştirilmiş zDOM yüzdesi</translation>
     </message>
     <message>
-        <source>Preferred Automint zDOMO Denomination</source>
-        <translation>Tercih edilen Automint zDOMO Nominal değeri</translation>
+        <source>Wait with automatic conversion to Zerocoin until enough DOM for this denomination is available</source>
+        <translation>Bu mezhebi için yeterli DOM bulunana kadar Zerocoin'e otomatik dönüşümle birlikte bekleyin</translation>
+    </message>
+    <message>
+        <source>Preferred Automint zDOM Denomination</source>
+        <translation>Tercih edilen Automint zDOM Nominal değeri</translation>
     </message>
     <message>
         <source>Connect to the DOMO network through a SOCKS5 proxy.</source>
@@ -1981,10 +1937,6 @@ https://www.transifex.com/domo-project/domo-project-translations</translation>
     <message>
         <source>User Interface Theme:</source>
         <translation>Kullanıcı Arabirimi Teması:</translation>
-    </message>
-    <message>
-        <source>&amp;Unit to show amounts in:</source>
-        <translation>&amp; Birim tutarları göstermek için:</translation>
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
@@ -2058,7 +2010,15 @@ https://www.transifex.com/domo-project/domo-project-translations</translation>
         <source>The supplied proxy address is invalid.</source>
         <translation>Verilen proxy adresi geçersiz.</translation>
     </message>
-    </context>
+    <message>
+        <source>The supplied proxy port is invalid.</source>
+        <translation>Verilen proxy port adresi geçersiz.</translation>
+    </message>
+    <message>
+        <source>The supplied proxy settings are invalid.</source>
+        <translation>Verilen proxy seçenekleri geçersiz.</translation>
+    </message>
+</context>
 <context>
     <name>OverviewPage</name>
     <message>
@@ -2078,8 +2038,8 @@ https://www.transifex.com/domo-project/domo-project-translations</translation>
         <translation>Toplam Bakiye, mevcut olmayan tüm paralar dahil.</translation>
     </message>
     <message>
-        <source>Detailed Balance</source>
-        <translation>DOMO Bakiyesi</translation>
+        <source>DOM Balance</source>
+        <translation>DOM Bakiyesi</translation>
     </message>
     <message>
         <source>Pending:</source>
@@ -2098,12 +2058,28 @@ https://www.transifex.com/domo-project/domo-project-translations</translation>
         <translation>Staklanmış veya masternod ödülleri henüz olgunlaşmamış</translation>
     </message>
     <message>
+        <source>Current locked balance in watch-only addresses</source>
+        <translation>Mevcut kilitli bakiye sadece görüntülenebilir adreslerde.</translation>
+    </message>
+    <message>
         <source>Your current DOMO balance, unconfirmed and immature transactions included</source>
         <translation>Güncel DOMO bakiyeniz, onaylanmamış ve olgunlaşmamış işlemler dahil</translation>
     </message>
     <message>
-        <source>zDetailed Balance</source>
-        <translation>zDOMO Bakiyesi</translation>
+        <source>zDOM Balance</source>
+        <translation>zDOM Bakiyesi</translation>
+    </message>
+    <message>
+        <source>Mature: more than 20 confirmation and more than 1 mint of the same denomination after it was minted.
+These zDOM are spendable.</source>
+        <translation>Olgun: basılmış olduktan sonra 20'den fazla onay alınmış ve aynı ölçü biriminden 1 kereden fazla basılmış.
+Bu zDOM ler harcanabilir.</translation>
+    </message>
+    <message>
+        <source>Unconfirmed: less than 20 confirmations
+Immature: confirmed, but less than 1 mint of the same denomination after it was minted</source>
+        <translation>Doğrulanmamış: 20'den az doğrulama
+Olgunlaşmamış: onaylandı, ancak basıldıktan sonra aynı ölçü biriminden 1 taneden daha az basım bulunmakta.</translation>
     </message>
     <message>
         <source>The displayed information may be out of date. Your wallet automatically synchronizes with the DOMO network after a connection is established, but this process has not completed yet.</source>
@@ -2114,11 +2090,11 @@ https://www.transifex.com/domo-project/domo-project-translations</translation>
         <translation>GENEL BAKIŞ</translation>
     </message>
     <message>
-        <source>Domo Balance (including unconfirmed and immature coins)</source>
+        <source>Combined Balance (including unconfirmed and immature coins)</source>
         <translation>Toplam Bakiye (onaylanmamış ve olgunlaşmamış paralar dahil)</translation>
     </message>
     <message>
-        <source>Domo Balance</source>
+        <source>Combined Balance</source>
         <translation>Toplam Bakiye</translation>
     </message>
     <message>
@@ -2150,8 +2126,8 @@ https://www.transifex.com/domo-project/domo-project-translations</translation>
         <translation>Harcanabilir:</translation>
     </message>
     <message>
-        <source>Locked DOMO or Masternode collaterals. These are excluded from zDOMO minting.</source>
-        <translation>Kilitli DOMO veya Masternode teminatları. Bunlar zDOMO matlaştırmadan çıkarılır.</translation>
+        <source>Locked DOM or Masternode collaterals. These are excluded from zDOM minting.</source>
+        <translation>Kilitli DOM veya Masternode teminatları. Bunlar zDOM matlaştırmadan çıkarılır.</translation>
     </message>
     <message>
         <source>Locked:</source>
@@ -2162,8 +2138,8 @@ https://www.transifex.com/domo-project/domo-project-translations</translation>
         <translation>onaylanmamış:</translation>
     </message>
     <message>
-        <source>Your current zDOMO balance, unconfirmed and immature zDOMO included.</source>
-        <translation>Güncel zDOMO bakiyeniz, onaylanmamış ve olgunlaşmamış zDOMO'ler dahil.</translation>
+        <source>Your current zDOM balance, unconfirmed and immature zDOM included.</source>
+        <translation>Güncel zDOM bakiyeniz, onaylanmamış ve olgunlaşmamış zDOM'ler dahil.</translation>
     </message>
     <message>
         <source>Recent transactions</source>
@@ -2174,10 +2150,10 @@ https://www.transifex.com/domo-project/domo-project-translations</translation>
         <translation>senkronizasyon dışı</translation>
     </message>
     <message>
-        <source>Current percentage of zDOMO.
+        <source>Current percentage of zDOM.
 If AutoMint is enabled this percentage will settle around the configured AutoMint percentage (default = 10%).
 </source>
-        <translation>Mevcut zDOMO yüzdesi.
+        <translation>Mevcut zDOM yüzdesi.
 AutoMint etkinleştirilirse, bu yüzde, yapılandırılmış AutoMint yüzdesi etrafında düzelir (varsayılan = 10%).
 </translation>
     </message>
@@ -2321,20 +2297,8 @@ To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in domo.conf<
         <translation>0</translation>
     </message>
     <message>
-        <source>zDOMO</source>
-        <translation>zDOMO</translation>
-    </message>
-    <message>
-        <source>Available for minting are coins which are confirmed and not locked or Masternode collaterals.</source>
-        <translation>Minting için teyit edilmiş ve kilitli olmayan paralar veya Masternode teminatları mevcuttur.</translation>
-    </message>
-    <message>
-        <source>Available for Minting:</source>
-        <translation>Mintinge hazır</translation>
-    </message>
-    <message>
-        <source>0.000 000 00 DOMO</source>
-        <translation>0.000 000 00 DOMO</translation>
+        <source>zDOM</source>
+        <translation>zDOM</translation>
     </message>
     <message>
         <source>Reset Zerocoin Wallet DB. Deletes transactions that did not make it into the blockchain.</source>
@@ -2343,18 +2307,6 @@ To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in domo.conf<
     <message>
         <source>Reset</source>
         <translation>Sıfırla</translation>
-    </message>
-    <message>
-        <source>Coin Control...</source>
-        <translation>Coin kontrol...</translation>
-    </message>
-    <message>
-        <source>Quantity:</source>
-        <translation>Miktar</translation>
-    </message>
-    <message>
-        <source>Amount:</source>
-        <translation>Tutar:</translation>
     </message>
     <message>
         <source>Rescan the complete blockchain for  Zerocoin mints and their meta-data.</source>
@@ -2373,6 +2325,14 @@ To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in domo.conf<
         <translation>GİZLİLİK</translation>
     </message>
     <message>
+        <source>zDOM Control</source>
+        <translation>zDOM Kontrolü</translation>
+    </message>
+    <message>
+        <source>zDOM Selected:</source>
+        <translation>zDom Seçildi:</translation>
+    </message>
+    <message>
         <source>Quantity Selected:</source>
         <translation>Seçilen miktar:</translation>
     </message>
@@ -2385,36 +2345,24 @@ To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in domo.conf<
         <translation>Harca Zerocoin</translation>
     </message>
     <message>
-        <source>Available (mature and spendable) zDOMO for spending</source>
-        <translation>Mevcut (olgun ve harcanabilir) harcama için zDOMO</translation>
+        <source>Available (mature and spendable) zDOM for spending</source>
+        <translation>Mevcut (olgun ve harcanabilir) harcama için zDOM</translation>
     </message>
     <message>
         <source>Available Balance:</source>
         <translation>Kullanılabilir Bakiye:</translation>
     </message>
     <message>
-        <source>Available (mature and spendable) zDOMO for spending
+        <source>Available (mature and spendable) zDOM for spending
 
-zDOMO are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</source>
-        <translation>Mevcut (olgun ve harcanabilir) harcama için zDOMO
+zDOM are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</source>
+        <translation>Mevcut (olgun ve harcanabilir) harcama için zDOM
 
-zDOMO, 20'den fazla teyit bulunduğunda olgunlaşır ve bundan sonra aynı mezhepten 2 kat fazla darphane çekilir.</translation>
+zDOM, 20'den fazla teyit bulunduğunda olgunlaşır ve bundan sonra aynı mezhepten 2 kat fazla darphane çekilir.</translation>
     </message>
     <message>
-        <source>0 zDOMO</source>
-        <translation>0 zDOMO</translation>
-    </message>
-    <message>
-        <source>Security Level for Zerocoin Transactions. More is better, but needs more time and resources.</source>
-        <translation>Zerocoin İşlemleri için Güvenlik Seviyesi. Daha fazlası iyidir, ancak daha fazla zaman ve kaynak gerekmektedir.</translation>
-    </message>
-    <message>
-        <source>Security Level:</source>
-        <translation>Güvenlik seviyesi:</translation>
-    </message>
-    <message>
-        <source>Security Level 1 - 100 (default: 42)</source>
-        <translation>Güvenlik seviyesi 1 - 100 (varsayılan: 42)</translation>
+        <source>0 zDOM</source>
+        <translation>0 zDOM</translation>
     </message>
     <message>
         <source>Pay &amp;To:</source>
@@ -2473,8 +2421,8 @@ zDOMO, 20'den fazla teyit bulunduğunda olgunlaşır ve bundan sonra aynı mezhe
         <translation>Zerocoin durumu:</translation>
     </message>
     <message>
-        <source>Total Balance including unconfirmed and immature zDOMO</source>
-        <translation>Doğrulanmamış ve olgunlaşmamış zDOMO dahil toplam bakiye</translation>
+        <source>Total Balance including unconfirmed and immature zDOM</source>
+        <translation>Doğrulanmamış ve olgunlaşmamış zDOM dahil toplam bakiye</translation>
     </message>
     <message>
         <source>Total Zerocoin  Balance:</source>
@@ -2487,6 +2435,12 @@ zDOMO, 20'den fazla teyit bulunduğunda olgunlaşır ve bundan sonra aynı mezhe
     <message>
         <source>Denom. with value 1:</source>
         <translation>Denom. değer 1 ile:</translation>
+    </message>
+    <message>
+        <source>Unconfirmed: less than 20 confirmations
+Immature: confirmed, but less than 1 mint of the same denomination after it was minted</source>
+        <translation>Doğrulanmamış: 20'den az doğrulama
+Olgunlaşmamış: onaylandı, ancak basıldıktan sonra aynı ölçü biriminden 1 taneden daha az basım bulunmakta.</translation>
     </message>
     <message>
         <source>AutoMint Status</source>
@@ -2621,70 +2575,22 @@ zDOMO, 20'den fazla teyit bulunduğunda olgunlaşır ve bundan sonra aynı mezhe
         <translation>Mint Durumu: Tamam</translation>
     </message>
     <message>
-        <source>Copy quantity</source>
-        <translation>Miktarı kopyala</translation>
-    </message>
-    <message>
-        <source>Copy amount</source>
-        <translation>Miktarı kopyala</translation>
-    </message>
-    <message>
         <source>Starting ResetMintZerocoin: rescanning complete blockchain, this will need up to 30 minutes depending on your hardware.
 Please be patient...</source>
         <translation>ResetMintZerocoin: tam blok zinciri yeniden tarama, bu donanımınıza bağlı olarak 30 dakika kadar sürmelidir.
 Lütfen sabırlı olun...</translation>
     </message>
     <message>
-        <source>Spending Zerocoin.
-Computationally expensive, might need several minutes depending on the selected Security Level and your hardware.
-Please be patient...</source>
-        <translation>Harcanıyor Zerocoin.
-Hesaplaması pahalı, biraz fazla  hardware. ve seçili güvenlik seviyesine bağlı olarak.
-Lütfen sabırlı olun...</translation>
+        <source>zDOM is currently disabled due to maintenance.</source>
+        <translation>zDOM bakım nedeniyle şu an kullanıma kapalı.</translation>
     </message>
     <message>
-        <source>) needed.
-Maximum allowed: </source>
-        <translation>) gerekli.
-Maksimum bırakılan: </translation>
-    </message>
-    <message>
-        <source>zDOMO is currently disabled due to maintenance.</source>
-        <translation>zDOMO bakım nedeniyle şu an kullanıma kapalı.</translation>
-    </message>
-    <message>
-        <source>zDOMO is currently undergoing maintenance.</source>
-        <translation>zDOMO halen bakım alıyor.</translation>
+        <source>zDOM is currently undergoing maintenance.</source>
+        <translation>zDOM halen bakım alıyor.</translation>
     </message>
     <message>
         <source>AutoMint Status:</source>
         <translation>Otomatik Basım Durumu:</translation>
-    </message>
-    <message>
-        <source>Error: Your wallet is locked. Please enter the wallet passphrase first.</source>
-        <translation>Hata: Cüzdan kilitlendi. Lütfen önce cüzdan parolasını girin.</translation>
-    </message>
-    <message>
-        <source>Message: Enter an amount &gt; 0.</source>
-        <translation>Mesaj: Değer girin  &gt; 0.</translation>
-    </message>
-    <message>
-        <source>Minting </source>
-        <translation>Minting </translation>
-    </message>
-    <message>
-        <source>Successfully minted </source>
-        <translation>Başarılı şekilde mint edildi</translation>
-    </message>
-    <message>
-        <source> zDOMO in </source>
-        <translation> zDOMO in </translation>
-    </message>
-    <message>
-        <source> sec. Used denominations:
-</source>
-        <translation> sec. Used denominations:
-</translation>
     </message>
     <message>
         <source>Duration: </source>
@@ -2729,22 +2635,8 @@ Maksimum bırakılan: </translation>
         <translation>yeni üretilen (kullanılmayan ve bu nedenle isimsiz) yerel adrese &lt;br /&gt;</translation>
     </message>
     <message>
-        <source>with Security Level </source>
-        <translation>Güvenlik seviyesi ile</translation>
-    </message>
-    <message>
         <source>Confirm send coins</source>
         <translation>Coin gönderimini onayla</translation>
-    </message>
-    <message>
-        <source>Too much inputs (</source>
-        <translation>Çok fazla girdi (</translation>
-    </message>
-    <message>
-        <source>
-Either mint higher denominations (so fewer inputs are needed) or reduce the amount to spend.</source>
-        <translation>
-Ya daha yüksek mezhepleri daraltın (daha az girdi gereklidir) veya harcama miktarını azaltın.</translation>
     </message>
     <message>
         <source>Spend Zerocoin failed with status = </source>
@@ -2783,6 +2675,9 @@ Ya daha yüksek mezhepleri daraltın (daha az girdi gereklidir) veya harcama mik
         <translation>ücret: </translation>
     </message>
 </context>
+<context>
+    <name>ProposalFrame</name>
+    </context>
 <context>
     <name>QObject</name>
     <message>
@@ -2833,7 +2728,11 @@ Ya daha yüksek mezhepleri daraltın (daha az girdi gereklidir) veya harcama mik
         <source>%1 ms</source>
         <translation>%1 ms</translation>
     </message>
-</context>
+    <message>
+        <source>DOMO Core</source>
+        <translation>DOMO CORE</translation>
+    </message>
+    </context>
 <context>
     <name>QRImageWidget</name>
     <message>
@@ -3136,10 +3035,6 @@ Ya daha yüksek mezhepleri daraltın (daha az girdi gereklidir) veya harcama mik
         <translation>Blockchaini resenkronize etmeyi onaylayın</translation>
     </message>
     <message>
-        <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
-        <translation>Geçmişi görmek için ukarı ve aşağı okları kullanın, ve &lt;b&gt;Ctrl-L&lt;/b&gt; ekranı silmek için.</translation>
-    </message>
-    <message>
         <source>Type &lt;b&gt;help&lt;/b&gt; for an overview of available commands.</source>
         <translation>Yazın&lt;b&gt;help&lt;/b&gt; mevcut komutaları görmek için</translation>
     </message>
@@ -3199,6 +3094,10 @@ Ya daha yüksek mezhepleri daraltın (daha az girdi gereklidir) veya harcama mik
         <translation>Yeni alma adresi ile ilişkilendirilebilecek isteğe bağlı bir etiket.</translation>
     </message>
     <message>
+        <source>A&amp;mount:</source>
+        <translation>Miktar:</translation>
+    </message>
+    <message>
         <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the DOMO network.</source>
         <translation>Talep açıldığında görüntülenecek ödeme isteğine eklemek için isteğe bağlı bir mesaj. Not: Mesaj, ödemenin DOMO şebekesi üzerinden gönderilmeyecektir.</translation>
     </message>
@@ -3217,10 +3116,6 @@ Ya daha yüksek mezhepleri daraltın (daha az girdi gereklidir) veya harcama mik
     <message>
         <source>An optional amount to request. Leave this empty or zero to not request a specific amount.</source>
         <translation>İsteğe bağlı olarak isteğe bağlı bir miktar. Belirli bir miktar talep etmemek için bu boş bırakın veya sıfırlayın.</translation>
-    </message>
-    <message>
-        <source>&amp;Amount:</source>
-        <translation>miktar:</translation>
     </message>
     <message>
         <source>&amp;Request payment</source>
@@ -3265,6 +3160,10 @@ Ya daha yüksek mezhepleri daraltın (daha az girdi gereklidir) veya harcama mik
     <message>
         <source>Copy amount</source>
         <translation>Miktarı kopyala</translation>
+    </message>
+    <message>
+        <source>Copy address</source>
+        <translation>Adresi Kopyala</translation>
     </message>
 </context>
 <context>
@@ -3335,6 +3234,10 @@ Ya daha yüksek mezhepleri daraltın (daha az girdi gereklidir) veya harcama mik
     <message>
         <source>Message</source>
         <translation>Mesaj</translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation>adres</translation>
     </message>
     <message>
         <source>Amount</source>
@@ -3428,8 +3331,8 @@ Ya daha yüksek mezhepleri daraltın (daha az girdi gereklidir) veya harcama mik
         <translation>UTXO Boyutu:</translation>
     </message>
     <message>
-        <source>0 DOMO</source>
-        <translation>0 DOMO</translation>
+        <source>0 DOM</source>
+        <translation>0 DOM</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -3484,12 +3387,12 @@ Ya daha yüksek mezhepleri daraltın (daha az girdi gereklidir) veya harcama mik
         <translation>Koinler otomatik seçildi</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uDOMOs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uDOMOs in fee,&lt;br /&gt;while "at least" pays 1000 uDOMOs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Özel ücret 1000 uDOMO olarak ayarlanmış ve işlem sadece 250 bayt ise, "kilobayt başına" ücret karşılığında yalnızca 250 uDOMO öder,&lt;br /&gt;"en az" ise 1000 uDOMO öder. Bir kilobayttan daha büyük işlemler için kilobayt ödersiniz.</translation>
+        <source>If the custom fee is set to 1000 uDOMs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uDOMs in fee,&lt;br /&gt;while "at least" pays 1000 uDOMs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Özel ücret 1000 uDOM olarak ayarlanmış ve işlem sadece 250 bayt ise, "kilobayt başına" ücret karşılığında yalnızca 250 uDOM öder,&lt;br /&gt;"en az" ise 1000 uDOM öder. Bir kilobayttan daha büyük işlemler için kilobayt ödersiniz.</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uDOMOs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uDOMOs in fee,&lt;br /&gt;while "total at least" pays 1000 uDOMOs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Özel ücret 1000 uDOMO olarak ayarlanırsa ve işlem sadece 250 bayt ise, "kilobayt başına" ücret karşılığında yalnızca 250 uDOMO ücreti verilir,&lt;br /&gt;"toplam en az" ise 1000 uDOMO ödüyor. Bir kilobayttan daha büyük işlemler için kilobayt ödersiniz.</translation>
+        <source>If the custom fee is set to 1000 uDOMs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uDOMs in fee,&lt;br /&gt;while "total at least" pays 1000 uDOMs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Özel ücret 1000 uDOM olarak ayarlanırsa ve işlem sadece 250 bayt ise, "kilobayt başına" ücret karşılığında yalnızca 250 uDOM ücreti verilir,&lt;br /&gt;"toplam en az" ise 1000 uDOM ödüyor. Bir kilobayttan daha büyük işlemler için kilobayt ödersiniz.</translation>
     </message>
     <message>
         <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for DOMO transactions than the network can process.</source>
@@ -3540,8 +3443,8 @@ Ya daha yüksek mezhepleri daraltın (daha az girdi gereklidir) veya harcama mik
         <translation>Alıcı ekle</translation>
     </message>
     <message>
-        <source>Anonymized DOMO</source>
-        <translation>anonim edilmiş DOMO</translation>
+        <source>Anonymized DOM</source>
+        <translation>anonim edilmiş DOM</translation>
     </message>
     <message>
         <source>Balance:</source>
@@ -3914,10 +3817,6 @@ Ya daha yüksek mezhepleri daraltın (daha az girdi gereklidir) veya harcama mik
     <message>
         <source>The Dash Core developers</source>
         <translation>The Dash Core developers</translation>
-    </message>
-    <message>
-        <source>The PIVX Core developers</source>
-        <translation>The PIVX Core developers</translation>
     </message>
     <message>
         <source>The DOMO Core developers</source>
@@ -4440,8 +4339,8 @@ Ya daha yüksek mezhepleri daraltın (daha az girdi gereklidir) veya harcama mik
         <translation>Koinleri göder</translation>
     </message>
     <message>
-        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 DOMO.</source>
-        <translation>SwiftX yüksek değerler göndermeyi desteklemiyor. İşlemler şu anda %1 DOMO ile sınırlıdır.</translation>
+        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 DOM.</source>
+        <translation>SwiftX yüksek değerler göndermeyi desteklemiyor. İşlemler şu anda %1 DOM ile sınırlıdır.</translation>
     </message>
 </context>
 <context>
@@ -4468,7 +4367,7 @@ Ya daha yüksek mezhepleri daraltın (daha az girdi gereklidir) veya harcama mik
     </message>
 </context>
 <context>
-    <name>ZDomoControlDialog</name>
+    <name>ZDomControlDialog</name>
     <message>
         <source>Quantity</source>
         <translation>Adet</translation>
@@ -4478,18 +4377,14 @@ Ya daha yüksek mezhepleri daraltın (daha az girdi gereklidir) veya harcama mik
         <translation>0</translation>
     </message>
     <message>
-        <source>zDOMO</source>
-        <translation>zDOMO</translation>
+        <source>zDOM</source>
+        <translation>zDOM</translation>
     </message>
     <message>
         <source>Select/Deselect All</source>
         <translation>Seç/Çıkar Hepsini</translation>
     </message>
-    <message>
-        <source>Is Spendable</source>
-        <translation>Harcanabilir</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>domo-core</name>
     <message>
@@ -4569,20 +4464,16 @@ Ya daha yüksek mezhepleri daraltın (daha az girdi gereklidir) veya harcama mik
         <translation>En iyi blok değiştirildiğinde komutu yürütün (cmd'deki %s yerine blok karması verilir)</translation>
     </message>
     <message>
-        <source>Fees (in DOMO/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Bundan daha küçük ücretler (DOMO / Kb cinsinden), aktarma için sıfır ücret olarak kabul edilir (varsayılan: %s)</translation>
+        <source>Fees (in DOM/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Bundan daha küçük ücretler (DOM / Kb cinsinden), aktarma için sıfır ücret olarak kabul edilir (varsayılan: %s)</translation>
     </message>
     <message>
-        <source>Fees (in DOMO/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Bundan daha küçük ücretler (DOMO / Kb cinsinden), işlem yaratmada sıfır ücret olarak kabul edilir (varsayılan: %s)</translation>
+        <source>Fees (in DOM/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Bundan daha küçük ücretler (DOM / Kb cinsinden), işlem yaratmada sıfır ücret olarak kabul edilir (varsayılan: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
         <translation>Bellek havuzundan disk günlüğüne her veritabanı aktivitesini temizle&lt;n&gt; megabytes (default: %u)</translation>
-    </message>
-    <message>
-        <source>Found unconfirmed denominated outputs, will wait till they confirm to continue.</source>
-        <translation>Teyit edilmemiş isimler buldular, devam ettiklerini onaylayana kadar bekleyecekler.</translation>
     </message>
     <message>
         <source>If paytxfee is not set, include enough fee so transactions begin confirmation on average within n blocks (default: %u)</source>
@@ -4619,14 +4510,6 @@ Ya daha yüksek mezhepleri daraltın (daha az girdi gereklidir) veya harcama mik
     <message>
         <source>Done loading</source>
         <translation>Yükleme tamamlandı</translation>
-    </message>
-    <message>
-        <source>Entries are full.</source>
-        <translation>Girişler full</translation>
-    </message>
-    <message>
-        <source>Error connecting to Masternode.</source>
-        <translation>Masternod'a bağlanırken hata oluştu.</translation>
     </message>
     <message>
         <source>Error initializing block database</source>
@@ -4703,10 +4586,6 @@ Ya daha yüksek mezhepleri daraltın (daha az girdi gereklidir) veya harcama mik
         <translation>Masternode seçenekleri:</translation>
     </message>
     <message>
-        <source>Masternode:</source>
-        <translation>Masternode:</translation>
-    </message>
-    <message>
         <source>Rescanning...</source>
         <translation>Yeniden taranıyor...</translation>
     </message>
@@ -4723,16 +4602,8 @@ Ya daha yüksek mezhepleri daraltın (daha az girdi gereklidir) veya harcama mik
         <translation>Bu yardım mesajı</translation>
     </message>
     <message>
-        <source>This is not a Masternode.</source>
-        <translation>Bu masternod değil</translation>
-    </message>
-    <message>
         <source>Transaction amount too small</source>
         <translation>İşlem miktarı çok düşük</translation>
-    </message>
-    <message>
-        <source>Transaction not valid.</source>
-        <translation>İşlem geçersiz</translation>
     </message>
     <message>
         <source>Verifying blocks...</source>
@@ -4741,10 +4612,6 @@ Ya daha yüksek mezhepleri daraltın (daha az girdi gereklidir) veya harcama mik
     <message>
         <source>Verifying wallet...</source>
         <translation>Cüzdan doğrulanıyor..</translation>
-    </message>
-    <message>
-        <source>Wallet is locked.</source>
-        <translation>Cüzdan kilitli.</translation>
     </message>
     <message>
         <source>Wallet options:</source>

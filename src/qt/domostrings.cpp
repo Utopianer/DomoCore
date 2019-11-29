@@ -58,12 +58,14 @@ QT_TRANSLATE_NOOP("domo-core", ""
 QT_TRANSLATE_NOOP("domo-core", ""
 "Enable SwiftX, show confirmations for locked transactions (bool, default: %s)"),
 QT_TRANSLATE_NOOP("domo-core", ""
-"Enable automatic wallet backups triggered after each zDOMO minting (0-1, "
+"Enable automatic Zerocoin minting from specific addresses (0-1, default: %u)"),
+QT_TRANSLATE_NOOP("domo-core", ""
+"Enable automatic wallet backups triggered after each zDOM minting (0-1, "
 "default: %u)"),
 QT_TRANSLATE_NOOP("domo-core", ""
-"Enable or disable staking functionality for DOMO inputs (0-1, default: %u)"),
+"Enable or disable staking functionality for DOM inputs (0-1, default: %u)"),
 QT_TRANSLATE_NOOP("domo-core", ""
-"Enable or disable staking functionality for zDOMO inputs (0-1, default: %u)"),
+"Enable or disable staking functionality for zDOM inputs (0-1, default: %u)"),
 QT_TRANSLATE_NOOP("domo-core", ""
 "Enable spork administration functionality with the appropriate private key."),
 QT_TRANSLATE_NOOP("domo-core", ""
@@ -100,17 +102,14 @@ QT_TRANSLATE_NOOP("domo-core", ""
 QT_TRANSLATE_NOOP("domo-core", ""
 "Failed to find coin set amongst held coins with less than maxNumber of Spends"),
 QT_TRANSLATE_NOOP("domo-core", ""
-"Fees (in DOMO/Kb) smaller than this are considered zero fee for relaying "
+"Fees (in DOM/Kb) smaller than this are considered zero fee for relaying "
 "(default: %s)"),
 QT_TRANSLATE_NOOP("domo-core", ""
-"Fees (in DOMO/Kb) smaller than this are considered zero fee for transaction "
+"Fees (in DOM/Kb) smaller than this are considered zero fee for transaction "
 "creation (default: %s)"),
 QT_TRANSLATE_NOOP("domo-core", ""
 "Flush database activity from memory pool to disk log every <n> megabytes "
 "(default: %u)"),
-QT_TRANSLATE_NOOP("domo-core", ""
-"Found unconfirmed denominated outputs, will wait till they confirm to "
-"continue."),
 QT_TRANSLATE_NOOP("domo-core", ""
 "If paytxfee is not set, include enough fee so transactions begin "
 "confirmation on average within n blocks (default: %u)"),
@@ -134,8 +133,13 @@ QT_TRANSLATE_NOOP("domo-core", ""
 "Maintain a full transaction index, used by the getrawtransaction rpc call "
 "(default: %u)"),
 QT_TRANSLATE_NOOP("domo-core", ""
+"Maximum average size of an index occurrence in the block spam filter "
+"(default: %u)"),
+QT_TRANSLATE_NOOP("domo-core", ""
 "Maximum size of data in data carrier transactions we relay and mine "
 "(default: %u)"),
+QT_TRANSLATE_NOOP("domo-core", ""
+"Maximum size of the list of indexes in the block spam filter (default: %u)"),
 QT_TRANSLATE_NOOP("domo-core", ""
 "Maximum total fees to use in a single wallet transaction, setting too low "
 "may abort large transactions (default: %s)"),
@@ -162,6 +166,9 @@ QT_TRANSLATE_NOOP("domo-core", ""
 QT_TRANSLATE_NOOP("domo-core", ""
 "Set maximum size of high-priority/low-fee transactions in bytes (default: %d)"),
 QT_TRANSLATE_NOOP("domo-core", ""
+"Set the number of included blocks to precompute per cycle. (minimum: %d) "
+"(maximum: %d) (default: %d)"),
+QT_TRANSLATE_NOOP("domo-core", ""
 "Set the number of script verification threads (%u to %d, 0 = auto, <0 = "
 "leave that many cores free, default: %d)"),
 QT_TRANSLATE_NOOP("domo-core", ""
@@ -171,7 +178,7 @@ QT_TRANSLATE_NOOP("domo-core", ""
 "Show N confirmations for a successfully locked transaction (0-9999, default: "
 "%u)"),
 QT_TRANSLATE_NOOP("domo-core", ""
-"Specify custom backup path to add a copy of any automatic zDOMO backup. If "
+"Specify custom backup path to add a copy of any automatic zDOM backup. If "
 "set as dir, every backup generates a timestamped file. If set as file, will "
 "rewrite to that file every backup. If backuppath is set as well, 4 backups "
 "will happen"),
@@ -185,6 +192,11 @@ QT_TRANSLATE_NOOP("domo-core", ""
 "SwiftX requires inputs with at least 6 confirmations, you might need to wait "
 "a few minutes and try again."),
 QT_TRANSLATE_NOOP("domo-core", ""
+"The block database contains a block which appears to be from the future. "
+"This may be due to your computer's date and time being set incorrectly. Only "
+"rebuild the block database if you are sure that your computer's date and "
+"time are correct"),
+QT_TRANSLATE_NOOP("domo-core", ""
 "This is a pre-release test build - use at your own risk - do not use for "
 "staking or merchant applications!"),
 QT_TRANSLATE_NOOP("domo-core", ""
@@ -192,15 +204,18 @@ QT_TRANSLATE_NOOP("domo-core", ""
 "the OpenSSL Toolkit <https://www.openssl.org/> and cryptographic software "
 "written by Eric Young and UPnP software written by Thomas Bernard."),
 QT_TRANSLATE_NOOP("domo-core", ""
+"Total length of network version string (%i) exceeds maximum length (%i). "
+"Reduce the number or size of uacomments."),
+QT_TRANSLATE_NOOP("domo-core", ""
 "Unable to bind to %s on this computer. DOMO Core is probably already running."),
 QT_TRANSLATE_NOOP("domo-core", ""
 "Unable to locate enough Obfuscation denominated funds for this transaction."),
 QT_TRANSLATE_NOOP("domo-core", ""
 "Unable to locate enough Obfuscation non-denominated funds for this "
-"transaction that are not equal 10000 DOMO."),
+"transaction that are not equal 10000 DOM."),
 QT_TRANSLATE_NOOP("domo-core", ""
 "Unable to locate enough funds for this transaction that are not equal 10000 "
-"DOMO."),
+"DOM."),
 QT_TRANSLATE_NOOP("domo-core", ""
 "Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: "
 "%s)"),
@@ -235,43 +250,42 @@ QT_TRANSLATE_NOOP("domo-core", ""
 QT_TRANSLATE_NOOP("domo-core", ""
 "You must specify a masternodeprivkey in the configuration. Please see "
 "documentation for help."),
-QT_TRANSLATE_NOOP("domo-core", "(52992 could be used only on mainnet)"),
+QT_TRANSLATE_NOOP("domo-core", "(30717 could be used only on mainnet)"),
 QT_TRANSLATE_NOOP("domo-core", "(default: %s)"),
 QT_TRANSLATE_NOOP("domo-core", "(default: 1)"),
-QT_TRANSLATE_NOOP("domo-core", "(must be 52992 for mainnet)"),
+QT_TRANSLATE_NOOP("domo-core", "(must be 30717 for mainnet)"),
 QT_TRANSLATE_NOOP("domo-core", "<category> can be:"),
 QT_TRANSLATE_NOOP("domo-core", "Accept command line and JSON-RPC commands"),
 QT_TRANSLATE_NOOP("domo-core", "Accept connections from outside (default: 1 if no -proxy or -connect)"),
 QT_TRANSLATE_NOOP("domo-core", "Accept public REST requests (default: %u)"),
 QT_TRANSLATE_NOOP("domo-core", "Add a node to connect to and attempt to keep the connection open"),
+QT_TRANSLATE_NOOP("domo-core", "Adding Wrapped Serials supply..."),
 QT_TRANSLATE_NOOP("domo-core", "Allow DNS lookups for -addnode, -seednode and -connect"),
-QT_TRANSLATE_NOOP("domo-core", "Already have that input."),
 QT_TRANSLATE_NOOP("domo-core", "Always query for peer addresses via DNS lookup (default: %u)"),
+QT_TRANSLATE_NOOP("domo-core", "Append comment to the user agent string"),
 QT_TRANSLATE_NOOP("domo-core", "Attempt to force blockchain corruption recovery"),
 QT_TRANSLATE_NOOP("domo-core", "Attempt to recover private keys from a corrupt wallet.dat"),
 QT_TRANSLATE_NOOP("domo-core", "Automatically create Tor hidden service (default: %d)"),
 QT_TRANSLATE_NOOP("domo-core", "Block creation options:"),
 QT_TRANSLATE_NOOP("domo-core", "Calculating missing accumulators..."),
-QT_TRANSLATE_NOOP("domo-core", "Can't denominate: no compatible inputs left."),
-QT_TRANSLATE_NOOP("domo-core", "Can't find random Masternode."),
-QT_TRANSLATE_NOOP("domo-core", "Can't mix while sync in progress."),
+QT_TRANSLATE_NOOP("domo-core", "Cannot create public spend input"),
 QT_TRANSLATE_NOOP("domo-core", "Cannot downgrade wallet"),
 QT_TRANSLATE_NOOP("domo-core", "Cannot resolve -bind address: '%s'"),
 QT_TRANSLATE_NOOP("domo-core", "Cannot resolve -externalip address: '%s'"),
 QT_TRANSLATE_NOOP("domo-core", "Cannot resolve -whitebind address: '%s'"),
 QT_TRANSLATE_NOOP("domo-core", "Cannot write default address"),
 QT_TRANSLATE_NOOP("domo-core", "CoinSpend: Accumulator witness does not verify"),
-QT_TRANSLATE_NOOP("domo-core", "Collateral not valid."),
+QT_TRANSLATE_NOOP("domo-core", "CoinSpend: failed check"),
 QT_TRANSLATE_NOOP("domo-core", "Connect only to the specified node(s)"),
 QT_TRANSLATE_NOOP("domo-core", "Connect through SOCKS5 proxy"),
 QT_TRANSLATE_NOOP("domo-core", "Connect to a node to retrieve peer addresses, and disconnect"),
 QT_TRANSLATE_NOOP("domo-core", "Connection options:"),
 QT_TRANSLATE_NOOP("domo-core", "Copyright (C) 2009-%i The Bitcoin Core Developers"),
 QT_TRANSLATE_NOOP("domo-core", "Copyright (C) 2014-%i The Dash Core Developers"),
-QT_TRANSLATE_NOOP("domo-core", "Copyright (C) 2015-%i The PIVX Core Developers"),
-QT_TRANSLATE_NOOP("domo-core", "Copyright (C) %i The DOMO Core Developers"),
+QT_TRANSLATE_NOOP("domo-core", "Copyright (C) 2015-%i The DOMO Core Developers"),
 QT_TRANSLATE_NOOP("domo-core", "Corrupted block database detected"),
 QT_TRANSLATE_NOOP("domo-core", "Could not parse masternode.conf"),
+QT_TRANSLATE_NOOP("domo-core", "Couldn't generate the accumulator witness"),
 QT_TRANSLATE_NOOP("domo-core", "Debugging/Testing options:"),
 QT_TRANSLATE_NOOP("domo-core", "Delete blockchain folders and resync from scratch"),
 QT_TRANSLATE_NOOP("domo-core", "Disable OS notifications for incoming transactions (default: %u)"),
@@ -283,6 +297,7 @@ QT_TRANSLATE_NOOP("domo-core", "Do not load the wallet and disable wallet RPC ca
 QT_TRANSLATE_NOOP("domo-core", "Do you want to rebuild the block database now?"),
 QT_TRANSLATE_NOOP("domo-core", "Done loading"),
 QT_TRANSLATE_NOOP("domo-core", "Enable automatic Zerocoin minting (0-1, default: %u)"),
+QT_TRANSLATE_NOOP("domo-core", "Enable precomputation of zDOM spends and stakes (0-1, default %u)"),
 QT_TRANSLATE_NOOP("domo-core", "Enable publish hash block in <address>"),
 QT_TRANSLATE_NOOP("domo-core", "Enable publish hash transaction (locked via SwiftX) in <address>"),
 QT_TRANSLATE_NOOP("domo-core", "Enable publish hash transaction in <address>"),
@@ -291,8 +306,6 @@ QT_TRANSLATE_NOOP("domo-core", "Enable publish raw transaction (locked via Swift
 QT_TRANSLATE_NOOP("domo-core", "Enable publish raw transaction in <address>"),
 QT_TRANSLATE_NOOP("domo-core", "Enable staking functionality (0-1, default: %u)"),
 QT_TRANSLATE_NOOP("domo-core", "Enable the client to act as a masternode (0-1, default: %u)"),
-QT_TRANSLATE_NOOP("domo-core", "Entries are full."),
-QT_TRANSLATE_NOOP("domo-core", "Error connecting to Masternode."),
 QT_TRANSLATE_NOOP("domo-core", "Error initializing block database"),
 QT_TRANSLATE_NOOP("domo-core", "Error initializing wallet database environment %s!"),
 QT_TRANSLATE_NOOP("domo-core", "Error loading block database"),
@@ -306,39 +319,31 @@ QT_TRANSLATE_NOOP("domo-core", "Error writing zerocoinDB to disk"),
 QT_TRANSLATE_NOOP("domo-core", "Error"),
 QT_TRANSLATE_NOOP("domo-core", "Error: A fatal internal error occured, see debug.log for details"),
 QT_TRANSLATE_NOOP("domo-core", "Error: A fatal internal error occurred, see debug.log for details"),
-QT_TRANSLATE_NOOP("domo-core", "Error: Can't select current denominated inputs"),
 QT_TRANSLATE_NOOP("domo-core", "Error: Disk space is low!"),
 QT_TRANSLATE_NOOP("domo-core", "Error: No valid utxo!"),
 QT_TRANSLATE_NOOP("domo-core", "Error: Unsupported argument -tor found, use -onion."),
 QT_TRANSLATE_NOOP("domo-core", "Error: Wallet locked, unable to create transaction!"),
-QT_TRANSLATE_NOOP("domo-core", "Error: You already have pending entries in the Obfuscation pool"),
 QT_TRANSLATE_NOOP("domo-core", "Failed to calculate accumulator checkpoint"),
 QT_TRANSLATE_NOOP("domo-core", "Failed to create mint"),
-QT_TRANSLATE_NOOP("domo-core", "Failed to deserialize"),
 QT_TRANSLATE_NOOP("domo-core", "Failed to find Zerocoins in wallet.dat"),
 QT_TRANSLATE_NOOP("domo-core", "Failed to listen on any port. Use -listen=0 if you want this."),
 QT_TRANSLATE_NOOP("domo-core", "Failed to parse host:port string"),
+QT_TRANSLATE_NOOP("domo-core", "Failed to parse public spend"),
 QT_TRANSLATE_NOOP("domo-core", "Failed to read block"),
 QT_TRANSLATE_NOOP("domo-core", "Failed to select a zerocoin"),
 QT_TRANSLATE_NOOP("domo-core", "Failed to wipe zerocoinDB"),
 QT_TRANSLATE_NOOP("domo-core", "Failed to write coin serial number into wallet"),
-QT_TRANSLATE_NOOP("domo-core", "Fee (in DOMO/kB) to add to transactions you send (default: %s)"),
-QT_TRANSLATE_NOOP("domo-core", "Finalizing transaction."),
+QT_TRANSLATE_NOOP("domo-core", "Fee (in DOM/kB) to add to transactions you send (default: %s)"),
 QT_TRANSLATE_NOOP("domo-core", "Force safe mode (default: %u)"),
-QT_TRANSLATE_NOOP("domo-core", "Found enough users, signing ( waiting %s )"),
-QT_TRANSLATE_NOOP("domo-core", "Found enough users, signing ..."),
 QT_TRANSLATE_NOOP("domo-core", "Generate coins (default: %u)"),
 QT_TRANSLATE_NOOP("domo-core", "How many blocks to check at startup (default: %u, 0 = all)"),
 QT_TRANSLATE_NOOP("domo-core", "If <category> is not supplied, output all debugging information."),
 QT_TRANSLATE_NOOP("domo-core", "Importing..."),
 QT_TRANSLATE_NOOP("domo-core", "Imports blocks from external blk000??.dat file"),
 QT_TRANSLATE_NOOP("domo-core", "Include IP addresses in debug output (default: %u)"),
-QT_TRANSLATE_NOOP("domo-core", "Incompatible mode."),
-QT_TRANSLATE_NOOP("domo-core", "Incompatible version."),
 QT_TRANSLATE_NOOP("domo-core", "Incorrect or no genesis block found. Wrong datadir for network?"),
 QT_TRANSLATE_NOOP("domo-core", "Information"),
 QT_TRANSLATE_NOOP("domo-core", "Initialization sanity check failed. DOMO Core is shutting down."),
-QT_TRANSLATE_NOOP("domo-core", "Input is not valid."),
 QT_TRANSLATE_NOOP("domo-core", "Insufficient funds"),
 QT_TRANSLATE_NOOP("domo-core", "Insufficient funds."),
 QT_TRANSLATE_NOOP("domo-core", "Invalid -onion address or hostname: '%s'"),
@@ -353,10 +358,7 @@ QT_TRANSLATE_NOOP("domo-core", "Invalid masternodeprivkey. Please see documenati
 QT_TRANSLATE_NOOP("domo-core", "Invalid netmask specified in -whitelist: '%s'"),
 QT_TRANSLATE_NOOP("domo-core", "Invalid port detected in masternode.conf"),
 QT_TRANSLATE_NOOP("domo-core", "Invalid private key."),
-QT_TRANSLATE_NOOP("domo-core", "Invalid script detected."),
 QT_TRANSLATE_NOOP("domo-core", "Keep at most <n> unconnectable transactions in memory (default: %u)"),
-QT_TRANSLATE_NOOP("domo-core", "Last Obfuscation was too recent."),
-QT_TRANSLATE_NOOP("domo-core", "Last successful Obfuscation action was too recent."),
 QT_TRANSLATE_NOOP("domo-core", "Limit size of signature cache to <n> entries (default: %u)"),
 QT_TRANSLATE_NOOP("domo-core", "Line: %d"),
 QT_TRANSLATE_NOOP("domo-core", "Listen for JSON-RPC connections on <port> (default: %u or testnet: %u)"),
@@ -370,34 +372,19 @@ QT_TRANSLATE_NOOP("domo-core", "Loading sporks..."),
 QT_TRANSLATE_NOOP("domo-core", "Loading wallet... (%3.2f %%)"),
 QT_TRANSLATE_NOOP("domo-core", "Loading wallet..."),
 QT_TRANSLATE_NOOP("domo-core", "Location of the auth cookie (default: data dir)"),
-QT_TRANSLATE_NOOP("domo-core", "Lock is already in place."),
 QT_TRANSLATE_NOOP("domo-core", "Lock masternodes from masternode configuration file (default: %u)"),
 QT_TRANSLATE_NOOP("domo-core", "Lookup(): Invalid -proxy address or hostname: '%s'"),
 QT_TRANSLATE_NOOP("domo-core", "Maintain at most <n> connections to peers (default: %u)"),
 QT_TRANSLATE_NOOP("domo-core", "Masternode options:"),
-QT_TRANSLATE_NOOP("domo-core", "Masternode queue is full."),
-QT_TRANSLATE_NOOP("domo-core", "Masternode:"),
 QT_TRANSLATE_NOOP("domo-core", "Maximum per-connection receive buffer, <n>*1000 bytes (default: %u)"),
 QT_TRANSLATE_NOOP("domo-core", "Maximum per-connection send buffer, <n>*1000 bytes (default: %u)"),
 QT_TRANSLATE_NOOP("domo-core", "Mint did not make it into blockchain"),
-QT_TRANSLATE_NOOP("domo-core", "Missing input transaction information."),
-QT_TRANSLATE_NOOP("domo-core", "Mixing in progress..."),
 QT_TRANSLATE_NOOP("domo-core", "Need address because change is not exact"),
 QT_TRANSLATE_NOOP("domo-core", "Need to specify a port with -whitebind: '%s'"),
-QT_TRANSLATE_NOOP("domo-core", "No Masternodes detected."),
-QT_TRANSLATE_NOOP("domo-core", "No compatible Masternode found."),
-QT_TRANSLATE_NOOP("domo-core", "No funds detected in need of denominating."),
-QT_TRANSLATE_NOOP("domo-core", "No matching denominations found for mixing."),
 QT_TRANSLATE_NOOP("domo-core", "Node relay options:"),
-QT_TRANSLATE_NOOP("domo-core", "Non-standard public key detected."),
-QT_TRANSLATE_NOOP("domo-core", "Not compatible with existing transactions."),
 QT_TRANSLATE_NOOP("domo-core", "Not enough file descriptors available."),
-QT_TRANSLATE_NOOP("domo-core", "Not in the Masternode list."),
 QT_TRANSLATE_NOOP("domo-core", "Number of automatic wallet backups (default: 10)"),
 QT_TRANSLATE_NOOP("domo-core", "Number of custom location backups to retain (default: %d)"),
-QT_TRANSLATE_NOOP("domo-core", "Obfuscation is idle."),
-QT_TRANSLATE_NOOP("domo-core", "Obfuscation request complete:"),
-QT_TRANSLATE_NOOP("domo-core", "Obfuscation request incomplete:"),
 QT_TRANSLATE_NOOP("domo-core", "Only accept block chain matching built-in checkpoints (default: %u)"),
 QT_TRANSLATE_NOOP("domo-core", "Only connect to nodes in network <net> (ipv4, ipv6 or onion)"),
 QT_TRANSLATE_NOOP("domo-core", "Options:"),
@@ -406,12 +393,16 @@ QT_TRANSLATE_NOOP("domo-core", "Percentage of automatically minted Zerocoin  (1-
 QT_TRANSLATE_NOOP("domo-core", "Preparing for resync..."),
 QT_TRANSLATE_NOOP("domo-core", "Prepend debug output with timestamp (default: %u)"),
 QT_TRANSLATE_NOOP("domo-core", "Print version and exit"),
+QT_TRANSLATE_NOOP("domo-core", "Pubcoin not found in mint tx"),
 QT_TRANSLATE_NOOP("domo-core", "RPC server options:"),
 QT_TRANSLATE_NOOP("domo-core", "Randomly drop 1 of every <n> network messages"),
 QT_TRANSLATE_NOOP("domo-core", "Randomly fuzz 1 of every <n> network messages"),
 QT_TRANSLATE_NOOP("domo-core", "Rebuild block chain index from current blk000??.dat files"),
+QT_TRANSLATE_NOOP("domo-core", "Recalculating DOM supply..."),
+QT_TRANSLATE_NOOP("domo-core", "Recalculating minted ZDOM..."),
+QT_TRANSLATE_NOOP("domo-core", "Recalculating spent ZDOM..."),
 QT_TRANSLATE_NOOP("domo-core", "Receive and display P2P network alerts (default: %u)"),
-QT_TRANSLATE_NOOP("domo-core", "Reindex the DOMO and zDOMO money supply statistics"),
+QT_TRANSLATE_NOOP("domo-core", "Reindex the DOM and zDOM money supply statistics"),
 QT_TRANSLATE_NOOP("domo-core", "Reindex the accumulator database"),
 QT_TRANSLATE_NOOP("domo-core", "Reindexing zerocoin database..."),
 QT_TRANSLATE_NOOP("domo-core", "Reindexing zerocoin failed"),
@@ -425,7 +416,6 @@ QT_TRANSLATE_NOOP("domo-core", "Run a thread to flush wallet periodically (defau
 QT_TRANSLATE_NOOP("domo-core", "Run in the background as a daemon and accept commands"),
 QT_TRANSLATE_NOOP("domo-core", "Selected coins value is less than payment target"),
 QT_TRANSLATE_NOOP("domo-core", "Send transactions as zero-fee transactions if possible (default: %u)"),
-QT_TRANSLATE_NOOP("domo-core", "Session not complete!"),
 QT_TRANSLATE_NOOP("domo-core", "Session timed out."),
 QT_TRANSLATE_NOOP("domo-core", "Set database cache size in megabytes (%d to %d, default: %d)"),
 QT_TRANSLATE_NOOP("domo-core", "Set external address:port to get to this masternode (example: %s)"),
@@ -452,9 +442,7 @@ QT_TRANSLATE_NOOP("domo-core", "Spend Valid"),
 QT_TRANSLATE_NOOP("domo-core", "Spend unconfirmed change when sending transactions (default: %u)"),
 QT_TRANSLATE_NOOP("domo-core", "Staking options:"),
 QT_TRANSLATE_NOOP("domo-core", "Stop running after importing blocks from disk (default: %u)"),
-QT_TRANSLATE_NOOP("domo-core", "Submitted following entries to masternode: %u / %d"),
-QT_TRANSLATE_NOOP("domo-core", "Submitted to masternode, waiting for more entries ( %u / %d ) %s"),
-QT_TRANSLATE_NOOP("domo-core", "Submitted to masternode, waiting in queue %s"),
+QT_TRANSLATE_NOOP("domo-core", "Support the zerocoin light node protocol (default: %u)"),
 QT_TRANSLATE_NOOP("domo-core", "SwiftX options:"),
 QT_TRANSLATE_NOOP("domo-core", "Synchronization failed"),
 QT_TRANSLATE_NOOP("domo-core", "Synchronization finished"),
@@ -463,15 +451,12 @@ QT_TRANSLATE_NOOP("domo-core", "Synchronizing budgets..."),
 QT_TRANSLATE_NOOP("domo-core", "Synchronizing masternode winners..."),
 QT_TRANSLATE_NOOP("domo-core", "Synchronizing masternodes..."),
 QT_TRANSLATE_NOOP("domo-core", "Synchronizing sporks..."),
-QT_TRANSLATE_NOOP("domo-core", "Syncing zDOMO wallet..."),
+QT_TRANSLATE_NOOP("domo-core", "Syncing zDOM wallet..."),
 QT_TRANSLATE_NOOP("domo-core", "The coin spend has been used"),
-QT_TRANSLATE_NOOP("domo-core", "The new spend coin transaction did not verify"),
-QT_TRANSLATE_NOOP("domo-core", "The selected mint coin is an invalid coin"),
 QT_TRANSLATE_NOOP("domo-core", "The transaction did not verify"),
 QT_TRANSLATE_NOOP("domo-core", "This help message"),
 QT_TRANSLATE_NOOP("domo-core", "This is experimental software."),
 QT_TRANSLATE_NOOP("domo-core", "This is intended for regression testing tools and app development."),
-QT_TRANSLATE_NOOP("domo-core", "This is not a Masternode."),
 QT_TRANSLATE_NOOP("domo-core", "Threshold for disconnecting misbehaving peers (default: %u)"),
 QT_TRANSLATE_NOOP("domo-core", "Too many spends needed"),
 QT_TRANSLATE_NOOP("domo-core", "Tor control port password (default: empty)"),
@@ -480,33 +465,27 @@ QT_TRANSLATE_NOOP("domo-core", "Transaction Created"),
 QT_TRANSLATE_NOOP("domo-core", "Transaction Mint Started"),
 QT_TRANSLATE_NOOP("domo-core", "Transaction amount too small"),
 QT_TRANSLATE_NOOP("domo-core", "Transaction amounts must be positive"),
-QT_TRANSLATE_NOOP("domo-core", "Transaction created successfully."),
-QT_TRANSLATE_NOOP("domo-core", "Transaction fees are too high."),
-QT_TRANSLATE_NOOP("domo-core", "Transaction not valid."),
 QT_TRANSLATE_NOOP("domo-core", "Transaction too large for fee policy"),
 QT_TRANSLATE_NOOP("domo-core", "Transaction too large"),
-QT_TRANSLATE_NOOP("domo-core", "Transmitting final transaction."),
-QT_TRANSLATE_NOOP("domo-core", "Try to spend with a higher security level to include more coins"),
 QT_TRANSLATE_NOOP("domo-core", "Trying to spend an already spent serial #, try again."),
 QT_TRANSLATE_NOOP("domo-core", "Unable to bind to %s on this computer (bind returned error %s)"),
-QT_TRANSLATE_NOOP("domo-core", "Unable to find transaction containing mint"),
+QT_TRANSLATE_NOOP("domo-core", "Unable to find transaction containing mint %s"),
+QT_TRANSLATE_NOOP("domo-core", "Unable to find transaction containing mint, txHash: %s"),
 QT_TRANSLATE_NOOP("domo-core", "Unable to sign spork message, wrong key?"),
 QT_TRANSLATE_NOOP("domo-core", "Unable to start HTTP server. See debug log for details."),
 QT_TRANSLATE_NOOP("domo-core", "Unknown network specified in -onlynet: '%s'"),
-QT_TRANSLATE_NOOP("domo-core", "Unknown state: id = %u"),
 QT_TRANSLATE_NOOP("domo-core", "Upgrade wallet to latest format"),
 QT_TRANSLATE_NOOP("domo-core", "Use UPnP to map the listening port (default: %u)"),
 QT_TRANSLATE_NOOP("domo-core", "Use UPnP to map the listening port (default: 1 when listening)"),
 QT_TRANSLATE_NOOP("domo-core", "Use a custom max chain reorganization depth (default: %u)"),
+QT_TRANSLATE_NOOP("domo-core", "Use block spam filter (default: %u)"),
 QT_TRANSLATE_NOOP("domo-core", "Use the test network"),
+QT_TRANSLATE_NOOP("domo-core", "User Agent comment (%s) contains unsafe characters."),
 QT_TRANSLATE_NOOP("domo-core", "Username for JSON-RPC connections"),
-QT_TRANSLATE_NOOP("domo-core", "Value is below the smallest available denomination (= 1) of zDOMO"),
-QT_TRANSLATE_NOOP("domo-core", "Value more than Obfuscation pool maximum allows."),
+QT_TRANSLATE_NOOP("domo-core", "Value is below the smallest available denomination (= 1) of zDOM"),
 QT_TRANSLATE_NOOP("domo-core", "Verifying blocks..."),
 QT_TRANSLATE_NOOP("domo-core", "Verifying wallet..."),
-QT_TRANSLATE_NOOP("domo-core", "Version 1 zDOMO require a security level of 100 to successfully spend."),
 QT_TRANSLATE_NOOP("domo-core", "Wallet %s resides outside data directory %s"),
-QT_TRANSLATE_NOOP("domo-core", "Wallet is locked."),
 QT_TRANSLATE_NOOP("domo-core", "Wallet needed to be rewritten: restart DOMO Core to complete"),
 QT_TRANSLATE_NOOP("domo-core", "Wallet options:"),
 QT_TRANSLATE_NOOP("domo-core", "Wallet window title"),
@@ -514,14 +493,12 @@ QT_TRANSLATE_NOOP("domo-core", "Warning"),
 QT_TRANSLATE_NOOP("domo-core", "Warning: This version is obsolete, upgrade required!"),
 QT_TRANSLATE_NOOP("domo-core", "Warning: Unsupported argument -benchmark ignored, use -debug=bench."),
 QT_TRANSLATE_NOOP("domo-core", "Warning: Unsupported argument -debugnet ignored, use -debug=net."),
-QT_TRANSLATE_NOOP("domo-core", "Will retry..."),
 QT_TRANSLATE_NOOP("domo-core", "You don't have enough Zerocoins in your wallet"),
 QT_TRANSLATE_NOOP("domo-core", "You need to rebuild the database using -reindex to change -txindex"),
-QT_TRANSLATE_NOOP("domo-core", "Your entries added successfully."),
-QT_TRANSLATE_NOOP("domo-core", "Your transaction was accepted into the pool!"),
 QT_TRANSLATE_NOOP("domo-core", "Zapping all transactions from wallet..."),
 QT_TRANSLATE_NOOP("domo-core", "ZeroMQ notification options:"),
 QT_TRANSLATE_NOOP("domo-core", "Zerocoin options:"),
+QT_TRANSLATE_NOOP("domo-core", "could not get lock on cs_spendcache"),
 QT_TRANSLATE_NOOP("domo-core", "isValid(): Invalid -proxy address or hostname: '%s'"),
 QT_TRANSLATE_NOOP("domo-core", "on startup"),
 QT_TRANSLATE_NOOP("domo-core", "wallet.dat corrupt, salvage failed"),

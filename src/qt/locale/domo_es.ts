@@ -176,16 +176,16 @@
         <translation>Confirme el cifrado del monedero</translation>
     </message>
     <message>
-        <source>DOMO will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your DOMOs from being stolen by malware infecting your computer.</source>
-        <translation>DOMO se cerrará para finalizar el proceso de cifrado. Recuerde que cifrar su monedero no garantiza que sus DOMOs no sean robados mediante malware de su ordenador.</translation>
+        <source>DOMO will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your DOMs from being stolen by malware infecting your computer.</source>
+        <translation>DOMO se cerrará para finalizar el proceso de cifrado. Recuerde que cifrar su monedero no garantiza que sus DOMs no sean robados mediante malware de su ordenador.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>¿Está seguro de que desea cifrar su monedero?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR DOMO&lt;/b&gt;!</source>
-        <translation>Atención: Si cifra su monedero y pierde su contraseña, perderá &lt;b&gt; TODOS SUS DOMO&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR DOM&lt;/b&gt;!</source>
+        <translation>Atención: Si cifra su monedero y pierde su contraseña, perderá &lt;b&gt; TODOS SUS DOM&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -267,7 +267,7 @@
     </message>
     <message>
         <source>Alt+A</source>
-        <translation>Alt + A</translation>
+        <translation>Alt+A</translation>
     </message>
     <message>
         <source>Paste address from clipboard</source>
@@ -275,7 +275,7 @@
     </message>
     <message>
         <source>Alt+P</source>
-        <translation>Alt + P</translation>
+        <translation>Alt+P</translation>
     </message>
     <message>
         <source>Passphrase: </source>
@@ -433,8 +433,8 @@
         <translation>Navegar por el historial de transacciones</translation>
     </message>
     <message>
-        <source>Privacy Actions for zDOMO</source>
-        <translation>Acciones de privacidad para zDOMO</translation>
+        <source>Privacy Actions for zDOM</source>
+        <translation>Acciones de privacidad para zDOM</translation>
     </message>
     <message>
         <source>E&amp;xit</source>
@@ -608,10 +608,6 @@
         <source>&amp;Command-line options</source>
         <translation>&amp;Opciones de linea de comandos</translation>
     </message>
-    <message numerus="yes">
-        <source>Processed %n blocks of transaction history.</source>
-        <translation><numerusform>Procesados %n bloques del histórico de transacciones.</numerusform><numerusform>Procesados %n bloques del histórico de transacciones.</numerusform></translation>
-    </message>
     <message>
         <source>Synchronizing additional data: %p%</source>
         <translation>Sincronizando datos adicionales: %p%</translation>
@@ -623,6 +619,10 @@
     <message>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt; for anonymization and staking only</source>
         <translation>El monedero está &lt;b&gt;cifrado&lt;/b&gt; y actualmente &lt;b&gt;desbloqueado&lt;/b&gt; para anonimato y prueba de participación.</translation>
+    </message>
+    <message>
+        <source>Tor is &lt;b&gt;enabled&lt;/b&gt;: %1</source>
+        <translation>Tor está &lt;b&gt; habilitado&lt;/b&gt;: %1</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -736,10 +736,6 @@
         <source>DOMO Core client</source>
         <translation>Cliente DOMO Core</translation>
     </message>
-    <message numerus="yes">
-        <source>%n active connection(s) to DOMO network</source>
-        <translation><numerusform>%n conexión(es) activas a la red DOMO</numerusform><numerusform>%n conexión(es) activas a la red DOMO</numerusform></translation>
-    </message>
     <message>
         <source>Synchronizing with network...</source>
         <translation>Sincronizando con la red...</translation>
@@ -760,25 +756,9 @@
         <source>Up to date</source>
         <translation>Actualizado</translation>
     </message>
-    <message numerus="yes">
-        <source>%n hour(s)</source>
-        <translation><numerusform>%n horas</numerusform><numerusform>%n horas</numerusform></translation>
-    </message>
-    <message numerus="yes">
-        <source>%n day(s)</source>
-        <translation><numerusform>%n días</numerusform><numerusform>%n días</numerusform></translation>
-    </message>
-    <message numerus="yes">
-        <source>%n week(s)</source>
-        <translation><numerusform>%n semanas</numerusform><numerusform>%n semanas</numerusform></translation>
-    </message>
     <message>
         <source>%1 and %2</source>
         <translation>%1 y %2</translation>
-    </message>
-    <message numerus="yes">
-        <source>%n year(s)</source>
-        <translation><numerusform>%n años</numerusform><numerusform>%n años</numerusform></translation>
     </message>
     <message>
         <source>Catching up...</source>
@@ -864,7 +844,7 @@ MultiEnvío: %1</translation>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
         <translation>El monedero está &lt;b&gt;encriptado&lt;/b&gt; y actualmente &lt;b&gt;bloqueado&lt;/b&gt;</translation>
     </message>
-</context>
+    </context>
 <context>
     <name>BlockExplorer</name>
     <message>
@@ -915,11 +895,11 @@ MultiEnvío: %1</translation>
     </message>
     <message>
         <source>Bytes:</source>
-        <translation>Octetos:</translation>
+        <translation>Bytes:</translation>
     </message>
     <message>
         <source>Amount:</source>
-        <translation>Cantidad:</translation>
+        <translation>Suma:</translation>
     </message>
     <message>
         <source>Priority:</source>
@@ -1130,8 +1110,8 @@ MultiEnvío: %1</translation>
         <translation>Esta etiqueta se vuelve roja, si algún destinatario recibe una cantidad menor que %1.</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 upiv per input.</source>
-        <translation>Puede variar +/- %1 upiv por entrada.</translation>
+        <source>Can vary +/- %1 udom per input.</source>
+        <translation>Puede variar +/- %1 udom por entrada.</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -1224,6 +1204,17 @@ MultiEnvío: %1</translation>
         <translation>No se puede crear un directorio de datos aquí.</translation>
     </message>
 </context>
+<context>
+    <name>GovernancePage</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulario</translation>
+    </message>
+    <message>
+        <source>0</source>
+        <translation>0</translation>
+    </message>
+    </context>
 <context>
     <name>HelpMessageDialog</name>
     <message>
@@ -1542,48 +1533,54 @@ MultiEnvío no se activará a menos que haga usted click en Activar</translation
         <translation>(sin etiqueta)</translation>
     </message>
     <message>
-        <source>The entered address:
-</source>
-        <translation>La dirección introducida:
-</translation>
+        <source>MultiSend Active for Stakes and Masternode Rewards</source>
+        <translation>MultiSend Activado para las recompensas de Stakes y Masternode</translation>
     </message>
     <message>
-        <source> is invalid.
+        <source>MultiSend Active for Stakes</source>
+        <translation>MultiSend Activado para Stakes</translation>
+    </message>
+    <message>
+        <source>MultiSend Active for Masternode Rewards</source>
+        <translation>MultiSend Activado para las recompensas de Masternode</translation>
+    </message>
+    <message>
+        <source>MultiSend Not Active</source>
+        <translation>MultiSend Desactivado </translation>
+    </message>
+    <message>
+        <source>The entered address: %1 is invalid.
 Please check the address and try again.</source>
-        <translation>es inválida.
-Por favor compruebe la dirección e inténtelo de nuevo.</translation>
+        <translation>La dirección introducida: %1 es inválida.
+Por favor comprueba la dirección e inténtalo nuevamente.</translation>
     </message>
     <message>
-        <source>The total amount of your MultiSend vector is over 100% of your stake reward
-</source>
-        <translation>La cantidad total de su vector MultiEnvío es superior al 100% de su recompensa de stake
-</translation>
+        <source>The total amount of your MultiSend vector is over 100% of your stake reward</source>
+        <translation>La cantidad total de tu vector de MultiEnvío es superior al 100% de tu recompensa de Stake</translation>
+    </message>
+    <message>
+        <source>Saved the MultiSend to memory, but failed saving properties to the database.</source>
+        <translation>El MultiSend se guardó en la memoria, pero se produjo un error al guardar las propiedades en la base de datos.</translation>
+    </message>
+    <message>
+        <source>MultiSend Vector</source>
+        <translation>Vector de MultiSend</translation>
+    </message>
+    <message>
+        <source>Removed %1</source>
+        <translation>Removido %1</translation>
+    </message>
+    <message>
+        <source>Could not locate address</source>
+        <translation>No se pudo localizar la dirección</translation>
+    </message>
+    <message>
+        <source>Unable to activate MultiSend, check MultiSend vector</source>
+        <translation>No fue posible activar el MultiSend, verifica el vector de MultiSend</translation>
     </message>
     <message>
         <source>Please Enter 1 - 100 for percent.</source>
         <translation>Por favor Introduzca 1 - 100 por ciento.</translation>
-    </message>
-    <message>
-        <source>Saved the MultiSend to memory, but failed saving properties to the database.
-</source>
-        <translation>Se guardó MultiEnvío en la memoria, pero se produjo un error al guardar las propiedades en la base de datos.
-</translation>
-    </message>
-    <message>
-        <source>MultiSend Vector
-</source>
-        <translation>Vector MultiEnvío
-</translation>
-    </message>
-    <message>
-        <source>Removed </source>
-        <translation>Borrado</translation>
-    </message>
-    <message>
-        <source>Could not locate address
-</source>
-        <translation>No se pudo localizar la dirección
-</translation>
     </message>
 </context>
 <context>
@@ -1666,7 +1663,7 @@ Por favor, tenga paciencia después de hacer clic en importar.</translation>
     </message>
     <message>
         <source>Amount:</source>
-        <translation>Cantidad:</translation>
+        <translation>Suma:</translation>
     </message>
     <message>
         <source>Add an input to fund the outputs</source>
@@ -1681,8 +1678,8 @@ Por favor, tenga paciencia después de hacer clic en importar.</translation>
         <translation>Dirección / Cantidad:</translation>
     </message>
     <message>
-        <source>Add destinations to send DOMO to</source>
-        <translation>Agregue los destinos para enviar DOMO</translation>
+        <source>Add destinations to send DOM to</source>
+        <translation>Agregue los destinos para enviar DOM</translation>
     </message>
     <message>
         <source>Add &amp;Destination</source>
@@ -1755,73 +1752,6 @@ Por favor, tenga paciencia después de hacer clic en importar.</translation>
     <message>
         <source>Maximum (15)</source>
         <translation>Máximo (15)</translation>
-    </message>
-</context>
-<context>
-    <name>ObfuscationConfig</name>
-    <message>
-        <source>Configure Obfuscation</source>
-        <translation>Configurar Ofuscación</translation>
-    </message>
-    <message>
-        <source>Basic Privacy</source>
-        <translation>Privacidad Básica</translation>
-    </message>
-    <message>
-        <source>High Privacy</source>
-        <translation>Alta Privacidad</translation>
-    </message>
-    <message>
-        <source>Maximum Privacy</source>
-        <translation>Máxima Privacidad</translation>
-    </message>
-    <message>
-        <source>Please select a privacy level.</source>
-        <translation>Por favor seleccione un nivel de privacidad.</translation>
-    </message>
-    <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 DOMO</source>
-        <translation>Use 2 masterdodes diferentes para mezclar los fondos hasta los 10000 DOMO</translation>
-    </message>
-    <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 DOMO</source>
-        <translation>Use 8 masternodes diferentes para mezclar fondos hasta los 10000 DOMO</translation>
-    </message>
-    <message>
-        <source>Use 16 separate masternodes</source>
-        <translation>Use 16 masternodes diferentes</translation>
-    </message>
-    <message>
-        <source>This option is the quickest and will cost about ~0.025 DOMO to anonymize 10000 DOMO</source>
-        <translation>Esta opción es la más rápida y costará alrededor de ~0.025 DOMO para anonimizar 10000 DOMO</translation>
-    </message>
-    <message>
-        <source>This option is moderately fast and will cost about 0.05 DOMO to anonymize 10000 DOMO</source>
-        <translation>Esta opción es moderadamente rápida y costará cerca de 0.05 DOMO para anonimizar 10000 DOMO</translation>
-    </message>
-    <message>
-        <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
-        <translation>Esta es la opción más lenta pero más segura. Usar el máximo anonimato costará</translation>
-    </message>
-    <message>
-        <source>0.1 DOMO per 10000 DOMO you anonymize.</source>
-        <translation>0.1 DOMO por 10000 DOMO que anonimizas.</translation>
-    </message>
-    <message>
-        <source>Obfuscation Configuration</source>
-        <translation>Configuración de Ofuscación</translation>
-    </message>
-    <message>
-        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening DOMO's configuration screen.</source>
-        <translation>La Ofuscación se configuró correctamente en modo básico (%1 y 2 rondas). Puedes cambiar esto en cualquier momento accediendo a la ventana de configuración de DOMO.</translation>
-    </message>
-    <message>
-        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening DOMO's configuration screen.</source>
-        <translation>La Ofuscación se activó correctamente en modo alto (%1 y 8 rondas). Usted puede cambiar esto en cualquier momento abriendo la ventana de configuración de DOMO.</translation>
-    </message>
-    <message>
-        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening DOMO's configuration screen.</source>
-        <translation>La Ofuscación se activó correctamente en su grado máximo (%1 y 16 rondas). Usted puede cambiar ésto en cualquier momento en la ventana de configuración de DOMO.</translation>
     </message>
 </context>
 <context>
@@ -1948,28 +1878,28 @@ https://www.transifex.com/domo-project/domo-project-translations</translation>
         <translation>Mapear un puerto utilizando &amp;UPnP</translation>
     </message>
     <message>
-        <source>Enable automatic minting of DOMO units to zDOMO</source>
-        <translation>Activar el minting automática de unidades DOMO a zDOMO</translation>
+        <source>Enable automatic minting of DOM units to zDOM</source>
+        <translation>Activar el minting automática de unidades DOM a zDOM</translation>
     </message>
     <message>
-        <source>Enable zDOMO Automint</source>
-        <translation>Activar zDOMO Automint</translation>
+        <source>Enable zDOM Automint</source>
+        <translation>Activar zDOM Automint</translation>
     </message>
     <message>
-        <source>Percentage of incoming DOMO which get automatically converted to zDOMO via Zerocoin Protocol (min: 10%)</source>
-        <translation>Porcentaje de DOMO entrantes que serán automáticamente convertidos a zDOMO a través del Protocolo Zerocoin (mín: 10%)</translation>
+        <source>Percentage of incoming DOM which get automatically converted to zDOM via Zerocoin Protocol (min: 10%)</source>
+        <translation>Porcentaje de DOM entrantes que serán automáticamente convertidos a zDOM a través del Protocolo Zerocoin (mín: 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zDOMO</source>
-        <translation>Porcentaje de zDOMO autogenerados</translation>
+        <source>Percentage of autominted zDOM</source>
+        <translation>Porcentaje de zDOM autogenerados</translation>
     </message>
     <message>
-        <source>Wait with automatic conversion to Zerocoin until enough DOMO for this denomination is available</source>
-        <translation>Esperar con la conversión automática a Zerocoin hasta que hayan suficientes DOMO disponibles para este tamaño de billete</translation>
+        <source>Wait with automatic conversion to Zerocoin until enough DOM for this denomination is available</source>
+        <translation>Esperar con la conversión automática a Zerocoin hasta que hayan suficientes DOM disponibles para este tamaño de billete</translation>
     </message>
     <message>
-        <source>Preferred Automint zDOMO Denomination</source>
-        <translation>Tamaño de billete zDOMO preferido en la creación automática de dinero</translation>
+        <source>Preferred Automint zDOM Denomination</source>
+        <translation>Tamaño de billete zDOM preferido en la creación automática de dinero</translation>
     </message>
     <message>
         <source>Stake split threshold:</source>
@@ -2026,10 +1956,6 @@ https://www.transifex.com/domo-project/domo-project-translations</translation>
     <message>
         <source>User Interface Theme:</source>
         <translation>Tema de la Interface de Usuario:</translation>
-    </message>
-    <message>
-        <source>&amp;Unit to show amounts in:</source>
-        <translation>&amp;Unidad para mostrar cantidades:</translation>
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
@@ -2131,8 +2057,8 @@ https://www.transifex.com/domo-project/domo-project-translations</translation>
         <translation>Balance Total, incluidas todas las monedas no disponibles.</translation>
     </message>
     <message>
-        <source>Detailed Balance</source>
-        <translation>Balance DOMO</translation>
+        <source>DOM Balance</source>
+        <translation>Balance DOM</translation>
     </message>
     <message>
         <source>Pending:</source>
@@ -2159,14 +2085,14 @@ https://www.transifex.com/domo-project/domo-project-translations</translation>
         <translation>Su balance DOMO actual, transacciones no confirmadas e inmaduras incluidas</translation>
     </message>
     <message>
-        <source>zDetailed Balance</source>
-        <translation>Balance zDOMO</translation>
+        <source>zDOM Balance</source>
+        <translation>Balance zDOM</translation>
     </message>
     <message>
         <source>Mature: more than 20 confirmation and more than 1 mint of the same denomination after it was minted.
-These zDOMO are spendable.</source>
+These zDOM are spendable.</source>
         <translation>Maduración: más de 20 confirmaciones y más de 1 acuñación de la misma denominación después de acuñarse.
-Estas zDOMO son utilizables.</translation>
+Estas zDOM son utilizables.</translation>
     </message>
     <message>
         <source>Unconfirmed: less than 20 confirmations
@@ -2183,11 +2109,11 @@ Inmaduro: confirmado, pero menos de 1 acuñación de la misma denominación desp
         <translation>VISIÓN DE CONJUNTO</translation>
     </message>
     <message>
-        <source>Domo Balance (including unconfirmed and immature coins)</source>
+        <source>Combined Balance (including unconfirmed and immature coins)</source>
         <translation>Balance combinados (incluidas las monedas no confirmadas e inmaduras)</translation>
     </message>
     <message>
-        <source>Domo Balance</source>
+        <source>Combined Balance</source>
         <translation>Balance Combinado</translation>
     </message>
     <message>
@@ -2219,8 +2145,8 @@ Inmaduro: confirmado, pero menos de 1 acuñación de la misma denominación desp
         <translation>Disponible:</translation>
     </message>
     <message>
-        <source>Locked DOMO or Masternode collaterals. These are excluded from zDOMO minting.</source>
-        <translation>DOMO bloqueado o Masternode colaterales. Estos están excluidos de minting zDOMO.</translation>
+        <source>Locked DOM or Masternode collaterals. These are excluded from zDOM minting.</source>
+        <translation>DOM bloqueado o Masternode colaterales. Estos están excluidos de minting zDOM.</translation>
     </message>
     <message>
         <source>Locked:</source>
@@ -2231,8 +2157,8 @@ Inmaduro: confirmado, pero menos de 1 acuñación de la misma denominación desp
         <translation>Sin confirmar:</translation>
     </message>
     <message>
-        <source>Your current zDOMO balance, unconfirmed and immature zDOMO included.</source>
-        <translation>Su balance zDOMO actual, zDOMO inmaduro e inmaduro incluido.</translation>
+        <source>Your current zDOM balance, unconfirmed and immature zDOM included.</source>
+        <translation>Su balance zDOM actual, zDOM inmaduro e inmaduro incluido.</translation>
     </message>
     <message>
         <source>Recent transactions</source>
@@ -2243,10 +2169,10 @@ Inmaduro: confirmado, pero menos de 1 acuñación de la misma denominación desp
         <translation>desincronizado</translation>
     </message>
     <message>
-        <source>Current percentage of zDOMO.
+        <source>Current percentage of zDOM.
 If AutoMint is enabled this percentage will settle around the configured AutoMint percentage (default = 10%).
 </source>
-        <translation>Porcentaje actual de zDOMO.
+        <translation>Porcentaje actual de zDOM.
 Si AutoMint está habilitado, este porcentaje se establecerá alrededor del porcentaje de AutoMint configurado (predeterminado = 10%).
 </translation>
     </message>
@@ -2390,20 +2316,8 @@ Para habilitar AutoMint cambie 'enablezeromint = 0' a 'enablezeromint = 1' en do
         <translation>0</translation>
     </message>
     <message>
-        <source>zDOMO</source>
-        <translation>zDOMO</translation>
-    </message>
-    <message>
-        <source>Available for minting are coins which are confirmed and not locked or Masternode collaterals.</source>
-        <translation>Disponibles para minting son monedas que están confirmadas y no bloqueadas o colateral de Masternode.</translation>
-    </message>
-    <message>
-        <source>Available for Minting:</source>
-        <translation>Disponible para minting:</translation>
-    </message>
-    <message>
-        <source>0.000 000 00 DOMO</source>
-        <translation>0.000 000 00 DOMO</translation>
+        <source>zDOM</source>
+        <translation>zDOM</translation>
     </message>
     <message>
         <source>Reset Zerocoin Wallet DB. Deletes transactions that did not make it into the blockchain.</source>
@@ -2412,18 +2326,6 @@ Para habilitar AutoMint cambie 'enablezeromint = 0' a 'enablezeromint = 1' en do
     <message>
         <source>Reset</source>
         <translation>Reiniciar</translation>
-    </message>
-    <message>
-        <source>Coin Control...</source>
-        <translation>Control de Monedas...</translation>
-    </message>
-    <message>
-        <source>Quantity:</source>
-        <translation>Cantidad:</translation>
-    </message>
-    <message>
-        <source>Amount:</source>
-        <translation>Suma:</translation>
     </message>
     <message>
         <source>Rescan the complete blockchain for  Zerocoin mints and their meta-data.</source>
@@ -2442,16 +2344,12 @@ Para habilitar AutoMint cambie 'enablezeromint = 0' a 'enablezeromint = 1' en do
         <translation>PRIVACIDAD</translation>
     </message>
     <message>
-        <source>Enter an amount of Domo to convert to zDOMO</source>
-        <translation>Introduzca la cantidad de DOMO que desea convertir a zDomo</translation>
+        <source>zDOM Control</source>
+        <translation>Control zDOM</translation>
     </message>
     <message>
-        <source>zDOMO Control</source>
-        <translation>Control zDOMO</translation>
-    </message>
-    <message>
-        <source>zDOMO Selected:</source>
-        <translation>zDOMO Seleccionados:</translation>
+        <source>zDOM Selected:</source>
+        <translation>zDOM Seleccionados:</translation>
     </message>
     <message>
         <source>Quantity Selected:</source>
@@ -2466,36 +2364,24 @@ Para habilitar AutoMint cambie 'enablezeromint = 0' a 'enablezeromint = 1' en do
         <translation>Gastar Zerocoin</translation>
     </message>
     <message>
-        <source>Available (mature and spendable) zDOMO for spending</source>
-        <translation>zDOMO disponible (maduro y gastable) para gastar</translation>
+        <source>Available (mature and spendable) zDOM for spending</source>
+        <translation>zDOM disponible (maduro y gastable) para gastar</translation>
     </message>
     <message>
         <source>Available Balance:</source>
         <translation>Balance disponible:</translation>
     </message>
     <message>
-        <source>Available (mature and spendable) zDOMO for spending
+        <source>Available (mature and spendable) zDOM for spending
 
-zDOMO are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</source>
-        <translation>zDOMO disponible (maduro y gastable) para gastar
+zDOM are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</source>
+        <translation>zDOM disponible (maduro y gastable) para gastar
 
-zDOMO son maduros cuando tienen más de 20 confirmaciones Y más de 2 mints de la misma denominación después que ellos fueron minted</translation>
+zDOM son maduros cuando tienen más de 20 confirmaciones Y más de 2 mints de la misma denominación después que ellos fueron minted</translation>
     </message>
     <message>
-        <source>0 zDOMO</source>
-        <translation>0 zDOMO</translation>
-    </message>
-    <message>
-        <source>Security Level for Zerocoin Transactions. More is better, but needs more time and resources.</source>
-        <translation>Nivel de Seguridad para Transacciones Zerocoin. Cuanto más mejor, pero necesitará más tiempo y recursos.</translation>
-    </message>
-    <message>
-        <source>Security Level:</source>
-        <translation>Nivel de Seguridad:</translation>
-    </message>
-    <message>
-        <source>Security Level 1 - 100 (default: 42)</source>
-        <translation>Nivel de Seguridad 1 - 100 (por defecto: 42)</translation>
+        <source>0 zDOM</source>
+        <translation>0 zDOM</translation>
     </message>
     <message>
         <source>Pay &amp;To:</source>
@@ -2531,7 +2417,7 @@ zDOMO son maduros cuando tienen más de 20 confirmaciones Y más de 2 mints de l
     </message>
     <message>
         <source>A&amp;mount:</source>
-        <translation>C&amp;antidad:</translation>
+        <translation>Cantidad:</translation>
     </message>
     <message>
         <source>Convert Change to Zerocoin (might cost additional fees)</source>
@@ -2554,8 +2440,8 @@ zDOMO son maduros cuando tienen más de 20 confirmaciones Y más de 2 mints de l
         <translation>Estadísticas Zerocoin:</translation>
     </message>
     <message>
-        <source>Total Balance including unconfirmed and immature zDOMO</source>
-        <translation>Balance total incluyendo zDOMO no confirmado e inmaduro</translation>
+        <source>Total Balance including unconfirmed and immature zDOM</source>
+        <translation>Balance total incluyendo zDOM no confirmado e inmaduro</translation>
     </message>
     <message>
         <source>Total Zerocoin  Balance:</source>
@@ -2576,24 +2462,24 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
 Inmaduro: confirmado, pero menos de 1 acuñación de la misma denominación después de ser acuñado</translation>
     </message>
     <message>
-        <source>Show the current status of automatic zDOMO minting.
+        <source>Show the current status of automatic zDOM minting.
 
 To change the status (restart required):
 - enable: add 'enablezeromint=1' to domo.conf
 - disable: add 'enablezeromint=0' to domo.conf
 
 To change the percentage (no restart required):
-- menu Settings-&gt;Options-&gt;Percentage of autominted zDOMO
+- menu Settings-&gt;Options-&gt;Percentage of autominted zDOM
 
 </source>
-        <translation>Muestra el estado actual de zDOMO minting automática.
+        <translation>Muestra el estado actual de zDOM minting automática.
 
 Para cambiar el estado (reinicio requerido):
 - activar: añade 'enablezeromint = 1' en domo.conf
 - desctivar: añade 'enablezeromint = 0' en domo.conf
 
 Para cambiar el porcentaje (no se requiere reiniciar):
-- menú Configuración-&gt;Opciones-&gt;Porcentaje de zDOMO automint
+- menú Configuración-&gt;Opciones-&gt;Porcentaje de zDOM automint
 </translation>
     </message>
     <message>
@@ -2718,7 +2604,7 @@ Para cambiar el porcentaje (no se requiere reiniciar):
     </message>
     <message>
         <source>Bytes:</source>
-        <translation>Octetos:</translation>
+        <translation>Bytes:</translation>
     </message>
     <message>
         <source>Insufficient funds!</source>
@@ -2761,40 +2647,18 @@ Para cambiar el porcentaje (no se requiere reiniciar):
         <translation>Estado de Creación de Moneda: Ok</translation>
     </message>
     <message>
-        <source>Copy quantity</source>
-        <translation>Copiar cantidad</translation>
-    </message>
-    <message>
-        <source>Copy amount</source>
-        <translation>Copiar cantidad</translation>
-    </message>
-    <message>
         <source>Starting ResetMintZerocoin: rescanning complete blockchain, this will need up to 30 minutes depending on your hardware.
 Please be patient...</source>
         <translation>Ejecutando ResetMintZerocoin: reescaneando el blockchain entero, esto necesitará hasta 30 minutos dependiendo de su hardware.
 Por favor espere...</translation>
     </message>
     <message>
-        <source>Spending Zerocoin.
-Computationally expensive, might need several minutes depending on the selected Security Level and your hardware.
-Please be patient...</source>
-        <translation>Gastando Zerocoin.
-Esto es computacionalmente intensivo, puede necesitar varios minutos dependiendo del Nivel de Seguridad elegido y el hardware de su máquina.
-Por favor tenga paciencia...</translation>
+        <source>zDOM Spend #: </source>
+        <translation>Gastar zDOM #: </translation>
     </message>
     <message>
-        <source>) needed.
-Maximum allowed: </source>
-        <translation>) necesario.
-Máximo permitido:</translation>
-    </message>
-    <message>
-        <source>zDOMO Spend #: </source>
-        <translation>Gastar zDOMO #: </translation>
-    </message>
-    <message>
-        <source>zDOMO Mint</source>
-        <translation>Acuñar zDOMO</translation>
+        <source>zDOM Mint</source>
+        <translation>Acuñar zDOM</translation>
     </message>
     <message>
         <source> &lt;b&gt;enabled&lt;/b&gt;.</source>
@@ -2809,12 +2673,12 @@ Máximo permitido:</translation>
         <translation>Porcentaje objetivo configurado:</translation>
     </message>
     <message>
-        <source>zDOMO is currently disabled due to maintenance.</source>
-        <translation>zDOMO actualmente está desactivado debido al mantenimiento.</translation>
+        <source>zDOM is currently disabled due to maintenance.</source>
+        <translation>zDOM actualmente está desactivado debido al mantenimiento.</translation>
     </message>
     <message>
-        <source>zDOMO is currently undergoing maintenance.</source>
-        <translation>zDOMO se encuentra actualmente en mantenimiento.</translation>
+        <source>zDOM is currently undergoing maintenance.</source>
+        <translation>zDOM se encuentra actualmente en mantenimiento.</translation>
     </message>
     <message>
         <source>Denom. with value &lt;b&gt;1&lt;/b&gt;:</source>
@@ -2885,32 +2749,6 @@ Máximo permitido:</translation>
         <translation>Denom. &lt;b&gt;5000&lt;/b&gt;:</translation>
     </message>
     <message>
-        <source>Error: Your wallet is locked. Please enter the wallet passphrase first.</source>
-        <translation>Error: Tu monedero está bloqueado. Por favor, primero introduzca la frase clave del monedero.</translation>
-    </message>
-    <message>
-        <source>Message: Enter an amount &gt; 0.</source>
-        <translation>Mensaje: Introduzca una cantidad &gt; 0.</translation>
-    </message>
-    <message>
-        <source>Minting </source>
-        <translation>Minting</translation>
-    </message>
-    <message>
-        <source>Successfully minted </source>
-        <translation>Minted correctamente</translation>
-    </message>
-    <message>
-        <source> zDOMO in </source>
-        <translation>zDOMO en</translation>
-    </message>
-    <message>
-        <source> sec. Used denominations:
-</source>
-        <translation>seg. denominación usados:
-</translation>
-    </message>
-    <message>
         <source>Duration: </source>
         <translation>Duración:</translation>
     </message>
@@ -2953,43 +2791,16 @@ Máximo permitido:</translation>
         <translation>a una dirección local recién generada (no utilizada y, por lo tanto, anónima)&lt;br /&gt;</translation>
     </message>
     <message>
-        <source>with Security Level </source>
-        <translation>con Nivel de Seguridad</translation>
-    </message>
-    <message>
         <source>Confirm send coins</source>
         <translation>Confirmar enviar monedas</translation>
-    </message>
-    <message>
-        <source>Version 1 zDOMO require a security level of 100 to successfully spend.</source>
-        <translation>La versión 1 zDOMO requiere un nivel de seguridad de 100 para gastar exitosamente.</translation>
-    </message>
-    <message>
-        <source>Failed to spend zDOMO</source>
-        <translation>Error al enviar zDOMO</translation>
     </message>
     <message>
         <source>Failed to fetch mint associated with serial hash</source>
         <translation>Error al buscar la asociación del acuñado con el hash serial</translation>
     </message>
     <message>
-        <source>Too much inputs (</source>
-        <translation>Demasiadas entradas (</translation>
-    </message>
-    <message>
-        <source>
-Either mint higher denominations (so fewer inputs are needed) or reduce the amount to spend.</source>
-        <translation>
-O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o reduzca la cantidad a gastar.</translation>
-    </message>
-    <message>
         <source>Spend Zerocoin failed with status = </source>
         <translation>Gastar Zerocoin falló con estado =</translation>
-    </message>
-    <message numerus="yes">
-        <source>PrivacyDialog</source>
-        <comment>Enter an amount of DOMO to convert to zDOMO</comment>
-        <translation><numerusform>PrivacyDialog</numerusform><numerusform>PrivacyDialog</numerusform></translation>
     </message>
     <message>
         <source>denomination: </source>
@@ -3024,6 +2835,9 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
         <translation>comisión:</translation>
     </message>
 </context>
+<context>
+    <name>ProposalFrame</name>
+    </context>
 <context>
     <name>QObject</name>
     <message>
@@ -3074,7 +2888,11 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
         <source>%1 ms</source>
         <translation>%1 ms</translation>
     </message>
-</context>
+    <message>
+        <source>DOMO Core</source>
+        <translation>DOMO Core</translation>
+    </message>
+    </context>
 <context>
     <name>QRImageWidget</name>
     <message>
@@ -3305,8 +3123,8 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
         <translation>Ruta personalizada de la copia de seguridad:</translation>
     </message>
     <message>
-        <source>Custom zDOMO Backup Path:</source>
-        <translation>Ruta personalizada de la copia de seguridad zDOMO:</translation>
+        <source>Custom zDOM Backup Path:</source>
+        <translation>Ruta personalizada de la copia de seguridad zDOM:</translation>
     </message>
     <message>
         <source>Custom Backups Threshold:</source>
@@ -3437,10 +3255,6 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
         <translation>Confirmar resincronización del Blockchain</translation>
     </message>
     <message>
-        <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
-        <translation>Use las teclas arriba y abajo para navegar por la historia, y &lt;b&gt;Ctrl-L&lt;/b&gt; para limpiar la pantalla.</translation>
-    </message>
-    <message>
         <source>Type &lt;b&gt;help&lt;/b&gt; for an overview of available commands.</source>
         <translation>Escriba &lt;b&gt;help&lt;/b&gt; para ver una lista de posibles comandos.</translation>
     </message>
@@ -3512,6 +3326,10 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
         <translation>Una etiqueta opcional a asociar con la nueva dirección de recepción.</translation>
     </message>
     <message>
+        <source>A&amp;mount:</source>
+        <translation>Cantidad:</translation>
+    </message>
+    <message>
         <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the DOMO network.</source>
         <translation>Un mensaje opcional a adjuntar a la solicitud de pago, que será mostrado cuando se abra la solicitud. Nota: El mensaje no se envía junto al pago por la red DOMO.</translation>
     </message>
@@ -3534,10 +3352,6 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
     <message>
         <source>An optional amount to request. Leave this empty or zero to not request a specific amount.</source>
         <translation>Una cantidad opcional a solicitar. Deje esto vacío o en cero para no pedir una cantidad específica.</translation>
-    </message>
-    <message>
-        <source>&amp;Amount:</source>
-        <translation>&amp;Cantidad:</translation>
     </message>
     <message>
         <source>&amp;Request payment</source>
@@ -3582,6 +3396,10 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
     <message>
         <source>Copy amount</source>
         <translation>Copiar cantidad</translation>
+    </message>
+    <message>
+        <source>Copy address</source>
+        <translation>Copiar dirección</translation>
     </message>
 </context>
 <context>
@@ -3654,6 +3472,10 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
         <translation>Mensaje</translation>
     </message>
     <message>
+        <source>Address</source>
+        <translation>Dirección</translation>
+    </message>
+    <message>
         <source>Amount</source>
         <translation>Cantidad</translation>
     </message>
@@ -3698,7 +3520,7 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
     </message>
     <message>
         <source>Amount:</source>
-        <translation>Cantidad:</translation>
+        <translation>Suma:</translation>
     </message>
     <message>
         <source>Priority:</source>
@@ -3749,8 +3571,8 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
         <translation>Tamaño de UTXO:</translation>
     </message>
     <message>
-        <source>0 DOMO</source>
-        <translation>0 DOMO</translation>
+        <source>0 DOM</source>
+        <translation>0 DOM</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -3805,12 +3627,12 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
         <translation>Monedas seleccionadas automáticamente</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uDOMOs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uDOMOs in fee,&lt;br /&gt;while "at least" pays 1000 uDOMOs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Si la comisión personalizada se fija en 1000 uDOMOs y la transacción necesita sólo 250 bytes, entonces la opción "por kilobyte" sólo pagará 250 uDOMOs de comisión,&lt;br/&gt;mientras "por lo menos" pagará 1000 uDOMOs. Para transacciones que midan más de un kilobyte ambas pagan por kilobyte.</translation>
+        <source>If the custom fee is set to 1000 uDOMs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uDOMs in fee,&lt;br /&gt;while "at least" pays 1000 uDOMs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Si la comisión personalizada se fija en 1000 uDOMs y la transacción necesita sólo 250 bytes, entonces la opción "por kilobyte" sólo pagará 250 uDOMs de comisión,&lt;br/&gt;mientras "por lo menos" pagará 1000 uDOMs. Para transacciones que midan más de un kilobyte ambas pagan por kilobyte.</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uDOMOs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uDOMOs in fee,&lt;br /&gt;while "total at least" pays 1000 uDOMOs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Si la comisión personalizada se fija en 1000 uDOMOs y la transacción necesita sólo 250 bytes, entonces la opción "por kilobyte" sólo pagará 250 uDOMOs de comisión,&lt;br/&gt;mientras "por lo menos" pagará 1000 uDOMOs. Para transacciones que midan más de un kilobyte ambas pagan por kilobyte.</translation>
+        <source>If the custom fee is set to 1000 uDOMs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uDOMs in fee,&lt;br /&gt;while "total at least" pays 1000 uDOMs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Si la comisión personalizada se fija en 1000 uDOMs y la transacción necesita sólo 250 bytes, entonces la opción "por kilobyte" sólo pagará 250 uDOMs de comisión,&lt;br/&gt;mientras "por lo menos" pagará 1000 uDOMs. Para transacciones que midan más de un kilobyte ambas pagan por kilobyte.</translation>
     </message>
     <message>
         <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for DOMO transactions than the network can process.</source>
@@ -3861,8 +3683,8 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
         <translation>Añadir Destinatario</translation>
     </message>
     <message>
-        <source>Anonymized DOMO</source>
-        <translation>DOMO anonimizados</translation>
+        <source>Anonymized DOM</source>
+        <translation>DOM anonimizados</translation>
     </message>
     <message>
         <source>Balance:</source>
@@ -3935,10 +3757,6 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
     <message>
         <source>A fee %1 times higher than %2 per kB is considered an insanely high fee.</source>
         <translation>Una comisión %1 veces más alta que %2 por kB se considera exageradamente alta.</translation>
-    </message>
-    <message numerus="yes">
-        <source>Estimated to begin confirmation within %n block(s).</source>
-        <translation><numerusform>Estimamos que empezará la confirmación en %n bloques.</numerusform><numerusform>Estimamos que empezará la confirmación en %n bloques.</numerusform></translation>
     </message>
     <message>
         <source>The recipient address is not valid, please recheck.</source>
@@ -4021,7 +3839,7 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
     </message>
     <message>
         <source>Alt+A</source>
-        <translation>Alt + A</translation>
+        <translation>Alt+A</translation>
     </message>
     <message>
         <source>Paste address from clipboard</source>
@@ -4029,7 +3847,7 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
     </message>
     <message>
         <source>Alt+P</source>
-        <translation>Alt + P</translation>
+        <translation>Alt+P</translation>
     </message>
     <message>
         <source>Remove this entry</source>
@@ -4111,7 +3929,7 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
     </message>
     <message>
         <source>Alt+A</source>
-        <translation>Alt + A</translation>
+        <translation>Alt+A</translation>
     </message>
     <message>
         <source>Paste address from clipboard</source>
@@ -4119,7 +3937,7 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
     </message>
     <message>
         <source>Alt+P</source>
-        <translation>Alt + P</translation>
+        <translation>Alt+P</translation>
     </message>
     <message>
         <source>Enter the message you want to sign here</source>
@@ -4245,10 +4063,6 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
         <translation>Los desarrolladores de Dash Core</translation>
     </message>
     <message>
-        <source>The PIVX Core developers</source>
-        <translation>Los desarrolladores de PIVX Core</translation>
-    </message>
-    <message>
         <source>The DOMO Core developers</source>
         <translation>Los desarrolladores de DOMO Core</translation>
     </message>
@@ -4266,10 +4080,6 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
 </context>
 <context>
     <name>TransactionDesc</name>
-    <message numerus="yes">
-        <source>Open for %n more block(s)</source>
-        <translation><numerusform>Abierto para %n bloques más</numerusform><numerusform>Abierto para %n bloques más</numerusform></translation>
-    </message>
     <message>
         <source>Open until %1</source>
         <translation>Abierto hasta %1</translation>
@@ -4330,10 +4140,6 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
         <source>, has not been successfully broadcast yet</source>
         <translation>, no ha sido correctamente transmitida todavía</translation>
     </message>
-    <message numerus="yes">
-        <source>, broadcast through %n node(s)</source>
-        <translation><numerusform>, retransmitido a través de %n nodos</numerusform><numerusform>, retransmitido a través de %n nodos</numerusform></translation>
-    </message>
     <message>
         <source>Date</source>
         <translation>Fecha</translation>
@@ -4373,10 +4179,6 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
     <message>
         <source>Credit</source>
         <translation>Crédito</translation>
-    </message>
-    <message numerus="yes">
-        <source>matures in %n more block(s)</source>
-        <translation><numerusform>madura en %n bloques más</numerusform><numerusform>maduracíon en %n bloques más</numerusform></translation>
     </message>
     <message>
         <source>not accepted</source>
@@ -4476,10 +4278,6 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
         <source>Address</source>
         <translation>Dirección</translation>
     </message>
-    <message numerus="yes">
-        <source>Open for %n more block(s)</source>
-        <translation><numerusform>Abierto para %n bloques más</numerusform><numerusform>Abierto para %n bloques más</numerusform></translation>
-    </message>
     <message>
         <source>Open until %1</source>
         <translation>Abierto hasta %1</translation>
@@ -4529,12 +4327,12 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
         <translation>Recibido por medio de Ofuscación</translation>
     </message>
     <message>
-        <source>DOMO Stake</source>
-        <translation>Stake DOMO</translation>
+        <source>DOM Stake</source>
+        <translation>Stake DOM</translation>
     </message>
     <message>
-        <source>zDOMO Stake</source>
-        <translation>Stake zDOMO</translation>
+        <source>zDOM Stake</source>
+        <translation>Stake zDOM</translation>
     </message>
     <message>
         <source>Obfuscation Denominate</source>
@@ -4553,32 +4351,32 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
         <translation>Ofuscación Crea Billetes</translation>
     </message>
     <message>
-        <source>Converted DOMO to zDOMO</source>
-        <translation>DOMO convertidos a zDOMO</translation>
+        <source>Converted DOM to zDOM</source>
+        <translation>DOM convertidos a zDOM</translation>
     </message>
     <message>
-        <source>Spent zDOMO</source>
-        <translation>Gastar zDOMO</translation>
+        <source>Spent zDOM</source>
+        <translation>Gastar zDOM</translation>
     </message>
     <message>
-        <source>Received DOMO from zDOMO</source>
-        <translation>DOMO recibidos desde zDOMO </translation>
+        <source>Received DOM from zDOM</source>
+        <translation>DOM recibidos desde zDOM</translation>
     </message>
     <message>
-        <source>Minted Change as zDOMO from zDOMO Spend</source>
-        <translation>Cambio de acuñación en zDOMO al Gastar zDOMO</translation>
+        <source>Minted Change as zDOM from zDOM Spend</source>
+        <translation>Cambio de acuñación en zDOM al Gastar zDOM</translation>
     </message>
     <message>
-        <source>Converted zDOMO to DOMO</source>
-        <translation>zDOMO convertidos a DOMO</translation>
+        <source>Converted zDOM to DOM</source>
+        <translation>zDOM convertidos a DOM</translation>
     </message>
     <message>
-        <source>Anonymous (zDOMO Transaction)</source>
-        <translation>Anónimo (Transacción zDOMO)</translation>
+        <source>Anonymous (zDOM Transaction)</source>
+        <translation>Anónimo (Transacción zDOM)</translation>
     </message>
     <message>
-        <source>Anonymous (zDOMO Stake)</source>
-        <translation>Anónimo (Stake zDOMO)</translation>
+        <source>Anonymous (zDOM Stake)</source>
+        <translation>Anónimo (Stake zDOM)</translation>
     </message>
     <message>
         <source>Sent to</source>
@@ -4788,12 +4586,12 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
         <translation>Exportación Correcta</translation>
     </message>
     <message>
-        <source>Received DOMO from zDOMO</source>
-        <translation>DOMO recibidos desde zDOMO</translation>
+        <source>Received DOM from zDOM</source>
+        <translation>DOM recibidos desde zDOM</translation>
     </message>
     <message>
-        <source>Zerocoin Spend, Change in zDOMO</source>
-        <translation>Gastar Zerocoin, Cambio en zDOMO</translation>
+        <source>Zerocoin Spend, Change in zDOM</source>
+        <translation>Gastar Zerocoin, Cambio en zDOM</translation>
     </message>
     <message>
         <source>The transaction history was successfully saved to %1.</source>
@@ -4829,8 +4627,8 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
         <translation>Enviar Monedas</translation>
     </message>
     <message>
-        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 DOMO.</source>
-        <translation>SwiftTX no soporta el envío de importes tan altos todavía. Las transacciones están actualmente limitadas a %1 DOMO.</translation>
+        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 DOM.</source>
+        <translation>SwiftTX no soporta el envío de importes tan altos todavía. Las transacciones están actualmente limitadas a %1 DOM.</translation>
     </message>
 </context>
 <context>
@@ -4861,10 +4659,10 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
     </message>
 </context>
 <context>
-    <name>ZDomoControlDialog</name>
+    <name>ZDomControlDialog</name>
     <message>
-        <source>Select zDOMO to Spend</source>
-        <translation>Selecciona zDOMO para Gastar</translation>
+        <source>Select zDOM to Spend</source>
+        <translation>Selecciona zDOM para Gastar</translation>
     </message>
     <message>
         <source>Quantity</source>
@@ -4875,18 +4673,14 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
         <translation>0</translation>
     </message>
     <message>
-        <source>zDOMO</source>
-        <translation>zDOMO</translation>
+        <source>zDOM</source>
+        <translation>zDOM</translation>
     </message>
     <message>
         <source>Select/Deselect All</source>
         <translation>Seleccionar/Deseleccionar Todos</translation>
     </message>
-    <message>
-        <source>Is Spendable</source>
-        <translation>Es Gastable</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>domo-core</name>
     <message>
@@ -4942,16 +4736,16 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
         <translation>Distribuido bajo licencia MIT software license, ver el archivo adjunto COPYING or &lt;http://www.opensource.org/licenses/mit-license.php&gt;</translation>
     </message>
     <message>
-        <source>Enable automatic wallet backups triggered after each zDOMO minting (0-1, default: %u)</source>
-        <translation>Habilite copias de seguridad automáticas del monedero que se activan después de cada acuñación zDOMO (0-1, predeterminado: %u)</translation>
+        <source>Enable automatic wallet backups triggered after each zDOM minting (0-1, default: %u)</source>
+        <translation>Habilite copias de seguridad automáticas del monedero que se activan después de cada acuñación zDOM (0-1, predeterminado: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for DOMO inputs (0-1, default: %u)</source>
-        <translation>Habilitar o deshabilitar la funcionalidad de staking para las entradas DOMO (0-1, predeterminado: %u)</translation>
+        <source>Enable or disable staking functionality for DOM inputs (0-1, default: %u)</source>
+        <translation>Habilitar o deshabilitar la funcionalidad de staking para las entradas DOM (0-1, predeterminado: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for zDOMO inputs (0-1, default: %u)</source>
-        <translation>Habilitar o deshabilitar la funcionalidad de staking para las entradas zDOMO (0-1, predeterminado: %u)</translation>
+        <source>Enable or disable staking functionality for zDOM inputs (0-1, default: %u)</source>
+        <translation>Habilitar o deshabilitar la funcionalidad de staking para las entradas zDOM (0-1, predeterminado: %u)</translation>
     </message>
     <message>
         <source>Enable spork administration functionality with the appropriate private key.</source>
@@ -4986,20 +4780,16 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
         <translation>Ejecutar comando cuando el mejor bloque cambie (%s en cmd es reemplazado por el block hash)</translation>
     </message>
     <message>
-        <source>Fees (in DOMO/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Comisiones (en DOMO/Kb) menores a esta son consideradas gratuitas para la propagación de la transacción (default: %s)</translation>
+        <source>Fees (in DOM/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Comisiones (en DOM/Kb) menores a esta son consideradas gratuitas para la propagación de la transacción (default: %s)</translation>
     </message>
     <message>
-        <source>Fees (in DOMO/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Comisiones (en DOMO/Kb) menores a esta son consideradas gratuitas para la creación de la transacción (default: %s)</translation>
+        <source>Fees (in DOM/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Comisiones (en DOM/Kb) menores a esta son consideradas gratuitas para la creación de la transacción (default: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
         <translation>Trasladar la actividad de la base de datos en el pool de memoria al log de disco cada &lt;n&gt; megabytes (default: %u)</translation>
-    </message>
-    <message>
-        <source>Found unconfirmed denominated outputs, will wait till they confirm to continue.</source>
-        <translation>Se encontró salidas denominadas sin confirmar, se esperará hasta que se confirmen para continuar.</translation>
     </message>
     <message>
         <source>If paytxfee is not set, include enough fee so transactions begin confirmation on average within n blocks (default: %u)</source>
@@ -5098,12 +4888,12 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
         <translation>Imposible localizar suficientes fondos denominados de Ofuscación para esta transacción.</translation>
     </message>
     <message>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 DOMO.</source>
-        <translation>Imposible localizar suficientes fondos no-denominados de Ofuscación para esta transacción que no es igual a 10000 DOMO.</translation>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 DOM.</source>
+        <translation>Imposible localizar suficientes fondos no-denominados de Ofuscación para esta transacción que no es igual a 10000 DOM.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 DOMO.</source>
-        <translation>Imposible localizar fondos suficientes para esta transacción que no es igual a 10000 DOMO.</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 DOM.</source>
+        <translation>Imposible localizar fondos suficientes para esta transacción que no es igual a 10000 DOM.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -5150,8 +4940,8 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
         <translation>Debes especificar un masternodeprivkey en la configuración. Por favor mira la documentación por ayuda.</translation>
     </message>
     <message>
-        <source>(52992 could be used only on mainnet)</source>
-        <translation>(52992 puede ser utilizado solo en mainnet)</translation>
+        <source>(30717 could be used only on mainnet)</source>
+        <translation>(30717 puede ser utilizado solo en mainnet)</translation>
     </message>
     <message>
         <source>(default: %s)</source>
@@ -5162,8 +4952,8 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
         <translation>(predeterminado: 1)</translation>
     </message>
     <message>
-        <source>(must be 52992 for mainnet)</source>
-        <translation>(debe ser 52992 para un mainnet)</translation>
+        <source>(must be 30717 for mainnet)</source>
+        <translation>(debe ser 30717 para un mainnet)</translation>
     </message>
     <message>
         <source>Accept command line and JSON-RPC commands</source>
@@ -5186,10 +4976,6 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
         <translation>Permitir búsquedas DNS para -addnode, -seednode y -connect</translation>
     </message>
     <message>
-        <source>Already have that input.</source>
-        <translation>Ya tiene esa entrada.</translation>
-    </message>
-    <message>
         <source>Always query for peer addresses via DNS lookup (default: %u)</source>
         <translation>Siempre consultar por direcciones de pares vía búsqueda DNS (predeterminado: %u)</translation>
     </message>
@@ -5210,18 +4996,6 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
         <translation>Calculando acumuladores pendientes...</translation>
     </message>
     <message>
-        <source>Can't denominate: no compatible inputs left.</source>
-        <translation>No se puede denominar: quedaron entradas no compatibles.</translation>
-    </message>
-    <message>
-        <source>Can't find random Masternode.</source>
-        <translation>No se puede encontrar un Masternode al azar.</translation>
-    </message>
-    <message>
-        <source>Can't mix while sync in progress.</source>
-        <translation>No se puede mezclar mientras la sincronización esta en progreso.</translation>
-    </message>
-    <message>
         <source>Cannot downgrade wallet</source>
         <translation>No se puede volver a una versión anterior del monedero</translation>
     </message>
@@ -5240,10 +5014,6 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
     <message>
         <source>Cannot write default address</source>
         <translation>No se puede escribir la dirección predeterminada</translation>
-    </message>
-    <message>
-        <source>Collateral not valid.</source>
-        <translation>Colateral no válido.</translation>
     </message>
     <message>
         <source>Connect only to the specified node(s)</source>
@@ -5270,12 +5040,8 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
         <translation>Copyright (C) 2014-%i The Dash Core Developers</translation>
     </message>
     <message>
-        <source>Copyright (C) 2015-%i The PIVX Core Developers</source>
-        <translation>Copyright (C) 2015-%i The PIVX Core Developers</translation>
-    </message>
-    <message>
-        <source>Copyright (C) %i The DOMO Core Developers</source>
-        <translation>Copyright (C) %i The DOMO Core Developers</translation>
+        <source>Copyright (C) 2015-%i The DOMO Core Developers</source>
+        <translation>Copyright (C) 2015-%i The DOMO Core Developers</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>
@@ -5334,14 +5100,6 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
         <translation>Habilitar al cliente para actuar como un nodo maestro (0-1. predeterminado: %u)</translation>
     </message>
     <message>
-        <source>Entries are full.</source>
-        <translation>Las entradas están llenas.</translation>
-    </message>
-    <message>
-        <source>Error connecting to Masternode.</source>
-        <translation>Error al conectar al Nodo Maestro</translation>
-    </message>
-    <message>
         <source>Error initializing block database</source>
         <translation>Error al inicializar base de datos de bloques</translation>
     </message>
@@ -5378,16 +5136,16 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
         <translation>Error al recuperar clave pública.</translation>
     </message>
     <message>
+        <source>Error writing zerocoinDB to disk</source>
+        <translation>Error al escribir zerocoinDB en el disco</translation>
+    </message>
+    <message>
         <source>Error</source>
         <translation>Error</translation>
     </message>
     <message>
         <source>Error: A fatal internal error occured, see debug.log for details</source>
         <translation>Error: Un error interno fatal a ocurrido, ver debug.log para mas detalles</translation>
-    </message>
-    <message>
-        <source>Error: Can't select current denominated inputs</source>
-        <translation>Error: No se pudo seleccionar las entradas denominadas actuales</translation>
     </message>
     <message>
         <source>Error: Disk space is low!</source>
@@ -5402,10 +5160,6 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
         <translation>Error: ¡Monedero bloqueado, imposible crear transacción!</translation>
     </message>
     <message>
-        <source>Error: You already have pending entries in the Obfuscation pool</source>
-        <translation>Error: Ya tienes entradas pendientes en el pool de Ofuscación</translation>
-    </message>
-    <message>
         <source>Failed to calculate accumulator checkpoint</source>
         <translation>Error al calcular el punto de control del acumulador</translation>
     </message>
@@ -5414,28 +5168,20 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
         <translation>Falló la escucha en cualquiera de los puertos. Usar -listen=0 si quieres esto.</translation>
     </message>
     <message>
+        <source>Failed to parse host:port string</source>
+        <translation>Error al analizar el host: cadena del puerto</translation>
+    </message>
+    <message>
         <source>Failed to read block</source>
         <translation>Falló al leer el bloque</translation>
     </message>
     <message>
-        <source>Fee (in DOMO/kB) to add to transactions you send (default: %s)</source>
-        <translation>Comisión (en DOMO/kB) para agregar a la transacción que envías (predeterminado: %s)</translation>
-    </message>
-    <message>
-        <source>Finalizing transaction.</source>
-        <translation>Finalizando transacción.</translation>
+        <source>Fee (in DOM/kB) to add to transactions you send (default: %s)</source>
+        <translation>Comisión (en DOM/kB) para agregar a la transacción que envías (predeterminado: %s)</translation>
     </message>
     <message>
         <source>Force safe mode (default: %u)</source>
         <translation>Forzar modo seguro (predeterminado: %u)</translation>
-    </message>
-    <message>
-        <source>Found enough users, signing ( waiting %s )</source>
-        <translation>Se han encontrado suficientes usuarios, firmando ( esperando %s )</translation>
-    </message>
-    <message>
-        <source>Found enough users, signing ...</source>
-        <translation>Se han encontrado suficientes usuarios, firmando ...</translation>
     </message>
     <message>
         <source>Generate coins (default: %u)</source>
@@ -5462,14 +5208,6 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
         <translation>Incluir direcciones IP en salida de depuración (predeterminado: %u)</translation>
     </message>
     <message>
-        <source>Incompatible mode.</source>
-        <translation>Modo incompatible.</translation>
-    </message>
-    <message>
-        <source>Incompatible version.</source>
-        <translation>Versión imcompatible.</translation>
-    </message>
-    <message>
         <source>Incorrect or no genesis block found. Wrong datadir for network?</source>
         <translation>Bloque de génesis incorrecto o no encontrado. datadir equivocado para red?</translation>
     </message>
@@ -5480,10 +5218,6 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
     <message>
         <source>Initialization sanity check failed. DOMO Core is shutting down.</source>
         <translation>La prueba de salud de inicialización ha fallado. DOMO Core se cerrará.</translation>
-    </message>
-    <message>
-        <source>Input is not valid.</source>
-        <translation>La entrada no es válida.</translation>
     </message>
     <message>
         <source>Insufficient funds</source>
@@ -5542,16 +5276,12 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
         <translation>Clave pública inválida.</translation>
     </message>
     <message>
-        <source>Invalid script detected.</source>
-        <translation>Script inválido detectado.</translation>
-    </message>
-    <message>
         <source>Percentage of automatically minted Zerocoin  (1-100, default: %u)</source>
         <translation>Porcentaje de Zerocoin creadas automáticamente (10-100, por defecto: %u)</translation>
     </message>
     <message>
-        <source>Reindex the DOMO and zDOMO money supply statistics</source>
-        <translation>Reindexar as estatísticas de fornecimento de dinheiro DOMO e zDOMO</translation>
+        <source>Reindex the DOM and zDOM money supply statistics</source>
+        <translation>Reindexar as estatísticas de fornecimento de dinheiro DOM e zDOM</translation>
     </message>
     <message>
         <source>Reindexing zerocoin database...</source>
@@ -5626,8 +5356,8 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
         <translation>Denominación preferida para acuñado automatico de Zerocoin (1/5/10/50/100/500/1000/5000), 0 para ninguna preferencia. predeterminado: %u)</translation>
     </message>
     <message>
-        <source>Specify custom backup path to add a copy of any automatic zDOMO backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
-        <translation>Especifique la ruta de copia de seguridad personalizada para agregar una copia de cualquier copia de seguridad zDOMO automática. Si se establece como directorio, cada copia de seguridad genera un archivo con marcas de tiempo. Si se establece como archivo, se reescribirá en ese archivo cada copia de seguridad. Si también se establece backuppath, se realizarán 4 copias de seguridad</translation>
+        <source>Specify custom backup path to add a copy of any automatic zDOM backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
+        <translation>Especifique la ruta de copia de seguridad personalizada para agregar una copia de cualquier copia de seguridad zDOM automática. Si se establece como directorio, cada copia de seguridad genera un archivo con marcas de tiempo. Si se establece como archivo, se reescribirá en ese archivo cada copia de seguridad. Si también se establece backuppath, se realizarán 4 copias de seguridad</translation>
     </message>
     <message>
         <source>Specify custom backup path to add a copy of any wallet backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup.</source>
@@ -5690,10 +5420,6 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
         <translation>Error al acuñar</translation>
     </message>
     <message>
-        <source>Failed to deserialize</source>
-        <translation>Error al deserializar</translation>
-    </message>
-    <message>
         <source>Failed to find Zerocoins in wallet.dat</source>
         <translation>Error al encontrar Zerocoins en wallet.dat</translation>
     </message>
@@ -5712,14 +5438,6 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
     <message>
         <source>Keep at most &lt;n&gt; unconnectable transactions in memory (default: %u)</source>
         <translation>Mantener como máximo &lt;n&gt; transacciones no conectables en memoria (predeterminado: %u)</translation>
-    </message>
-    <message>
-        <source>Last Obfuscation was too recent.</source>
-        <translation>La última Ofuscación fue demasiado reciente.</translation>
-    </message>
-    <message>
-        <source>Last successful Obfuscation action was too recent.</source>
-        <translation>La última acción de Ofuscación exitosa fue demasiado reciente.</translation>
     </message>
     <message>
         <source>Limit size of signature cache to &lt;n&gt; entries (default: %u)</source>
@@ -5774,10 +5492,6 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
         <translation>Ubicación de la cookie de autenticación (predeterminado: data dir)</translation>
     </message>
     <message>
-        <source>Lock is already in place.</source>
-        <translation>Bloqueo esta en su lugar.</translation>
-    </message>
-    <message>
         <source>Lock masternodes from masternode configuration file (default: %u)</source>
         <translation>Bloquear nodos maestros desde el archivo de configuración de nodo maestro (predeterminado: %u)</translation>
     </message>
@@ -5794,14 +5508,6 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
         <translation>Opciones de Masternode:</translation>
     </message>
     <message>
-        <source>Masternode queue is full.</source>
-        <translation>La cola del Masternode esta llena.</translation>
-    </message>
-    <message>
-        <source>Masternode:</source>
-        <translation>Masternode:</translation>
-    </message>
-    <message>
         <source>Maximum per-connection receive buffer, &lt;n&gt;*1000 bytes (default: %u)</source>
         <translation>Buffer de recepción máximo por conexión, &lt;n&gt;*1000 bytes (predeterminado: %u)</translation>
     </message>
@@ -5814,14 +5520,6 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
         <translation>El Acuñado no se realizó en blockchain</translation>
     </message>
     <message>
-        <source>Missing input transaction information.</source>
-        <translation>Información de transacciones de entrada perdidas.</translation>
-    </message>
-    <message>
-        <source>Mixing in progress...</source>
-        <translation>Mezcla en progreso...</translation>
-    </message>
-    <message>
         <source>Need address because change is not exact</source>
         <translation>Necesita dirección porque el cambio no es exacto</translation>
     </message>
@@ -5830,40 +5528,12 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
         <translation>Necesita especificar un puerto con -whitebind: '%s'</translation>
     </message>
     <message>
-        <source>No Masternodes detected.</source>
-        <translation>No se han detectado Masternodes.</translation>
-    </message>
-    <message>
-        <source>No compatible Masternode found.</source>
-        <translation>No hay un Masternode compatible encontrado.</translation>
-    </message>
-    <message>
-        <source>No funds detected in need of denominating.</source>
-        <translation>No hay fondos detectados necesarios de denominación.</translation>
-    </message>
-    <message>
-        <source>No matching denominations found for mixing.</source>
-        <translation>No hemos encontrado billetes coincidentes para mezclado.</translation>
-    </message>
-    <message>
         <source>Node relay options:</source>
         <translation>Opciones de transmisión del nodo:</translation>
     </message>
     <message>
-        <source>Non-standard public key detected.</source>
-        <translation>Clave pública no-estandar ha sido detectada.</translation>
-    </message>
-    <message>
-        <source>Not compatible with existing transactions.</source>
-        <translation>No es compatible con las transacciones salientes.</translation>
-    </message>
-    <message>
         <source>Not enough file descriptors available.</source>
         <translation>No hay suficientes descriptores de archivo disponibles.</translation>
-    </message>
-    <message>
-        <source>Not in the Masternode list.</source>
-        <translation>No en la lista Masternode.</translation>
     </message>
     <message>
         <source>Number of automatic wallet backups (default: 10)</source>
@@ -5872,18 +5542,6 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
     <message>
         <source>Number of custom location backups to retain (default: %d)</source>
         <translation>Número de copias de seguridad personalizadas que se deben retener (predeterminado: %d)</translation>
-    </message>
-    <message>
-        <source>Obfuscation is idle.</source>
-        <translation>La Ofuscación está sin uso.</translation>
-    </message>
-    <message>
-        <source>Obfuscation request complete:</source>
-        <translation>Pedido de Ofuscacion completado:</translation>
-    </message>
-    <message>
-        <source>Obfuscation request incomplete:</source>
-        <translation>Pedido de Ofuscación incompleto:</translation>
     </message>
     <message>
         <source>Only accept block chain matching built-in checkpoints (default: %u)</source>
@@ -5976,10 +5634,6 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
     <message>
         <source>Send transactions as zero-fee transactions if possible (default: %u)</source>
         <translation>Enviar transacciones como transacciones cero-comisión si es posible (predeterminado: %u)</translation>
-    </message>
-    <message>
-        <source>Session not complete!</source>
-        <translation>Sesión no completa!</translation>
     </message>
     <message>
         <source>Session timed out.</source>
@@ -6086,18 +5740,6 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
         <translation>Parar la ejecución después de importar bloques desde el disco (predeterminado: %u)</translation>
     </message>
     <message>
-        <source>Submitted following entries to masternode: %u / %d</source>
-        <translation>Se enviaron las siguientes entradas a masternode: %u / %d</translation>
-    </message>
-    <message>
-        <source>Submitted to masternode, waiting for more entries ( %u / %d ) %s</source>
-        <translation>Enviado a masternode, esperando por mas entradas (%u / %d) %s</translation>
-    </message>
-    <message>
-        <source>Submitted to masternode, waiting in queue %s</source>
-        <translation>Enviado a masternode, quedando en espera %s</translation>
-    </message>
-    <message>
         <source>Synchronization failed</source>
         <translation>Falló la sincronización</translation>
     </message>
@@ -6126,20 +5768,12 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
         <translation>Sincronizando con la red... </translation>
     </message>
     <message>
-        <source>Syncing zDOMO wallet...</source>
-        <translation>Sincronizando el monedero zDOMO...</translation>
+        <source>Syncing zDOM wallet...</source>
+        <translation>Sincronizando el monedero zDOM...</translation>
     </message>
     <message>
         <source>The coin spend has been used</source>
         <translation>El gasto de moneda se ha usado</translation>
-    </message>
-    <message>
-        <source>The new spend coin transaction did not verify</source>
-        <translation>La nueva transacción de gasto de moneda no se verificó</translation>
-    </message>
-    <message>
-        <source>The selected mint coin is an invalid coin</source>
-        <translation>La moneda acuñada seleccionada es una moneda no válida</translation>
     </message>
     <message>
         <source>The transaction did not verify</source>
@@ -6156,10 +5790,6 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
     <message>
         <source>This is intended for regression testing tools and app development.</source>
         <translation>Esto esta destinado para herramientas de prueba de regresión y desarrollo de aplicaciones.</translation>
-    </message>
-    <message>
-        <source>This is not a Masternode.</source>
-        <translation>Este no es un nodo maestro.</translation>
     </message>
     <message>
         <source>Threshold for disconnecting misbehaving peers (default: %u)</source>
@@ -6194,18 +5824,6 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
         <translation>El monto de la transacción debe ser positivo</translation>
     </message>
     <message>
-        <source>Transaction created successfully.</source>
-        <translation>Transacción creada satisfactoriamente.</translation>
-    </message>
-    <message>
-        <source>Transaction fees are too high.</source>
-        <translation>La comision de transacción es demasiado alta.</translation>
-    </message>
-    <message>
-        <source>Transaction not valid.</source>
-        <translation>La transacción no es valida.</translation>
-    </message>
-    <message>
         <source>Transaction too large for fee policy</source>
         <translation>La transacción es demasiado grande para la política de comisión.</translation>
     </message>
@@ -6214,24 +5832,12 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
         <translation>La transacción es demasiado grande</translation>
     </message>
     <message>
-        <source>Transmitting final transaction.</source>
-        <translation>Transmitiendo la transacción final.</translation>
-    </message>
-    <message>
-        <source>Try to spend with a higher security level to include more coins</source>
-        <translation>Intenta gastar con un nivel de seguridad más alto para incluir más monedas</translation>
-    </message>
-    <message>
         <source>Trying to spend an already spent serial #, try again.</source>
         <translation>Tentando gastar um número de série já gasto, tente novamente.</translation>
     </message>
     <message>
         <source>Unable to bind to %s on this computer (bind returned error %s)</source>
         <translation>Imposible enlazar %s en esta computadora (enlace retorna error %s)</translation>
-    </message>
-    <message>
-        <source>Unable to find transaction containing mint</source>
-        <translation>No se puede encontrar la transacción que contiene la acuñación</translation>
     </message>
     <message>
         <source>Unable to sign spork message, wrong key?</source>
@@ -6244,10 +5850,6 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
     <message>
         <source>Unknown network specified in -onlynet: '%s'</source>
         <translation>Red especificada desconocida en -onlynet: '%s'</translation>
-    </message>
-    <message>
-        <source>Unknown state: id = %u</source>
-        <translation>Estado desconocido: id = %u</translation>
     </message>
     <message>
         <source>Upgrade wallet to latest format</source>
@@ -6274,12 +5876,8 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
         <translation>Nombre de usuario para conexiones JSON-RPC</translation>
     </message>
     <message>
-        <source>Value is below the smallest available denomination (= 1) of zDOMO</source>
-        <translation>El valor está por debajo de la denominación más pequeña disponible (= 1) de zDOMO</translation>
-    </message>
-    <message>
-        <source>Value more than Obfuscation pool maximum allows.</source>
-        <translation>Valor mayor al máximo pool de Ofuscación permitido.</translation>
+        <source>Value is below the smallest available denomination (= 1) of zDOM</source>
+        <translation>El valor está por debajo de la denominación más pequeña disponible (= 1) de zDOM</translation>
     </message>
     <message>
         <source>Verifying blocks...</source>
@@ -6290,16 +5888,8 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
         <translation>Verificando el monedero...</translation>
     </message>
     <message>
-        <source>Version 1 zDOMO require a security level of 100 to successfully spend.</source>
-        <translation>La versión 1 zDOMO requiere un nivel de seguridad de 100 para gastar exitosamente.</translation>
-    </message>
-    <message>
         <source>Wallet %s resides outside data directory %s</source>
         <translation>El monedero %s esta ubicada fuera del directorio de datos %s</translation>
-    </message>
-    <message>
-        <source>Wallet is locked.</source>
-        <translation>Monedero bloqueado.</translation>
     </message>
     <message>
         <source>Wallet needed to be rewritten: restart DOMO Core to complete</source>
@@ -6330,24 +5920,12 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
         <translation>Advertencia: Argumento no soportado -debugnet ignorado, use -debug=net.</translation>
     </message>
     <message>
-        <source>Will retry...</source>
-        <translation>Probando...</translation>
-    </message>
-    <message>
         <source>You don't have enough Zerocoins in your wallet</source>
         <translation>No tienes suficientes Zerocoins en tu monedero</translation>
     </message>
     <message>
         <source>You need to rebuild the database using -reindex to change -txindex</source>
         <translation>Usted necesita reconstruir la base de datos usando -reindex para cambiar -txindex</translation>
-    </message>
-    <message>
-        <source>Your entries added successfully.</source>
-        <translation>Su entrada a sido agregada satisfactoriamente.</translation>
-    </message>
-    <message>
-        <source>Your transaction was accepted into the pool!</source>
-        <translation>Su transacción ha sido aceptada en el pool!</translation>
     </message>
     <message>
         <source>Zapping all transactions from wallet...</source>

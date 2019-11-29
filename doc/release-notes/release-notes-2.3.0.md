@@ -151,7 +151,7 @@ git merge commit are mentioned.
 - #201 `f0e87b1` [RPC] Add active/incative flag to getstakingstatus RPC call (Mrs-X)
 
 ### Configuration and command-line options
-- #180 `16b8601` [Wallet] Add parameter interaction between -disablewallet and -domostake (Aaron Miller)
+- #180 `16b8601` [Wallet] Add parameter interaction between -disablewallet and -staking (Aaron Miller)
 - #208 `5f494c4` [Qt] Fix segfault when running with `-help` (Fuzzbawls)
 - #193 `ac7590b` [Output] Reformat help messages (Fuzzbawls)
 - #230 `aa47fa4` [Output] Update default value for -peerbloomfilters in help (Fuzzbawls)

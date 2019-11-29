@@ -176,16 +176,16 @@
         <translation>Potvrdi šifriranje novčanika</translation>
     </message>
     <message>
-        <source>DOMO will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your DOMOs from being stolen by malware infecting your computer.</source>
-        <translation>DOMO se sada zatvara kako bi dovršio proces šifriranja. Ne zaboravite da šifriranje vašeg novčanika ne može u potpunosti zaštititi vaše DOMO od krađe zlonamjernog softvera koji zarazi vaše računalo.</translation>
+        <source>DOMO will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your DOMs from being stolen by malware infecting your computer.</source>
+        <translation>DOMO se sada zatvara kako bi dovršio proces šifriranja. Ne zaboravite da šifriranje vašeg novčanika ne može u potpunosti zaštititi vaše DOM od krađe zlonamjernog softvera koji zarazi vaše računalo.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Jeste li sigurni da želite šifrirati svoj novčanik?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR DOMO&lt;/b&gt;!</source>
-        <translation>Upozorenje: Ako šifrirate svoj novčanik i izgubite zaporku, 1 izgubit ćete sve Vaše DOMOove 1 !</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR DOM&lt;/b&gt;!</source>
+        <translation>Upozorenje: Ako šifrirate svoj novčanik i izgubite zaporku, 1 izgubit ćete sve Vaše DOMove 1 !</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -251,7 +251,7 @@
     </message>
     <message>
         <source>Address:</source>
-        <translation>Adresa:</translation>
+        <translation>Adresa: </translation>
     </message>
     <message>
         <source>Enter a DOMO Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
@@ -433,8 +433,8 @@
         <translation>Pregled povijesti transakcija</translation>
     </message>
     <message>
-        <source>Privacy Actions for zDOMO</source>
-        <translation>Postavke privatnosti za zDOMO</translation>
+        <source>Privacy Actions for zDOM</source>
+        <translation>Postavke privatnosti za zDOM</translation>
     </message>
     <message>
         <source>E&amp;xit</source>
@@ -608,10 +608,6 @@
         <source>&amp;Command-line options</source>
         <translation>Opcije naredbene linije</translation>
     </message>
-    <message numerus="yes">
-        <source>Processed %n blocks of transaction history.</source>
-        <translation><numerusform>Obrađeno %n blokova povijesti transakcija.</numerusform><numerusform>Obrađeno %n blokova povijesti transakcija.</numerusform><numerusform>Obrađeno %n blokova povijesti transakcija.</numerusform></translation>
-    </message>
     <message>
         <source>Synchronizing additional data: %p%</source>
         <translation>Usklađivanje dodatnih podataka: %p%</translation>
@@ -734,11 +730,7 @@
     </message>
     <message>
         <source>DOMO Core client</source>
-        <translation>DOMOIX Core Klijent</translation>
-    </message>
-    <message numerus="yes">
-        <source>%n active connection(s) to DOMO network</source>
-        <translation><numerusform>%n aktivne veze na DOMO mrežu</numerusform><numerusform>%n aktivne veze na DOMO mrežu</numerusform><numerusform>%n aktivne veze na DOMO mrežu</numerusform></translation>
+        <translation>DOMIX Core Klijent</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -760,25 +752,9 @@
         <source>Up to date</source>
         <translation>Ažurirano</translation>
     </message>
-    <message numerus="yes">
-        <source>%n hour(s)</source>
-        <translation><numerusform>%n sati</numerusform><numerusform>%n sati</numerusform><numerusform>%n sati</numerusform></translation>
-    </message>
-    <message numerus="yes">
-        <source>%n day(s)</source>
-        <translation><numerusform>%n dana</numerusform><numerusform>%n dana</numerusform><numerusform>%n dana</numerusform></translation>
-    </message>
-    <message numerus="yes">
-        <source>%n week(s)</source>
-        <translation><numerusform>%n tjedni</numerusform><numerusform>%n tjedni</numerusform><numerusform>%n tjedni</numerusform></translation>
-    </message>
     <message>
         <source>%1 and %2</source>
         <translation>%1 i %2</translation>
-    </message>
-    <message numerus="yes">
-        <source>%n year(s)</source>
-        <translation><numerusform>%n godine</numerusform><numerusform>%n godine</numerusform><numerusform>%n godine</numerusform></translation>
     </message>
     <message>
         <source>Catching up...</source>
@@ -836,7 +812,7 @@ Višestruko slanje: %1</translation>
     </message>
     <message>
         <source>Active</source>
-        <translation>Aktivno</translation>
+        <translation>Aktivno </translation>
     </message>
     <message>
         <source>Not Active</source>
@@ -864,7 +840,7 @@ Višestruko slanje: %1</translation>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
         <translation>Novčanik je 1. šifriran 1. i trenutno 2. zaključan 2.</translation>
     </message>
-</context>
+    </context>
 <context>
     <name>BlockExplorer</name>
     <message>
@@ -1130,8 +1106,8 @@ Višestruko slanje: %1</translation>
         <translation>Ova oznaka postaje crvena ako neki primatelj prima iznos manji od %1.</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 upiv per input.</source>
-        <translation>Može varirati +/- %1 upiv po unosu.</translation>
+        <source>Can vary +/- %1 udom per input.</source>
+        <translation>Može varirati +/- %1 udom po unosu.</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -1224,6 +1200,17 @@ Višestruko slanje: %1</translation>
         <translation>Ovdje nije moguće stvoriti direktorij za podatke.</translation>
     </message>
 </context>
+<context>
+    <name>GovernancePage</name>
+    <message>
+        <source>Form</source>
+        <translation>Obrazac</translation>
+    </message>
+    <message>
+        <source>0</source>
+        <translation>0</translation>
+    </message>
+    </context>
 <context>
     <name>HelpMessageDialog</name>
     <message>
@@ -1542,45 +1529,8 @@ MultiSend neće biti aktiviran dok ne kliknete Aktiviraj</translation>
         <translation>(bez oznake)</translation>
     </message>
     <message>
-        <source>The entered address:
-</source>
-        <translation>Unesena adresa:</translation>
-    </message>
-    <message>
-        <source> is invalid.
-Please check the address and try again.</source>
-        <translation>je netočna.
-Provjerite adresu i pokušajte ponovo.</translation>
-    </message>
-    <message>
-        <source>The total amount of your MultiSend vector is over 100% of your stake reward
-</source>
-        <translation>Ukupna količina vašeg MultiSend vektora iznosi preko 100% vaše nagrade uloga
-</translation>
-    </message>
-    <message>
         <source>Please Enter 1 - 100 for percent.</source>
         <translation>Unesite 1 - 100 za postotak.</translation>
-    </message>
-    <message>
-        <source>Saved the MultiSend to memory, but failed saving properties to the database.
-</source>
-        <translation>Spremio je MultiSend u memoriju, ali nije spasio svojstva u bazi podataka.</translation>
-    </message>
-    <message>
-        <source>MultiSend Vector
-</source>
-        <translation>MultiSend Vektor
-</translation>
-    </message>
-    <message>
-        <source>Removed </source>
-        <translation>Uklonjeno</translation>
-    </message>
-    <message>
-        <source>Could not locate address
-</source>
-        <translation>Nije moguće pronaći adresu</translation>
     </message>
 </context>
 <context>
@@ -1679,8 +1629,8 @@ Budite strpljivi nakon što kliknete uvoz.</translation>
         <translation>Adresa / iznos:</translation>
     </message>
     <message>
-        <source>Add destinations to send DOMO to</source>
-        <translation>Dodajte odredišta za slanje DOMO
+        <source>Add destinations to send DOM to</source>
+        <translation>Dodajte odredišta za slanje DOM
 </translation>
     </message>
     <message>
@@ -1754,73 +1704,6 @@ Budite strpljivi nakon što kliknete uvoz.</translation>
     <message>
         <source>Maximum (15)</source>
         <translation>Maksimum (15)</translation>
-    </message>
-</context>
-<context>
-    <name>ObfuscationConfig</name>
-    <message>
-        <source>Configure Obfuscation</source>
-        <translation>Konfiguriraj Obfuscation</translation>
-    </message>
-    <message>
-        <source>Basic Privacy</source>
-        <translation>Osnovna privatnost</translation>
-    </message>
-    <message>
-        <source>High Privacy</source>
-        <translation>Visoka privatnost</translation>
-    </message>
-    <message>
-        <source>Maximum Privacy</source>
-        <translation>Maksimalna privatnost</translation>
-    </message>
-    <message>
-        <source>Please select a privacy level.</source>
-        <translation>Odaberi razinu privatnosti.</translation>
-    </message>
-    <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 DOMO</source>
-        <translation>Koristite 2 odvojene masternode za miješanje sredstava do 10000 DOMO</translation>
-    </message>
-    <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 DOMO</source>
-        <translation>Koristite 8 zasebnih masternoda za miješanje sredstava do 10000 DOMO</translation>
-    </message>
-    <message>
-        <source>Use 16 separate masternodes</source>
-        <translation>Koristite 16 zasebnih masternodova</translation>
-    </message>
-    <message>
-        <source>This option is the quickest and will cost about ~0.025 DOMO to anonymize 10000 DOMO</source>
-        <translation>Ova je opcija najbrža i košta oko 0,025 DOMO da anonimizira 10000 DOMO</translation>
-    </message>
-    <message>
-        <source>This option is moderately fast and will cost about 0.05 DOMO to anonymize 10000 DOMO</source>
-        <translation>Ova je opcija umjereno brza i košta oko 0,05 DOMO da anonimizira 10000 DOMO</translation>
-    </message>
-    <message>
-        <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
-        <translation>Ovo je najsporiji i najsigurniji izbor. Korištenje maksimalne anonimnosti košta</translation>
-    </message>
-    <message>
-        <source>0.1 DOMO per 10000 DOMO you anonymize.</source>
-        <translation>0,1 DOMO po 10000 DOMO za anonimizaciju.</translation>
-    </message>
-    <message>
-        <source>Obfuscation Configuration</source>
-        <translation>Obfuscation Konfiguracija</translation>
-    </message>
-    <message>
-        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening DOMO's configuration screen.</source>
-        <translation>Obfuscation je uspješno postavljen na osnovne (%1 i 2 runde). To možete promijeniti u bilo kojem trenutku otvaranjem zaslona za konfiguraciju DOMO-a.</translation>
-    </message>
-    <message>
-        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening DOMO's configuration screen.</source>
-        <translation>Obfuscation je uspješno postavljen na visoku razinu (%1 i 8 krugova). To možete promijeniti u bilo kojem trenutku otvaranjem zaslona za konfiguraciju DOMO-a</translation>
-    </message>
-    <message>
-        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening DOMO's configuration screen.</source>
-        <translation>Obfuscation je uspješno postavljen na maksimalnu razinu (%1 i 16 krugova). To možete promijeniti u bilo kojem trenutku otvaranjem zaslona za konfiguraciju DOMO-a.</translation>
     </message>
 </context>
 <context>
@@ -1948,28 +1831,28 @@ https://www.transifex.com/domo-project/domo-project-translations</translation>
 </translation>
     </message>
     <message>
-        <source>Enable automatic minting of DOMO units to zDOMO</source>
-        <translation>Omogućite automint DOMO jedinica na zDOMO</translation>
+        <source>Enable automatic minting of DOM units to zDOM</source>
+        <translation>Omogućite automint DOM jedinica na zDOM</translation>
     </message>
     <message>
-        <source>Enable zDOMO Automint</source>
-        <translation>Omogući zDOMO Automint</translation>
+        <source>Enable zDOM Automint</source>
+        <translation>Omogući zDOM Automint</translation>
     </message>
     <message>
-        <source>Percentage of incoming DOMO which get automatically converted to zDOMO via Zerocoin Protocol (min: 10%)</source>
-        <translation>Postotak dolaznih DOMO koji se automatski pretvara u zDOMO putem protokola Zerocoin (min: 10%)</translation>
+        <source>Percentage of incoming DOM which get automatically converted to zDOM via Zerocoin Protocol (min: 10%)</source>
+        <translation>Postotak dolaznih DOM koji se automatski pretvara u zDOM putem protokola Zerocoin (min: 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zDOMO</source>
-        <translation>Postotak automatiziranog zDOMO</translation>
+        <source>Percentage of autominted zDOM</source>
+        <translation>Postotak automatiziranog zDOM</translation>
     </message>
     <message>
-        <source>Wait with automatic conversion to Zerocoin until enough DOMO for this denomination is available</source>
-        <translation>Pričekajte s automatskom pretvorbom u Zerocoin dok ne bude dostupno dovoljno DOMO za apoen</translation>
+        <source>Wait with automatic conversion to Zerocoin until enough DOM for this denomination is available</source>
+        <translation>Pričekajte s automatskom pretvorbom u Zerocoin dok ne bude dostupno dovoljno DOM za apoen</translation>
     </message>
     <message>
-        <source>Preferred Automint zDOMO Denomination</source>
-        <translation>Preferirana Automint zDOMO denominacijad</translation>
+        <source>Preferred Automint zDOM Denomination</source>
+        <translation>Preferirana Automint zDOM denominacijad</translation>
     </message>
     <message>
         <source>Stake split threshold:</source>
@@ -2026,10 +1909,6 @@ https://www.transifex.com/domo-project/domo-project-translations</translation>
     <message>
         <source>User Interface Theme:</source>
         <translation>Tema sučelja korisnika:</translation>
-    </message>
-    <message>
-        <source>&amp;Unit to show amounts in:</source>
-        <translation>Jedinica za prikaz količine:</translation>
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
@@ -2131,8 +2010,8 @@ https://www.transifex.com/domo-project/domo-project-translations</translation>
         <translation>Ukupni saldo, uključujući sve nedostupne kovanice.</translation>
     </message>
     <message>
-        <source>Detailed Balance</source>
-        <translation>DOMO Saldo</translation>
+        <source>DOM Balance</source>
+        <translation>DOM Saldo</translation>
     </message>
     <message>
         <source>Pending:</source>
@@ -2159,14 +2038,14 @@ https://www.transifex.com/domo-project/domo-project-translations</translation>
         <translation>Uključena je vaša trenutna bilanca DOMO, nepotvrđene i nezrele transakcije</translation>
     </message>
     <message>
-        <source>zDetailed Balance</source>
-        <translation>zDOMO Bilanca</translation>
+        <source>zDOM Balance</source>
+        <translation>zDOM Bilanca</translation>
     </message>
     <message>
         <source>Mature: more than 20 confirmation and more than 1 mint of the same denomination after it was minted.
-These zDOMO are spendable.</source>
+These zDOM are spendable.</source>
         <translation>Mature: više od 20 potvrda i više od 1 mint od iste denominacije nakon što je mintan.
-Ti zDOMOs se mogu potrošiti.</translation>
+Ti zDOMs se mogu potrošiti.</translation>
     </message>
     <message>
         <source>Unconfirmed: less than 20 confirmations
@@ -2183,11 +2062,11 @@ Nezreli: potvrđeno, ali manje od 1 minta iste denominacije nakon mintanja</tran
         <translation>PREGLED</translation>
     </message>
     <message>
-        <source>Domo Balance (including unconfirmed and immature coins)</source>
+        <source>Combined Balance (including unconfirmed and immature coins)</source>
         <translation>Kombinirana bilanca (uključujući nepotvrđene i nezrele novčiće)</translation>
     </message>
     <message>
-        <source>Domo Balance</source>
+        <source>Combined Balance</source>
         <translation>Kombinirani saldo</translation>
     </message>
     <message>
@@ -2219,8 +2098,8 @@ Nezreli: potvrđeno, ali manje od 1 minta iste denominacije nakon mintanja</tran
         <translation>Po potrošiti:</translation>
     </message>
     <message>
-        <source>Locked DOMO or Masternode collaterals. These are excluded from zDOMO minting.</source>
-        <translation>Zaključani DOMO ili Masternode kolateral. Oni su isključeni iz zDOMO kovanja.</translation>
+        <source>Locked DOM or Masternode collaterals. These are excluded from zDOM minting.</source>
+        <translation>Zaključani DOM ili Masternode kolateral. Oni su isključeni iz zDOM kovanja.</translation>
     </message>
     <message>
         <source>Locked:</source>
@@ -2231,8 +2110,8 @@ Nezreli: potvrđeno, ali manje od 1 minta iste denominacije nakon mintanja</tran
         <translation>Nepotvrđeno:</translation>
     </message>
     <message>
-        <source>Your current zDOMO balance, unconfirmed and immature zDOMO included.</source>
-        <translation>Vaša trenutačna zDOMO bilanca, nepotvrđena i nezrela zDOMO.</translation>
+        <source>Your current zDOM balance, unconfirmed and immature zDOM included.</source>
+        <translation>Vaša trenutačna zDOM bilanca, nepotvrđena i nezrela zDOM.</translation>
     </message>
     <message>
         <source>Recent transactions</source>
@@ -2243,10 +2122,10 @@ Nezreli: potvrđeno, ali manje od 1 minta iste denominacije nakon mintanja</tran
         <translation>nije sinkronizirano</translation>
     </message>
     <message>
-        <source>Current percentage of zDOMO.
+        <source>Current percentage of zDOM.
 If AutoMint is enabled this percentage will settle around the configured AutoMint percentage (default = 10%).
 </source>
-        <translation>Trenutni postotak zDOMO.
+        <translation>Trenutni postotak zDOM.
 Ako je omogućeno automatsko navođenje, ovaj postotak će se podmiriti oko konfiguriranog postotka automatskog navođenja (zadano = 10%).
 </translation>
     </message>
@@ -2390,20 +2269,8 @@ Da biste omogućili, promjenite postavke AutoMint 'enablezeromint=0' na 'enablez
         <translation>0</translation>
     </message>
     <message>
-        <source>zDOMO</source>
-        <translation>zDOMO</translation>
-    </message>
-    <message>
-        <source>Available for minting are coins which are confirmed and not locked or Masternode collaterals.</source>
-        <translation>Dostupne za mintanje su kovanice koje su potvrđene i nisu zaključane ili Masternode kolateralne.</translation>
-    </message>
-    <message>
-        <source>Available for Minting:</source>
-        <translation>Dostupno za Minting:</translation>
-    </message>
-    <message>
-        <source>0.000 000 00 DOMO</source>
-        <translation>0.000 000 00 DOMO</translation>
+        <source>zDOM</source>
+        <translation>zDOM</translation>
     </message>
     <message>
         <source>Reset Zerocoin Wallet DB. Deletes transactions that did not make it into the blockchain.</source>
@@ -2412,18 +2279,6 @@ Da biste omogućili, promjenite postavke AutoMint 'enablezeromint=0' na 'enablez
     <message>
         <source>Reset</source>
         <translation>Reset</translation>
-    </message>
-    <message>
-        <source>Coin Control...</source>
-        <translation>Upravljanje novčićem...</translation>
-    </message>
-    <message>
-        <source>Quantity:</source>
-        <translation>Količina:</translation>
-    </message>
-    <message>
-        <source>Amount:</source>
-        <translation>Iznos:</translation>
     </message>
     <message>
         <source>Rescan the complete blockchain for  Zerocoin mints and their meta-data.</source>
@@ -2442,16 +2297,12 @@ Da biste omogućili, promjenite postavke AutoMint 'enablezeromint=0' na 'enablez
         <translation>PRIVATNOST</translation>
     </message>
     <message>
-        <source>Enter an amount of Domo to convert to zDOMO</source>
-        <translation>Unesite iznos Domo za pretvorbu u zDOMO</translation>
+        <source>zDOM Control</source>
+        <translation>Upravljanje zDOM</translation>
     </message>
     <message>
-        <source>zDOMO Control</source>
-        <translation>Upravljanje zDOMO</translation>
-    </message>
-    <message>
-        <source>zDOMO Selected:</source>
-        <translation>zDOMO Odabrani:</translation>
+        <source>zDOM Selected:</source>
+        <translation>zDOM Odabrani:</translation>
     </message>
     <message>
         <source>Quantity Selected:</source>
@@ -2466,36 +2317,24 @@ Da biste omogućili, promjenite postavke AutoMint 'enablezeromint=0' na 'enablez
         <translation>Potroši Zerocoin</translation>
     </message>
     <message>
-        <source>Available (mature and spendable) zDOMO for spending</source>
-        <translation>Dostupni (zreli) zDOMO za potrošnju</translation>
+        <source>Available (mature and spendable) zDOM for spending</source>
+        <translation>Dostupni (zreli) zDOM za potrošnju</translation>
     </message>
     <message>
         <source>Available Balance:</source>
         <translation>Dostupna Bilanca:</translation>
     </message>
     <message>
-        <source>Available (mature and spendable) zDOMO for spending
+        <source>Available (mature and spendable) zDOM for spending
 
-zDOMO are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</source>
-        <translation>Dostupni (zreli) zDOMO za potrošnju
+zDOM are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</source>
+        <translation>Dostupni (zreli) zDOM za potrošnju
 
-zDOMO su zreli kada imaju više od 20 potvrda I više od 2 mint od iste denominacije nakon što su bili mintani</translation>
+zDOM su zreli kada imaju više od 20 potvrda I više od 2 mint od iste denominacije nakon što su bili mintani</translation>
     </message>
     <message>
-        <source>0 zDOMO</source>
-        <translation>0 zDOMO</translation>
-    </message>
-    <message>
-        <source>Security Level for Zerocoin Transactions. More is better, but needs more time and resources.</source>
-        <translation>Razina sigurnosti za Zerocoin transakcije. Više je bolje, ali treba više vremena i resursa.</translation>
-    </message>
-    <message>
-        <source>Security Level:</source>
-        <translation>Razina sigurnosti:</translation>
-    </message>
-    <message>
-        <source>Security Level 1 - 100 (default: 42)</source>
-        <translation>Razina sigurnosti 1 - 100 (zadano: 42)</translation>
+        <source>0 zDOM</source>
+        <translation>0 zDOM</translation>
     </message>
     <message>
         <source>Pay &amp;To:</source>
@@ -2554,8 +2393,8 @@ zDOMO su zreli kada imaju više od 20 potvrda I više od 2 mint od iste denomina
         <translation>Statistike Zerocoina:</translation>
     </message>
     <message>
-        <source>Total Balance including unconfirmed and immature zDOMO</source>
-        <translation>Ukupni saldo uključujući nepotvrđeni i nedovršeni zDOMO</translation>
+        <source>Total Balance including unconfirmed and immature zDOM</source>
+        <translation>Ukupni saldo uključujući nepotvrđeni i nedovršeni zDOM</translation>
     </message>
     <message>
         <source>Total Zerocoin  Balance:</source>
@@ -2576,24 +2415,24 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
 Nezreli: potvrđeno, ali manje od 1 minta iste denominacije nakon mintanja</translation>
     </message>
     <message>
-        <source>Show the current status of automatic zDOMO minting.
+        <source>Show the current status of automatic zDOM minting.
 
 To change the status (restart required):
 - enable: add 'enablezeromint=1' to domo.conf
 - disable: add 'enablezeromint=0' to domo.conf
 
 To change the percentage (no restart required):
-- menu Settings-&gt;Options-&gt;Percentage of autominted zDOMO
+- menu Settings-&gt;Options-&gt;Percentage of autominted zDOM
 
 </source>
-        <translation>Pokažite trenutačni status automatskog zDOMO mintanja.
+        <translation>Pokažite trenutačni status automatskog zDOM mintanja.
 
 Da biste promijenili status (potrebno je ponovno pokretanje):
 - omogući: dodajte 'enablezeromint = 1' u domo.conf
 - onemogućiti: dodajte 'enablezeromint = 0' na domo.conf
 
 Promjena postotka (nije potrebno ponovno pokretanje):
-- izbornik Postavke-&gt; Opcije-&gt; Postotak zDOMO</translation>
+- izbornik Postavke-&gt; Opcije-&gt; Postotak zDOM</translation>
     </message>
     <message>
         <source>AutoMint Status</source>
@@ -2760,39 +2599,17 @@ Promjena postotka (nije potrebno ponovno pokretanje):
         <translation>Mint Status: U redu</translation>
     </message>
     <message>
-        <source>Copy quantity</source>
-        <translation>Kopirajte količinu</translation>
-    </message>
-    <message>
-        <source>Copy amount</source>
-        <translation>Kopiraj iznos</translation>
-    </message>
-    <message>
         <source>Starting ResetMintZerocoin: rescanning complete blockchain, this will need up to 30 minutes depending on your hardware.
 Please be patient...</source>
         <translation>Pokretanje ResetMintZerocoin: ponovno skeniranje potpunog blockchain, to će trajati i do 30 minuta, ovisno o vašem hardveru.</translation>
     </message>
     <message>
-        <source>Spending Zerocoin.
-Computationally expensive, might need several minutes depending on the selected Security Level and your hardware.
-Please be patient...</source>
-        <translation>Potrošnja Zerocoina.
-Zahtjevan izračun, možda će trebati nekoliko minuta ovisno o odabranoj razini sigurnosti i vašem hardveru.
-Budite strpljivi ...</translation>
+        <source>zDOM Spend #: </source>
+        <translation>zDOM utrošeno #: </translation>
     </message>
     <message>
-        <source>) needed.
-Maximum allowed: </source>
-        <translation>) potrebno.
-Maksimalno dopušteno:</translation>
-    </message>
-    <message>
-        <source>zDOMO Spend #: </source>
-        <translation>zDOMO utrošeno #: </translation>
-    </message>
-    <message>
-        <source>zDOMO Mint</source>
-        <translation>zDOMO Mint</translation>
+        <source>zDOM Mint</source>
+        <translation>zDOM Mint</translation>
     </message>
     <message>
         <source> &lt;b&gt;enabled&lt;/b&gt;.</source>
@@ -2807,12 +2624,12 @@ Maksimalno dopušteno:</translation>
         <translation> Konfigirani ciljani postotak: &lt;b&gt;</translation>
     </message>
     <message>
-        <source>zDOMO is currently disabled due to maintenance.</source>
-        <translation>Zbog održavanja zDOMO je trenutačno onemogućen.</translation>
+        <source>zDOM is currently disabled due to maintenance.</source>
+        <translation>Zbog održavanja zDOM je trenutačno onemogućen.</translation>
     </message>
     <message>
-        <source>zDOMO is currently undergoing maintenance.</source>
-        <translation>Radovi u tijeku na zDOMO.</translation>
+        <source>zDOM is currently undergoing maintenance.</source>
+        <translation>Radovi u tijeku na zDOM.</translation>
     </message>
     <message>
         <source>Denom. with value &lt;b&gt;1&lt;/b&gt;:</source>
@@ -2883,31 +2700,6 @@ Maksimalno dopušteno:</translation>
         <translation>Denom. &lt;b&gt;5000&lt;/b&gt;:</translation>
     </message>
     <message>
-        <source>Error: Your wallet is locked. Please enter the wallet passphrase first.</source>
-        <translation>Pogreška: vaš je novčanik zaključan. Najprije unesite zaporku novčanika.</translation>
-    </message>
-    <message>
-        <source>Message: Enter an amount &gt; 0.</source>
-        <translation>Poruka: unesite iznos&gt; 0.</translation>
-    </message>
-    <message>
-        <source>Minting </source>
-        <translation>Minting </translation>
-    </message>
-    <message>
-        <source>Successfully minted </source>
-        <translation>Uspješno mintano</translation>
-    </message>
-    <message>
-        <source> zDOMO in </source>
-        <translation> ulazni zDOMO </translation>
-    </message>
-    <message>
-        <source> sec. Used denominations:
-</source>
-        <translation>sek. Upotrijebljene denominacije:</translation>
-    </message>
-    <message>
         <source>Duration: </source>
         <translation>Trajanje:</translation>
     </message>
@@ -2950,42 +2742,16 @@ Maksimalno dopušteno:</translation>
         <translation>na novo generiranu (neiskorištenu i stoga anonimnu) lokalnu adresu</translation>
     </message>
     <message>
-        <source>with Security Level </source>
-        <translation>s razinom sigurnosti</translation>
-    </message>
-    <message>
         <source>Confirm send coins</source>
         <translation>Potvrdite slanje novca</translation>
-    </message>
-    <message>
-        <source>Version 1 zDOMO require a security level of 100 to successfully spend.</source>
-        <translation>Verzija 1 zDOMO zahtjeva sigurnosnu razinu 100 da se uspješno utroši.</translation>
-    </message>
-    <message>
-        <source>Failed to spend zDOMO</source>
-        <translation>Neuspjelo trošenje zDOMO</translation>
     </message>
     <message>
         <source>Failed to fetch mint associated with serial hash</source>
         <translation>Neuspjelo dohvaćanje minta asociranog s serijskim hashom</translation>
     </message>
     <message>
-        <source>Too much inputs (</source>
-        <translation>Previše unosa (</translation>
-    </message>
-    <message>
-        <source>
-Either mint higher denominations (so fewer inputs are needed) or reduce the amount to spend.</source>
-        <translation>Ili mintaj više vrijedne denominacije (tako da je potrebno manje ulaza) ili smanjiti iznos potrošnje</translation>
-    </message>
-    <message>
         <source>Spend Zerocoin failed with status = </source>
         <translation>Utrošak Zerocoina nije uspjela s statusom =</translation>
-    </message>
-    <message numerus="yes">
-        <source>PrivacyDialog</source>
-        <comment>Enter an amount of DOMO to convert to zDOMO</comment>
-        <translation><numerusform>PrivacyDialog</numerusform><numerusform>PrivacyDialog</numerusform><numerusform>PrivacyDialog</numerusform></translation>
     </message>
     <message>
         <source>denomination: </source>
@@ -3020,6 +2786,9 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>naknada:</translation>
     </message>
 </context>
+<context>
+    <name>ProposalFrame</name>
+    </context>
 <context>
     <name>QObject</name>
     <message>
@@ -3070,7 +2839,11 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <source>%1 ms</source>
         <translation>%1 ms</translation>
     </message>
-</context>
+    <message>
+        <source>DOMO Core</source>
+        <translation>DOMO Core</translation>
+    </message>
+    </context>
 <context>
     <name>QRImageWidget</name>
     <message>
@@ -3302,8 +3075,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Put prilagođenog sigurnosnog kopiranja:</translation>
     </message>
     <message>
-        <source>Custom zDOMO Backup Path:</source>
-        <translation>Prilagođeni put zDOMO sigurnosne kopije:</translation>
+        <source>Custom zDOM Backup Path:</source>
+        <translation>Prilagođeni put zDOM sigurnosne kopije:</translation>
     </message>
     <message>
         <source>Custom Backups Threshold:</source>
@@ -3434,10 +3207,6 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Potvrdite resync Blockchain</translation>
     </message>
     <message>
-        <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
-        <translation>Upotrijebite strelice gore i dolje za kretanje po povijesti, a Ctrl-L za brisanje zaslona.</translation>
-    </message>
-    <message>
         <source>Type &lt;b&gt;help&lt;/b&gt; for an overview of available commands.</source>
         <translation>Upišite pomoć za pregled dostupnih naredbi.</translation>
     </message>
@@ -3509,6 +3278,10 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Dodatna oznaka za povezivanje s novom adresom primatelja.</translation>
     </message>
     <message>
+        <source>A&amp;mount:</source>
+        <translation>Količina:</translation>
+    </message>
+    <message>
         <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the DOMO network.</source>
         <translation>Dodatna poruka priložena zahtjevu za plaćanje, koji će se prikazati kada se zahtjev otvori. Napomena: poruka neće biti poslana s plaćanjem putem DOMO mreže.</translation>
     </message>
@@ -3531,10 +3304,6 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     <message>
         <source>An optional amount to request. Leave this empty or zero to not request a specific amount.</source>
         <translation>Neobavezna količina za zahtjev. Ostavite ovo prazno ili nulu da ne zatražite određeni iznos.</translation>
-    </message>
-    <message>
-        <source>&amp;Amount:</source>
-        <translation>Iznos:</translation>
     </message>
     <message>
         <source>&amp;Request payment</source>
@@ -3579,6 +3348,10 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     <message>
         <source>Copy amount</source>
         <translation>Kopiraj iznos</translation>
+    </message>
+    <message>
+        <source>Copy address</source>
+        <translation>Kopiraj adresu</translation>
     </message>
 </context>
 <context>
@@ -3650,6 +3423,10 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     <message>
         <source>Message</source>
         <translation>Poruka</translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation>Adresa</translation>
     </message>
     <message>
         <source>Amount</source>
@@ -3747,8 +3524,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Veličina UTXO:</translation>
     </message>
     <message>
-        <source>0 DOMO</source>
-        <translation>0 DOMO</translation>
+        <source>0 DOM</source>
+        <translation>0 DOM</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -3805,12 +3582,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Kovanice se automatski odabiru</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uDOMOs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uDOMOs in fee,&lt;br /&gt;while "at least" pays 1000 uDOMOs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Ako je prilagođena naknada postavljena na 1000 uDOMO-ova, a transakcija je samo 250 bajta, tada "po kilobajtu" se plaća samo 250 uDOMO-a, dok se "barem" plaća 1000 uDOMO-ova. Za transakcije veće od kilobajta, oboje plaćaju po kilobajtu.</translation>
+        <source>If the custom fee is set to 1000 uDOMs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uDOMs in fee,&lt;br /&gt;while "at least" pays 1000 uDOMs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Ako je prilagođena naknada postavljena na 1000 uDOM-ova, a transakcija je samo 250 bajta, tada "po kilobajtu" se plaća samo 250 uDOM-a, dok se "barem" plaća 1000 uDOM-ova. Za transakcije veće od kilobajta, oboje plaćaju po kilobajtu.</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uDOMOs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uDOMOs in fee,&lt;br /&gt;while "total at least" pays 1000 uDOMOs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Ako je prilagođena naknada postavljena na 1000 uDOMO, a transakcija je samo 250 bajta, tada "po kilobajtu" plaća se samo 250 uDOMO-ova, a "ukupno barem" plaća 1000 uDOMO-ova. Za transakcije veće od kilobajta, oboje plaćaju po kilobajtu.</translation>
+        <source>If the custom fee is set to 1000 uDOMs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uDOMs in fee,&lt;br /&gt;while "total at least" pays 1000 uDOMs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Ako je prilagođena naknada postavljena na 1000 uDOM, a transakcija je samo 250 bajta, tada "po kilobajtu" plaća se samo 250 uDOM-ova, a "ukupno barem" plaća 1000 uDOM-ova. Za transakcije veće od kilobajta, oboje plaćaju po kilobajtu.</translation>
     </message>
     <message>
         <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for DOMO transactions than the network can process.</source>
@@ -3861,8 +3638,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Dodaj primatelja</translation>
     </message>
     <message>
-        <source>Anonymized DOMO</source>
-        <translation>Anonimiziran DOMO</translation>
+        <source>Anonymized DOM</source>
+        <translation>Anonimiziran DOM</translation>
     </message>
     <message>
         <source>Balance:</source>
@@ -3935,10 +3712,6 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     <message>
         <source>A fee %1 times higher than %2 per kB is considered an insanely high fee.</source>
         <translation>Naknada %1 puta veća od %2 po kB smatra se nerazumljivo visokom naknadom.</translation>
-    </message>
-    <message numerus="yes">
-        <source>Estimated to begin confirmation within %n block(s).</source>
-        <translation><numerusform>Procijenjeno za početak potvrde u%n blokova.</numerusform><numerusform>Procijenjeno za početak potvrde u%n blokova.</numerusform><numerusform>Procijenjeno za početak potvrde u %n blokova.</numerusform></translation>
     </message>
     <message>
         <source>The recipient address is not valid, please recheck.</source>
@@ -4245,10 +4018,6 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Dash Core programeri</translation>
     </message>
     <message>
-        <source>The PIVX Core developers</source>
-        <translation>PIVX Core programeri</translation>
-    </message>
-    <message>
         <source>The DOMO Core developers</source>
         <translation>DOMO Core programeri</translation>
     </message>
@@ -4266,10 +4035,6 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
 </context>
 <context>
     <name>TransactionDesc</name>
-    <message numerus="yes">
-        <source>Open for %n more block(s)</source>
-        <translation><numerusform>Otvori se za %n više blokova</numerusform><numerusform>Otvori se za %n više blokova</numerusform><numerusform>Otvori se za %n više blokova</numerusform></translation>
-    </message>
     <message>
         <source>Open until %1</source>
         <translation>Otvori dok %1</translation>
@@ -4330,10 +4095,6 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <source>, has not been successfully broadcast yet</source>
         <translation>, još nije uspješno emitiran</translation>
     </message>
-    <message numerus="yes">
-        <source>, broadcast through %n node(s)</source>
-        <translation><numerusform>, emitiraju se preko %n čvorova</numerusform><numerusform>, emitiraju se preko %n čvorova</numerusform><numerusform>, emitiraju se preko %n čvorova</numerusform></translation>
-    </message>
     <message>
         <source>Date</source>
         <translation>Datum</translation>
@@ -4373,10 +4134,6 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     <message>
         <source>Credit</source>
         <translation>Kredit</translation>
-    </message>
-    <message numerus="yes">
-        <source>matures in %n more block(s)</source>
-        <translation><numerusform>sazrijeva se u %n više blokova</numerusform><numerusform>sazrijeva se u %n više blokova</numerusform><numerusform>sazrijeva se u %n više blokova</numerusform></translation>
     </message>
     <message>
         <source>not accepted</source>
@@ -4477,10 +4234,6 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <source>Address</source>
         <translation>Adresa</translation>
     </message>
-    <message numerus="yes">
-        <source>Open for %n more block(s)</source>
-        <translation><numerusform>Otvori se za %n više blokova</numerusform><numerusform>Otvori se za %n više blokova</numerusform><numerusform>Otvori se za %n više blokova</numerusform></translation>
-    </message>
     <message>
         <source>Open until %1</source>
         <translation>Otvori dok %1</translation>
@@ -4530,12 +4283,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Zaprimljeno preko Zametanja</translation>
     </message>
     <message>
-        <source>DOMO Stake</source>
-        <translation>DOMO Stake</translation>
+        <source>DOM Stake</source>
+        <translation>DOM Stake</translation>
     </message>
     <message>
-        <source>zDOMO Stake</source>
-        <translation>zDOMO Stake</translation>
+        <source>zDOM Stake</source>
+        <translation>zDOM Stake</translation>
     </message>
     <message>
         <source>Obfuscation Denominate</source>
@@ -4554,32 +4307,32 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Prikrivanje Stvara Denominacije</translation>
     </message>
     <message>
-        <source>Converted DOMO to zDOMO</source>
-        <translation>Pretvoreni DOMO u zDOMO</translation>
+        <source>Converted DOM to zDOM</source>
+        <translation>Pretvoreni DOM u zDOM</translation>
     </message>
     <message>
-        <source>Spent zDOMO</source>
-        <translation>Utrošeni zDOMO</translation>
+        <source>Spent zDOM</source>
+        <translation>Utrošeni zDOM</translation>
     </message>
     <message>
-        <source>Received DOMO from zDOMO</source>
-        <translation>Primljeni DOMO od zDOMO</translation>
+        <source>Received DOM from zDOM</source>
+        <translation>Primljeni DOM od zDOM</translation>
     </message>
     <message>
-        <source>Minted Change as zDOMO from zDOMO Spend</source>
-        <translation>Mintana razlika zDOMO od zDOMO Utroška</translation>
+        <source>Minted Change as zDOM from zDOM Spend</source>
+        <translation>Mintana razlika zDOM od zDOM Utroška</translation>
     </message>
     <message>
-        <source>Converted zDOMO to DOMO</source>
-        <translation>Pretvoreni zDOMO u DOMO</translation>
+        <source>Converted zDOM to DOM</source>
+        <translation>Pretvoreni zDOM u DOM</translation>
     </message>
     <message>
-        <source>Anonymous (zDOMO Transaction)</source>
-        <translation>Anonimno (zDOMO Transakcija)</translation>
+        <source>Anonymous (zDOM Transaction)</source>
+        <translation>Anonimno (zDOM Transakcija)</translation>
     </message>
     <message>
-        <source>Anonymous (zDOMO Stake)</source>
-        <translation>Anonimno (zDOMO Stake)</translation>
+        <source>Anonymous (zDOM Stake)</source>
+        <translation>Anonimno (zDOM Stake)</translation>
     </message>
     <message>
         <source>Sent to</source>
@@ -4789,12 +4542,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Izvoz uspješan</translation>
     </message>
     <message>
-        <source>Received DOMO from zDOMO</source>
-        <translation>Primljeni DOMO od zDOMO</translation>
+        <source>Received DOM from zDOM</source>
+        <translation>Primljeni DOM od zDOM</translation>
     </message>
     <message>
-        <source>Zerocoin Spend, Change in zDOMO</source>
-        <translation>Zerocoin Utrošeno, Razlika (ostatak) u zDOMO</translation>
+        <source>Zerocoin Spend, Change in zDOM</source>
+        <translation>Zerocoin Utrošeno, Razlika (ostatak) u zDOM</translation>
     </message>
     <message>
         <source>The transaction history was successfully saved to %1.</source>
@@ -4830,8 +4583,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Salji novac</translation>
     </message>
     <message>
-        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 DOMO.</source>
-        <translation>SwiftX ne podržava slanje visokih vrijednosti. Transakcije su trenutačno ograničene na %1 DOMO.</translation>
+        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 DOM.</source>
+        <translation>SwiftX ne podržava slanje visokih vrijednosti. Transakcije su trenutačno ograničene na %1 DOM.</translation>
     </message>
 </context>
 <context>
@@ -4862,10 +4615,10 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
 </context>
 <context>
-    <name>ZDomoControlDialog</name>
+    <name>ZDomControlDialog</name>
     <message>
-        <source>Select zDOMO to Spend</source>
-        <translation>Odabrani zDOMO za utrošiti</translation>
+        <source>Select zDOM to Spend</source>
+        <translation>Odabrani zDOM za utrošiti</translation>
     </message>
     <message>
         <source>Quantity</source>
@@ -4876,18 +4629,14 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>0</translation>
     </message>
     <message>
-        <source>zDOMO</source>
-        <translation>zDOMO</translation>
+        <source>zDOM</source>
+        <translation>zDOM</translation>
     </message>
     <message>
         <source>Select/Deselect All</source>
         <translation>Odaberite/poništi odabir za Sve</translation>
     </message>
-    <message>
-        <source>Is Spendable</source>
-        <translation>Je moguće utrošiti</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>domo-core</name>
     <message>
@@ -4943,16 +4692,16 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Distribuirano pod MIT softverskom licencom, pogledajte priloženu datoteku COPYING ili &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</translation>
     </message>
     <message>
-        <source>Enable automatic wallet backups triggered after each zDOMO minting (0-1, default: %u)</source>
-        <translation>Omogući automatsko sigurnosno kopiranje novčanika nakon svakog zDOMO mintanja (0-1, default: %u)</translation>
+        <source>Enable automatic wallet backups triggered after each zDOM minting (0-1, default: %u)</source>
+        <translation>Omogući automatsko sigurnosno kopiranje novčanika nakon svakog zDOM mintanja (0-1, default: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for DOMO inputs (0-1, default: %u)</source>
-        <translation>Omogući ili onemogući staking funkcionalnosti za DOMO unose (0-1, default: %u)</translation>
+        <source>Enable or disable staking functionality for DOM inputs (0-1, default: %u)</source>
+        <translation>Omogući ili onemogući staking funkcionalnosti za DOM unose (0-1, default: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for zDOMO inputs (0-1, default: %u)</source>
-        <translation>Omogući ili onemogući staking funkcionalnosti za zDOMO unose (0-1, default: %u)</translation>
+        <source>Enable or disable staking functionality for zDOM inputs (0-1, default: %u)</source>
+        <translation>Omogući ili onemogući staking funkcionalnosti za zDOM unose (0-1, default: %u)</translation>
     </message>
     <message>
         <source>Enable spork administration functionality with the appropriate private key.</source>
@@ -4987,20 +4736,16 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Izvrši naredbu kada se promijeni najbolji blok (%s u cmd zamjenjuje se blokovskim raspršivanjem)</translation>
     </message>
     <message>
-        <source>Fees (in DOMO/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Naknade (u DOMO / Kb) manje od toga smatraju se nulom naknadom za prosljeđivanje (zadano: %s)</translation>
+        <source>Fees (in DOM/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Naknade (u DOM / Kb) manje od toga smatraju se nulom naknadom za prosljeđivanje (zadano: %s)</translation>
     </message>
     <message>
-        <source>Fees (in DOMO/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Naknade (u DOMO / Kb) manje od toga smatraju se nulom naknadom za izradu transakcija (zadano: %s)</translation>
+        <source>Fees (in DOM/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Naknade (u DOM / Kb) manje od toga smatraju se nulom naknadom za izradu transakcija (zadano: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
         <translation>Ispraznite aktivnost baze podataka iz baze memorije na dnevnik diska svakog megabajta (zadano: %u)</translation>
-    </message>
-    <message>
-        <source>Found unconfirmed denominated outputs, will wait till they confirm to continue.</source>
-        <translation>Pronađeni su nepotvrđeni denonimi izlaza, čekat će dok ne potvrde nastavak.</translation>
     </message>
     <message>
         <source>If paytxfee is not set, include enough fee so transactions begin confirmation on average within n blocks (default: %u)</source>
@@ -5099,12 +4844,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Nije moguće locirati dovoljno sredstava s domenom Prikrivanja za tu transakciju.</translation>
     </message>
     <message>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 DOMO.</source>
-        <translation>Nije moguće pronaći dovoljno prikrivenih sredstava koja nisu denominirana za ovu transakciju koja nisu jednaka 10000 DOMO.</translation>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 DOM.</source>
+        <translation>Nije moguće pronaći dovoljno prikrivenih sredstava koja nisu denominirana za ovu transakciju koja nisu jednaka 10000 DOM.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 DOMO.</source>
-        <translation>Nije moguće pronaći dovoljno sredstava za ovu transakciju koja nije jednaka 10000 DOMO.</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 DOM.</source>
+        <translation>Nije moguće pronaći dovoljno sredstava za ovu transakciju koja nije jednaka 10000 DOM.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -5151,8 +4896,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Morate odrediti masternodeprivkey u konfiguraciji. Za pomoć pogledajte dokumentaciju.</translation>
     </message>
     <message>
-        <source>(52992 could be used only on mainnet)</source>
-        <translation>(52992 se može koristiti samo na mainnetu)</translation>
+        <source>(30717 could be used only on mainnet)</source>
+        <translation>(30717 se može koristiti samo na mainnetu)</translation>
     </message>
     <message>
         <source>(default: %s)</source>
@@ -5163,8 +4908,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>(default: 1)</translation>
     </message>
     <message>
-        <source>(must be 52992 for mainnet)</source>
-        <translation>(mora biti 52992 za glavnu mrežu)</translation>
+        <source>(must be 30717 for mainnet)</source>
+        <translation>(mora biti 30717 za glavnu mrežu)</translation>
     </message>
     <message>
         <source>Accept command line and JSON-RPC commands</source>
@@ -5187,10 +4932,6 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Dopustite traženja DNS-a za -addnode, -seednode i -connect</translation>
     </message>
     <message>
-        <source>Already have that input.</source>
-        <translation>Već imate taj unos.</translation>
-    </message>
-    <message>
         <source>Always query for peer addresses via DNS lookup (default: %u)</source>
         <translation>Uvijek se upita za peer adrese putem DNS pretraživanja (zadano: %u)</translation>
     </message>
@@ -5211,18 +4952,6 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Izračun akumulatora koji nedostaju ...</translation>
     </message>
     <message>
-        <source>Can't denominate: no compatible inputs left.</source>
-        <translation>Nije moguće denominirati: nema kompatibilnih ulaza.</translation>
-    </message>
-    <message>
-        <source>Can't find random Masternode.</source>
-        <translation>Nije moguće pronaći slučajni Masternode.</translation>
-    </message>
-    <message>
-        <source>Can't mix while sync in progress.</source>
-        <translation>Nije moguće miješati dok je sinkronizacija u tijeku.</translation>
-    </message>
-    <message>
         <source>Cannot downgrade wallet</source>
         <translation>Nije moguće novčanik vratiti na nižu verziju</translation>
     </message>
@@ -5241,10 +4970,6 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     <message>
         <source>Cannot write default address</source>
         <translation>Ne možete zapisati zadanu adresu</translation>
-    </message>
-    <message>
-        <source>Collateral not valid.</source>
-        <translation>Zalog nije valjan.</translation>
     </message>
     <message>
         <source>Connect only to the specified node(s)</source>
@@ -5271,12 +4996,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Autorska prava (C) 2014-%i The Dash Core Developers</translation>
     </message>
     <message>
-        <source>Copyright (C) 2015-%i The PIVX Core Developers</source>
-        <translation>Autorska prava (C) 2015-%i The PIVX Core Developers</translation>
-    </message>
-    <message>
-        <source>Copyright (C) %i The DOMO Core Developers</source>
-        <translation>Autorska prava (C) %i The DOMO Core Developers</translation>
+        <source>Copyright (C) 2015-%i The DOMO Core Developers</source>
+        <translation>Autorska prava (C) 2015-%i The DOMO Core Developers</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>
@@ -5336,14 +5057,6 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Omogućite klijentu da djeluje kao masternode (0-1, zadano: %u)</translation>
     </message>
     <message>
-        <source>Entries are full.</source>
-        <translation>Unosi su puni.</translation>
-    </message>
-    <message>
-        <source>Error connecting to Masternode.</source>
-        <translation>Pogreška pri povezivanju s Masternodeom.</translation>
-    </message>
-    <message>
         <source>Error initializing block database</source>
         <translation>Pogreška prilikom inicijalizacije baze blokova</translation>
     </message>
@@ -5380,16 +5093,16 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Pogreška prilikom vraćanja javnog ključa.</translation>
     </message>
     <message>
+        <source>Error writing zerocoinDB to disk</source>
+        <translation>Greška u zapisivanju zerocoinDB na disk</translation>
+    </message>
+    <message>
         <source>Error</source>
         <translation>Greška</translation>
     </message>
     <message>
         <source>Error: A fatal internal error occured, see debug.log for details</source>
         <translation>Pogreška: Došlo je do kobne interne pogreške, pogledajte detalje o debug.logu</translation>
-    </message>
-    <message>
-        <source>Error: Can't select current denominated inputs</source>
-        <translation>Pogreška: Nije moguće odabrati trenutne unose</translation>
     </message>
     <message>
         <source>Error: Disk space is low!</source>
@@ -5404,10 +5117,6 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Pogreška: Novčanik zaključan, ne može stvoriti transakciju!</translation>
     </message>
     <message>
-        <source>Error: You already have pending entries in the Obfuscation pool</source>
-        <translation>Pogreška: već imate unose čekanja u grupi za Prekrivanje</translation>
-    </message>
-    <message>
         <source>Failed to calculate accumulator checkpoint</source>
         <translation>Nije uspjelo izračunavanje kontrolne točke akumulatora</translation>
     </message>
@@ -5420,24 +5129,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Greška čitanja bloka</translation>
     </message>
     <message>
-        <source>Fee (in DOMO/kB) to add to transactions you send (default: %s)</source>
-        <translation>Naknada (u DOMO / kB) za dodavanje transakcija koje šaljete (zadano: %s)</translation>
-    </message>
-    <message>
-        <source>Finalizing transaction.</source>
-        <translation>Završavanje transakcije.</translation>
+        <source>Fee (in DOM/kB) to add to transactions you send (default: %s)</source>
+        <translation>Naknada (u DOM / kB) za dodavanje transakcija koje šaljete (zadano: %s)</translation>
     </message>
     <message>
         <source>Force safe mode (default: %u)</source>
         <translation>Prisilno poktretanje sigurnosnog načina rada (zadano: %u)</translation>
-    </message>
-    <message>
-        <source>Found enough users, signing ( waiting %s )</source>
-        <translation>Pronađeno dovoljno korisnika, potpisivanje (čekanje %s)</translation>
-    </message>
-    <message>
-        <source>Found enough users, signing ...</source>
-        <translation>Pronađeno dovoljno korisnika, potpisivanje ...</translation>
     </message>
     <message>
         <source>Generate coins (default: %u)</source>
@@ -5464,14 +5161,6 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Uključi IP adrese u izlaz za ispravljanje pogrešaka (zadano: %u)</translation>
     </message>
     <message>
-        <source>Incompatible mode.</source>
-        <translation>Nepodudarni način rada.</translation>
-    </message>
-    <message>
-        <source>Incompatible version.</source>
-        <translation>Nepodudarna verzija.</translation>
-    </message>
-    <message>
         <source>Incorrect or no genesis block found. Wrong datadir for network?</source>
         <translation>Netočan ili nijedan blok geneze nije pronađen. Pogrešan datadir za mrežu?</translation>
     </message>
@@ -5482,10 +5171,6 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     <message>
         <source>Initialization sanity check failed. DOMO Core is shutting down.</source>
         <translation>Provjera ispravnosti inicijalizacije nije uspjela. DOMO Core se zatvara.</translation>
-    </message>
-    <message>
-        <source>Input is not valid.</source>
-        <translation>Unos nije valjan.</translation>
     </message>
     <message>
         <source>Insufficient funds</source>
@@ -5544,16 +5229,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Nevažeći privatni ključ.</translation>
     </message>
     <message>
-        <source>Invalid script detected.</source>
-        <translation>Otkriven nevažeća skripta.</translation>
-    </message>
-    <message>
         <source>Percentage of automatically minted Zerocoin  (1-100, default: %u)</source>
         <translation>Postotak automatskog kovanog Zerocoina (1-100, zadano: %u)</translation>
     </message>
     <message>
-        <source>Reindex the DOMO and zDOMO money supply statistics</source>
-        <translation>Ponovno indeksirati statistiku DOMO i zDOMO ponude novca</translation>
+        <source>Reindex the DOM and zDOM money supply statistics</source>
+        <translation>Ponovno indeksirati statistiku DOM i zDOM ponude novca</translation>
     </message>
     <message>
         <source>Reindexing zerocoin database...</source>
@@ -5627,8 +5308,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Preferirana denominacija za automatski ovjereni Zerocoin (1/5/10/50/100/500/1000/5000), 0 bez preferencije. zadana vrijednost: %u)</translation>
     </message>
     <message>
-        <source>Specify custom backup path to add a copy of any automatic zDOMO backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
-        <translation>Navedite put prilagođenog sigurnosnog kopiranja da biste dodali kopiju bilo koje automatske zDOMO sigurnosne kopije. Ako je postavljeno kao dir, svaka sigurnosna kopija generira vremensku datoteku. Ako je postavljen kao datoteka, prepisat će na tu datoteku svaku kopiju. Ako je postavljen backuppath, dogodit će se 4 sigurnosne kopije</translation>
+        <source>Specify custom backup path to add a copy of any automatic zDOM backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
+        <translation>Navedite put prilagođenog sigurnosnog kopiranja da biste dodali kopiju bilo koje automatske zDOM sigurnosne kopije. Ako je postavljeno kao dir, svaka sigurnosna kopija generira vremensku datoteku. Ako je postavljen kao datoteka, prepisat će na tu datoteku svaku kopiju. Ako je postavljen backuppath, dogodit će se 4 sigurnosne kopije</translation>
     </message>
     <message>
         <source>Specify custom backup path to add a copy of any wallet backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup.</source>
@@ -5691,10 +5372,6 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Nije uspjelo kovanje</translation>
     </message>
     <message>
-        <source>Failed to deserialize</source>
-        <translation>Deserializiranje nije uspjelo</translation>
-    </message>
-    <message>
         <source>Failed to find Zerocoins in wallet.dat</source>
         <translation>Neuspjelo pronalaženje Zerocoina u wallet.dat</translation>
     </message>
@@ -5713,14 +5390,6 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     <message>
         <source>Keep at most &lt;n&gt; unconnectable transactions in memory (default: %u)</source>
         <translation>Zadržite najviše &lt;n&gt; neprenosive transakcije u memoriji (zadano: %u)</translation>
-    </message>
-    <message>
-        <source>Last Obfuscation was too recent.</source>
-        <translation>Poslijednje prikrivanje je bilo nedavno.</translation>
-    </message>
-    <message>
-        <source>Last successful Obfuscation action was too recent.</source>
-        <translation>Posljednje uspješno Prikrivanje je bilo nedavno.</translation>
     </message>
     <message>
         <source>Limit size of signature cache to &lt;n&gt; entries (default: %u)</source>
@@ -5775,10 +5444,6 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Lokacija autentičnog kolačića (zadano: dir. Podataka)</translation>
     </message>
     <message>
-        <source>Lock is already in place.</source>
-        <translation>Zaključavanje na mjestu.</translation>
-    </message>
-    <message>
         <source>Lock masternodes from masternode configuration file (default: %u)</source>
         <translation>Zaključaj masternode iz masternode konfiguracijske datoteke (zadano: %u)</translation>
     </message>
@@ -5795,14 +5460,6 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Opcije Masternoda:</translation>
     </message>
     <message>
-        <source>Masternode queue is full.</source>
-        <translation>Niz Masternoda je pun.</translation>
-    </message>
-    <message>
-        <source>Masternode:</source>
-        <translation>Masternode:</translation>
-    </message>
-    <message>
         <source>Maximum per-connection receive buffer, &lt;n&gt;*1000 bytes (default: %u)</source>
         <translation>Maksimalni međuspremnik za primanje veze, &lt;n&gt;* 1000 bajta (zadano: %u)</translation>
     </message>
@@ -5815,14 +5472,6 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Kovanje nije ušlo u blockchain</translation>
     </message>
     <message>
-        <source>Missing input transaction information.</source>
-        <translation>Nedostaju informacije o ulaznoj transakciji.</translation>
-    </message>
-    <message>
-        <source>Mixing in progress...</source>
-        <translation>Miješanje u tijeku ...</translation>
-    </message>
-    <message>
         <source>Need address because change is not exact</source>
         <translation>Trebate adresu, jer ostatak nije točan</translation>
     </message>
@@ -5831,40 +5480,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Morate navesti vezu s -whitebind: '%s'</translation>
     </message>
     <message>
-        <source>No Masternodes detected.</source>
-        <translation>Masternode nije pronađen.</translation>
-    </message>
-    <message>
-        <source>No compatible Masternode found.</source>
-        <translation>Nema kompatibilnog Masternoda.</translation>
-    </message>
-    <message>
-        <source>No funds detected in need of denominating.</source>
-        <translation>Nema otkrivenih sredstava kojima je potrebna denominacija.</translation>
-    </message>
-    <message>
-        <source>No matching denominations found for mixing.</source>
-        <translation>Za miješanje nisu pronađeni odgovarajući apoeni.</translation>
-    </message>
-    <message>
         <source>Node relay options:</source>
         <translation>Opcije releja čvorova:</translation>
     </message>
     <message>
-        <source>Non-standard public key detected.</source>
-        <translation>Otkriven je nestandardni javni ključ.</translation>
-    </message>
-    <message>
-        <source>Not compatible with existing transactions.</source>
-        <translation>Nije kompatibilno s postojećim transakcijama.</translation>
-    </message>
-    <message>
         <source>Not enough file descriptors available.</source>
         <translation>Nije dostupno dovoljno deskriptora datoteka.</translation>
-    </message>
-    <message>
-        <source>Not in the Masternode list.</source>
-        <translation>Nije na popisu Masternode.</translation>
     </message>
     <message>
         <source>Number of automatic wallet backups (default: 10)</source>
@@ -5873,18 +5494,6 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     <message>
         <source>Number of custom location backups to retain (default: %d)</source>
         <translation>Broj sigurnosnih kopija prilagođenih lokacija za zadržavanje (zadano: %d)</translation>
-    </message>
-    <message>
-        <source>Obfuscation is idle.</source>
-        <translation>Prikrivanje je u stanju mirovanja.</translation>
-    </message>
-    <message>
-        <source>Obfuscation request complete:</source>
-        <translation>Zahtjev za Prikrivanje dovršeno:</translation>
-    </message>
-    <message>
-        <source>Obfuscation request incomplete:</source>
-        <translation>Nedovršeni zahtjevi za Prikrivanje:</translation>
     </message>
     <message>
         <source>Only accept block chain matching built-in checkpoints (default: %u)</source>
@@ -5977,10 +5586,6 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     <message>
         <source>Send transactions as zero-fee transactions if possible (default: %u)</source>
         <translation>Ako je moguće, pošaljite transakcije kao transakcije s nultom naknadom (zadano: %u)</translation>
-    </message>
-    <message>
-        <source>Session not complete!</source>
-        <translation>Sjednica nije dovršena!</translation>
     </message>
     <message>
         <source>Session timed out.</source>
@@ -6087,18 +5692,6 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Prestani prikazivati nakon uvoza blokova s diska (zadano: %u)</translation>
     </message>
     <message>
-        <source>Submitted following entries to masternode: %u / %d</source>
-        <translation>Sljedeće unose podnesi na masternode: %u / %d</translation>
-    </message>
-    <message>
-        <source>Submitted to masternode, waiting for more entries ( %u / %d ) %s</source>
-        <translation>Poslano na masternode, čeka se više unosa ( %u / %d ) %s</translation>
-    </message>
-    <message>
-        <source>Submitted to masternode, waiting in queue %s</source>
-        <translation>poslano na masternode, čeka se %s</translation>
-    </message>
-    <message>
         <source>Synchronization failed</source>
         <translation>Sinkronizacija neuspjela</translation>
     </message>
@@ -6127,20 +5720,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Sinkronizacija sporka...</translation>
     </message>
     <message>
-        <source>Syncing zDOMO wallet...</source>
-        <translation>Sinkronizacija zDOMO novčanika...</translation>
+        <source>Syncing zDOM wallet...</source>
+        <translation>Sinkronizacija zDOM novčanika...</translation>
     </message>
     <message>
         <source>The coin spend has been used</source>
         <translation>Korištena je potrošnja novčića</translation>
-    </message>
-    <message>
-        <source>The new spend coin transaction did not verify</source>
-        <translation>Nova transakcija potrošnje novca nije potvrđena</translation>
-    </message>
-    <message>
-        <source>The selected mint coin is an invalid coin</source>
-        <translation>Odabrano je kovanje novčića za nevažeći novčić</translation>
     </message>
     <message>
         <source>The transaction did not verify</source>
@@ -6157,10 +5742,6 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     <message>
         <source>This is intended for regression testing tools and app development.</source>
         <translation>To je namijenjeno alatima za test regresije i razvoju aplikacija.</translation>
-    </message>
-    <message>
-        <source>This is not a Masternode.</source>
-        <translation>Ovo nije Masternode.</translation>
     </message>
     <message>
         <source>Threshold for disconnecting misbehaving peers (default: %u)</source>
@@ -6195,18 +5776,6 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Iznos transakcije mora biti pozitivan</translation>
     </message>
     <message>
-        <source>Transaction created successfully.</source>
-        <translation>Transakcija uspješno stvorena.</translation>
-    </message>
-    <message>
-        <source>Transaction fees are too high.</source>
-        <translation>Previsoka naknada za transakciju.</translation>
-    </message>
-    <message>
-        <source>Transaction not valid.</source>
-        <translation>Transakcija nije valjana.</translation>
-    </message>
-    <message>
         <source>Transaction too large for fee policy</source>
         <translation>Transakcija prevelika da bi bila besplatna</translation>
     </message>
@@ -6215,24 +5784,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Transakcija prevelika</translation>
     </message>
     <message>
-        <source>Transmitting final transaction.</source>
-        <translation>Šaljem finalnu transakciju. </translation>
-    </message>
-    <message>
-        <source>Try to spend with a higher security level to include more coins</source>
-        <translation>Pokušajte potrošiti s višom razinom sigurnosti kako biste uključili više novca</translation>
-    </message>
-    <message>
         <source>Trying to spend an already spent serial #, try again.</source>
         <translation>Pokušavate potrošiti već utrošeni serijski broj #, pokušajte ponovo.</translation>
     </message>
     <message>
         <source>Unable to bind to %s on this computer (bind returned error %s)</source>
         <translation>Nije moguće vezati se na %s na ovom računalu (vezanje vraćene pogreške %s)</translation>
-    </message>
-    <message>
-        <source>Unable to find transaction containing mint</source>
-        <translation>Nije moguće pronaći transakciju koja sadrži mintanje</translation>
     </message>
     <message>
         <source>Unable to sign spork message, wrong key?</source>
@@ -6245,10 +5802,6 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     <message>
         <source>Unknown network specified in -onlynet: '%s'</source>
         <translation>Nepoznata mreža specificirana u -onlynet: '%s'</translation>
-    </message>
-    <message>
-        <source>Unknown state: id = %u</source>
-        <translation>Nepoznato stanje: id = %u</translation>
     </message>
     <message>
         <source>Upgrade wallet to latest format</source>
@@ -6275,12 +5828,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Korisničko ime za JSON-RPC veze</translation>
     </message>
     <message>
-        <source>Value is below the smallest available denomination (= 1) of zDOMO</source>
-        <translation>Vrijednost je niža od najmanje dostupne denominacije (= 1) zDOMO-a</translation>
-    </message>
-    <message>
-        <source>Value more than Obfuscation pool maximum allows.</source>
-        <translation>Vrijednost veća od maksimalnog broja Prikrivanja zbirnih sredstava.</translation>
+        <source>Value is below the smallest available denomination (= 1) of zDOM</source>
+        <translation>Vrijednost je niža od najmanje dostupne denominacije (= 1) zDOM-a</translation>
     </message>
     <message>
         <source>Verifying blocks...</source>
@@ -6291,16 +5840,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Provjera novčanika...</translation>
     </message>
     <message>
-        <source>Version 1 zDOMO require a security level of 100 to successfully spend.</source>
-        <translation>Verzija 1 zDOMO zahtjeva sigurnosnu razinu 100 da se uspješno utroši.</translation>
-    </message>
-    <message>
         <source>Wallet %s resides outside data directory %s</source>
         <translation>Novčanik %s nalazi se izvan direktorija podataka %s</translation>
-    </message>
-    <message>
-        <source>Wallet is locked.</source>
-        <translation>Novčanik zaključan.</translation>
     </message>
     <message>
         <source>Wallet needed to be rewritten: restart DOMO Core to complete</source>
@@ -6331,24 +5872,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Upozorenje: nepodržani argument -debugnet ignoriran, upotrijebite -debug=net.</translation>
     </message>
     <message>
-        <source>Will retry...</source>
-        <translation>Ponovno pokušati...</translation>
-    </message>
-    <message>
         <source>You don't have enough Zerocoins in your wallet</source>
         <translation>Nemate dovoljno Zerocoina u novčaniku</translation>
     </message>
     <message>
         <source>You need to rebuild the database using -reindex to change -txindex</source>
         <translation>orate obnoviti bazu podataka koristeći -index za promjenu -txindexa</translation>
-    </message>
-    <message>
-        <source>Your entries added successfully.</source>
-        <translation>Unosi uspješno dodani.</translation>
-    </message>
-    <message>
-        <source>Your transaction was accepted into the pool!</source>
-        <translation>Vaša transakcija je prihvaćena u bazen!</translation>
     </message>
     <message>
         <source>Zapping all transactions from wallet...</source>

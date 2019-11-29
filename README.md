@@ -1,98 +1,59 @@
-DOMO Core integration/staging tree
-===================================
+DOMO Core integration/staging repository
+=====================================
 
-https://domoproject.me
+[![Build Status](https://travis-ci.org/DOMO-Project/DOMO.svg?branch=master)](https://travis-ci.org/DOMO-Project/DOMO) [![GitHub version](https://badge.fury.io/gh/DOMO-Project%2FDOMO.svg)](https://badge.fury.io/gh/DOMO-Project%2FDOMO)
 
-What is DOMO?
---------------
+DOMO is an open source crypto-currency focused on fast private transactions using the Zerocoin protocol, with low transaction fees & environmental footprint.  It utilizes the first ever anonymous proof of stake protocol, called zPoS, combined with regular PoS and masternodes for securing its network. zPoS incentivises using the privacy features available in DOMO by granting a higher block reward for zPoS over regular PoS and masternodes. In practice DOMO has between 4 to 10 times higher use of it's privacy features in comparison to other coins that combine public and private transactions. This is thanks to innovations like zPoS and integrating the Zerocoin protocol into light/mobile wallets, allowing for a complete and lightweight privacy protocol that can be used on the go. As well as security improvements like [deterministic generation of zDOM for easy backups.](https://www.reddit.com/r/domo/comments/8gbjf7/how_to_use_deterministic_zerocoin_generation/)
+The goal of DOMO is to achieve a decentralized sustainable crypto currency with near instant full-time private transactions, fair governance and community intelligence.
+- Anonymized transactions & consensus using the [_Zerocoin Protocol_](http://www.domo.org/zdom) and [zPoS](https://domo.org/zpos/).
+- light/mobile wallet privacy using the [Zerocoin Light Node Protocol](https://domo.org/wp-content/uploads/2018/11/Zerocoin_Light_Node_Protocol.pdf)
+- Fast transactions featuring guaranteed zero confirmation transactions, we call it _SwiftX_.
+- Decentralized blockchain voting utilizing Masternode technology to form a DAO. The blockchain will distribute monthly treasury funds based on successful proposals submitted by the community and voted on by the DAO.
 
-DOMOcoin will be used as a 'ticket' to enter the community in the future (proof of ownership).
-We are developing the first prototype of a new kind of social network approach.
-Only people holding Domocoins in their wallet will be able to login to the network. 
-This way mostly only 'crypto' and blockchain enthusiasts will join the community and create an environment Cryptotwitter is dreaming of. After reaching a decent amount of unique users within the prototype, we will do a official crowdfunding to develop a open source, decentralized, autonomous social network, which is not run by a single entity or centralized servers.
-This is your chance to join the team in early stages, earn a masternode for your effort and be hired to build a social network, which can´t be taken down by institutions and is maintained by the people actually using it.
+More information at [domo.org](http://www.domo.org) Visit our ANN thread at [BitcoinTalk](http://www.bitcointalk.org/index.php?topic=1262920)
 
-The DOMO Community is essential part of Domocoin and will help to develop the project outside the boundarys of our initial goals.
-All future Blockchains and Projects will be carried out on the DOMO community, acting as testing, evaluating and developing entity in the Blockchain era.
+### Coin Specs
+<table>
+<tr><td>Algo</td><td>Quark</td></tr>
+<tr><td>Block Time</td><td>60 Seconds</td></tr>
+<tr><td>Difficulty Retargeting</td><td>Every Block</td></tr>
+<tr><td>Max Coin Supply (PoW Phase)</td><td>43,199,500 DOM</td></tr>
+<tr><td>Max Coin Supply (PoS Phase)</td><td>Infinite</td></tr>
+<tr><td>Premine</td><td>60,000 DOM*</td></tr>
+</table>
 
-For more information, as well as an immediately useable, binary version of
-the DOMO Core software, see https://domoproject.me/.
+*60,000 DOM Premine was burned in block [279917](http://www.presstab.pw/phpexplorer/DOMO/block.php?blockhash=206d9cfe859798a0b0898ab00d7300be94de0f5469bb446cecb41c3e173a57e0)
 
-License
--------
+### Reward Distribution
 
-DOMO Core is released under the terms of the MIT license. See [COPYING](COPYING) for more
-information or see http://opensource.org/licenses/MIT.
+<table>
+<th colspan=4>Genesis Block</th>
+<tr><th>Block Height</th><th>Reward Amount</th><th>Notes</th></tr>
+<tr><td>1</td><td>60,000 DOM</td><td>Initial Pre-mine, burnt in block <a href="http://www.presstab.pw/phpexplorer/DOMO/block.php?blockhash=206d9cfe859798a0b0898ab00d7300be94de0f5469bb446cecb41c3e173a57e0">279917</a></td></tr>
+</table>
 
-Development process
--------------------
+### PoW Rewards Breakdown
 
-Developers work in their own trees, then submit pull requests when they think
-their feature or bug fix is ready.
+<table>
+<th>Block Height</th><th>Masternodes</th><th>Miner</th><th>Budget</th>
+<tr><td>2-43200</td><td>20% (50 DOM)</td><td>80% (200 DOM)</td><td>N/A</td></tr>
+<tr><td>43201-151200</td><td>20% (50 DOM)</td><td>70% (200 DOM)</td><td>10% (25 DOM)</td></tr>
+<tr><td>151201-259200</td><td>45% (22.5 DOM)</td><td>45% (22.5 DOM)</td><td>10% (5 DOM)</td></tr>
+</table>
 
-If it is a simple/trivial/non-controversial change, then one of the DOMO
-development team members simply pulls it.
+### PoS Rewards Breakdown
 
-
-The patch will be accepted if there is broad consensus that it is a good thing.
-Developers should expect to rework and resubmit patches if the code doesn't
-match the project's coding conventions (see [doc/coding.md](doc/coding.md)) or are
-controversial.
-
-The `master` branch is regularly built and tested, but is not guaranteed to be
-completely stable. [Tags](https://github.com/Utopianer/DomoCore/tags) are created
-regularly to indicate new official, stable release versions of DOMO.
-
-Testing
--------
-
-Testing and code review is the bottleneck for development; we get more pull
-requests than we can review and test on short notice. Please be patient and help out by testing
-other people's pull requests, and remember this is a security-critical project where any mistake might cost people
-lots of money.
-
-### Automated Testing
-
-Developers are strongly encouraged to write unit tests for new code, and to
-submit new unit tests for old code. Unit tests can be compiled and run (assuming they weren't disabled in configure) with: `make check`
-
-
-### Manual Quality Assurance (QA) Testing
-
-Large changes should have a test plan, and should be tested by somebody other
-than the developer who wrote the code.
-
-Development tips and tricks
----------------------------
-
-**compiling for debugging**
-
-Run configure with the --enable-debug option, then make. Or run configure with
-CXXFLAGS="-g -ggdb -O0" or whatever debug flags you need.
-
-**debug.log**
-
-If the code is behaving strangely, take a look in the debug.log file in the data directory;
-error and debugging messages are written there.
-
-The -debug=... command-line option controls debugging; running with just -debug will turn
-on all categories (and give you a very large debug.log file).
-
-The Qt code routes qDebug() output to debug.log under category "qt": run with -debug=qt
-to see it.
-
-**testnet and regtest modes**
-
-Run with the -testnet option to run with "play DOMOs" on the test network, if you
-are testing multi-machine code that needs to operate across the internet.
-
-If you are testing something that can run on one machine, run with the -regtest option.
-In regression test mode, blocks can be created on-demand; see qa/rpc-tests/ for tests
-that run in -regtest mode.
-
-**DEBUG_LOCKORDER**
-
-DOMO Core is a multithreaded application, and deadlocks or other multithreading bugs
-can be very difficult to track down. Compiling with -DDEBUG_LOCKORDER (configure
-CXXFLAGS="-DDEBUG_LOCKORDER -g") inserts run-time checks to keep track of which locks
-are held, and adds warnings to the debug.log file if inconsistencies are detected.
+<table>
+<th>Phase</th><th>Block Height</th><th>Reward</th><th>Masternodes & Stakers</th><th>Budget</th>
+<tr><td>Phase 0</td><td>259201-302399</td><td>50 DOM</td><td>90% (45 DOM)</td><td>10% (5 DOM)</td></tr>
+<tr><td>Phase 1</td><td>302400-345599</td><td>45 DOM</td><td>90% (40.5 DOM)</td><td>10% (4.5 DOM)</td></tr>
+<tr><td>Phase 2</td><td>345600-388799</td><td>40 DOM</td><td>90% (36 DOM)</td><td>10% (4 DOM)</td></tr>
+<tr><td>Phase 3</td><td>388800-431999</td><td>35 DOM</td><td>90% (31.5 DOM)</td><td>10% (3.5 DOM)</td></tr>
+<tr><td>Phase 4</td><td>432000-475199</td><td>30 DOM</td><td>90% (27 DOM)</td><td>10% (3 DOM)</td></tr>
+<tr><td>Phase 5</td><td>475200-518399</td><td>25 DOM</td><td>90% (22.5 DOM)</td><td>10% (2.5 DOM)</td></tr>
+<tr><td>Phase 6</td><td>518400-561599</td><td>20 DOM</td><td>90% (18 DOM)</td><td>10% (2 DOM)</td></tr>
+<tr><td>Phase 7</td><td>561600-604799</td><td>15 DOM</td><td>90% (13.5 DOM)</td><td>10% (1.5 DOM)</td></tr>
+<tr><td>Phase 8</td><td>604800-647999</td><td>10 DOM</td><td>90% (9 DOM)</td><td>10% (1 DOM)</td></tr>
+<tr><td>Phase 9</td><td>648000-1154203</td><td>5 DOM</td><td>90% (4.5 DOM)</td><td>10% (0.5 DOM)</td></tr>
+<tr><td>Phase X</td><td>1154203-∞</td><td>6 DOM</td><td>84% (5 DOM/zDOM)</td><td>16% (1 DOM)</td></tr>
+</table>

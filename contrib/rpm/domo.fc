@@ -1,0 +1,8 @@
+/usr/bin/domo-cli		--	gen_context(system_u:object_r:domo_exec_t,s0)
+/usr/sbin/domod		--	gen_context(system_u:object_r:domo_exec_t,s0)
+/usr/lib(64)?/domo/domod		--	gen_context(system_u:object_r:domo_exec_t,s0)
+
+/etc/domo(/.*)?		gen_context(system_u:object_r:domo_conf_t,s0)
+/var/lib/domo(/.*)?		gen_context(system_u:object_r:domo_var_lib_t,s0)
+
+(/var)?/run/domod(/.*)?   gen_context(system_u:object_r:domo_var_run_t,s0)

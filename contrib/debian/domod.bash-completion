@@ -1,1 +1,2 @@
 contrib/domod.bash-completion	domod
+contrib/domo-cli.bash-completion domo-cli

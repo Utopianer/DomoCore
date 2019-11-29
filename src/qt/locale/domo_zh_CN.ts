@@ -172,16 +172,16 @@
         <translation>确认钱包加密</translation>
     </message>
     <message>
-        <source>DOMO will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your DOMOs from being stolen by malware infecting your computer.</source>
-        <translation>DOMO将关闭以完成加密过程。但是，仅仅加密您的钱包是不够的，因为它并不能阻止恶意软件从您的电脑里面偷取DOMOs。</translation>
+        <source>DOMO will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your DOMs from being stolen by malware infecting your computer.</source>
+        <translation>DOMO将关闭以完成加密过程。但是，仅仅加密您的钱包是不够的，因为它并不能阻止恶意软件从您的电脑里面偷取DOMs。</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>您确定加密您的钱包吗？</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR DOMO&lt;/b&gt;!</source>
-        <translation>注意：请妥善保管好你的密码，因为在加密后，没有密码将无法打开钱包。这将会让您&lt;b&gt;损失钱包中所有的DOMO&lt;/b&gt;！</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR DOM&lt;/b&gt;!</source>
+        <translation>注意：请妥善保管好你的密码，因为在加密后，没有密码将无法打开钱包。这将会让您&lt;b&gt;损失钱包中所有的DOM&lt;/b&gt;！</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -681,6 +681,10 @@
         <translation>最新</translation>
     </message>
     <message>
+        <source>%1 and %2</source>
+        <translation>%1 和 %2</translation>
+    </message>
+    <message>
         <source>Catching up...</source>
         <translation>追赶…</translation>
     </message>
@@ -801,6 +805,13 @@ Address: %4
     <name>FreespaceChecker</name>
     </context>
 <context>
+    <name>GovernancePage</name>
+    <message>
+        <source>Form</source>
+        <translation>来自</translation>
+    </message>
+    </context>
+<context>
     <name>HelpMessageDialog</name>
     <message>
         <source>DOMO Core</source>
@@ -892,9 +903,6 @@ Address: %4
     <name>MultisigDialog</name>
     </context>
 <context>
-    <name>ObfuscationConfig</name>
-    </context>
-<context>
     <name>OpenURIDialog</name>
     </context>
 <context>
@@ -982,10 +990,6 @@ Address: %4
     <message>
         <source>User Interface Theme:</source>
         <translation>界面主题（语言包）:</translation>
-    </message>
-    <message>
-        <source>&amp;Unit to show amounts in:</source>
-        <translation>&amp;单位显示金额</translation>
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
@@ -1117,7 +1121,14 @@ Address: %4
     </message>
     </context>
 <context>
+    <name>ProposalFrame</name>
+    </context>
+<context>
     <name>QObject</name>
+    <message>
+        <source>DOMO Core</source>
+        <translation>DOMO Core</translation>
+    </message>
     </context>
 <context>
     <name>QRImageWidget</name>
@@ -1172,6 +1183,10 @@ Address: %4
         <translation>&amp;消息：</translation>
     </message>
     <message>
+        <source>A&amp;mount:</source>
+        <translation>A&amp;总计</translation>
+    </message>
+    <message>
         <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the DOMO network.</source>
         <translation>附加到付款请求的可选消息，将在请求打开时显示。 注意：消息不会在付款时通过DOMO网络发送。</translation>
     </message>
@@ -1184,10 +1199,6 @@ Address: %4
         <translation>&amp;标签</translation>
     </message>
     <message>
-        <source>&amp;Amount:</source>
-        <translation>&amp;总计</translation>
-    </message>
-    <message>
         <source>&amp;Request payment</source>
         <translation>&amp;请求支付</translation>
     </message>
@@ -1195,7 +1206,11 @@ Address: %4
         <source>Copy message</source>
         <translation>复制消息</translation>
     </message>
-    </context>
+    <message>
+        <source>Copy address</source>
+        <translation>复制地址</translation>
+    </message>
+</context>
 <context>
     <name>ReceiveRequestDialog</name>
     <message>
@@ -1236,6 +1251,10 @@ Address: %4
     <message>
         <source>Message</source>
         <translation>消息 </translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation>地址</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -1533,7 +1552,7 @@ Address: %4
     </message>
     </context>
 <context>
-    <name>ZDomoControlDialog</name>
+    <name>ZDomControlDialog</name>
     </context>
 <context>
     <name>domo-core</name>
@@ -1568,14 +1587,6 @@ Address: %4
     <message>
         <source>Warning</source>
         <translation>注意</translation>
-    </message>
-    <message>
-        <source>Your entries added successfully.</source>
-        <translation>您的输入成功添加。</translation>
-    </message>
-    <message>
-        <source>Your transaction was accepted into the pool!</source>
-        <translation>您的交易被矿池接受！</translation>
     </message>
     </context>
 </TS>

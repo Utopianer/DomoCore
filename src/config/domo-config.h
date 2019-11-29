@@ -1,9 +1,9 @@
 /* src/config/domo-config.h.  Generated from domo-config.h.in by configure.  */
 /* src/config/domo-config.h.in.  Generated from configure.ac by autoheader.  */
 
-#ifndef DOMO_CONFIG_H
+#ifndef DOM_CONFIG_H
 
-#define DOMO_CONFIG_H
+#define DOM_CONFIG_H
 
 /* Define if building universal (internal helper macro) */
 /* #undef AC_APPLE_UNIVERSAL_BUILD */
@@ -15,22 +15,31 @@
 #define CLIENT_VERSION_IS_RELEASE true
 
 /* Major version */
-#define CLIENT_VERSION_MAJOR 3
+#define CLIENT_VERSION_MAJOR 4
 
 /* Minor version */
 #define CLIENT_VERSION_MINOR 0
 
 /* Build revision */
-#define CLIENT_VERSION_REVISION 2
+#define CLIENT_VERSION_REVISION 0
 
 /* Version is release */
 #define COPYRIGHT_YEAR 2019
+
+/* Define this symbol to build code that uses AVX2 intrinsics */
+#define ENABLE_AVX2 1
+
+/* Define this symbol to build code that uses SHA-NI intrinsics */
+#define ENABLE_SHANI 1
+
+/* Define this symbol to build code that uses SSE4.1 intrinsics */
+#define ENABLE_SSE41 1
 
 /* Define to 1 to enable wallet functions */
 #define ENABLE_WALLET 1
 
 /* Define to 1 to enable ZMQ functions */
-#define ENABLE_ZMQ 1
+#define ENABLE_ZMQ 0
 
 /* parameter and return value type for __fdelt_chk */
 /* #undef FDELT_TYPE */
@@ -56,11 +65,18 @@
 /* define if the Boost::Unit_Test_Framework library is available */
 #define HAVE_BOOST_UNIT_TEST_FRAMEWORK /**/
 
+/* Define to 1 if you have the <byteswap.h> header file. */
+#define HAVE_BYTESWAP_H 1
+
 /* Define this symbol if the consensus lib has been built */
 /* #undef HAVE_CONSENSUS_LIB */
 
 /* define if the compiler supports basic C++11 syntax */
 #define HAVE_CXX11 1
+
+/* Define to 1 if you have the declaration of `be16toh', and to 0 if you
+   don't. */
+#define HAVE_DECL_BE16TOH 1
 
 /* Define to 1 if you have the declaration of `be32toh', and to 0 if you
    don't. */
@@ -70,9 +86,25 @@
    don't. */
 #define HAVE_DECL_BE64TOH 1
 
+/* Define to 1 if you have the declaration of `bswap_16', and to 0 if you
+   don't. */
+#define HAVE_DECL_BSWAP_16 1
+
+/* Define to 1 if you have the declaration of `bswap_32', and to 0 if you
+   don't. */
+#define HAVE_DECL_BSWAP_32 1
+
+/* Define to 1 if you have the declaration of `bswap_64', and to 0 if you
+   don't. */
+#define HAVE_DECL_BSWAP_64 1
+
 /* Define to 1 if you have the declaration of `daemon', and to 0 if you don't.
    */
 #define HAVE_DECL_DAEMON 1
+
+/* Define to 1 if you have the declaration of `htobe16', and to 0 if you
+   don't. */
+#define HAVE_DECL_HTOBE16 1
 
 /* Define to 1 if you have the declaration of `htobe32', and to 0 if you
    don't. */
@@ -82,6 +114,10 @@
    don't. */
 #define HAVE_DECL_HTOBE64 1
 
+/* Define to 1 if you have the declaration of `htole16', and to 0 if you
+   don't. */
+#define HAVE_DECL_HTOLE16 1
+
 /* Define to 1 if you have the declaration of `htole32', and to 0 if you
    don't. */
 #define HAVE_DECL_HTOLE32 1
@@ -89,6 +125,10 @@
 /* Define to 1 if you have the declaration of `htole64', and to 0 if you
    don't. */
 #define HAVE_DECL_HTOLE64 1
+
+/* Define to 1 if you have the declaration of `le16toh', and to 0 if you
+   don't. */
+#define HAVE_DECL_LE16TOH 1
 
 /* Define to 1 if you have the declaration of `le32toh', and to 0 if you
    don't. */
@@ -106,6 +146,18 @@
    don't. */
 #define HAVE_DECL_STRNLEN 1
 
+/* Define to 1 if you have the declaration of `__builtin_clz', and to 0 if you
+   don't. */
+#define HAVE_DECL___BUILTIN_CLZ 1
+
+/* Define to 1 if you have the declaration of `__builtin_clzl', and to 0 if
+   you don't. */
+#define HAVE_DECL___BUILTIN_CLZL 1
+
+/* Define to 1 if you have the declaration of `__builtin_clzll', and to 0 if
+   you don't. */
+#define HAVE_DECL___BUILTIN_CLZLL 1
+
 /* Define to 1 if you have the <dlfcn.h> header file. */
 #define HAVE_DLFCN_H 1
 
@@ -121,11 +173,12 @@
 /* Define to 1 if the system has the `visibility' function attribute */
 #define HAVE_FUNC_ATTRIBUTE_VISIBILITY 1
 
-/* Define this symbol if you have getaddrinfo_a */
-#define HAVE_GETADDRINFO_A 1
+/* Define this symbol if the BSD getentropy system call is available */
+#define HAVE_GETENTROPY 1
 
-/* Define this symbol if you have inet_pton */
-#define HAVE_INET_PTON 1
+/* Define this symbol if the BSD getentropy system call is available with
+   sys/random.h */
+#define HAVE_GETENTROPY_RAND 1
 
 /* Define to 1 if you have the <inttypes.h> header file. */
 #define HAVE_INTTYPES_H 1
@@ -142,11 +195,11 @@
 /* Define to 1 if you have the `crypt32' library (-lcrypt32). */
 /* #undef HAVE_LIBCRYPT32 */
 
-/* Define to 1 if you have the `crypto' library (-lcrypto). */
-#define HAVE_LIBCRYPTO 1
-
 /* Define to 1 if you have the `gdi32' library (-lgdi32). */
 /* #undef HAVE_LIBGDI32 */
+
+/* Define this symbol if libgmp is installed */
+#define HAVE_LIBGMP 1
 
 /* Define to 1 if you have the `imm32' library (-limm32). */
 /* #undef HAVE_LIBIMM32 */
@@ -253,6 +306,15 @@
 /* Define to 1 if you have the <string.h> header file. */
 #define HAVE_STRING_H 1
 
+/* Define this symbol if the BSD sysctl(KERN_ARND) is available */
+/* #undef HAVE_SYSCTL_ARND */
+
+/* Define to 1 if you have the <sys/endian.h> header file. */
+/* #undef HAVE_SYS_ENDIAN_H */
+
+/* Define this symbol if the Linux getrandom system call is available */
+#define HAVE_SYS_GETRANDOM 1
+
 /* Define to 1 if you have the <sys/prctl.h> header file. */
 #define HAVE_SYS_PRCTL_H 1
 
@@ -290,7 +352,7 @@
 #define PACKAGE_NAME "Domo Core"
 
 /* Define to the full name and version of this package. */
-#define PACKAGE_STRING "Domo Core 3.0.2"
+#define PACKAGE_STRING "Domo Core 4.0.0"
 
 /* Define to the one symbol short name of this package. */
 #define PACKAGE_TARNAME "domo"
@@ -299,7 +361,7 @@
 #define PACKAGE_URL ""
 
 /* Define to the version of this package. */
-#define PACKAGE_VERSION "3.0.2"
+#define PACKAGE_VERSION "4.0.0"
 
 /* Define to necessary symbol if this constant uses a non-standard name on
    your system. */
@@ -326,14 +388,23 @@
 /* Define to 1 if strerror_r returns char *. */
 #define STRERROR_R_CHAR_P 1
 
+/* Define this symbol to build in assembly routines */
+#define USE_ASM 1
+
 /* Define this symbol if coverage is enabled */
 /* #undef USE_COVERAGE */
 
 /* Define if dbus support should be compiled in */
 #define USE_DBUS 1
 
-/* Define if QR support should be compiled in */
-#define USE_QRCODE 1
+/* Define this symbol to use the gmp implementation */
+#define USE_NUM_GMP 1
+
+/* Define this symbol to use openssl implementation */
+/* #undef USE_NUM_OPENSSL */
+
+/* Define if QTCHARTS support should be compiled in */
+/* #undef USE_QTCHARTS */
 
 /* UPnP support not compiled if undefined, otherwise value (0 or 1) determines
    default state */
@@ -362,4 +433,4 @@
 /* Define for large files, on AIX-style hosts. */
 /* #undef _LARGE_FILES */
 
-#endif //DOMO_CONFIG_H
+#endif //DOM_CONFIG_H

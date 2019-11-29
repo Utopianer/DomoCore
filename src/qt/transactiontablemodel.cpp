@@ -1,7 +1,6 @@
 // Copyright (c) 2011-2014 The Bitcoin developers
 // Copyright (c) 2014-2016 The Dash developers
-// Copyright (c) 2016-2018 The PIVX developers
-// Copyright (c) 2018-2019 The DOMO developers
+// Copyright (c) 2016-2019 The DOMO developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -19,13 +18,17 @@
 #include "sync.h"
 #include "uint256.h"
 #include "util.h"
-#include "wallet.h"
+#include "wallet/wallet.h"
 
 #include <QColor>
 #include <QDateTime>
 #include <QDebug>
 #include <QIcon>
 #include <QList>
+#include <QtConcurrent/QtConcurrent>
+#include <QFuture>
+
+#define SINGLE_THREAD_MAX_TXES_SIZE 4000
 
 // Amount column is right-aligned it contains numbers
 static int column_alignments[] = {
@@ -70,6 +73,8 @@ public:
      * this is sorted by sha256.
      */
     QList<TransactionRecord> cachedWallet;
+    bool hasZcTxes = false;
+
 
     /* Query entire wallet anew from core.
      */
@@ -77,13 +82,79 @@ public:
     {
         qDebug() << "TransactionTablePriv::refreshWallet";
         cachedWallet.clear();
-        {
-            LOCK2(cs_main, wallet->cs_wallet);
-            for (std::map<uint256, CWalletTx>::iterator it = wallet->mapWallet.begin(); it != wallet->mapWallet.end(); ++it) {
-                if (TransactionRecord::showTransaction(it->second))
-                    cachedWallet.append(TransactionRecord::decomposeTransaction(wallet, it->second));
+
+        std::vector<CWalletTx> walletTxes = wallet->getWalletTxs();
+
+        // Divide the work between multiple threads to speedup the process if the vector is larger than 4k txes
+        std::size_t txesSize = walletTxes.size();
+        if (txesSize > SINGLE_THREAD_MAX_TXES_SIZE) {
+
+            // Simple way to get the processors count
+            std::size_t threadsCount = (QThreadPool::globalInstance()->maxThreadCount() / 2 ) + 1;
+
+            // Size of the tx subsets
+            std::size_t const subsetSize = txesSize / (threadsCount + 1);
+            std::size_t totalSumSize = 0;
+            QList<QFuture<QList<TransactionRecord>>> tasks;
+
+            // Subsets + run task
+            for (std::size_t i = 0; i < threadsCount; ++i) {
+                tasks.append(
+                        QtConcurrent::run(
+                                convertTxToRecords,
+                                this,
+                                wallet,
+                                std::vector<CWalletTx>(walletTxes.begin() + totalSumSize, walletTxes.begin() + totalSumSize + subsetSize)
+                        )
+                 );
+                totalSumSize += subsetSize;
+            }
+
+            // Now take the remaining ones and do the work here
+            std::size_t const remainingSize = txesSize - totalSumSize;
+            cachedWallet.append(convertTxToRecords(this, wallet,
+                                                   std::vector<CWalletTx>(walletTxes.end() - remainingSize, walletTxes.end())
+                                                   ));
+
+            for (QFuture<QList<TransactionRecord>> &future : tasks) {
+                future.waitForFinished();
+                cachedWallet.append(future.result());
+            }
+        } else {
+            // Single thread flow
+            cachedWallet.append(convertTxToRecords(this, wallet, walletTxes));
+        }
+    }
+
+    static QList<TransactionRecord> convertTxToRecords(TransactionTablePriv* tablePriv, const CWallet* wallet, const std::vector<CWalletTx>& walletTxes) {
+        QList<TransactionRecord> cachedWallet;
+        bool hasZcTxes = tablePriv->hasZcTxes;
+        for (const auto &tx : walletTxes) {
+            if (TransactionRecord::showTransaction(tx)) {
+                QList<TransactionRecord> records = TransactionRecord::decomposeTransaction(wallet, tx);
+
+                if (!hasZcTxes) {
+                    for (const TransactionRecord &record : records) {
+                        hasZcTxes = HasZcTxesIfNeeded(record);
+                        if (hasZcTxes) break;
+                    }
+                }
+
+                cachedWallet.append(records);
             }
         }
+
+        if (hasZcTxes) // Only update it if it's true, multi-thread operation.
+            tablePriv->hasZcTxes = true;
+
+        return cachedWallet;
+    }
+
+    static bool HasZcTxesIfNeeded(const TransactionRecord& record) {
+        return (record.type == TransactionRecord::ZerocoinMint ||
+                record.type == TransactionRecord::ZerocoinSpend ||
+                record.type == TransactionRecord::ZerocoinSpend_Change_zDom ||
+                record.type == TransactionRecord::ZerocoinSpend_FromMe);
     }
 
     /* Update our model of the wallet incrementally, to synchronize our model of the wallet
@@ -138,6 +209,7 @@ public:
                     int insert_idx = lowerIndex;
                     foreach (const TransactionRecord& rec, toInsert) {
                         cachedWallet.insert(insert_idx, rec);
+                        if (!hasZcTxes) hasZcTxes = HasZcTxesIfNeeded(rec);
                         insert_idx += 1;
                     }
                     parent->endInsertRows();
@@ -164,6 +236,11 @@ public:
     int size()
     {
         return cachedWallet.size();
+    }
+
+    bool containsZcTxes()
+    {
+        return hasZcTxes;
     }
 
     TransactionRecord* index(int idx)
@@ -240,6 +317,8 @@ void TransactionTableModel::updateTransaction(const QString& hash, int status, b
     updated.SetHex(hash.toStdString());
 
     priv->updateWallet(updated, status, showTransaction);
+
+    emit txArrived(hash);
 }
 
 void TransactionTableModel::updateConfirmations()
@@ -262,6 +341,14 @@ int TransactionTableModel::columnCount(const QModelIndex& parent) const
 {
     Q_UNUSED(parent);
     return columns.length();
+}
+
+int TransactionTableModel::size() const{
+    return priv->size();
+}
+
+bool TransactionTableModel::hasZcTxes() {
+    return priv->containsZcTxes();
 }
 
 QString TransactionTableModel::formatTxStatus(const TransactionRecord* wtx) const
@@ -320,10 +407,10 @@ QString TransactionTableModel::lookupAddress(const std::string& address, bool to
     QString label = walletModel->getAddressTableModel()->labelForAddress(QString::fromStdString(address));
     QString description;
     if (!label.isEmpty()) {
-        description += label;
+        description += label + QString(" ");
     }
     if (label.isEmpty() || tooltip) {
-        description += QString(" (") + QString::fromStdString(address) + QString(")");
+        description += QString::fromStdString(address);
     }
     return description;
 }
@@ -345,9 +432,9 @@ QString TransactionTableModel::formatTxType(const TransactionRecord* wtx) const
     case TransactionRecord::SendToSelf:
         return tr("Payment to yourself");
     case TransactionRecord::StakeMint:
-        return tr("DOMO Stake");
-    case TransactionRecord::StakeZDOMO:
-        return tr("zDOMO Stake");
+        return tr("DOM Stake");
+    case TransactionRecord::StakeZDOM:
+        return tr("zDOM Stake");
     case TransactionRecord::Generated:
         return tr("Mined");
     case TransactionRecord::ObfuscationDenominate:
@@ -361,16 +448,15 @@ QString TransactionTableModel::formatTxType(const TransactionRecord* wtx) const
     case TransactionRecord::Obfuscated:
         return tr("Obfuscated");
     case TransactionRecord::ZerocoinMint:
-        return tr("Converted DOMO to zDOMO");
+        return tr("Converted DOM to zDOM");
     case TransactionRecord::ZerocoinSpend:
-        return tr("Spent zDOMO");
+        return tr("Spent zDOM");
     case TransactionRecord::RecvFromZerocoinSpend:
-        return tr("Received DOMO from zDOMO");
-    case TransactionRecord::ZerocoinSpend_Change_zDomo:
-        return tr("Minted Change as zDOMO from zDOMO Spend");
+        return tr("Received DOM from zDOM");
+    case TransactionRecord::ZerocoinSpend_Change_zDom:
+        return tr("Minted Change as zDOM from zDOM Spend");
     case TransactionRecord::ZerocoinSpend_FromMe:
-        return tr("Converted zDOMO to DOMO");
-
+        return tr("Converted zDOM to DOM");
     default:
         return QString();
     }
@@ -381,7 +467,7 @@ QVariant TransactionTableModel::txAddressDecoration(const TransactionRecord* wtx
     switch (wtx->type) {
     case TransactionRecord::Generated:
     case TransactionRecord::StakeMint:
-    case TransactionRecord::StakeZDOMO:
+    case TransactionRecord::StakeZDOM:
     case TransactionRecord::MNReward:
         return QIcon(":/icons/tx_mined");
     case TransactionRecord::RecvWithObfuscation:
@@ -392,7 +478,7 @@ QVariant TransactionTableModel::txAddressDecoration(const TransactionRecord* wtx
     case TransactionRecord::SendToAddress:
     case TransactionRecord::SendToOther:
     case TransactionRecord::ZerocoinSpend:
-        return QIcon(":/icons/tx_output");
+        return QIcon("://ic-transaction-sent");
     default:
         return QIcon(":/icons/tx_inout");
     }
@@ -424,21 +510,26 @@ QString TransactionTableModel::formatTxToAddress(const TransactionRecord* wtx, b
     case TransactionRecord::SendToOther:
         return QString::fromStdString(wtx->address) + watchAddress;
     case TransactionRecord::ZerocoinMint:
-    case TransactionRecord::ZerocoinSpend_Change_zDomo:
-        return tr("Anonymous (zDOMO Transaction)");
-    case TransactionRecord::StakeZDOMO:
-        return tr("Anonymous (zDOMO Stake)");
-    case TransactionRecord::SendToSelf:
-    default:
-        return tr("(n/a)") + watchAddress;
+    case TransactionRecord::ZerocoinSpend_Change_zDom:
+    case TransactionRecord::StakeZDOM:
+        return tr("Anonymous");
+    case TransactionRecord::SendToSelf: {
+        QString label = walletModel->getAddressTableModel()->labelForAddress(QString::fromStdString(wtx->address));
+        return label.isEmpty() ? "" : label;
+    }
+    default: {
+        if (watchAddress.isEmpty()) {
+            return tr("No information");
+        } else {
+            return tr("(n/a)") + watchAddress;
+        }
+    }
     }
 }
 
 QVariant TransactionTableModel::addressColor(const TransactionRecord* wtx) const
 {
     switch (wtx->type) {
-    case TransactionRecord::SendToSelf:
-        return COLOR_BAREADDRESS;
     // Show addresses without label in a less visible color
     case TransactionRecord::RecvWithAddress:
     case TransactionRecord::SendToAddress:
@@ -448,6 +539,7 @@ QVariant TransactionTableModel::addressColor(const TransactionRecord* wtx) const
         if (label.isEmpty())
             return COLOR_BAREADDRESS;
     }
+    case TransactionRecord::SendToSelf:
     default:
         // To avoid overriding above conditional formats a default text color for this QTableView is not defined in stylesheet,
         // so we must always return a color here
@@ -495,7 +587,7 @@ QVariant TransactionTableModel::txStatusDecoration(const TransactionRecord* wtx)
         return QIcon(":/icons/transaction_conflicted");
     case TransactionStatus::Immature: {
         int total = wtx->status.depth + wtx->status.matures_in;
-        int part = (wtx->status.depth * 4 / total) + 1;
+        int part = (wtx->status.depth * 5 / total) + 1;
         return QIcon(QString(":/icons/transaction_%1").arg(part));
     }
     case TransactionStatus::MaturesWarning:
@@ -575,7 +667,15 @@ QVariant TransactionTableModel::data(const QModelIndex& index, int role) const
     case Qt::TextAlignmentRole:
         return column_alignments[index.column()];
     case Qt::ForegroundRole:
-        // Conflicted, most probably orphaned
+        // Minted
+        if (rec->type == TransactionRecord::Generated || rec->type == TransactionRecord::StakeMint ||
+                rec->type == TransactionRecord::StakeZDOM || rec->type == TransactionRecord::MNReward) {
+            if (rec->status.status == TransactionStatus::Conflicted || rec->status.status == TransactionStatus::NotAccepted)
+                return COLOR_ORPHAN;
+            else
+                return COLOR_STAKE;
+        }
+        // Conflicted tx
         if (rec->status.status == TransactionStatus::Conflicted || rec->status.status == TransactionStatus::NotAccepted) {
             return COLOR_CONFLICTED;
         }
@@ -595,6 +695,8 @@ QVariant TransactionTableModel::data(const QModelIndex& index, int role) const
         return COLOR_BLACK;
     case TypeRole:
         return rec->type;
+    case SizeRole:
+        return rec->size;
     case DateRole:
         return QDateTime::fromTime_t(static_cast<uint>(rec->time));
     case WatchonlyRole:

@@ -13,6 +13,7 @@ QT_TS = \
   qt/locale/domo_da.ts \
   qt/locale/domo_de.ts \
   qt/locale/domo_en.ts \
+  qt/locale/domo_en_GB.ts \
   qt/locale/domo_en_US.ts \
   qt/locale/domo_eo.ts \
   qt/locale/domo_es.ts \
@@ -43,82 +44,158 @@ QT_TS = \
 QT_FORMS_UI = \
   qt/forms/addressbookpage.ui \
   qt/forms/askpassphrasedialog.ui \
-  qt/forms/bip38tooldialog.ui \
   qt/forms/coincontroldialog.ui \
   qt/forms/blockexplorer.ui \
-  qt/forms/obfuscationconfig.ui \
   qt/forms/editaddressdialog.ui \
+  qt/forms/governancepage.ui \
   qt/forms/helpmessagedialog.ui \
   qt/forms/intro.ui \
-  qt/forms/masternodelist.ui \
-  qt/forms/multisenddialog.ui \
-  qt/forms/multisigdialog.ui\
   qt/forms/openuridialog.ui \
   qt/forms/optionsdialog.ui \
-  qt/forms/overviewpage.ui \
-  qt/forms/receivecoinsdialog.ui \
-  qt/forms/privacydialog.ui \
-  qt/forms/receiverequestdialog.ui \
   qt/forms/rpcconsole.ui \
-  qt/forms/sendcoinsdialog.ui \
-  qt/forms/sendcoinsentry.ui \
-  qt/forms/signverifymessagedialog.ui \
-  qt/forms/transactiondescdialog.ui \
-  qt/forms/zpivcontroldialog.ui
+  qt/domo/forms/loadingdialog.ui \
+  qt/forms/zdomcontroldialog.ui \
+  qt/domo/forms/snackbar.ui \
+  qt/domo/forms/navmenuwidget.ui \
+  qt/domo/forms/lockunlock.ui \
+  qt/domo/forms/expandablebutton.ui \
+  qt/domo/forms/receivedialog.ui \
+  qt/domo/forms/walletpassworddialog.ui \
+  qt/domo/forms/topbar.ui \
+  qt/domo/forms/txrow.ui \
+  qt/domo/forms/dashboardwidget.ui \
+  qt/domo/forms/coincontroldomwidget.ui \
+  qt/domo/forms/addresslabelrow.ui \
+  qt/domo/forms/contactdropdownrow.ui \
+  qt/domo/forms/mninfodialog.ui \
+  qt/domo/forms/optionbutton.ui \
+  qt/domo/forms/masternodewizarddialog.ui \
+  qt/domo/forms/mnrow.ui \
+  qt/domo/forms/masternodeswidget.ui \
+  qt/domo/forms/myaddressrow.ui \
+  qt/domo/forms/sendchangeaddressdialog.ui \
+  qt/domo/forms/sendconfirmdialog.ui \
+  qt/domo/forms/sendcustomfeedialog.ui \
+  qt/domo/forms/sendchangeaddressdialog.ui \
+  qt/domo/forms/sendmultirow.ui \
+  qt/domo/forms/send.ui \
+  qt/domo/forms/addnewaddressdialog.ui \
+  qt/domo/forms/addnewcontactdialog.ui \
+  qt/domo/forms/requestdialog.ui \
+  qt/domo/forms/receivewidget.ui \
+  qt/domo/forms/tooltipmenu.ui \
+  qt/domo/forms/addresseswidget.ui \
+  qt/domo/forms/defaultdialog.ui \
+  qt/domo/forms/denomgenerationdialog.ui \
+  qt/domo/forms/privacywidget.ui \
+  qt/domo/settings/forms/settingsbackupwallet.ui \
+  qt/domo/settings/forms/settingsbittoolwidget.ui \
+  qt/domo/settings/forms/settingsconsolewidget.ui \
+  qt/domo/settings/forms/settingsdisplayoptionswidget.ui \
+  qt/domo/settings/forms/settingsfaqwidget.ui \
+  qt/domo/settings/forms/settingsinformationwidget.ui \
+  qt/domo/settings/forms/settingsmainoptionswidget.ui \
+  qt/domo/settings/forms/settingsmultisenddialog.ui \
+  qt/domo/settings/forms/settingsmultisendwidget.ui \
+  qt/domo/settings/forms/settingssignmessagewidgets.ui \
+  qt/domo/settings/forms/settingswalletoptionswidget.ui \
+  qt/domo/settings/forms/settingswalletrepairwidget.ui \
+  qt/domo/settings/forms/settingswidget.ui \
+  qt/domo/forms/welcomecontentwidget.ui \
+  qt/domo/forms/splash.ui
 
 QT_MOC_CPP = \
   qt/moc_addressbookpage.cpp \
   qt/moc_addresstablemodel.cpp \
   qt/moc_askpassphrasedialog.cpp \
   qt/moc_bantablemodel.cpp \
-  qt/moc_bip38tooldialog.cpp \
   qt/moc_bitcoinaddressvalidator.cpp \
   qt/moc_bitcoinamountfield.cpp \
-  qt/moc_bitcoingui.cpp \
+  qt/domo/moc_domogui.cpp \
   qt/moc_bitcoinunits.cpp \
   qt/moc_blockexplorer.cpp \
   qt/moc_clientmodel.cpp \
   qt/moc_coincontroldialog.cpp \
   qt/moc_coincontroltreewidget.cpp \
   qt/moc_csvmodelwriter.cpp \
-  qt/moc_obfuscationconfig.cpp \
   qt/moc_editaddressdialog.cpp \
+  qt/moc_governancepage.cpp \
   qt/moc_guiutil.cpp \
   qt/moc_intro.cpp \
   qt/moc_macdockiconhandler.cpp \
   qt/moc_macnotificationhandler.cpp \
-  qt/moc_masternodelist.cpp \
-  qt/moc_multisenddialog.cpp \
-  qt/moc_multisigdialog.cpp\
   qt/moc_notificator.cpp \
   qt/moc_openuridialog.cpp \
   qt/moc_optionsdialog.cpp \
   qt/moc_optionsmodel.cpp \
-  qt/moc_overviewpage.cpp \
   qt/moc_peertablemodel.cpp \
   qt/moc_paymentserver.cpp \
   qt/moc_qvalidatedlineedit.cpp \
   qt/moc_qvaluecombobox.cpp \
-  qt/moc_receivecoinsdialog.cpp \
-  qt/moc_privacydialog.cpp \
-  qt/moc_receiverequestdialog.cpp \
+  qt/moc_proposalframe.cpp \
   qt/moc_recentrequeststablemodel.cpp \
   qt/moc_rpcconsole.cpp \
-  qt/moc_sendcoinsdialog.cpp \
-  qt/moc_sendcoinsentry.cpp \
-  qt/moc_signverifymessagedialog.cpp \
   qt/moc_splashscreen.cpp \
   qt/moc_trafficgraphwidget.cpp \
   qt/moc_transactiondesc.cpp \
-  qt/moc_transactiondescdialog.cpp \
   qt/moc_transactionfilterproxy.cpp \
   qt/moc_transactiontablemodel.cpp \
-  qt/moc_transactionview.cpp \
   qt/moc_utilitydialog.cpp \
-  qt/moc_walletframe.cpp \
   qt/moc_walletmodel.cpp \
-  qt/moc_walletview.cpp \
-  qt/moc_zpivcontroldialog.cpp
+  qt/domo/moc_loadingdialog.cpp \
+  qt/moc_zdomcontroldialog.cpp \
+  qt/domo/moc_pwidget.cpp \
+  qt/domo/moc_snackbar.cpp \
+  qt/domo/moc_navmenuwidget.cpp \
+  qt/domo/moc_lockunlock.cpp \
+  qt/domo/moc_expandablebutton.cpp \
+  qt/domo/moc_furabstractlistitemdelegate.cpp \
+  qt/domo/moc_receivedialog.cpp \
+  qt/domo/moc_walletpassworddialog.cpp \
+  qt/domo/moc_topbar.cpp \
+  qt/domo/moc_txrow.cpp \
+  qt/domo/moc_dashboardwidget.cpp \
+  qt/domo/moc_coincontroldomwidget.cpp \
+  qt/domo/moc_addresslabelrow.cpp \
+  qt/domo/moc_contactdropdownrow.cpp \
+  qt/domo/moc_mninfodialog.cpp \
+  qt/domo/moc_optionbutton.cpp \
+  qt/domo/moc_mnmodel.cpp \
+  qt/domo/moc_masternodewizarddialog.cpp \
+  qt/domo/moc_mnrow.cpp \
+  qt/domo/moc_masternodeswidget.cpp \
+  qt/domo/moc_myaddressrow.cpp \
+  qt/domo/moc_contactsdropdown.cpp \
+  qt/domo/moc_sendchangeaddressdialog.cpp \
+  qt/domo/moc_sendconfirmdialog.cpp \
+  qt/domo/moc_sendcustomfeedialog.cpp \
+  qt/domo/moc_sendchangeaddressdialog.cpp \
+  qt/domo/moc_sendmultirow.cpp \
+  qt/domo/moc_send.cpp \
+  qt/domo/moc_addnewaddressdialog.cpp \
+  qt/domo/moc_addnewcontactdialog.cpp \
+  qt/domo/moc_requestdialog.cpp \
+  qt/domo/moc_receivewidget.cpp \
+  qt/domo/moc_tooltipmenu.cpp \
+  qt/domo/moc_addresseswidget.cpp \
+  qt/domo/moc_defaultdialog.cpp \
+  qt/domo/moc_denomgenerationdialog.cpp \
+  qt/domo/moc_privacywidget.cpp \
+  qt/domo/settings/moc_settingsbackupwallet.cpp \
+  qt/domo/settings/moc_settingsbittoolwidget.cpp \
+  qt/domo/settings/moc_settingsconsolewidget.cpp \
+  qt/domo/settings/moc_settingsdisplayoptionswidget.cpp \
+  qt/domo/settings/moc_settingsfaqwidget.cpp \
+  qt/domo/settings/moc_settingsinformationwidget.cpp \
+  qt/domo/settings/moc_settingsmainoptionswidget.cpp \
+  qt/domo/settings/moc_settingsmultisenddialog.cpp \
+  qt/domo/settings/moc_settingsmultisendwidget.cpp \
+  qt/domo/settings/moc_settingssignmessagewidgets.cpp \
+  qt/domo/settings/moc_settingswalletoptionswidget.cpp \
+  qt/domo/settings/moc_settingswalletrepairwidget.cpp \
+  qt/domo/settings/moc_settingswidget.cpp \
+  qt/domo/moc_welcomecontentwidget.cpp \
+  qt/domo/moc_splash.cpp
 
 BITCOIN_MM = \
   qt/macdockiconhandler.mm \
@@ -128,8 +205,8 @@ QT_MOC = \
   qt/domo.moc \
   qt/bitcoinamountfield.moc \
   qt/intro.moc \
-  qt/overviewpage.moc \
-  qt/rpcconsole.moc
+  qt/rpcconsole.moc \
+  qt/domo/settings/moc_settingsconsolewidget.cpp
 
 QT_QRC_CPP = qt/qrc_domo.cpp
 QT_QRC = qt/domo.qrc
@@ -145,61 +222,105 @@ BITCOIN_QT_H = \
   qt/addresstablemodel.h \
   qt/askpassphrasedialog.h \
   qt/bantablemodel.h \
-  qt/bip38tooldialog.h \
   qt/bitcoinaddressvalidator.h \
   qt/bitcoinamountfield.h \
-  qt/bitcoingui.h \
+  qt/domo/domogui.h \
   qt/bitcoinunits.h \
   qt/blockexplorer.h \
   qt/clientmodel.h \
   qt/coincontroldialog.h \
   qt/coincontroltreewidget.h \
   qt/csvmodelwriter.h \
-  qt/obfuscationconfig.h \
   qt/editaddressdialog.h \
+  qt/governancepage.h \
   qt/guiconstants.h \
   qt/guiutil.h \
   qt/intro.h \
   qt/macdockiconhandler.h \
   qt/macnotificationhandler.h \
-  qt/masternodelist.h \
-  qt/multisenddialog.h \
-  qt/multisigdialog.h\
   qt/networkstyle.h \
   qt/notificator.h \
   qt/openuridialog.h \
   qt/optionsdialog.h \
   qt/optionsmodel.h \
-  qt/overviewpage.h \
   qt/paymentrequestplus.h \
   qt/paymentserver.h \
   qt/peertablemodel.h \
   qt/platformstyle.h \
+  qt/proposalframe.h \
   qt/qvalidatedlineedit.h \
   qt/qvaluecombobox.h \
-  qt/receivecoinsdialog.h \
-  qt/privacydialog.h \
-  qt/receiverequestdialog.h \
   qt/recentrequeststablemodel.h \
   qt/rpcconsole.h \
-  qt/sendcoinsdialog.h \
-  qt/sendcoinsentry.h \
-  qt/signverifymessagedialog.h \
   qt/splashscreen.h \
   qt/trafficgraphwidget.h \
   qt/transactiondesc.h \
-  qt/transactiondescdialog.h \
   qt/transactionfilterproxy.h \
   qt/transactionrecord.h \
   qt/transactiontablemodel.h \
-  qt/transactionview.h \
   qt/utilitydialog.h \
-  qt/walletframe.h \
   qt/walletmodel.h \
   qt/walletmodeltransaction.h \
-  qt/walletview.h \
+  qt/domo/prunnable.h \
+  qt/domo/loadingdialog.h \
   qt/winshutdownmonitor.h \
-  qt/zpivcontroldialog.h
+  qt/zdomcontroldialog.h \
+  qt/domo/pwidget.h \
+  qt/domo/snackbar.h \
+  qt/domo/navmenuwidget.h \
+  qt/domo/lockunlock.h \
+  qt/domo/receivedialog.h \
+  qt/domo/furlistrow.h \
+  qt/domo/furabstractlistitemdelegate.h \
+  qt/domo/txviewholder.h \
+  qt/domo/qtutils.h \
+  qt/domo/expandablebutton.h \
+  qt/domo/walletpassworddialog.h \
+  qt/domo/topbar.h \
+  qt/domo/txrow.h \
+  qt/domo/addressfilterproxymodel.h \
+  qt/domo/dashboardwidget.h \
+  qt/domo/coincontroldomwidget.h \
+  qt/domo/addresslabelrow.h \
+  qt/domo/contactdropdownrow.h \
+  qt/domo/mninfodialog.h \
+  qt/domo/optionbutton.h \
+  qt/domo/mnmodel.h \
+  qt/domo/masternodewizarddialog.h \
+  qt/domo/mnrow.h \
+  qt/domo/masternodeswidget.h \
+  qt/domo/myaddressrow.h \
+  qt/domo/contactsdropdown.h \
+  qt/domo/sendchangeaddressdialog.h \
+  qt/domo/sendconfirmdialog.h \
+  qt/domo/sendcustomfeedialog.h \
+  qt/domo/sendchangeaddressdialog.h \
+  qt/domo/sendmultirow.h \
+  qt/domo/send.h \
+  qt/domo/addnewaddressdialog.h \
+  qt/domo/addnewcontactdialog.h \
+  qt/domo/requestdialog.h \
+  qt/domo/receivewidget.h \
+  qt/domo/tooltipmenu.h \
+  qt/domo/addresseswidget.h \
+  qt/domo/defaultdialog.h \
+  qt/domo/denomgenerationdialog.h \
+  qt/domo/privacywidget.h \
+  qt/domo/settings/settingsbackupwallet.h \
+  qt/domo/settings/settingsbittoolwidget.h \
+  qt/domo/settings/settingsconsolewidget.h \
+  qt/domo/settings/settingsdisplayoptionswidget.h \
+  qt/domo/settings/settingsfaqwidget.h \
+  qt/domo/settings/settingsinformationwidget.h \
+  qt/domo/settings/settingsmainoptionswidget.h \
+  qt/domo/settings/settingsmultisenddialog.h \
+  qt/domo/settings/settingsmultisendwidget.h \
+  qt/domo/settings/settingssignmessagewidgets.h \
+  qt/domo/settings/settingswalletoptionswidget.h \
+  qt/domo/settings/settingswalletrepairwidget.h \
+  qt/domo/settings/settingswidget.h \
+  qt/domo/welcomecontentwidget.h \
+  qt/domo/splash.h
 
 RES_ICONS = \
   qt/res/icons/add.png \
@@ -210,6 +331,7 @@ RES_ICONS = \
   qt/res/icons/bitcoin.png \
   qt/res/icons/bitcoin_testnet.ico \
   qt/res/icons/bitcoin_testnet.png \
+  qt/res/icons/bitcoin_regtest.png \
   qt/res/icons/browse.png \
   qt/res/icons/clock1.png \
   qt/res/icons/clock2.png \
@@ -247,6 +369,8 @@ RES_ICONS = \
   qt/res/icons/remove.png \
   qt/res/icons/send.png \
   qt/res/icons/send_dark.png \
+  qt/res/icons/governance.png \
+  qt/res/icons/governance_dark.png \
   qt/res/icons/staking_active.png \
   qt/res/icons/staking_inactive.png \
   qt/res/icons/synced.png \
@@ -258,25 +382,219 @@ RES_ICONS = \
   qt/res/icons/tx_input.png \
   qt/res/icons/tx_output.png \
   qt/res/icons/tx_mined.png \
+  qt/res/icons/ic-transaction-received.svg \
+  qt/res/icons/ic-transaction-mint.svg \
+  qt/res/icons/ic-transaction-sent.svg \
+  qt/res/icons/ic-transaction-staked.svg \
   qt/res/icons/unit_domo.png \
   qt/res/icons/unit_mdomo.png \
   qt/res/icons/unit_udomo.png \
   qt/res/icons/unit_tdomo.png \
   qt/res/icons/unit_tmdomo.png \
-  qt/res/icons/unit_tudomo.png
+  qt/res/icons/unit_tudomo.png \
+  qt/res/icons/yesvote.png \
+  qt/res/icons/novote.png \
+  qt/res/icons/abstainvote.png \
+  qt/domo/res/img/bg-dashboard-banner.png \
+  qt/domo/res/img/bg-multi-number-dark.svg \
+  qt/domo/res/img/ic-check-locked.svg \
+  qt/domo/res/img/ic-nav-address.svg \
+  qt/domo/res/img/ic-update.svg \
+  qt/domo/res/img/bg-multi-number.svg \
+  qt/domo/res/img/ic-check-mint-off.svg \
+  qt/domo/res/img/ic-nav-dashboard-active.svg \
+  qt/domo/res/img/ic-wallet-status-locked.svg \
+  qt/domo/res/img/bg-splash.svg \
+  qt/domo/res/img/bg-splash.png \
+  qt/domo/res/img/ic-check-mint.svg \
+  qt/domo/res/img/ic-nav-dashboard-hover.svg \
+  qt/domo/res/img/ic-wallet-status-staking.svg \
+  qt/domo/res/img/ic-check-peers-off.svg \
+  qt/domo/res/img/ic-nav-dashboard.svg \
+  qt/domo/res/img/ic-wallet-status-unlocked.svg \
+  qt/domo/res/img/ic-check-peers.svg \
+  qt/domo/res/img/ic-nav-master-active.svg \
+  qt/domo/res/img/ic-watch-password-white.svg \
+  qt/domo/res/img/bg-welcome-container.jpg \
+  qt/domo/res/img/bg-welcome-container.png \
+  qt/domo/res/img/bg-welcome-container.svg \
+  qt/domo/res/img/bg-welcome-container@2x.png \
+  qt/domo/res/img/bg-welcome-container@3x.png \
+  qt/domo/res/img/ic-check-staking-off.svg \
+  qt/domo/res/img/ic-nav-master-hover.svg \
+  qt/domo/res/img/ic-watch-password.svg \
+  qt/domo/res/img/bg-welcome.jpg \
+  qt/domo/res/img/bg-welcome.svg \
+  qt/domo/res/img/bg-welcome@2x.jpg \
+  qt/domo/res/img/bg-welcome@3x.jpg \
+  qt/domo/res/img/bg-welcome.png \
+  qt/domo/res/img/ic-check-staking.svg \
+  qt/domo/res/img/ic-nav-master.svg \
+  qt/domo/res/img/img-dashboard-banner.jpg \
+  qt/domo/res/img/btn-radio-active.svg \
+  qt/domo/res/img/ic-check-sync-off.svg \
+  qt/domo/res/img/ic-nav-privacy-active.svg \
+  qt/domo/res/img/img-empty-contacts.svg \
+  qt/domo/res/img/btn-radio-off.svg \
+  qt/domo/res/img/ic-check-sync.png \
+  qt/domo/res/img/ic-nav-privacy-hover.svg \
+  qt/domo/res/img/img-empty-dark-contacts.svg \
+  qt/domo/res/img/ic-contact-arrow-down.svg \
+  qt/domo/res/img/ic-contact-arrow-down-white.svg \
+  qt/domo/res/img/ic-check-sync.svg \
+  qt/domo/res/img/ic-check-faq.svg \
+  qt/domo/res/img/ic-nav-privacy.svg \
+  qt/domo/res/img/img-empty-dark-error.svg \
+  qt/domo/res/img/ic-add-label.svg \
+  qt/domo/res/img/ic-pending.svg \
+  qt/domo/res/img/ic-check-theme-dark.svg \
+  qt/domo/res/img/ic-nav-receive-active.svg \
+  qt/domo/res/img/img-empty-dark-masternode.svg \
+  qt/domo/res/img/ic-add-liliac.svg \
+  qt/domo/res/img/ic-check-theme-light.svg \
+  qt/domo/res/img/ic-nav-receive-hover.svg \
+  qt/domo/res/img/img-empty-dark-multisend.svg \
+  qt/domo/res/img/ic-add-purple.svg \
+  qt/domo/res/img/ic-check-white.svg \
+  qt/domo/res/img/ic-nav-receive.svg \
+  qt/domo/res/img/img-empty-dark-peers.svg \
+  qt/domo/res/img/ic-add.svg \
+  qt/domo/res/img/ic-check.svg \
+  qt/domo/res/img/ic-nav-send-active.svg \
+  qt/domo/res/img/img-empty-dark-staking-off.svg \
+  qt/domo/res/img/img-empty-dark-staking-on.svg \
+  qt/domo/res/img/ic-address-book-grey.svg \
+  qt/domo/res/img/ic-chevron-left.svg \
+  qt/domo/res/img/ic-nav-send-hover.svg \
+  qt/domo/res/img/img-empty-dark-transactions.svg \
+  qt/domo/res/img/ic-address-book-white.svg \
+  qt/domo/res/img/ic-chevron-right.svg \
+  qt/domo/res/img/ic-nav-send.svg \
+  qt/domo/res/img/img-empty-error.svg \
+  qt/domo/res/img/ic-address-book.svg \
+  qt/domo/res/img/ic-clear-liliac.svg \
+  qt/domo/res/img/ic-nav-settings-active.svg \
+  qt/domo/res/img/img-empty-masternode.svg \
+  qt/domo/res/img/ic-address-send-white.svg \
+  qt/domo/res/img/ic-clear-purple.svg \
+  qt/domo/res/img/ic-nav-settings-hover.svg \
+  qt/domo/res/img/img-empty-multisend.svg \
+  qt/domo/res/img/ic-address-send.svg \
+  qt/domo/res/img/ic-close-white.svg \
+  qt/domo/res/img/ic-nav-settings.svg \
+  qt/domo/res/img/img-empty-peers.svg \
+  qt/domo/res/img/img-empty-privacy.svg \
+  qt/domo/res/img/img-empty-privacy-dark.svg \
+  qt/domo/res/img/ic-arrow-drop-down-white.svg \
+  qt/domo/res/img/ic-close.svg \
+  qt/domo/res/img/ic-radio-liliac-on.svg \
+  qt/domo/res/img/img-empty-staking-off.svg \
+  qt/domo/res/img/ic-arrow-drop-down.svg \
+  qt/domo/res/img/ic-coin-dom.svg \
+  qt/domo/res/img/ic-receive-off.svg \
+  qt/domo/res/img/img-empty-staking-on.svg \
+  qt/domo/res/img/ic-arrow-drop-up-white.svg \
+  qt/domo/res/img/ic-coin-zdom.png \
+  qt/domo/res/img/ic-receive-on.svg \
+  qt/domo/res/img/img-empty-transactions.svg \
+  qt/domo/res/img/ic-arrow-drop-up.svg \
+  qt/domo/res/img/ic-coin-zdom.svg \
+  qt/domo/res/img/ic-received.svg \
+  qt/domo/res/img/img-logo-domo.png \
+  qt/domo/res/img/ic-arrow-drop-white-down.svg \
+  qt/domo/res/img/ic-combo-box.svg \
+  qt/domo/res/img/ic-send.svg \
+  qt/domo/res/img/img-logo-domo@2x.png \
+  qt/domo/res/img/ic-arrow-purple-down.svg \
+  qt/domo/res/img/ic-connect.svg \
+  qt/domo/res/img/ic-submenu-lock.svg \
+  qt/domo/res/img/img-logo-domo@3x.png \
+  qt/domo/res/img/img-logo-domo.svg \
+  qt/domo/res/img/ic-arrow-right-white.svg \
+  qt/domo/res/img/ic-arrow-left-white.svg \
+  qt/domo/res/img/ic-arrow-left.svg \
+  qt/domo/res/img/ic-copy-liliac.svg \
+  qt/domo/res/img/ic-submenu-staking.svg \
+  qt/domo/res/img/img-nav-logo-domo.png \
+  qt/domo/res/img/ic-arrow-right.svg \
+  qt/domo/res/img/ic-copy.svg \
+  qt/domo/res/img/ic-copy-big.svg \
+  qt/domo/res/img/ic-copy-big-white.svg \
+  qt/domo/res/img/ic-submenu-unlock.svg \
+  qt/domo/res/img/img-nav-logo.png \
+  qt/domo/res/img/ic-arrow-white-left.svg \
+  qt/domo/res/img/ic-exit.svg \
+  qt/domo/res/img/ic-switch-liliac-on.svg \
+  qt/domo/res/img/img-nav-logo.svg \
+  qt/domo/res/img/ic-arrow-white-right.svg \
+  qt/domo/res/img/ic-expand.svg \
+  qt/domo/res/img/ic-switch-off.svg \
+  qt/domo/res/img/img-qr-test-big.png \
+  qt/domo/res/img/ic-check-active.svg \
+  qt/domo/res/img/ic-folder.svg \
+  qt/domo/res/img/ic-switch-on.svg \
+  qt/domo/res/img/img-qr-test.png \
+  qt/domo/res/img/ic-check-box.svg \
+  qt/domo/res/img/ic-check-box-dark-active.svg \
+  qt/domo/res/img/ic-check-box-indeterminate.svg \
+  qt/domo/res/img/ic-check-box-liliac-indeterminate.svg \
+  qt/domo/res/img/ic-label-liliac.svg \
+  qt/domo/res/img/ic-transaction-warning.svg \
+  qt/domo/res/img/ic-transaction-mint.svg \
+  qt/domo/res/img/ic-transaction-mint-inactive.svg \
+  qt/domo/res/img/img-qr.svg \
+  qt/domo/res/img/ic-check-connect-off.svg \
+  qt/domo/res/img/ic-label.svg \
+  qt/domo/res/img/ic-transaction-received.svg \
+  qt/domo/res/img/dark/ic-transaction-received.svg \
+  qt/domo/res/img/dark/ic-transaction-warning.svg \
+  qt/domo/res/img/dark/ic-transaction-mint.svg \
+  qt/domo/res/img/dark/ic-transaction-mint-inactive.svg \
+  qt/domo/res/img/ic-transaction-received-inactive.svg \
+  qt/domo/res/img/dark/ic-transaction-received-inactive.svg \
+  qt/domo/res/img/img-welcome-step1.png \
+  qt/domo/res/img/ic-check-connect.svg \
+  qt/domo/res/img/ic-menu-hover.svg \
+  qt/domo/res/img/ic-transaction-sent.svg \
+  qt/domo/res/img/ic-transaction-sent-inactive.svg \
+  qt/domo/res/img/dark/ic-transaction-sent.svg \
+  qt/domo/res/img/dark/ic-transaction-sent-inactive.svg \
+  qt/domo/res/img/img-welcome-step2.png \
+  qt/domo/res/img/ic-check-dark.svg \
+  qt/domo/res/img/ic-mint.svg \
+  qt/domo/res/img/ic-transaction-staked.svg \
+  qt/domo/res/img/ic-transaction-staked-inactive.svg \
+  qt/domo/res/img/dark/ic-transaction-staked.svg \
+  qt/domo/res/img/dark/ic-transaction-staked-inactive.svg \
+  qt/domo/res/img/img-welcome-step3.png \
+  qt/domo/res/img/ic-check-liliac-on.svg \
+  qt/domo/res/img/ic-nav-address-active.svg \
+  qt/domo/res/img/ic-unlock-staking.svg \
+  qt/domo/res/img/img-welcome-step4.png \
+  qt/domo/res/img/ic-check-locked-off.svg \
+  qt/domo/res/img/ic-nav-address-hover.svg \
+  qt/domo/res/img/ic-update-liliac.svg \
+  qt/domo/res/img/ic-arrow-drop-down-purple.svg \
+  qt/domo/res/img/ic-arrow-drop-up-purple.svg \
+  qt/domo/res/img/ic-check-liliac-indeterminate.svg \
+  qt/domo/res/img/ic-check-box-liliac-indeterminate.svg \
+  qt/domo/res/img/ic-check-box-indeterminate.svg \
+  qt/domo/res/img/ani-loading-dark.gif \
+  qt/domo/res/img/ani-loading.gif
 
-BITCOIN_QT_CPP = \
+
+
+BITCOIN_QT_BASE_CPP = \
   qt/bantablemodel.cpp \
   qt/bitcoinaddressvalidator.cpp \
   qt/bitcoinamountfield.cpp \
-  qt/bitcoingui.cpp \
+  qt/domo/domogui.cpp \
   qt/bitcoinunits.cpp \
   qt/blockexplorer.cpp \
   qt/clientmodel.cpp \
   qt/csvmodelwriter.cpp \
   qt/guiutil.cpp \
   qt/intro.cpp \
-  qt/masternodelist.cpp \
   qt/networkstyle.cpp \
   qt/notificator.cpp \
   qt/optionsdialog.cpp \
@@ -290,53 +608,100 @@ BITCOIN_QT_CPP = \
   qt/trafficgraphwidget.cpp \
   qt/utilitydialog.cpp
 
-if TARGET_WINDOWS
-BITCOIN_QT_CPP += qt/winshutdownmonitor.cpp
-endif
+BITCOIN_QT_WINDOWS_CPP = qt/winshutdownmonitor.cpp
 
-if ENABLE_WALLET
-BITCOIN_QT_CPP += \
+BITCOIN_QT_WALLET_CPP = \
   qt/addressbookpage.cpp \
   qt/addresstablemodel.cpp \
   qt/askpassphrasedialog.cpp \
-  qt/bip38tooldialog.cpp \
   qt/blockexplorer.cpp \
   qt/coincontroldialog.cpp \
   qt/coincontroltreewidget.cpp \
-  qt/obfuscationconfig.cpp \
   qt/editaddressdialog.cpp \
-  qt/masternodelist.cpp \
-  qt/multisenddialog.cpp \
-  qt/multisigdialog.cpp\
+  qt/governancepage.cpp \
   qt/openuridialog.cpp \
-  qt/overviewpage.cpp \
   qt/paymentrequestplus.cpp \
   qt/paymentserver.cpp \
-  qt/receivecoinsdialog.cpp \
-  qt/privacydialog.cpp \
-  qt/receiverequestdialog.cpp \
+  qt/proposalframe.cpp \
   qt/recentrequeststablemodel.cpp \
-  qt/sendcoinsdialog.cpp \
-  qt/sendcoinsentry.cpp \
-  qt/signverifymessagedialog.cpp \
   qt/transactiondesc.cpp \
-  qt/transactiondescdialog.cpp \
   qt/transactionfilterproxy.cpp \
   qt/transactionrecord.cpp \
   qt/transactiontablemodel.cpp \
-  qt/transactionview.cpp \
-  qt/walletframe.cpp \
   qt/walletmodel.cpp \
   qt/walletmodeltransaction.cpp \
-  qt/walletview.cpp \
-  qt/zpivcontroldialog.cpp
+  qt/domo/loadingdialog.cpp \
+  qt/zdomcontroldialog.cpp \
+  qt/domo/pwidget.cpp \
+  qt/domo/snackbar.cpp \
+  qt/domo/navmenuwidget.cpp \
+  qt/domo/lockunlock.cpp \
+  qt/domo/receivedialog.cpp \
+  qt/domo/furabstractlistitemdelegate.cpp \
+  qt/domo/txviewholder.cpp \
+  qt/domo/qtutils.cpp \
+  qt/domo/expandablebutton.cpp \
+  qt/domo/walletpassworddialog.cpp \
+  qt/domo/topbar.cpp \
+  qt/domo/txrow.cpp \
+  qt/domo/addressfilterproxymodel.cpp \
+  qt/domo/dashboardwidget.cpp \
+  qt/domo/coincontroldomwidget.cpp \
+  qt/domo/addresslabelrow.cpp \
+  qt/domo/contactdropdownrow.cpp \
+  qt/domo/contactsdropdown.cpp \
+  qt/domo/optionbutton.cpp \
+  qt/domo/mninfodialog.cpp \
+  qt/domo/mnmodel.cpp \
+  qt/domo/masternodewizarddialog.cpp \
+  qt/domo/mnrow.cpp \
+  qt/domo/masternodeswidget.cpp \
+  qt/domo/myaddressrow.cpp \
+  qt/domo/sendchangeaddressdialog.cpp \
+  qt/domo/sendconfirmdialog.cpp \
+  qt/domo/sendcustomfeedialog.cpp \
+  qt/domo/sendchangeaddressdialog.cpp \
+  qt/domo/sendmultirow.cpp \
+  qt/domo/send.cpp \
+  qt/domo/addnewaddressdialog.cpp \
+  qt/domo/addnewcontactdialog.cpp \
+  qt/domo/requestdialog.cpp \
+  qt/domo/receivewidget.cpp \
+  qt/domo/tooltipmenu.cpp \
+  qt/domo/addresseswidget.cpp \
+  qt/domo/defaultdialog.cpp \
+  qt/domo/denomgenerationdialog.cpp \
+  qt/domo/privacywidget.cpp \
+  qt/domo/settings/settingsbackupwallet.cpp \
+  qt/domo/settings/settingsbittoolwidget.cpp \
+  qt/domo/settings/settingsconsolewidget.cpp \
+  qt/domo/settings/settingsdisplayoptionswidget.cpp \
+  qt/domo/settings/settingsfaqwidget.cpp \
+  qt/domo/settings/settingsinformationwidget.cpp \
+  qt/domo/settings/settingsmainoptionswidget.cpp \
+  qt/domo/settings/settingsmultisenddialog.cpp \
+  qt/domo/settings/settingsmultisendwidget.cpp \
+  qt/domo/settings/settingssignmessagewidgets.cpp \
+  qt/domo/settings/settingswalletoptionswidget.cpp \
+  qt/domo/settings/settingswalletrepairwidget.cpp \
+  qt/domo/settings/settingswidget.cpp \
+  qt/domo/welcomecontentwidget.cpp \
+  qt/domo/splash.cpp
 
+
+BITCOIN_QT_CPP = $(BITCOIN_QT_BASE_CPP)
+if TARGET_WINDOWS
+BITCOIN_QT_CPP += $(BITCOIN_QT_WINDOWS_CPP)
+endif
+if ENABLE_WALLET
+BITCOIN_QT_CPP += $(BITCOIN_QT_WALLET_CPP)
 endif
 
 RES_IMAGES = \
   qt/res/images/about.png \
   qt/res/images/splash.png \
   qt/res/images/splash_testnet.png \
+  qt/res/images/splash_regtest.png \
   qt/res/images/domo_logo_horizontal.png \
   qt/res/images/downArrow_dark.png \
   qt/res/images/downArrow_small_dark.png \
@@ -345,13 +710,12 @@ RES_IMAGES = \
   qt/res/images/upArrow_small.png \
   qt/res/images/leftArrow_small_dark.png \
   qt/res/images/rightArrow_small_dark.png \
-  qt/res/images/qtreeview_selected.png \
-  qt/res/images/walletFrame.png \
-  qt/res/images/walletFrame_bg.png \
-  qt/res/images/walletFrame_bg.png
+  qt/res/images/qtreeview_selected.png
 
 RES_CSS = \
-  qt/res/css/default.css
+  qt/res/css/default.css \
+  qt/domo/res/css/style_dark.css \
+  qt/domo/res/css/style_light.css
 
 RES_MOVIES = $(wildcard $(srcdir)/qt/res/movies/spinner-*.png)
 
@@ -361,7 +725,7 @@ BITCOIN_QT_INCLUDES = -I$(builddir)/qt -I$(srcdir)/qt -I$(srcdir)/qt/forms \
   -I$(builddir)/qt/forms
 
 qt_libbitcoinqt_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(BITCOIN_QT_INCLUDES) \
-  $(QT_INCLUDES) $(QT_DBUS_INCLUDES) $(PROTOBUF_CFLAGS) $(QR_CFLAGS)
+  $(QT_INCLUDES) $(QT_DBUS_INCLUDES) $(PROTOBUF_CFLAGS) $(QR_CFLAGS) $(SVG_CFLAGS) $(CHARTS_CFLAGS)
 qt_libbitcoinqt_a_CXXFLAGS = $(AM_CXXFLAGS) $(QT_PIE_FLAGS)
 qt_libbitcoinqt_a_OBJCXXFLAGS = $(AM_OBJCXXFLAGS) $(QT_PIE_FLAGS)
 
@@ -386,9 +750,8 @@ $(QT_MOC_CPP): $(PROTOBUF_H)
 
 # domo-qt binary #
 qt_domo_qt_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(BITCOIN_QT_INCLUDES) \
-  $(QT_INCLUDES) $(PROTOBUF_CFLAGS) $(QR_CFLAGS)
+  $(QT_INCLUDES) $(PROTOBUF_CFLAGS) $(QR_CFLAGS) $(SVG_CFLAGS) $(CHARTS_CFLAGS)
 qt_domo_qt_CXXFLAGS = $(AM_CXXFLAGS) $(QT_PIE_FLAGS)
-qt_bitcoin_qt_CXXFLAGS = $(AM_CXXFLAGS) $(QT_PIE_FLAGS)
 
 qt_domo_qt_SOURCES = qt/domo.cpp
 if TARGET_DARWIN
@@ -399,16 +762,16 @@ if TARGET_WINDOWS
 endif
 qt_domo_qt_LDADD = qt/libbitcoinqt.a $(LIBBITCOIN_SERVER)
 if ENABLE_WALLET
-qt_domo_qt_LDADD += $(LIBBITCOIN_WALLET)
+qt_domo_qt_LDADD += $(LIBBITCOIN_UTIL) $(LIBBITCOIN_WALLET)
 endif
 if ENABLE_ZMQ
 qt_domo_qt_LDADD += $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
 endif
-qt_domo_qt_LDADD += $(LIBBITCOIN_CLI) $(LIBBITCOIN_COMMON) $(LIBBITCOIN_UTIL) $(LIBBITCOIN_CRYPTO) $(LIBUNIVALUE) $(LIBBITCOIN_ZEROCOIN) $(LIBLEVELDB) $(LIBMEMENV) \
-  $(BOOST_LIBS) $(QT_LIBS) $(QT_DBUS_LIBS) $(QR_LIBS) $(PROTOBUF_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(LIBSECP256K1) \
+qt_domo_qt_LDADD += $(LIBBITCOIN_CLI) $(LIBBITCOIN_COMMON) $(LIBBITCOIN_UTIL) $(LIBBITCOIN_CRYPTO) $(LIBUNIVALUE) $(LIBBITCOIN_ZEROCOIN) $(LIBLEVELDB) $(LIBLEVELDB_SSE42) $(LIBMEMENV) \
+  $(BOOST_LIBS) $(QT_LIBS) $(QT_DBUS_LIBS) $(QR_LIBS) $(PROTOBUF_LIBS) $(SVG_LIBS) $(CHARTS_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(LIBSECP256K1) \
   $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS)
 qt_domo_qt_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(QT_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
-qt_domo_qt_LIBTOOLFLAGS = --tag CXX
+qt_domo_qt_LIBTOOLFLAGS = $(AM_LIBTOOLFLAGS) --tag CXX
 
 #locale/foo.ts -> locale/foo.qm
 QT_QM=$(QT_TS:.ts=.qm)
@@ -419,7 +782,7 @@ $(srcdir)/qt/domostrings.cpp: $(libbitcoin_server_a_SOURCES) $(libbitcoin_wallet
 	@test -n $(XGETTEXT) || echo "xgettext is required for updating translations"
 	$(AM_V_GEN) cd $(srcdir); XGETTEXT=$(XGETTEXT) PACKAGE_NAME="$(PACKAGE_NAME)" $(PYTHON) ../share/qt/extract_strings_qt.py $^
 
-translate: $(srcdir)/qt/domostrings.cpp $(QT_FORMS_UI) $(QT_FORMS_UI) $(BITCOIN_QT_CPP) $(BITCOIN_QT_H) $(BITCOIN_MM)
+translate: $(srcdir)/qt/domostrings.cpp $(QT_FORMS_UI) $(QT_FORMS_UI) $(BITCOIN_QT_BASE_CPP) qt/domo.cpp $(BITCOIN_QT_WINDOWS_CPP) $(BITCOIN_QT_WALLET_CPP) $(BITCOIN_QT_H) $(BITCOIN_MM)
 	@test -n $(LUPDATE) || echo "lupdate is required for updating translations"
 	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(LUPDATE) $^ -locations relative -no-obsolete -ts $(srcdir)/qt/locale/domo_en.ts
 

@@ -1,7 +1,6 @@
 // Copyright (c) 2011-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
-// Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2018-2019 The DOMO developers
+// Copyright (c) 2015-2017 The DOMO developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -12,6 +11,8 @@
 #include <QSettings>
 #include <QStringList>
 
+#include <iostream>
+
 BitcoinUnits::BitcoinUnits(QObject* parent) : QAbstractListModel(parent),
                                               unitlist(availableUnits())
 {
@@ -20,18 +21,18 @@ BitcoinUnits::BitcoinUnits(QObject* parent) : QAbstractListModel(parent),
 QList<BitcoinUnits::Unit> BitcoinUnits::availableUnits()
 {
     QList<BitcoinUnits::Unit> unitlist;
-    unitlist.append(DOMO);
-    unitlist.append(mDOMO);
-    unitlist.append(uDOMO);
+    unitlist.append(DOM);
+    unitlist.append(mDOM);
+    unitlist.append(uDOM);
     return unitlist;
 }
 
 bool BitcoinUnits::valid(int unit)
 {
     switch (unit) {
-    case DOMO:
-    case mDOMO:
-    case uDOMO:
+    case DOM:
+    case mDOM:
+    case uDOM:
         return true;
     default:
         return false;
@@ -41,38 +42,40 @@ bool BitcoinUnits::valid(int unit)
 QString BitcoinUnits::id(int unit)
 {
     switch (unit) {
-    case DOMO:
+    case DOM:
         return QString("domo");
-    case mDOMO:
+    case mDOM:
         return QString("mdomo");
-    case uDOMO:
+    case uDOM:
         return QString::fromUtf8("udomo");
     default:
         return QString("???");
     }
 }
 
-QString BitcoinUnits::name(int unit)
+QString BitcoinUnits::name(int unit, bool isZdom)
 {
+    QString z = "";
+    if(isZdom) z = "z";
     if (Params().NetworkID() == CBaseChainParams::MAIN) {
         switch (unit) {
-        case DOMO:
-            return QString("DOMO");
-        case mDOMO:
-            return QString("mDOMO");
-        case uDOMO:
-            return QString::fromUtf8("μDOMO");
+        case DOM:
+            return z + QString("DOM");
+        case mDOM:
+            return z + QString("mDOM");
+        case uDOM:
+            return z + QString::fromUtf8("μDOM");
         default:
             return QString("???");
         }
     } else {
         switch (unit) {
-        case DOMO:
-            return QString("tDOMO");
-        case mDOMO:
-            return QString("mtDOMO");
-        case uDOMO:
-            return QString::fromUtf8("μtDOMO");
+        case DOM:
+            return z + QString("tDOM");
+        case mDOM:
+            return z + QString("mtDOM");
+        case uDOM:
+            return z + QString::fromUtf8("μtDOM");
         default:
             return QString("???");
         }
@@ -83,23 +86,23 @@ QString BitcoinUnits::description(int unit)
 {
     if (Params().NetworkID() == CBaseChainParams::MAIN) {
         switch (unit) {
-        case DOMO:
-            return QString("DOMO");
-        case mDOMO:
-            return QString("Milli-DOMO (1 / 1" THIN_SP_UTF8 "000)");
-        case uDOMO:
-            return QString("Micro-DOMO (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+        case DOM:
+            return QString("DOM");
+        case mDOM:
+            return QString("Milli-DOM (1 / 1" THIN_SP_UTF8 "000)");
+        case uDOM:
+            return QString("Micro-DOM (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
         default:
             return QString("???");
         }
     } else {
         switch (unit) {
-        case DOMO:
-            return QString("TestDOMOs");
-        case mDOMO:
-            return QString("Milli-TestDOMO (1 / 1" THIN_SP_UTF8 "000)");
-        case uDOMO:
-            return QString("Micro-TestDOMO (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+        case DOM:
+            return QString("TestDOMs");
+        case mDOM:
+            return QString("Milli-TestDOM (1 / 1" THIN_SP_UTF8 "000)");
+        case uDOM:
+            return QString("Micro-TestDOM (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
         default:
             return QString("???");
         }
@@ -109,11 +112,11 @@ QString BitcoinUnits::description(int unit)
 qint64 BitcoinUnits::factor(int unit)
 {
     switch (unit) {
-    case DOMO:
+    case DOM:
         return 100000000;
-    case mDOMO:
+    case mDOM:
         return 100000;
-    case uDOMO:
+    case uDOM:
         return 100;
     default:
         return 100000000;
@@ -123,23 +126,24 @@ qint64 BitcoinUnits::factor(int unit)
 int BitcoinUnits::decimals(int unit)
 {
     switch (unit) {
-    case DOMO:
+    case DOM:
         return 8;
-    case mDOMO:
+    case mDOM:
         return 5;
-    case uDOMO:
+    case uDOM:
         return 2;
     default:
         return 0;
     }
 }
 
-QString BitcoinUnits::format(int unit, const CAmount& nIn, bool fPlus, SeparatorStyle separators)
+QString BitcoinUnits::format(int unit, const CAmount& nIn, bool fPlus, SeparatorStyle separators, bool cleanRemainderZeros)
 {
     // Note: not using straight sprintf here because we do NOT want
     // localized number formatting.
-    if (!valid(unit))
+    if (!valid(unit)){
         return QString(); // Refuse to format invalid unit
+    }
     qint64 n = (qint64)nIn;
     qint64 coin = factor(unit);
     int num_decimals = decimals(unit);
@@ -164,6 +168,18 @@ QString BitcoinUnits::format(int unit, const CAmount& nIn, bool fPlus, Separator
 
     if (num_decimals <= 0)
         return quotient_str;
+
+    if(cleanRemainderZeros) {
+        // Clean remainder
+        QString cleanRemainder = remainder_str;
+        for (int i = (remainder_str.length() - 1); i > 1; i--) {
+            if (remainder_str.at(i) == QChar('0')) {
+                cleanRemainder = cleanRemainder.left(cleanRemainder.lastIndexOf("0"));
+            } else
+                break;
+        }
+        return quotient_str + QString(".") + cleanRemainder;
+    }
 
     return quotient_str + QString(".") + remainder_str;
 }
@@ -192,25 +208,34 @@ QString BitcoinUnits::formatWithUnit(int unit, const CAmount& amount, bool pluss
 QString BitcoinUnits::formatHtmlWithUnit(int unit, const CAmount& amount, bool plussign, SeparatorStyle separators)
 {
     QString str(formatWithUnit(unit, amount, plussign, separators));
-    str.replace(QChar(THIN_SP_CP), QString(THIN_SP_HTML));
+    str.replace(QChar(THIN_SP_CP), QString(COMMA_HTML));
     return QString("<span style='white-space: nowrap;'>%1</span>").arg(str);
 }
 
-QString BitcoinUnits::floorWithUnit(int unit, const CAmount& amount, bool plussign, SeparatorStyle separators)
+QString BitcoinUnits::floorWithUnit(int unit, const CAmount& amount, bool plussign, SeparatorStyle separators, bool cleanRemainderZeros, bool isZDOM)
 {
     QSettings settings;
     int digits = settings.value("digits").toInt();
 
-    QString result = format(unit, amount, plussign, separators);
-    if (decimals(unit) > digits) result.chop(decimals(unit) - digits);
+    QString result = format(unit, amount, plussign, separators, cleanRemainderZeros);
+    if(decimals(unit) > digits) {
+        if (!cleanRemainderZeros) {
+            result.chop(decimals(unit) - digits);
+        } else {
+            int lenght = result.mid(result.indexOf("."), result.length() - 1).length() - 1;
+            if (lenght > digits) {
+                result.chop(lenght - digits);
+            }
+        }
+    }
 
-    return result + QString(" ") + name(unit);
+    return result + QString(" ") + name(unit, isZDOM);
 }
 
-QString BitcoinUnits::floorHtmlWithUnit(int unit, const CAmount& amount, bool plussign, SeparatorStyle separators)
+QString BitcoinUnits::floorHtmlWithUnit(int unit, const CAmount& amount, bool plussign, SeparatorStyle separators, bool cleanRemainderZeros, bool isZDOM)
 {
-    QString str(floorWithUnit(unit, amount, plussign, separators));
-    str.replace(QChar(THIN_SP_CP), QString(THIN_SP_HTML));
+    QString str(floorWithUnit(unit, amount, plussign, separators, cleanRemainderZeros, isZDOM));
+    str.replace(QChar(THIN_SP_CP), QString(COMMA_HTML));
     return QString("<span style='white-space: nowrap;'>%1</span>").arg(str);
 }
 
