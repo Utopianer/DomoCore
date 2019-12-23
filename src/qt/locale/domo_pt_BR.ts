@@ -3576,8 +3576,8 @@ https://www.transifex.com/domo-project/domo-project-translations</translation>
         <translation>Define o tamanho máximo de transações de alta prioridade/taxa baixa em bytes (padrão: %d)</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 DOM.</source>
-        <translation>Incapaz de localizar fundos para esta transação que não são iguais a 10000 DOM.</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 1000 DOM.</source>
+        <translation>Incapaz de localizar fundos para esta transação que não são iguais a 1000 DOM.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>

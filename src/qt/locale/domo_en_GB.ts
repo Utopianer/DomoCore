@@ -4969,12 +4969,12 @@ Please be patient...</translation>
         <translation>Unable to locate enough Obfuscation denominated funds for this transaction.</translation>
     </message>
     <message>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 DOM.</source>
-        <translation>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 DOM.</translation>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 1000 DOM.</source>
+        <translation>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 1000 DOM.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 DOM.</source>
-        <translation>Unable to locate enough funds for this transaction that are not equal 10000 DOM.</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 1000 DOM.</source>
+        <translation>Unable to locate enough funds for this transaction that are not equal 1000 DOM.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>

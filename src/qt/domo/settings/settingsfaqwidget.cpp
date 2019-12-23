@@ -26,10 +26,10 @@ SettingsFaqWidget::SettingsFaqWidget(QWidget *parent) :
     setCssProperty({
            ui->labelNumber1,
            ui->labelNumber2,
-           ui->labelNumber3,
-           ui->labelNumber4,
-           ui->labelNumber5,
-           ui->labelNumber6,
+        //    ui->labelNumber3,
+        //    ui->labelNumber4,
+        //    ui->labelNumber5,
+        //    ui->labelNumber6,
            ui->labelNumber7,
            ui->labelNumber8,
            ui->labelNumber9,
@@ -39,10 +39,10 @@ SettingsFaqWidget::SettingsFaqWidget(QWidget *parent) :
     setCssProperty({
               ui->labelSubtitle1,
               ui->labelSubtitle2,
-              ui->labelSubtitle3,
-              ui->labelSubtitle4,
-              ui->labelSubtitle5,
-              ui->labelSubtitle6,
+            //   ui->labelSubtitle3,
+            //   ui->labelSubtitle4,
+            //   ui->labelSubtitle5,
+            //   ui->labelSubtitle6,
               ui->labelSubtitle7,
               ui->labelSubtitle8,
               ui->labelSubtitle9,
@@ -53,10 +53,10 @@ SettingsFaqWidget::SettingsFaqWidget(QWidget *parent) :
     setCssProperty({
               ui->labelContent1,
               ui->labelContent2,
-              ui->labelContent3,
-              ui->labelContent4,
-              ui->labelContent5,
-              ui->labelContent6,
+            //   ui->labelContent3,
+            //   ui->labelContent4,
+            //   ui->labelContent5,
+            //   ui->labelContent6,
               ui->labelContent7,
               ui->labelContent8,
               ui->labelContent9,
@@ -67,18 +67,18 @@ SettingsFaqWidget::SettingsFaqWidget(QWidget *parent) :
     setCssProperty({
               ui->pushButtonFaq1,
               ui->pushButtonFaq2,
-              ui->pushButtonFaq3,
-              ui->pushButtonFaq4,
-              ui->pushButtonFaq5,
-              ui->pushButtonFaq6,
+            //   ui->pushButtonFaq3,
+            //   ui->pushButtonFaq4,
+            //   ui->pushButtonFaq5,
+            //   ui->pushButtonFaq6,
               ui->pushButtonFaq7,
               ui->pushButtonFaq8,
               ui->pushButtonFaq9,
               ui->pushButtonFaq10
             }, "btn-faq-options");
 
-    ui->labelContent3->setOpenExternalLinks(true);
-    ui->labelContent5->setOpenExternalLinks(true);
+    // ui->labelContent3->setOpenExternalLinks(true);
+    // ui->labelContent5->setOpenExternalLinks(true);
     ui->labelContent8->setOpenExternalLinks(true);
 
     // Exit button
@@ -86,7 +86,7 @@ SettingsFaqWidget::SettingsFaqWidget(QWidget *parent) :
     setCssProperty(ui->pushButtonExit, "btn-faq-exit");
 
     // Web Link
-    ui->pushButtonWebLink->setText("https://DOMO.org/");
+    ui->pushButtonWebLink->setText("https://domoproject.me/");
     setCssProperty(ui->pushButtonWebLink, "btn-faq-web");
     setCssProperty(ui->containerButtons, "container-faq-buttons");
 
@@ -94,10 +94,10 @@ SettingsFaqWidget::SettingsFaqWidget(QWidget *parent) :
     connect(ui->pushButtonExit, SIGNAL(clicked()), this, SLOT(close()));
     connect(ui->pushButtonFaq1, SIGNAL(clicked()), this, SLOT(onFaq1Clicked()));
     connect(ui->pushButtonFaq2, SIGNAL(clicked()), this, SLOT(onFaq2Clicked()));
-    connect(ui->pushButtonFaq3, SIGNAL(clicked()), this, SLOT(onFaq3Clicked()));
-    connect(ui->pushButtonFaq4, SIGNAL(clicked()), this, SLOT(onFaq4Clicked()));
-    connect(ui->pushButtonFaq5, SIGNAL(clicked()), this, SLOT(onFaq5Clicked()));
-    connect(ui->pushButtonFaq6, SIGNAL(clicked()), this, SLOT(onFaq6Clicked()));
+    // connect(ui->pushButtonFaq3, SIGNAL(clicked()), this, SLOT(onFaq3Clicked()));
+    // connect(ui->pushButtonFaq4, SIGNAL(clicked()), this, SLOT(onFaq4Clicked()));
+    // connect(ui->pushButtonFaq5, SIGNAL(clicked()), this, SLOT(onFaq5Clicked()));
+    // connect(ui->pushButtonFaq6, SIGNAL(clicked()), this, SLOT(onFaq6Clicked()));
     connect(ui->pushButtonFaq7, SIGNAL(clicked()), this, SLOT(onFaq7Clicked()));
     connect(ui->pushButtonFaq8, SIGNAL(clicked()), this, SLOT(onFaq8Clicked()));
     connect(ui->pushButtonFaq9, SIGNAL(clicked()), this, SLOT(onFaq9Clicked()));
@@ -130,19 +130,19 @@ void SettingsFaqWidget::onFaq2Clicked(){
 }
 
 void SettingsFaqWidget::onFaq3Clicked(){
-   ui->scrollAreaFaq->verticalScrollBar()->setValue(ui->widgetFaq3->y());
+//    ui->scrollAreaFaq->verticalScrollBar()->setValue(ui->widgetFaq3->y());
 }
 
 void SettingsFaqWidget::onFaq4Clicked(){
-    ui->scrollAreaFaq->verticalScrollBar()->setValue(ui->widgetFaq4->y());
+    // ui->scrollAreaFaq->verticalScrollBar()->setValue(ui->widgetFaq4->y());
 }
 
 void SettingsFaqWidget::onFaq5Clicked(){
-    ui->scrollAreaFaq->verticalScrollBar()->setValue(ui->widgetFaq5->y());
+    // ui->scrollAreaFaq->verticalScrollBar()->setValue(ui->widgetFaq5->y());
 }
 
 void SettingsFaqWidget::onFaq6Clicked(){
-    ui->scrollAreaFaq->verticalScrollBar()->setValue(ui->widgetFaq6->y());
+    // ui->scrollAreaFaq->verticalScrollBar()->setValue(ui->widgetFaq6->y());
 }
 
 void SettingsFaqWidget::onFaq7Clicked(){
@@ -171,10 +171,10 @@ std::vector<QPushButton*> SettingsFaqWidget::getButtons(){
     return {
             ui->pushButtonFaq1,
             ui->pushButtonFaq2,
-            ui->pushButtonFaq3,
-            ui->pushButtonFaq4,
-            ui->pushButtonFaq5,
-            ui->pushButtonFaq6,
+            // ui->pushButtonFaq3,
+            // ui->pushButtonFaq4,
+            // ui->pushButtonFaq5,
+            // ui->pushButtonFaq6,
             ui->pushButtonFaq7,
             ui->pushButtonFaq8,
             ui->pushButtonFaq9,

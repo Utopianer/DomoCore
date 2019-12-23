@@ -2029,7 +2029,7 @@ int64_t GetBlockValue(int nHeight)
 int64_t GetDevFundPayment(int nHeight, int64_t blockValue)
 {
     int64_t ret_val = 0;
-    ret_val = blockValue * 5 / 100; //7% of the reward while POS
+    ret_val = blockValue * 5 / 100; //5% of the reward while POS
     return ret_val;
 }
 
@@ -2277,21 +2277,10 @@ int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCou
             return 0;
     }
 
-    if (nHeight <= 43200) {
+    if (nHeight <= 10500) {
         ret = blockValue / 5;
-    } else if (nHeight < 86400 && nHeight > 43200) {
-        ret = blockValue / (100 / 30);
-    } else if (nHeight < (Params().NetworkID() == CBaseChainParams::TESTNET ? 145000 : 151200) && nHeight >= 86400) {
-        ret = 50 * COIN;
-    } else if (nHeight <= Params().LAST_POW_BLOCK() && nHeight >= 151200) {
-        ret = blockValue / 2;
-    } else if (nHeight < Params().Zerocoin_Block_V2_Start()) {
-        return GetSeeSaw(blockValue, nMasternodeCount, nHeight);
     } else {
-        //When zDOM is staked, masternode only gets 2 DOM
-        ret = 3 * COIN;
-        if (isZDOMStake)
-            ret = 2 * COIN;
+        ret = blockValue * 875 / 1000; //87.5% of the block reward
     }
 
     return ret;

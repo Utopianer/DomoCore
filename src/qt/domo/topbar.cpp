@@ -47,6 +47,16 @@ TopBar::TopBar(DOMOGUI* _mainWindow, QWidget *parent) :
     setCssProperty({ui->labelAmountDom, ui->labelAmountzDom}, "amount-topbar");
     setCssProperty({ui->labelPendingDom, ui->labelPendingzDom, ui->labelImmatureDom, ui->labelImmaturezDom}, "amount-small-topbar");
 
+    ui->labelAmountTopzDom->setVisible(false);
+    ui->label_16->setVisible(false);
+    ui->labelTitle2->setVisible(false);
+    ui->labelAmountzDom->setVisible(false);
+    ui->labelTitle5->setVisible(false);
+    ui->labelPendingzDom->setVisible(false);
+    ui->labelTitle6->setVisible(false);
+    ui->labelImmaturezDom->setVisible(false);
+    ui->label_9->setVisible(false);
+    
     // Progress Sync
     progressBar = new QProgressBar(ui->layoutSync);
     progressBar->setRange(1, 10);

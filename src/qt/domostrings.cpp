@@ -212,7 +212,7 @@ QT_TRANSLATE_NOOP("domo-core", ""
 "Unable to locate enough Obfuscation denominated funds for this transaction."),
 QT_TRANSLATE_NOOP("domo-core", ""
 "Unable to locate enough Obfuscation non-denominated funds for this "
-"transaction that are not equal 10000 DOM."),
+"transaction that are not equal 1000 DOM."),
 QT_TRANSLATE_NOOP("domo-core", ""
 "Unable to locate enough funds for this transaction that are not equal 10000 "
 "DOM."),
