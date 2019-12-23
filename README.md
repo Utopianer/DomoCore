@@ -1,59 +1,22 @@
-DOMO Core integration/staging repository
+Welcome to The DOMO Project
 =====================================
 
-[![Build Status](https://travis-ci.org/DOMO-Project/DOMO.svg?branch=master)](https://travis-ci.org/DOMO-Project/DOMO) [![GitHub version](https://badge.fury.io/gh/DOMO-Project%2FDOMO.svg)](https://badge.fury.io/gh/DOMO-Project%2FDOMO)
+Domocoin is a cryptocurrency based on a modified PivX code. It´s main purpose is the proof of ownership to access the DOMO community.
 
-DOMO is an open source crypto-currency focused on fast private transactions using the Zerocoin protocol, with low transaction fees & environmental footprint.  It utilizes the first ever anonymous proof of stake protocol, called zPoS, combined with regular PoS and masternodes for securing its network. zPoS incentivises using the privacy features available in DOMO by granting a higher block reward for zPoS over regular PoS and masternodes. In practice DOMO has between 4 to 10 times higher use of it's privacy features in comparison to other coins that combine public and private transactions. This is thanks to innovations like zPoS and integrating the Zerocoin protocol into light/mobile wallets, allowing for a complete and lightweight privacy protocol that can be used on the go. As well as security improvements like [deterministic generation of zDOM for easy backups.](https://www.reddit.com/r/domo/comments/8gbjf7/how_to_use_deterministic_zerocoin_generation/)
-The goal of DOMO is to achieve a decentralized sustainable crypto currency with near instant full-time private transactions, fair governance and community intelligence.
-- Anonymized transactions & consensus using the [_Zerocoin Protocol_](http://www.domo.org/zdom) and [zPoS](https://domo.org/zpos/).
-- light/mobile wallet privacy using the [Zerocoin Light Node Protocol](https://domo.org/wp-content/uploads/2018/11/Zerocoin_Light_Node_Protocol.pdf)
-- Fast transactions featuring guaranteed zero confirmation transactions, we call it _SwiftX_.
-- Decentralized blockchain voting utilizing Masternode technology to form a DAO. The blockchain will distribute monthly treasury funds based on successful proposals submitted by the community and voted on by the DAO.
+Only people owning at least 1 Domocoin will be able to login to the network
 
-More information at [domo.org](http://www.domo.org) Visit our ANN thread at [BitcoinTalk](http://www.bitcointalk.org/index.php?topic=1262920)
+By providing DOMO exclusive features and channels, we created an environment and userbase for our prototype, a open-source browser for social networks.
+
+For more informations visit the Homepage: https://domoproject.me
 
 ### Coin Specs
 <table>
 <tr><td>Algo</td><td>Quark</td></tr>
 <tr><td>Block Time</td><td>60 Seconds</td></tr>
 <tr><td>Difficulty Retargeting</td><td>Every Block</td></tr>
-<tr><td>Max Coin Supply (PoW Phase)</td><td>43,199,500 DOM</td></tr>
-<tr><td>Max Coin Supply (PoS Phase)</td><td>Infinite</td></tr>
-<tr><td>Premine</td><td>60,000 DOM*</td></tr>
+<tr><td>Max Coin Supply</td><td>1.000.000 (not yet integrated in the code)</td></tr>
+<tr><td>Premine</td><td>0 DOM*</td></tr>
 </table>
 
-*60,000 DOM Premine was burned in block [279917](http://www.presstab.pw/phpexplorer/DOMO/block.php?blockhash=206d9cfe859798a0b0898ab00d7300be94de0f5469bb446cecb41c3e173a57e0)
+*The Blockchain has been restarted several times (swap), with a premine of the circulating supply. The founder kept all unswapped coins for redistribution.
 
-### Reward Distribution
-
-<table>
-<th colspan=4>Genesis Block</th>
-<tr><th>Block Height</th><th>Reward Amount</th><th>Notes</th></tr>
-<tr><td>1</td><td>60,000 DOM</td><td>Initial Pre-mine, burnt in block <a href="http://www.presstab.pw/phpexplorer/DOMO/block.php?blockhash=206d9cfe859798a0b0898ab00d7300be94de0f5469bb446cecb41c3e173a57e0">279917</a></td></tr>
-</table>
-
-### PoW Rewards Breakdown
-
-<table>
-<th>Block Height</th><th>Masternodes</th><th>Miner</th><th>Budget</th>
-<tr><td>2-43200</td><td>20% (50 DOM)</td><td>80% (200 DOM)</td><td>N/A</td></tr>
-<tr><td>43201-151200</td><td>20% (50 DOM)</td><td>70% (200 DOM)</td><td>10% (25 DOM)</td></tr>
-<tr><td>151201-259200</td><td>45% (22.5 DOM)</td><td>45% (22.5 DOM)</td><td>10% (5 DOM)</td></tr>
-</table>
-
-### PoS Rewards Breakdown
-
-<table>
-<th>Phase</th><th>Block Height</th><th>Reward</th><th>Masternodes & Stakers</th><th>Budget</th>
-<tr><td>Phase 0</td><td>259201-302399</td><td>50 DOM</td><td>90% (45 DOM)</td><td>10% (5 DOM)</td></tr>
-<tr><td>Phase 1</td><td>302400-345599</td><td>45 DOM</td><td>90% (40.5 DOM)</td><td>10% (4.5 DOM)</td></tr>
-<tr><td>Phase 2</td><td>345600-388799</td><td>40 DOM</td><td>90% (36 DOM)</td><td>10% (4 DOM)</td></tr>
-<tr><td>Phase 3</td><td>388800-431999</td><td>35 DOM</td><td>90% (31.5 DOM)</td><td>10% (3.5 DOM)</td></tr>
-<tr><td>Phase 4</td><td>432000-475199</td><td>30 DOM</td><td>90% (27 DOM)</td><td>10% (3 DOM)</td></tr>
-<tr><td>Phase 5</td><td>475200-518399</td><td>25 DOM</td><td>90% (22.5 DOM)</td><td>10% (2.5 DOM)</td></tr>
-<tr><td>Phase 6</td><td>518400-561599</td><td>20 DOM</td><td>90% (18 DOM)</td><td>10% (2 DOM)</td></tr>
-<tr><td>Phase 7</td><td>561600-604799</td><td>15 DOM</td><td>90% (13.5 DOM)</td><td>10% (1.5 DOM)</td></tr>
-<tr><td>Phase 8</td><td>604800-647999</td><td>10 DOM</td><td>90% (9 DOM)</td><td>10% (1 DOM)</td></tr>
-<tr><td>Phase 9</td><td>648000-1154203</td><td>5 DOM</td><td>90% (4.5 DOM)</td><td>10% (0.5 DOM)</td></tr>
-<tr><td>Phase X</td><td>1154203-∞</td><td>6 DOM</td><td>84% (5 DOM/zDOM)</td><td>16% (1 DOM)</td></tr>
-</table>
