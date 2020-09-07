@@ -7,7 +7,7 @@ Only people owning at least 1 Domocoin will be able to login to the network
 
 By providing DOMO exclusive features and channels, we created an environment and userbase for our prototype, a open-source browser for social networks.
 
-For more informations visit the Homepage: https://domoproject.me
+For more informations visit the Homepage
 
 ### Coin Specs
 <table>
